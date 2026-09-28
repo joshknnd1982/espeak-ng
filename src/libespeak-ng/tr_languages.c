@@ -633,6 +633,11 @@ Translator *SelectTranslator(const char *name)
 	{
 		tr->langopts.param[LOPT_UNPRONOUNCABLE] = 1; // disable check for unpronouncable words
 		tr->langopts.stress_flags = S_NO_AUTO_2 | S_FINAL_DIM | S_FINAL_DIM_ONLY | S_EO_CLAUSE1;
+
+		// numbers from chr_list: "one" is said before hundred and thousand, and
+		// there is no "and" between the parts, eg. 121 = sogwo sgohitsgwa talisgo sogwo
+		tr->langopts.numbers = NUM_DEFAULT;
+		tr->langopts.max_digits = 14; // up to _0M4 (10^12)
 	}
 		break;
 	case L('c', 'v'): // Chuvash

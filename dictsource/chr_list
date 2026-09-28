@@ -1,0 +1,46 @@
+// Cherokee pronunciation exceptions
+
+// Numbers
+// The phonemes are those which chr_rules gives for the romanised words in the
+// comments ("qu" is written "gw"). The words for 0, 1000 and above and the
+// decimal point are from the CLDR spell-out rules for Cherokee (chr.xml).
+
+_0	tl'0~43||g'o:sd'i~43	// tla gosdi (Ꮭ ᎪᏍᏗ)
+
+_1	s'o:gw'o~43	// sogwo
+_2	t'0:l'i~43	// tali (ᏔᎵ)
+_3	ts'o:'i~43	// tsoi (ᏦᎢ)
+_4	n'&~:g'i~43	// nvgi (ᏅᎩ)
+_5	h'i:sg'i~43	// hisgi (ᎯᏍᎩ)
+_6	s'u:d'0:l'i~43	// sudali (ᏑᏓᎵ)
+_7	g'0:l'i:gw'o:g'i~43	// galigwogi (ᎦᎵᏉᎩ galiquogi)
+_8	ts'u:n'e~:l'0~43	// tsunela (ᏧᏁᎳ)
+_9	s'o:n'e~:l'0~43	// sonela (ᏐᏁᎳ)
+
+_10	sg'o:h'i~43	// sgohi (ᏍᎪᎯ)
+_11	s'0:d'u~43	// sadu (ᏌᏚ)
+_12	t'0:l'i:d'u~43	// talidu (ᏔᎵᏚ)
+_13	ts'o:g'0:d'u~43	// tsogadu (ᏦᎦᏚ)
+_14	n'i~:g'0:d'u~43	// nigadu (ᏂᎦᏚ)
+_15	h'i:sg'0:d'u~43	// hisgadu (ᎯᏍᎦᏚ)
+_16	d'0:l'0:d'u~43	// daladu (ᏓᎳᏚ)
+_17	g'0:l'i:gw'0:d'u~43	// galigwadu (ᎦᎵᏆᏚ galiquadu)
+_18	n'e~:l'0:d'u~43	// neladu (ᏁᎳᏚ)
+_19	s'o:n'e~:l'0:d'u~43	// soneladu (ᏐᏁᎳᏚ)
+
+_2X	t'0:l'i:sg'o~43||	// talisgo (ᏔᎵᏍᎪ)
+_3X	ts'o:sg'o~43||	// tsosgo (ᏦᏍᎪ)
+_4X	n'&~:g'i:sg'o~43||	// nvgisgo (ᏅᎩᏍᎪ)
+_5X	h'i:sg'i:sg'o~43||	// hisgisgo (ᎯᏍᎩᏍᎪ)
+_6X	s'u:d'0:l'i:sg'o~43||	// sudalisgo (ᏑᏓᎵᏍᎪ)
+_7X	g'0:l'i:gw'o:g'i:sg'o~43||	// galigwogisgo (galiquogisgo)
+_8X	ts'u:n'e~:l'i:sg'o~43||	// tsunelisgo
+_9X	s'o:n'e~:l'i:sg'o~43||	// sonelisgo
+
+_0C	||sg'o:h'i:tsgw'0~43	// sgohitsgwa (ᏍᎪᎯᏥᏆ)
+_0M1	'i:j'0:g'0:j'&~:l'i~43	// iyagayvli (ᎢᏯᎦᏴᎵ)
+_0M2	'i:j'u:gw'0:d'i:n'&~:d'0~43	// iyugwadinvda (ᎢᏳᏆᏗᏅᏓ)
+_0M3	'i:j'0:t'0:l'0:d'i:n'&~:d'&~43	// iyataladinvdv (ᎢᏯᏔᎳᏗᏅᏛ)
+_0M4	'i:j'0:ts'o:'0:d'i:n'&~:d'&~43	// iyatsoadinvdv (ᎢᏯᏦᎠᏗᏅᏛ)
+
+_dpt	g'o:sd'0:j'i~43	// gosdayi (ᎪᏍᏓᏱ)
