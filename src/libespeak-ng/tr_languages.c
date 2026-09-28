@@ -1502,6 +1502,11 @@ Translator *SelectTranslator(const char *name)
 		tr->langopts.break_numbers = BREAK_LAKH_HI;
 	}
 		break;
+	case L3('s', 'j', 'n'): // Sindarin
+		// Only the numbers 1-12 are attested, so speak numbers as individual
+		// digits (_0 to _9 in sjn_list), except for 10, 11 and 12
+		tr->langopts.numbers = 0;
+		break;
 	case L('s', 'l'): // Slovenian
 		tr->encoding = ESPEAKNG_ENCODING_ISO_8859_2;
 		tr->langopts.stress_rule = STRESSPOSN_2R; // Temporary

@@ -100,5 +100,12 @@ test_phon chr "s'o:gw'o~43_ 'i:j'0:g'0:j'&~:l'i~43_ s'o:gw'o~43_ 'i:j'0:g'0:j'&~
 test_phon chr "s'o:gw'o~43_ 'i:j'u:gw'0:d'i:n'&~:d'0~43_ s'o:gw'o~43_ 'i:j'0:t'0:l'0:d'i:n'&~:d'&~43_" "1000000 1000000000" "large"
 test_phon chr "ts'o:'i~43_ g'o:sd'0:j'i~43_ s'o:gw'o~43_ n'&~:g'i~43_" "3.14" "decimal"
 
+echo "... sjn (Sindarin)" # only 1-12 are attested; other numbers are spoken as individual digits
+
+test_phon sjn "l'Ost m'In t'a::d n'E:l k'anad l'EbEn 'EnEg 'OdOg t'OlOT n'EdER" "0 1 2 3 4 5 6 7 8 9" "units"
+test_phon sjn "p'aE m'InIb 'Imp" "10 11 12" "10-12"
+test_phon sjn "m'Inn'E:l_! t'a::dm'In_! m'Inl'Ost_!l'Ost" "13 21 100" "digits"
+test_phon sjn "m'Int'a::d_!n'E:lk'anad_!" "1234" "digits"
+
 test_phon it "dz'E*o_| 'items" "0 items" "NUM_SINGLE_VOWEL"
 test_phon sk "dv'ana:st; t;'isi:ts_! t@-*'ist'o St'i*itsat;p'&t;" "12345" "mixed"

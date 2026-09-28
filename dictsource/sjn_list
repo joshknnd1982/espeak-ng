@@ -30,3 +30,20 @@ or	$u
 os	$u
 pen	$u
 vi	$u
+
+// numbers
+// Only 1-12 are attested. Zero is not, so "lost" (empty) is used. The translator
+// has no number option: numbers are spoken as individual digits, except 10-12.
+_0	l'Ost	// lost
+_1	m'In	// min
+_2	t'a::d	// tâd
+_3	n'E::l	// nêl
+_4	k'anad	// canad
+_5	l'EbEn	// leben
+_6	'EnEg	// eneg
+_7	'OdOg	// odog
+_8	t'OlOT	// toloth
+_9	n'EdER	// neder
+10	p'aE	// pae
+11	m'InIb	// minib
+12	'Imp	// imp
