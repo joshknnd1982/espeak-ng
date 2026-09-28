@@ -1,5 +1,72 @@
 
-?1  _0lang   _^_EN   // speak numbers in English
+// Numbers (Attic Greek), counted in myriads: see the grc translator options
+// in tr_languages.c. The phonemes are those which grc_rules gives for the
+// words in the comments.
+
+_0	u:d'en	// οὐδέν
+_1	'he:s	// εἷς
+_2	d'yo	// δύο
+_3	tR'e:s	// τρεῖς
+_4	t'ettaRes	// τέτταρες
+_5	p'ente	// πέντε
+_6	h'eks	// ἕξ
+_7	hept'a	// ἑπτά
+_8	okt'O:	// ὀκτώ
+_9	enn'ea	// ἐννέα
+_10	d'eka	// δέκα
+_11	h'endeka	// ἕνδεκα
+_12	d'O:deka	// δώδεκα
+_13	tRe:sk'aIdeka	// τρεισκαίδεκα
+_14	tettaResk'aIdeka	// τετταρεσκαίδεκα
+_15	pentek'aIdeka	// πεντεκαίδεκα
+_16	hekk'aIdeka	// ἑκκαίδεκα
+_17	heptak'aIdeka	// ἑπτακαίδεκα
+_18	oktO:k'aIdeka	// ὀκτωκαίδεκα
+_19	enneak'aIdeka	// ἐννεακαίδεκα
+
+_1X	d'eka	// δέκα
+_2X	'e:kosi	// εἴκοσι
+_3X	tRi'akonta	// τριάκοντα
+_4X	tettaR'akonta	// τετταράκοντα
+_5X	pent'E:konta	// πεντήκοντα
+_6X	heks'E:konta	// ἑξήκοντα
+_7X	hebdom'E:konta	// ἑβδομήκοντα
+_8X	ogdo'E:konta	// ὀγδοήκοντα
+_9X	enen'E:konta	// ἐνενήκοντα
+
+_1C	hekat'on	// ἑκατόν
+_2C	diak'osioI	// διακόσιοι
+_3C	tRiak'osioI	// τριακόσιοι
+_4C	tetRak'osioI	// τετρακόσιοι
+_5C	pentak'osioI	// πεντακόσιοι
+_6C	heksak'osioI	// ἑξακόσιοι
+_7C	heptak'osioI	// ἑπτακόσιοι
+_8C	oktak'osioI	// ὀκτακόσιοι
+_9C	enak'osioI	// ἐνακόσιοι
+
+_1M0	x'ilioI	// χίλιοι
+_2M0	disx'ilioI	// δισχίλιοι
+_3M0	tRisx'ilioI	// τρισχίλιοι
+_4M0	tetRakisx'ilioI	// τετρακισχίλιοι
+_5M0	pentakisx'ilioI	// πεντακισχίλιοι
+_6M0	heksakisx'ilioI	// ἑξακισχίλιοι
+_7M0	heptakisx'ilioI	// ἑπτακισχίλιοι
+_8M0	oktakisx'ilioI	// ὀκτακισχίλιοι
+_9M0	enakisx'ilioI	// ἐνακισχίλιοι
+
+_1M1	m'yRioI	// μύριοι
+_2M1	dism'yRioI	// δισμύριοι
+_3M1	tRism'yRioI	// τρισμύριοι
+_4M1	tetRakism'yRioI	// τετρακισμύριοι
+_5M1	pentakism'yRioI	// πεντακισμύριοι
+_6M1	heksakism'yRioI	// ἑξακισμύριοι
+_7M1	heptakism'yRioI	// ἑπτακισμύριοι
+_8M1	oktakism'yRioI	// ὀκτακισμύριοι
+_9M1	enakism'yRioI	// ἐνακισμύριοι
+_0M1	myRi'ades	// μυριάδες
+
+_0and	||k'aI||	// καί, between tens and units
+_dpt	||k'omma||	// κόμμα, decimal comma (as for Modern Greek)
 
 // articles
 ɦο	$u	// ὁ

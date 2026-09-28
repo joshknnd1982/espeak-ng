@@ -758,6 +758,15 @@ Translator *SelectTranslator(const char *name)
 		if (name2 == L3('g', 'r', 'c')) {
 			// ancient greek
 			tr->langopts.param[LOPT_UNPRONOUNCABLE] = 1;
+
+			// Attic numerals: "kai" between tens and units, and counting in
+			// myriads (10000 = myrioi, 1000000 = hekaton myriades), as there
+			// is no Ancient Greek word for a million. Longer numbers are
+			// spoken as individual digits.
+			tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_AND_UNITS;
+			tr->langopts.numbers2 = NUM2_MYRIADS;
+			tr->langopts.break_numbers = BREAK_MYRIADS;
+			tr->langopts.max_digits = 8;
 		}
 	}
 		break;

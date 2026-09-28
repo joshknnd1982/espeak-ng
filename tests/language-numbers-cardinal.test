@@ -59,5 +59,20 @@ test_phon ne "e:k k'a*'o:d.@ d'Vs k'a*'o:d.@ e:k 'V*@b" "10000000 100000000 1000
 test_phon ne "b'a:*@2 l'a:k#@_! cO~t'I:s h@z'a:*@_! p'a:ncs'aj@ s'Vts'@t.t.#'i:" "12,34,567" "lakh separators"
 test_phon ne "S'u:nn'a: s'a:t e:k:k'a:is e:k h'@z'a:*@ d'u:,i:s'aj@ cO~t'I:s" "० ७ २१ १२३४" "Devanagari digits"
 
+# Myriads (10 000 = 1 myriad)
+
+echo "... grc (Ancient Greek)" # Attic numerals, counted in myriads
+
+test_phon grc "u:d'en_: h'e:s_: d'yo_: tR'e:s_: t'ettaR,es_: p'ente_: h'eks_: hept'a_: okt'O:_: enn'ea_:" "0 1 2 3 4 5 6 7 8 9" "units"
+test_phon grc "d'eka_: h'endek,a_: d'O:dek,a_: tRe:sk'aIdek,a_: t,ettaResk'aIdek,a_: p,entek'aIdek,a_: hekk'aIdek,a_: h,eptak'aIdek,a_: ,oktO:k'aIdek,a_: ,enneak'aIdek,a_:" "10 11 12 13 14 15 16 17 18 19" "teens"
+test_phon grc "'e:kos,i_: tRi;'akont,a_: t,ettaR'akont,a_: pent'E:kont,a_: heks'E:kont,a_: h,ebdom'E:kont,a_: ,ogdo'E:kont,a_: ,enen'E:kont,a_:" "20 30 40 50 60 70 80 90" "tens"
+test_phon grc "'e:kosi_: k'aI_: h'e:s_: ,enen'E:konta_: k'aI_: enn'ea_:" "21 99" "tens and units"
+test_phon grc "h,ekat'on_: h,ekat'on_: h'e:s_: d,i;ak'osi;,oI_: tR,i;ak'osi;,oI_: t,etRak'osi;,oI_: p,entak'osi;,oI_: h,eksak'osi;,oI_: h,eptak'osi;,oI_: ,oktak'osi;,oI_: ,enak'osi;,oI_:" "100 101 200 300 400 500 600 700 800 900" "hundreds"
+test_phon grc "x'ili;,oI_: disx'ili;,oI_: tRisx'ili;,oI_: t,etRakisx'ili;,oI_: p,entakisx'ili;,oI_: h,eksakisx'ili;,oI_: h,eptakisx'ili;,oI_: ,oktakisx'ili;,oI_: ,enakisx'ili;,oI_:" "1000 2000 3000 4000 5000 6000 7000 8000 9000" "thousands"
+test_phon grc "x'ili;,oI_: di;ak'osi;,oI_: tRi;'akonta_: k'aI_: t'ettaR,es_:" "1234" "mixed"
+test_phon grc "m'yRi;,oI_: dism'yRi;,oI_: ,enakism'yRi;,oI_: m'yRi;,oI_!_: disx'ili;,oI_: tRi;ak'osi;,oI_: tettaR'akonta_: k'aI_: p'ente_: d'eka_: m,yRi;'ades_:" "10000 20000 90000 12345 100000" "myriads"
+test_phon grc "h,ekat'on_: myRi;'ades_: h,ekat'on_: 'e:kosi_: k'aI_: tR'e:s_: myRi;'ades_!_: t,etRakisx'ili;,oI_: pentak'osi;,oI_: heks'E:konta_: k'aI_: hept'a_:" "1000000 1234567" "large"
+test_phon grc "tR'e:s_: k'omma_: h'e:s_: t'ettaR,es_:" "3,14" "decimal"
+
 test_phon it "dz'E*o_| 'items" "0 items" "NUM_SINGLE_VOWEL"
 test_phon sk "dv'ana:st; t;'isi:ts_! t@-*'ist'o St'i*itsat;p'&t;" "12345" "mixed"
