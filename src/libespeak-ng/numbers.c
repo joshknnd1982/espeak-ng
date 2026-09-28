@@ -1691,11 +1691,19 @@ static int TranslateNumber_1(Translator *tr, char *word, char *ph_out, char *ph_
 		}
 
 		if (prev_thousands == 0) {
-			if ((decimal_point == 0) && (ordinal == 0)) {
-				// Look for special pronunciation for this number in isolation (LANG=kl)
+			int next_char;
+			p2 = &word[n_digits];
+			while (*p2 == ' ')
+				p2++;
+			utf8_in(&next_char, p2);
+			if ((decimal_point == 0) && (ordinal == 0) && (!iswalpha(next_char) || (wtab[0].flags & FLAG_HYPHEN_AFTER))) {
+				// Look for special pronunciation for this number in isolation, ie. not
+				// followed by a word, except a suffix after a hyphen (LANG=cv)
 				sprintf(string, "_%ldn", value);
-				if (Lookup(tr, string, ph_out))
+				if (Lookup(tr, string, ph_buf)) {
+					sprintf(ph_out, "%s%s", ph_zeros, ph_buf); // keep any leading zeros, eg. "007"
 					return 1;
+				}
 			}
 
 			if (tr->langopts.numbers2 & NUM2_PERCENT_BEFORE) {

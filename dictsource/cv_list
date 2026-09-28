@@ -1,0 +1,63 @@
+// This file is UTF8 encoded
+// Pronunciation exceptions for Chuvash
+
+// Numbers
+// The phonemes are those which cv_rules gives for the words in the comments,
+// but with Chuvash stress: on the last syllable with a full vowel (not ӑ, ӗ),
+// or on the first syllable if there is none.
+
+_0	n'Ul;		// нуль
+
+// a number on its own (not followed by a word)
+_1n	p8RR'E		// пӗрре
+_2n	'Ikk8		// иккӗ
+_3n	v'ICC8		// виҫҫӗ
+_4n	t@v'att@	// тӑваттӑ
+_5n	p'Ill8k		// пиллӗк
+_6n	'Ultt@		// улттӑ
+_7n	C'ItStS8	// ҫиччӗ
+_8n	s'akk@R		// саккӑр
+_9n	t'@xx@R		// тӑххӑр
+
+// the attributive forms are used before a word, and in compound numbers:
+// 21 = ҫирӗм пӗр, 2000 = икӗ пин (CLDR has the shorter ик, тӑват, ҫич)
+_1	p'8R		// пӗр
+_2	'ik8		// икӗ
+_3	v'iC8		// виҫӗ
+_4	t@v'at@		// тӑватӑ
+_5	p'il8k		// пилӗк
+_6	'Ult		// улт
+_7	C'itS8		// ҫичӗ
+_8	s'ak@R		// сакӑр
+_9	t'@x@R		// тӑхӑр
+_10	v'Unn@		// вуннӑ
+
+_1X	v'Un||		// вун
+_2X	C'iR8m||	// ҫирӗм
+_3X	v'@t@R||	// вӑтӑр
+_4X	x'8R8x||	// хӗрӗх
+_5X	'all@||		// аллӑ
+_6X	'Utm@l||	// утмӑл
+_7X	C'Itm8l||	// ҫитмӗл
+_8X	s'ak@R||v'Un||	// сакӑр вун
+_9X	t'@x@R||v'Un||	// тӑхӑр вун
+_80	s'ak@R||v'un@	// сакӑр вунӑ (CLDR: сакӑрвуннӑ)
+_90	t'@x@R||v'un@	// тӑхӑр вунӑ (CLDR: тӑхӑрвуннӑ)
+
+_0C	C'8R		// ҫӗр
+_1C	C'8R		// ҫӗр
+_2C	'IkC8R		// икҫӗр
+_3C	v'ICC8R		// виҫҫӗр
+_4C	t@v'atC8R	// тӑватҫӗр
+_5C	p'il8kC8R	// пилӗкҫӗр
+_6C	'UltC8R		// ултҫӗр
+_7C	C'ItSC8R	// ҫичҫӗр
+_8C	s'ak@RC8R	// сакӑрҫӗр
+_9C	t'@x@RC8R	// тӑхӑрҫӗр
+
+_0M1	p'In		// пин
+_0M2	mIlli'On	// миллион
+_0M3	mIlli'aRd	// миллиард
+_0M4	tRIlli'On	// триллион
+
+_dpt	p'8t8m		// пӗтӗм, decimal comma

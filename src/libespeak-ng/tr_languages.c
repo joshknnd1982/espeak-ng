@@ -635,6 +635,20 @@ Translator *SelectTranslator(const char *name)
 		tr->langopts.stress_flags = S_NO_AUTO_2 | S_FINAL_DIM | S_FINAL_DIM_ONLY | S_EO_CLAUSE1;
 	}
 		break;
+	case L('c', 'v'): // Chuvash
+	{
+		// character codes offset by 0x420
+		static const unsigned char cv_vowels[] = { 0xb1, 0xb7, 0xd3, 0 }; // ӑ ӗ ӳ
+		static const unsigned char cv_consonants[] = { 0x8b, 0 }; // ҫ
+
+		SetCyrillicLetters(tr);
+		SetLetterBits(tr, LETTERGP_A, (const char *)cv_vowels);
+		SetLetterBits(tr, LETTERGP_VOWEL2, (const char *)cv_vowels);
+		SetLetterBits(tr, LETTERGP_C, (const char *)cv_consonants);
+
+		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_OMIT_1_HUNDRED | NUM_OMIT_1_THOUSAND;
+	}
+		break;
 	case L('c', 'y'): // Welsh
 	{
 		static const short stress_lengths_cy[8] = { 170, 220, 180, 180, 0, 0, 250, 270 };

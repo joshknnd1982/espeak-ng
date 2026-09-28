@@ -45,6 +45,19 @@ test_phon pdc "dr'aI _pUNkt ,e:ns fi@" "3.14" "decimal"
 test_phon pdc-x-midwest "d*'aI n'aIn d*'aIsIC d'aUs@nt" "3 9 30 1000" "Midwest"
 test_phon pdc-x-lehigh "dr'aI n'aIn dr'aIsIC d'aUs@nt" "3 9 30 1000" "Lehigh"
 
+echo "... cv (Chuvash)" # short scale; long forms on their own, attributive forms before a word and in compounds
+
+test_phon cv "n'Ul p8RR'E 'Ikk8 v'ICC8 t@v'att@ p'Ill8k 'Ultt@ C'ItStS8 s'akk@R t'@xx@R" "0 1 2 3 4 5 6 7 8 9" "units"
+test_phon cv "v'Unn@ v'Un p'8R v'Un 'ik8 v'Un v'iC8 v'Un t@v'at@ v'Un p'il8k v'Un 'Ult v'Un C'itS8 v'Un s'ak@R v'Un t'@x@R" "10 11 12 13 14 15 16 17 18 19" "teens"
+test_phon cv "C'i*8m v'@t@R x'8*8x 'all@ 'Utm@l C'Itm8l s'ak@R v'un@ t'@x@R v'un@" "20 30 40 50 60 70 80 90" "tens"
+test_phon cv "C'i*8m p'8R v'@t@R p'il8k s'ak@R v'Un p'8R t'@x@R v'Un t'@x@R" "21 35 81 99" "tens and units"
+test_phon cv "C'8R C'8R p'8R 'IkC8R v'ICC8R t@v'atC8R p'il8kC,8R 'UltC8R C'ItSC8R s'ak@RC,8R t'@x@RC,8R" "100 101 200 300 400 500 600 700 800 900" "hundreds"
+test_phon cv "p'In p'In p'8R p'In 'IkC8R v'@t@R t@v'at@ 'ik8 p'In v'Unn@ p'In C'i*8m p'8R p'In" "1000 1001 1234 2000 10000 21000" "thousands"
+test_phon cv "p'8R mIlli'On p'8R mIlli'On_! 'IkC8R v'@t@R t@v'at@ p'In_! p'il8kC8R 'Utm@l C'itS8 'ik8 m,Illi'aRd" "1000000 1234567 2000000000" "large"
+test_phon cv "C'itS8 C'Vn C'i*8m p'il8k C'Ul 'Ult C'Ul" "7 ҫын 25 ҫул 6 ҫул" "before a word"
+test_phon cv "n'Uln'UlC'ItStS8" "007" "leading zeros"
+test_phon cv "v'iC8 p'8t8m p'il8k" "3,5" "decimal"
+
 # South Asian Style (hundred, thousand, lakh, crore)
 
 echo "... ne (Nepali)" # ASCII digits are read in Nepali, the same as Devanagari digits
