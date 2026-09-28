@@ -45,5 +45,19 @@ test_phon pdc "dr'aI _pUNkt ,e:ns fi@" "3.14" "decimal"
 test_phon pdc-x-midwest "d*'aI n'aIn d*'aIsIC d'aUs@nt" "3 9 30 1000" "Midwest"
 test_phon pdc-x-lehigh "dr'aI n'aIn dr'aIsIC d'aUs@nt" "3 9 30 1000" "Lehigh"
 
+# South Asian Style (hundred, thousand, lakh, crore)
+
+echo "... ne (Nepali)" # ASCII digits are read in Nepali, the same as Devanagari digits
+
+test_phon ne "S'u:nn'a: 'e:k d'u:,i: t'i:n c'a:rr p'a:nc c#'@2 s'a:t 'a:t.# n'V'u:" "0 1 2 3 4 5 6 7 8 9" "units"
+test_phon ne "d'Vs e:g#'a:r'V b'a:*@2 t'e:hr@ c#'O:d@2 p'Vndr@2 s'o:*@2 s'Vtr@2 at.#'a:*@2 U:nn'a:is" "10 11 12 13 14 15 16 17 18 19" "teens"
+test_phon ne "b'i:s e:k:k'a:is pE~t'Is p@c'a:s U:nn'a:nsh@j,e:" "20 21 35 50 99" "tens"
+test_phon ne "e:ks'aj@ e:ks'aj@ ,e:k d'u:,i:s'aj@ p@c'a:s n'V'u:s'aj@ U:nn'a:nsh@j,e:" "100 101 250 999" "hundreds"
+test_phon ne "e:k h'@z'a:*@ e:k h'@z'a:*@ d'u:,i:s'aj@ cO~t'I:s b'a:*@2 h@z'a:*@_! t'i:ns'aj@ paInt'a:l'Is" "1000 1234 12345" "thousands"
+test_phon ne "e:k l'a:k#@ d'Vs l'a:k#@ b'a:*@2 l'a:k#@_! cO~t'I:s h@z'a:*@_! p'a:ncs'aj@ s'Vts'@t.t.#'i:" "100000 1000000 1234567" "lakh"
+test_phon ne "e:k k'a*'o:d.@ d'Vs k'a*'o:d.@ e:k 'V*@b" "10000000 100000000 1000000000" "crore"
+test_phon ne "b'a:*@2 l'a:k#@_! cO~t'I:s h@z'a:*@_! p'a:ncs'aj@ s'Vts'@t.t.#'i:" "12,34,567" "lakh separators"
+test_phon ne "S'u:nn'a: s'a:t e:k:k'a:is e:k h'@z'a:*@ d'u:,i:s'aj@ cO~t'I:s" "० ७ २१ १२३४" "Devanagari digits"
+
 test_phon it "dz'E*o_| 'items" "0 items" "NUM_SINGLE_VOWEL"
 test_phon sk "dv'ana:st; t;'isi:ts_! t@-*'ist'o St'i*itsat;p'&t;" "12345" "mixed"
