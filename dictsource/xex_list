@@ -16,36 +16,38 @@ _dpt	Z%ew
 
 $textmode
 
-_a	áfa
 b	bábon
 d	dódin
-_e	éte
 f	féfel
 g	gúguk
 h	háflu
-_i	íki
 j	íki flu
 k	kúkan
 l	lélon
 m	máspa
 n	nínep
-_o	óno
 p	pópel
 q	qáqip
 r	réxti
 s	sásek
 t	tótot
-_u	úbu
 v	vévet
 w	úbu flu
 x	xúxut
 z	zózot
 
-_y	ýbu
-
 c	xúxut loqban
 
 $phonememode
+
+// letter names which start with a vowel: an entry which starts with "_" is
+// translated into phonemes when the dictionary is compiled, so it can't be $text
+_a	_!'a:fa	// áfa
+_e	_!'E:tE	// éte
+_i	_!'i:ki	// íki
+_o	_!'o:no	// óno
+_u	_!'u:bu	// úbu
+_y	_!'@:bu	// ýbu
 
 //pause naturalization
 //stress naturalization has been removed in favor of explicit marking
