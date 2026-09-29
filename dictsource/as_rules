@@ -8,6 +8,10 @@
 // Y   vowel letters and vowel signs
 
 .replace
+// a letter and the nukta, as Unicode normalisation leaves them, are the one character
+ ড়	ড়
+ ঢ়	ঢ়
+ য়	য়
  ০	0
  ১	1
  ২	2
@@ -306,13 +310,13 @@
         ক্ষ		k#k#V   // or [k#:] ?
         ক্ষ (B	k#k#
 
-.group ড়
-       ড়		r.V     //  can be ড plus nukta
-       ড় (B	r.
+.group ড়
+       ড়		r.V     //  can be ড plus nukta
+       ড় (B	r.
 
-.group ঢ়
-        ঢ়		hr.V	// can be ঢ plus nukta
-        ঢ় (B	hr.
+.group ঢ়
+        ঢ়		hr.V	// can be ঢ plus nukta
+        ঢ় (B	hr.
 
 .group য়
         য়		jV
@@ -345,3 +349,5 @@
 
 
 //    D_) - (_D    bij'og
+.group
+    __) - (_D    bij'og	// a hyphen before a number is the minus sign (biyog)

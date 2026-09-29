@@ -3,123 +3,124 @@
 // Numbers
 // devanagari numbers are changed to latin characters before translation
 
-_0	  S'u:nj@-
-_1	'e:k:1
+_0	S'u:nj@
+_1	'e:k
 _2	d'o:n
 _3	t'i:n
-_4	c'a:d
-_5	pa:n^,c:0
-_6	s'@
+_4	c'a:r
+_5	p'a~c
+_6	s'O
 _7	s'a:t
-_8	'a:,t.#
-_9	n'O::1
+_8	'a:t.#
+_9	n.'Ow
 _10	d#'a:
-_11	'Ikr,a:
-_12	b'a:*a:
-_13	t'e:*a:
-_14	c'Vwd,a:
-_15	p'Vnd@*,a:
+_11	'Ikra:
+_12	b'a:ra:
+_13	t'e:ra:
+_14	c'Owda:
+_15	p'Ondra:
 _16	s'o:l.a:
-_17	s'Vtr,a:
-_18	'V,t.#,r@
-_19	,e:kUn.'i:s
+_17	s'Otra:
+_18	'Ot.#ra:
+_19	e:kUn.'i:s
 _20	w'i:s
-_21	,e:kw'i:s
+_21	e:kw'i:s
 _22	ba:w'i:s
 _23	te:w'i:s
 _24	co:w'i:s
-_25	p,@n^c@w'i:s
+_25	p@n^cw'i:s
 _26	s@ww'i:s
-_27	s,@t:a:w'i:s
-_28	V,t.#:0t.#a:w'i::1
-_29	,e:kUn.t'i:s
+_27	s@tta:w'i:s
+_28	@t.t.#a:w'i:s
+_29	e:kUn.t'i:s
 _30	t'i:s
-_31	,e:kt'i:s
-_32	b@t:'i:s
-_33	t'e:t:is
-_34	c,@wt'i:s
+_31	e:kt'i:s
+_32	b@tt'i:s
+_33	te:tt'i:s
+_34	caUt'i:s
 _35	p@st'i:s
-_36	c#@3t:'i:s
-_37	s'a:t:is
-_38	Vt.#t'i:s
-_39	,e:kUn.ca:l.'i:s
+_36	c#@tt'i:s
+_37	s@tt'i:s
+_38	@d.t'i:s
+_39	e:kUn.ca:l.'i:s
 _40	ca:l.'i:s
-_41	,e:ke:ca:l.'i:s
-_42	b,e:ca:l.'i:s
-_43	tr,e:ca:l.'i:s
-_44	c,@we:ca:l.'i:s
-_45	p,@n^ce:ca:l.'i:s
-_46	S,e:ca:l.'i:s
-_47	s,@t:e:ca:l.'i:s
-_48	V,t.#t.#e:ca:l.'i:s:0
-_49	e:,kU:n.,pann'a:
-_50	p@nn'a:
-_51	e:k'a:w@n
-_52	b'a:w@n
-_53	tr'e:p:1@n
-_54	c'Vw@p,@n
-_55	p@n^c'a:w@n
-_56	c#V:0pp@:0n
-_57	s@t:'a:w@n
-_58	V,t.#t.#a:w@:0n
-_59	,e:kUn.s'a:t.#
+_41	e:ke:ca:l.'i:s
+_42	be:ca:l.'i:s
+_43	tre:ca:l.'i:s
+_44	c@we:ca:l.'i:s
+_45	p@n^ce:ca:l.'i:s
+_46	s@He:ca:l.'i:s
+_47	s@tte:ca:l.'i:s
+_48	@t.t.#e:ca:l.'i:s
+_49	e:kUn.p@nn'a:s
+_50	p@nn'a:s
+_51	e:k'a:wOn
+_52	b'a:wOn
+_53	tr'e:pOn
+_54	c'o:pOn
+_55	p@n^c'a:wOn
+_56	c#'@ppOn
+_57	s@tt'a:wOn
+_58	@t.t.#'a:wOn
+_59	e:kUn.s'a:t.#
 _60	s'a:t.#
-_61	'e:k@s,@t.#
-_62	ba:s@t.#
-_63	tr'e:s@t.#
-_64	c'Vw@s,@t.#
-_65	pa:s@t.#
-_66	c#a:s@t.#
-_67	s'a:t@s,@t.#
-_68	V,t.#s@t.#
-_69	,e:kUn.@s'Vt:@r
-_70	s'Vt:@r
-_71	e:k:j'a:t:@r
-_72	bj'a:t:@r
-_73	trj'a:t:@r
-_74	c,@wdj'a:t:@r
-_75	p@n^c:j'a:t:@r
-_76	S'a:t:@r
-_77	s@t:j'a:t:@r
-_78	V,t.#ja:t@r
-_79	e:kUn.a:S'i:
-_80	V,sS'i:
-_81	e:kja:nSi:
-_82	b'ja,j@,Si:
-_83	trjeja:Si:
-_84	cO,dja:Si:
-_85	p@n,ca:si:
-_86	S'a:j@3Si:
-_87	s@t,tja:Si:
-_88	V,t.#t.#ja:Si:
-_89	,e:kUn.@n.'Vww:0@d
-_90	nOwV:0J
-_91	e:,kja:n.:0nO
-_92	bja:j@n.:0nO
-_93	trjeja:n.:0nO
-_94	caUdja:n.:0nO:
-_95	p@nca:n.:0nO
-_96	Sa:d.:0nO
-_97	sVtja:n.:0nO
-_98	V,t.#t.#ja:n.:0nO
-_99	nVbja:n.:0nO
-_1C0	S'Vm:1b@,r
-_1C	e:k,SVj@
-_2C	d'o:n,SVj@
-_3C	t'i:n,SVj@
-_4C	c'a:r,SVj@
-_5C	p'a~n^c,SVj@
-_6C	s'@,SVj@
-_7C	s'a:t,SVj@
-_8C	'a:,t.#,SVj@
-_9C	n.'Vw@-,SVj@
+_61	e:ks'@s.t.
+_62	ba:s'@s.t.
+_63	tre:s'@s.t.
+_64	caUs'@s.t.
+_65	pa:s'@s.t.
+_66	se:s'@s.t.
+_67	s@dUs'@s.t.
+_68	@d.Us'@s.t.
+_69	e:kUn.s'@tt@r
+_70	s'@tt@r
+_71	e:ka:H'@tt@r
+_72	ba:H'@tt@r
+_73	tre:H'@tt@r
+_74	caUdH'@tt@r
+_75	p@n^c'@tt@r
+_76	S@H'@tt@r
+_77	s@tj'@tt@r
+_78	@t.t.#j'@tt@r
+_79	e:kUn.'E~Si
+_80	'E~Si
+_81	e:k'E~Si
+_82	be:'E~Si
+_83	tre:'E~Si
+_84	caUd'E~Si
+_85	p@n^c'E~Si
+_86	Se:'E~Si
+_87	s@tj'E~Si
+_88	@t.t.#j'E~Si
+_89	e:kUn.n'@w@d
+_90	n'Ow@d
+_91	e:kj'a:n.n.Ow
+_92	bej'a:n.n.Ow
+_93	tre:j'a:n.n.Ow
+_94	caUd'aIn.n.Ow
+_95	p@n^c'a:n.n.Ow
+_96	S'a:n.n.Ow
+_97	s@ttj'a:n.n.Ow
+_98	@t.t.#j'a:n.n.Ow
+_99	n@wj'a:n.n.Ow
+_1C0	S'Vmb@r
+_1C	e:kS'e~
+_2C	d'o:nSi~
+_3C	t'i:nSi~
+_4C	c'a:rSi~
+_5C	p'aISi~
+_6C	s'aISi~
+_7C	s'a:tSi~
+_8C	'a:t.#Si~
+_9C	n'OwSi~
 
 _0M1	H@J'a:r
 _0M2	l'a:k#
 _0M3	k'o:t.i;
 _0M4	'VbJ@
+_0M5	k#'Vrv@
 
-_dpt	_d@s@ml'o:_   
+_dpt	_d@S'@m@l@v_
 
 // Single consonants
 क	k@
@@ -168,8 +169,8 @@ _dpt	_d@s@ml'o:_
 ख़	x@
 ग़	Q@
 ज़	z@
-ड़	r-@
-ढ़	hr@
+ड़	r.@
+ढ़	r.h@
 फ़	f@
 य़	j@
 
@@ -178,6 +179,92 @@ U+902	VnUswa:r
 U+903	wIsVrg@
 U+93c	nUkta
 U+94d	hVlVnt
+
+// Names of vowel signs and marks that the rules do not give, or do not tell apart
+ि	rH'Vsv@||Ik'a:r	// rhasva ikar
+ी	d'i:rg#@||i:k'a:r	// dirgha ikar
+ु	rH'Vsv@||Uk'a:r	// rhasva ukar
+ू	d'i:rg#@||u:k'a:r	// dirgha ukar
+ऽ	Vv'Vgr@H	// avagraha
+॑	Ud'a:tt@	// udatta
+॒	VnUd'a:tt@	// anudatta
+
+// Letters that the rules do not name
+ऩ	n'@||n'Ukta
+ॡ	d'i:rg#@||lr'i
+ॲ	'E
+
+// The short and long vowels have names that tell them apart.  The name is said when a word
+// is spelled out (__) and when the letter is all there is to read; in a sentence, before a
+// full stop and in an abbreviation the letter is still read as it sounds.
+__इ	rH'Vsv@||'I
+__ई	d'i:rg#@||'i:
+__उ	rH'Vsv@||'U
+__ऊ	d'i:rg#@||'u:
+इ	rH'Vsv@||'I	$atstart $atend $sentence	// rhasva i
+इ	$hasdot $atstart $atend
+ई	d'i:rg#@||'i:	$atstart $atend $sentence	// dirgha i
+ई	$hasdot $atstart $atend
+उ	rH'Vsv@||'U	$atstart $atend $sentence	// rhasva u
+उ	$hasdot $atstart $atend
+ऊ	d'i:rg#@||'u:	$atstart $atend $sentence	// dirgha u
+ऊ	$hasdot $atstart $atend
+
+// A capital letter of the Latin alphabet
+_cap	k'EpIt.@l
+
+// Names of punctuation marks and symbols, said when they are read out (CLDR kok; the
+// danda is purnaviram, the double danda the rules' dirghaviram; comma and semicolon are
+// named further down, and the names there of colon, question mark, hyphen, dash and
+// quotation mark are put right)
+_.	p'u:rn.@wIr,a:m
+_!	'Udga:rw,a:c@k||c'Inn@
+_'	Vp'o:st.rOp#i
+_“	d'a:we~||'Vw@t@r@n.||c'Inn@
+_”	'UJwe~||'Vw@t@r@n.||c'Inn@
+_‘	d'a:wi||Vp'o:st.rOp#i
+_’	'UJwi||Vp'o:st.rOp#i
+_(	'Ukto:||k'Vns
+_)	d#'a~pIllo:||k'Vns
+_[	'Ukto:||c'aUr@s||k'Vns
+_]	d#'a~pIllo:||c'aUr@s||k'Vns
+_{	'Ukto:||k'Vrli||k'Vns
+_}	d#'a~pIllo:||k'Vrli||k'Vns
+_<	j'a:p@r@s||lH'a:n
+_>	j'a:p@r@s||wH'Vd.
+_–	d.'ES
+_…	e:l'IpsIs
+_/	sl'ES
+_\	b'EkslES
+__	s'@k@jli||r'e:g
+_|	'Ubi||r'e:g
+_@	'Et.
+_#	H'ES
+_$	d.'Ol@r
+_^	s'@rk@mp#le:ks
+_&	'Emp@r@s,End.
+_*	,Est.e:r'Isk
+_+	@d'i:k
+_=	b@r'a:b@r
+_~	t.'Ild.e:
+_`	gr'e:wH||'Eks@nt.
+_°	d.'Igri
+_§	wIb#'a:g
+_•	b'Ule:t.
+_·	m'@dlo:||b'Indu
+_£	p'aUnd.
+_¥	j'e:n
+_€	j'Uro:
+_₹	r'Up@ja:
+_₨	r'Up@ja:
+_¢	s'e:nt.
+_×	gUn.a:k'a:r||c'Inn@
+_÷	b#a:ga:k'a:r||c'Inn@
+_±	@d'i:k||w'VJa:
+_¶	pEr'e:gra:p#||c'Inn@
+_©	k,Opir'a:It.
+_®	r'e:JIst.@rd.
+_™	t.r,e:d.m'a:rk
 
 _??	Vks.@r
 
@@ -189,7 +276,7 @@ _zh	c'i@ni
 // Punctuation
 
 $	dOlVr
-%	pVt'ISVt
+%	t.'Okko:
 +	plVs
 =	bVr'a:bVr
 *	ta:r'a:NkVn
@@ -197,10 +284,10 @@ $	dOlVr
 _,	'Vlp@||wir,a:m
 ।	p'u:rn.@||wIr,a:m
 _;	'Vrd#@-||wIr,a:m
-_:	brIHVd'a:ntr@-
-_?	prVSVnv'a:cVk
+_:	k'o:l@n
+_?	pr'VSn@w,a:c@k||c'Inn@
 !	wIsmVja:dIv'a:cVk 
-_—	nIrd'e:SVk
-_-	j'o:JVk
-_"	'Udd#VrVn. 
+_—	'e:m||d.'ES
+_-	H'a:jp#@n
+_"	'Vw@t@r@n.||c'Inn@
 

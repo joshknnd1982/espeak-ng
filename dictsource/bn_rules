@@ -11,6 +11,10 @@
 
 
 .replace
+// a letter and the nukta, as Unicode normalisation leaves them, are the one character
+ ড়	ড়
+ ঢ়	ঢ়
+ য়	য়
  ০	0
  ১	1
  ২	2
@@ -289,7 +293,9 @@
         য়       jV
      _) য় (B    j    
         য় (B        // used to separate 2 vowels
-        য় (_    jo
+        য় (_    j      // after a vowel it closes the syllable: হয়, সময়, যায়
+     ি) য় (_    jo     // -িয়, -ীয় (-iya): প্রিয়, জাতীয়
+     ী) য় (_    jo
 
         
 .group য

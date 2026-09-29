@@ -49,7 +49,7 @@ _38        ,Vd.t'i:s
 _39        ,e:ko:n.ca:l.'i:s
 
 _40         tSa:l.'i:s
-_41        'e:k:e:c,a:l.is
+_41        e:k:e:ca:l.'i:s
 _42        b,e:ca:l.'i:s
 _43        tr,e:ca:l.'i:s
 _44        c,@vve:ca:l.'i:s
@@ -57,7 +57,7 @@ _45        p,@n^ce:ca:l.'i:s
 _46        s,e:He:ca:l.'i:s
 _47        s,@t:e:ca:l.'i:s
 _48        ,Vt.#:e:ca:l.'i:s
-_49        ,e:ko:n.,@pnn'a:s
+_49        ,e:ko:n.p@nn'a:s
 
 _50        p@nn'a:s
 _51         'e:k:a:v,@nn@-
@@ -71,15 +71,15 @@ _58         ,Vt.#:a:v'Vnn@-
 _59        ,e:ko:n.s'a:t.#
 
 _60        s'a:t.#
-_61        ,e:ks'Vs.t.#
-_62        ba:s'Vs.t.#
-_63        tre:s'Vs.t.#
-_64         caUs'Vs.t.#
-_65        pa:s'Vs.t.#
-_66        s,@Ha:s'Vs.t.#
-_67        s,@dUs'Vs.t.#
-_68        ,Vd.Us'Vs.t.#
-_69        ,e:ko:n.@s'Vt:@r
+_61        ,e:ks'Vs.t.
+_62        ba:s'Vs.t.
+_63        tre:s'Vs.t.
+_64         caUs'Vs.t.
+_65        pa:s'Vs.t.
+_66        s,@Ha:s'Vs.t.
+_67        s,@dUs'Vs.t.
+_68        ,Vd.Us'Vs.t.
+_69        ,e:ko:n.s'Vt:@r
 
 _70        s'Vt:@r
 _71        'e:k:a:H,@t:@r
@@ -101,7 +101,7 @@ _85         p,@n^c:ja:'aI~Si
 _86         S,@Ha:'aI~Si
 _87         s,@t:ja:'aI~Si
 _88         ,Vt.#:ja:'aI~Si
-_89        ,e:ko:n.@n'Vvv@d
+_89        ,e:ko:n.n'Vvv@d
 
 _90        n'Vvv@d
 _91        e:k:j'a:n.n.@w
@@ -115,12 +115,13 @@ _98        Vt.#:j'a:n.n.@w
 _99        n@vvj'a:n.n.@w
 
 _0C	  S'e:
+_1C0	S'Vmb#@r
 _0M1	 H@z'a:r
 _0M2	l'a:k#
 _0M3	 k'o:t.i
 _0M4	  'VbJ@
 _0M5	  k#'Vrv@
-_dpt      _d@s@ml'o:_   
+_dpt      _d@S'a:nS_
 
 // Single consonants
 क      k@
@@ -133,7 +134,7 @@ _dpt      _d@s@ml'o:_
 ङ      N@
 च      c@
 छ      c#@
-ज      z@
+ज      J@
 ज़      z@
 झ      J#@
 ञ      n^@
@@ -168,8 +169,8 @@ _dpt      _d@s@ml'o:_
 ख़      x@
 ग़      Q@
 ज़      z@
-ड़      r-@
-ढ़      hr@
+ड़      r.@
+ढ़      r.h@
 फ़      f@
 य़      j@
 
@@ -195,6 +196,57 @@ _dpt      _d@s@ml'o:_
 //ॣ	#X2l-:
 ////ॐ	#X1o~m
 
+// Names of the vowel signs and of the other marks, as they are said when a word is spelled aloud
+ा	k'a:na:	// kana
+ि	p'VHIli||ve:l'a~t.i	// pahili velanti
+ी	d'Usri||ve:l'a~t.i	// dusri velanti
+ु	p'VHIla:||Uk'a:r	// pahila ukar
+ू	d'Usra:||Uk'a:r	// dusra ukar
+ृ	rUk'a:r	// rukar
+ॄ	d'i:rg#@||rUk'a:r
+ॅ	,Vrd#@c'Vndr@	// ardhachandra
+ॆ	rH'Vsv@||e:k'a:r
+े	'e:k||m'a:tra:	// ek matra
+ै	d'o:n||m'a:tra:	// don matra
+ॉ	k'a:na:||,Vrd#@c'Vndr@	// kana ardhachandra
+ॊ	rH'Vsv@||o:k'a:r
+ो	'e:k||k'a:na:||'e:k||m'a:tra:	// ek kana ek matra
+ौ	'e:k||k'a:na:||d'o:n||m'a:tra:	// ek kana don matra
+ॢ	lrUk'a:r
+ॣ	d'i:rg#@||lrUk'a:r
+ऽ	Vv'Vgr@H	// avagraha
+॑	Ud'a:tt@	// udatta
+॒	VnUd'a:tt@	// anudatta
+॰	s@NkS'e:p||c'InH	// sankshep chinha
+
+// Letters that the rules do not name
+ऩ	n'@||n'Ukta
+ऴ	l.@
+ऌ	lr'U
+ॠ	d'i:rg#@||r'U
+ॡ	d'i:rg#@||lr'U
+ॲ	'E
+
+// The short and long vowels have names that tell them apart.  The name is said when a word
+// is spelled out (__) and when the letter is all there is to read; in a sentence, before a
+// full stop and in an abbreviation (the abbreviation of ityadi, of isavi san) the letter is
+// still read as it sounds.
+__इ	rH'Vsv@||'I
+__ई	d'i:rg#@||'i:
+__उ	rH'Vsv@||'U
+__ऊ	d'i:rg#@||'u:
+इ	rH'Vsv@||'I	$atstart $atend $sentence	// rhasva i
+इ	$hasdot $atstart $atend
+ई	d'i:rg#@||'i:	$atstart $atend $sentence	// dirgha i
+ई	$hasdot $atstart $atend
+उ	rH'Vsv@||'U	$atstart $atend $sentence	// rhasva u
+उ	$hasdot $atstart $atend
+ऊ	d'i:rg#@||'u:	$atstart $atend $sentence	// dirgha u
+ऊ	$hasdot $atstart $atend
+
+// A capital letter of the Latin alphabet
+_cap	k'EpIt.@l
+
 U+901	cVndrVbIndu
 U+902	VnUswa:r
 U+903	wIsVrg@
@@ -207,19 +259,70 @@ _??	Vks.@r
 
 
 $	dOlVr
-%	pVt'ISVt
+%	t.'Vk:e:
 +	plVs
 /	sle:S
 ,	 sv,@lp@vI*'a:m
 ।	p'u:rn.@||wIr,a:m
 ।	$pause
 ;	 ,V*d#@vI*'a:m
-_:	brIHVd'a:ntr@-
-_?	prVSVnv'a:cVk
+_:	Vp'u:rn.@vIr,a:m
+_?	pr'VSn@c,InH
 !	wIsmVja:dIv'a:cVk 
-_—	nIrd'e:SVk
-_-	j'o:JVk
-_"	'Udd#VrVn. 
+_—	,Vps'a:r@n.||c'InH
+_-	s@njo:gc'InH
+_"	dUH'e:ri||,Vv@t@r@n.c'InH
+
+// Names of punctuation marks and symbols, said when they are read out
+_.	p'u:rn.@vIr,a:m
+_!	,Udga:rv'a:c@k||c'InH
+_'	e:k'e:ri||,Vv@t@r@n.c'InH
+_“	d.'a:ve:||,Vv@t@r@n.c'InH
+_”	'Uzve:||,Vv@t@r@n.c'InH
+_‘	d.'a:ve:||e:k'e:ri||,Vv@t@r@n.c'InH
+_’	'Uzve:||e:k'e:ri||,Vv@t@r@n.c'InH
+_(	'Ug#d.a:||g'o:l||k'Vns
+_)	b'Vnd||g'o:l||k'Vns
+_[	'Ug#d.a:||c'aUkt.i||k'Vns
+_]	b'Vnd||c'aUkt.i||k'Vns
+_{	'Ug#d.a:||m'VHIrpi||k'Vns
+_}	b'Vnd||m'VHIrpi||k'Vns
+_<	p'e:kSa:||l@H'a:n
+_>	p'e:kSa:||m'o:t.#a:
+_–	d.'ES
+_…	l'o:pc,InH
+_/	sl'ES
+_\	b'EkslES
+__	,Vd#o:r'e:k#a:
+_|	'Ub#i||r'e:s.a:
+_@	'Et.
+_#	H'ES
+_^	H'Vns@p@d
+_&	'End.
+_*	t,a:rka:c'InH
+_+	'Vd#Ik
+_=	b@r'o:b@r
+_~	t.'Ild.
+_`	b'Ekt.Ik
+_°	'VnS
+_§	k'Vl@m
+_•	b'Ule:t.
+_·	m'Vd#j@||b'Indu:
+_£	p'aUnd.
+_¥	j'e:n
+_€	j'Uro:
+_₹	rUp@j'a:
+_₨	rUp@j'a:
+_¢	s'e:nt.
+_×	g'Un.Ile:
+_÷	b#'a:gIle:
+_±	'Vd#Ik||'Un.e:
+_¶	p@rIc#'e:d||c'InH
+_®	n'o:nd@n.i:krUt
+_™	t.r,e:d.m'a:rk
+_©	k,Opir'a:It.
+_।	d'Vn.d.
+_॥	dUH'e:ri||d'Vn.d.
 
 // Exceptions
 चन्द्र	 tS'Vndr@- 
@@ -246,7 +349,7 @@ _"	'Udd#VrVn.
 ४० 	tSa:l.'i:s 
 ५४ 	tSo:p'Vnn@-
 
-100	 S'Vmb@r
+100	 S'Vmb#@r
 जीवन	 J'i:v@n
 जय	 J'VEj
 जग	 J'Vg

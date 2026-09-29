@@ -9,11 +9,11 @@ _0	S'unjO
 _1	'&k
 _2	d'uj
 _3	t'in
-_4	tS#'ar
+_4	tS'ar
 _5	p'a~tS
 _6	tS#'Oj
 _7	S'at
-_8	'at.#
+_8	'at.
 _9	n'Oj
 
 _2a	d'u     // with hundreds etc.
@@ -25,20 +25,20 @@ _10	d'OS
 _11	'&garo
 _12	b'arO
 _13	t'erO
-_14	tS#'oddO
+_14	tS'oddO
 _15	p'OnerO
 _16	S'olO
 _17	S'OterO
 _18	'at.#arO 
 _19	'uniS
 
-_20	k'uri    // or b'iS   ??
+_20	b'iS
 _21	ek'uS
 _22	b'ajS
 _23	t'ejS
 _24	tS'ObbiS
 _25	p'O~tSiS
-_26	tSh'abbiS
+_26	tS#'abbiS
 _27	Sat'aS
 _28	'at.#aS
 _29	'unOtr'iS
@@ -58,32 +58,32 @@ _40	tSOll'iS
 _41	'ektSOll'iS
 _42	b'iall'iS
 _43	t'etall'iS
-_44	tS'oall'iS
+_44	tS'uall'iS
 _45	p'O~jtall'iS
-_46	tS'etSOll'iS
-_47	S'atSOll'is
-_48	'atSOll'iS
-_49	'unOpO~tSaS
+_46	tS#'etSOll'iS
+_47	S'atSOll'iS
+_48	'at.tSOll'iS
+_49	'unOpOntS'aS
 
-_50	p'O~tS'aS
+_50	pOntS'aS
 _51	'&kann'o
-_52	b'ajann'o
-_53	t'epann'o
+_52	b'ahann'o
+_53	t'ippann'o
 _54	tS'ujann'o
 _55	p'ontSann'o
-_56	tS#'apann'o
+_56	tS#'appann'o
 _57	S'atann'o
 _58	'at.ann'o
 _59	'unOS'at.
 
 
-_60	s'at.
+_60	S'at.
 _61	'ekSOt.t.'i
 _62	b'aSOt.t.'i
 _63	t'eSOt.t.'i
 _64	tS'owSOt.t.'i
 _65	p'ojSOt.t.'i
-_66	S'eSOt.t.'i
+_66	tS#'eSOt.t.'i
 _67	S'atSOt.t.'i
 _68	'at.SOt.t.'i
 _6X	s'at.t.'i
@@ -93,8 +93,8 @@ _70	S'Ott'Or
 _71	'ekatt'Or
 _72	b'ahatt'Or
 _73	t'iatt'Or
-_74	tS'uhatt'Or
-_75	p'OtSatt'Or
+_74	tS'uatt'Or
+_75	p'O~tSatt'Or
 _76	tS#'ijatt'Or
 _77	S'atatt'Or
 _78	'at.att'Or
@@ -102,21 +102,21 @@ _79	'unOaS'i
 
 _80	aS'i
 _81	'&kaS'i
-_82	b'eraS'i
-_83	t'eraS'i
+_82	b'iraS'i
+_83	t'iraS'i
 _84	tS'uraS'i
-_85	p'o~tSaS'i
+_85	p'O~tSaS'i
 _86	tS#'ijaS'i
 _87	S'ataS'i
-_88	'at.aS'i
+_88	'OSt.aS'i
 _89	'unOnObb'oj
 
 _90	nObb'oj
 _91	'&kanObb'oj
-_92	b'eranObb'oj
-_93	t'eranObb'oj
+_92	b'iranObb'oj
+_93	t'iranObb'oj
 _94	tS'uranObb'oj
-_95	p'OtSanObb'oj
+_95	p'O~tSanObb'oj
 _96	tS#'ijanObb'oj
 _97	S'atanObb'oj
 _98	'at.anObb'oj
@@ -126,8 +126,9 @@ _0C	S'o
 _0M1	h'ajar
 _0M2	l'ak#
 _0M3	k'ot.i
-_0M4	'Orbud
-_dpt	_d'Osomik_
+_0M4	S'o||k'ot.i
+_10M4	h'aJar||k'ot.i	// a thousand crore
+_dpt	_d'OSomik_
 
 
 // Single consonants
@@ -135,49 +136,67 @@ _dpt	_d'Osomik_
 খ	k#O
 গ	gO
 ঘ	g#O
-ঙ	'uNgO~
+ঙ	'u~jo	// uuyo
 চ	tSO
 ছ	tShO    // [h] to distinguish from [tS]
 জ	JO
+__জ	b'orgijo||J'O	// borgiyo jo, when a word is spelled out
 ঝ	J#O
-ঞ	'iNO~
+ঞ	'i~jo	// iiyo
 ট	t.O
 ঠ	t.#O
 ড	d.O
 ঢ	d.#O
-ণ	m,odd#en.n.'O
+ণ	m'urd#Onno||n'O	// murdhonno no
 ত	tO
 থ	t#O
 দ	dO
 ধ	d#O
-ন	d,ontenn'O
+ন	d'Ont:o||n'O	$atstart $atend $sentence	// dontto no: in a sentence it is the word "not" (ন হন্যতে)
+ন	$hasdot $atstart $atend
+__ন	d'Ont:o||n'O
 প	pO
 ফ	fO      // or [p#O] ?
 ব	bO
 ভ	b#O
 ম	mO
 য়	Oj
-য	,ontostedZ'O
+__য়	'OntOst#o||j'O	// ontostho yo, when a word is spelled out
+য	'OntOst#o||J'O	// ontostho jo
 র	rO
 ড়       r.O
 ড়	r.O     // (d. + nukta)
 ঢ়	hr.O
 ঢ়	hr.O    // (d#. + nukta)
 ল	lO
-শ	t,aleboS:'O
-ষ	m,ud#en:oS:'O
-স	d,onteS:'O
+শ	So	// a hundred
+শ	t'alObbo||S'O	$atstart $atend $sentence	// talobbo sho
+শ	So	$hasdot $atstart $atend
+__শ	t'alObbo||S'O
+ষ	m'urd#Onno||S'O	// murdhonno sho
+স	d'Ont:o||S'O	// dontto sho
 হ	hO
-ৎ	kh,Ond.ot'O
-ক্ষ	k,ojmud#en:oS:'O
+ৎ	k#'Ond.o||t'O	// khondo to
+ক্ষ	k'Oje||m'urd#Onno||S'O	// ko-ye murdhonno sho
+
+// Letters that had no name
+য়	Oj	// (j + nukta)
+ঌ	l'i
+ৠ	d'i:rg#o||r'i
+ৡ	d'i:rg#o||l'i
+ৰ	'OSOmija||r'O	// the Assamese r
+ৱ	'OSOmija||w'O	// the Assamese w
 
 
 // full vowels
 অ	O:
 আ	a
-ই	hrOS:o'i
+ই	hr'OSSo||'i	$atstart $atend $sentence	// 12i: the ending of a date is read as it sounds
+ই	$hasdot $atstart $atend
+__ই	hr'OSSo||'i	// hroshsho i, when a word is spelled out
 ঈ	d'i:rg#o'i
 উ	hrOS:o'u
+উ	$hasdot	// the abbreviation of uttor
 ঊ	d'i:rg#o'u
 ঋ	ri
 ঔ	ow
@@ -194,13 +213,16 @@ _ও	o
 া	'akar
 ি	hrOS:o'ikar
 ী	d'i:rg#ikar
-ূ	hrOS:o'ukar
-ু	d'i:rg#ukar
+ূ	d'i:rg#ukar
+ু	hrOS:o'ukar
 ৃ	r'ikar
 ে	'ekar
 ৈ	'ojkar
 ো	'okar
 ৌ	'owkar
+ৄ	d'i:rg#o||r'ikar
+ৢ	l'ikar
+ৣ	d'i:rg#o||l'ikar
 
 // signs
 ্	h'OSonto
@@ -208,9 +230,15 @@ _ও	o
 ঃ	b'iSOrgo
 ঁ	tS'Ondrobindu
 ়	b'indu
+ঽ	'ObOgrOho	// obogroho
+৺	'iSSOr	// isshor
+
+// A capital letter of the Latin alphabet, and a character that has no name
+_cap	k'&pit.al
+_??	'Ok#k#Or
 
 $	d.Olar
-%	SOtk'Ora
+%	S'OtaNSo
 +	jOg
 =	SOman
 ৴	&k'ana:
@@ -221,9 +249,67 @@ $	d.Olar
 
 
 // Punctuation
-।	dVn.d.V
-_,	koma
-_?	pr'oSnOtSihnO
+।	d'a~r.i
+॥	d'ui||d'a~r.i
+_,	k'Oma
+_?	pr'oSnObod#Ok||tS'inno
+_।	d'a~r.i
+_॥	d'ui||d'a~r.i
+_.	f'ulSt.Op
+_;	S'emikolOn
+_:	k'olOn
+_!	b'iSmOjSutSOk||tS'inno
+_'	'urd#Ok,Oma
+_"	'udd#riti||tS'inno
+_“	'udd#riti||S'uru
+_”	'udd#riti||S'eS
+_‘	'ekOk||'udd#riti||S'uru
+_’	'ekOk||'udd#riti||S'eS
+_(	pr'ot#Om||b'Ond#Oni||S'uru
+_)	pr'ot#Om||b'Ond#Oni||S'eS
+_{	d'itijo||b'Ond#Oni||S'uru
+_}	d'itijo||b'Ond#Oni||S'eS
+_[	tr'itijo||b'Ond#Oni||S'uru
+_]	tr'itijo||b'Ond#Oni||S'eS
+_<	'er||tS'eje||tS#'ot.o
+_>	'er||tS'eje||b'Or.o
+_-	h'aifen
+_–	'en||d.'&S
+_—	d.'&S
+_…	'elipsis
+_/	Sl'&S
+_\	b'&kSl&S
+__	'and.arSkor
+_|	'ullOmbo||r'ek#a
+_@	'&t.
+_#	h'&S
+_$	d.'Olar
+_^	k'&ret.
+_&	'&nd.
+_*	t'arOkatS,inno
+_+	J'og||tS'inno
+_=	S'Oman||tS'inno
+_~	t.'ild.
+_`	b'&kt.ik
+_°	d.'igri
+_§	b'ib#ag
+_•	b'ulet.
+_·	m'Odd#o||b'indu
+_£	p'aund.
+_¥	'ijen
+_€	'iuro
+_₹	r'upi
+_₨	r'upi
+_৳	t.'aka
+_৲	t.'aka
+_¢	S'ent.
+_×	g'un||tS'inno
+_÷	b#'ag||tS'inno
+_±	J'og||bij'og
+_¶	'OnutStS#ed||tS'inno
+_©	k'opirait.
+_®	n'ibOnd#ito
+_™	t.r'ed.||m'ark
 
 // Pronouns
 আমি 	$u	// main: I
@@ -314,6 +400,7 @@ _?	pr'oSnOtSihnO
 // Verbs
 
 হয়	$u
+হয়	$u
 
 
 ছিল	$u	// chilo: past aux

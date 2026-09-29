@@ -10,6 +10,10 @@
 
 
 .replace
+// a letter and the nukta, as Unicode normalisation leaves them, are the one character
+ ড়	ড়
+ ঢ়	ঢ়
+ য়	য়    // the rules know ya and the nukta as two characters
  ০	0
  ১	1
  ২	2

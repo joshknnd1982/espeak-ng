@@ -14,6 +14,19 @@
 .L02 ච ඡ ජ ඣ ඦ
 .L03 ට ඨ ඩ ඪ 
 
+// Sinhala Lith digits (sinhala lith illakkam) are read as the digits 0-9
+.replace
+ ෦	0
+ ෧	1
+ ෨	2
+ ෩	3
+ ෪	4
+ ෫	5
+ ෬	6
+ ෭	7
+ ෮	8
+ ෯	9
+
 
 .group ක
 	ක	ka
@@ -318,3 +331,4 @@
 .group
 	zස	za
 	zස (B	z
+    __) - (_D      r'un.@	// a hyphen before a number is the minus sign (runa)

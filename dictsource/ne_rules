@@ -1005,10 +1005,10 @@
 	+ (_C	J'odc'inh@2
 
 .group -		
-	-	d.ja:S
+	-	_	// a hyphen standing alone is a pause; its name is _- in ne_list
 	+_) -	m'ainV=s
 	=_) -	m'ainV=s
-	- (_+	m'ainV=s
+	- (_D	m'ainV=s	// minus, before a number
 	- (_=	m'ainV=s
 	०_) -	m'ainV=s
 	१_) -	m'ainV=s
