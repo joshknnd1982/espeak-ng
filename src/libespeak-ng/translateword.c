@@ -925,8 +925,8 @@ static int TranslateLetter(Translator *tr, char *word, char *phonemes, int contr
 	int al_flags;
 	int number;
 	int phontab_1;
-	char capital[30];
-	char ph_buf[80];
+	char capital[N_PHONEME_BYTES];
+	char ph_buf[N_PHONEME_BYTES];
 	char ph_buf2[80];
 	char ph_alphabet[80];
 	char hexbuf[12];

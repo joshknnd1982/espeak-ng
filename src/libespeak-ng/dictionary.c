@@ -2882,14 +2882,41 @@ int Lookup(Translator *tr, const char *word, char *ph_out)
 		// NOTE: TranslateRoman checks text[-2] and IsLetterGroup looks
 		// for a heading \0, so pad the start of text to prevent
 		// it reading data on the stack.
-		char text[80];
+		char text[N_WORD_BYTES];
+		char *w;
+		int n_ph = 0;
 
 		text[0] = 0;
 		text[1] = ' ';
 		text[2] = ' ';
 		strncpy0(text+3, word1, sizeof(text)-3);
-		flags0 = TranslateWord(tr, text+3, NULL, NULL);
-		strcpy(ph_out, word_phonemes);
+
+		// every word of the text, not only the first, each with its own stress
+		ph_out[0] = 0;
+		flags0 = 0;
+		for (w = text+3; *w != 0; ) {
+			while (*w == ' ')
+				w++;
+			if (*w == 0)
+				break;
+			flags0 |= TranslateWord(tr, w, NULL, NULL);
+			int len = strlen(word_phonemes);
+			if (n_ph + len + 2 >= N_PHONEME_BYTES)
+				break; // the rest of a very long name is left out
+			if (n_ph > 0)
+				ph_out[n_ph++] = phonEND_WORD;
+			memcpy(&ph_out[n_ph], word_phonemes, len + 1);
+			n_ph += len;
+			while ((*w != ' ') && (*w != 0))
+				w++;
+		}
+		if ((ph_out[0] == 0) || (strchr(ph_out, phonSWITCH) != NULL)) {
+			// the text gave no phonemes of this language (Hangul, which is split into jamo
+			// only in running text, or words the language cannot read): not found, as before
+			ph_out[0] = 0;
+			flags0 = 0;
+		} else
+			flags0 |= FLAG_FOUND; // the name was found, though its words may not be in the dictionary
 		option_sayas = say_as;
 	}
 	return flags0;

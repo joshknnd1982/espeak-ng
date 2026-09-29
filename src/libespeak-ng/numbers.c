@@ -419,10 +419,11 @@ void LookupAccentedLetter(Translator *tr, unsigned int letter, char *ph_buf)
 	int flags1, flags2;
 	int basic_letter;
 	int letter2 = 0;
-	char ph_letter1[30];
-	char ph_letter2[30];
-	char ph_accent1[30];
-	char ph_accent2[30];
+	char ph_letter1[N_PHONEME_BYTES];
+	char ph_letter2[N_PHONEME_BYTES];
+	char ph_accent1[N_PHONEME_BYTES];
+	char ph_accent2[N_PHONEME_BYTES];
+	char *ph_start = ph_buf; // which has room for N_PHONEME_BYTES
 
 	ph_accent2[0] = 0;
 
@@ -455,22 +456,24 @@ void LookupAccentedLetter(Translator *tr, unsigned int letter, char *ph_buf)
 				if (accent2 != 0) {
 					flags2 = Lookup(tr, accents_tab[accent2].name, ph_accent2);
 					if (flags2 & FLAG_ACCENT_BEFORE) {
-						strcpy(ph_buf, ph_accent2);
+						snprintf(ph_buf, N_PHONEME_BYTES, "%s", ph_accent2);
 						ph_buf += strlen(ph_buf);
 						ph_accent2[0] = 0;
 					}
 				}
+				// the names of the letter and its accents, as much as there is room for
+				int room = N_PHONEME_BYTES - (ph_buf - ph_start);
 				if (letter2 != 0) {
 					// ligature
 					LookupLetter2(tr, letter2, ph_letter2);
-					sprintf(ph_buf, "%s%c%s%c%s%s", ph_accent1, phonPAUSE_VSHORT, ph_letter1, phonSTRESS_P, ph_letter2, ph_accent2);
+					snprintf(ph_buf, room, "%s%c%s%c%s%s", ph_accent1, phonPAUSE_VSHORT, ph_letter1, phonSTRESS_P, ph_letter2, ph_accent2);
 				} else {
 					if (accent1 == 0)
-						strcpy(ph_buf, ph_letter1);
+						snprintf(ph_buf, room, "%s", ph_letter1);
 					else if ((tr->langopts.accents & 1) || (flags1 & FLAG_ACCENT_BEFORE) || (accents_tab[accent1].accent_flags & 1))
-						sprintf(ph_buf, "%s%c%c%s", ph_accent1, phonPAUSE_VSHORT, phonSTRESS_P, ph_letter1);
+						snprintf(ph_buf, room, "%s%c%c%s", ph_accent1, phonPAUSE_VSHORT, phonSTRESS_P, ph_letter1);
 					else
-						sprintf(ph_buf, "%c%s%c%s%c", phonSTRESS_2, ph_letter1, phonPAUSE_VSHORT, ph_accent1, phonPAUSE_VSHORT);
+						snprintf(ph_buf, room, "%c%s%c%s%c", phonSTRESS_2, ph_letter1, phonPAUSE_VSHORT, ph_accent1, phonPAUSE_VSHORT);
 				}
 			}
 		}
