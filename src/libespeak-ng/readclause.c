@@ -90,6 +90,19 @@ int saved_parameters[N_SPEECH_PARAM]; // Parameters saved on synthesis start
 
 #define ESPEAKNG_CLAUSE_TYPE_PROPERTY_MASK 0xFFF0000000000000ull
 
+static bool IsCombiningMark(int c)
+{
+	switch (ucd_lookup_category(c))
+	{
+	case UCD_CATEGORY_Mn:
+	case UCD_CATEGORY_Mc:
+	case UCD_CATEGORY_Me:
+		return true;
+	default:
+		return false;
+	}
+}
+
 int clause_type_from_codepoint(uint32_t c)
 {
 	ucd_category cat = ucd_lookup_category(c);
@@ -826,7 +839,8 @@ int ReadClause(Translator *tr, char *buf, short *charix, int *charix_top, int n_
 
 			// don't announce punctuation for the alternative text inside inside <audio> ... </audio>
 			if (c1 == 0xe000+'<')  c1 = '<';
-			if (option_punctuation && iswpunct(c1) && (audio_text == false)) {
+			if (option_punctuation && iswpunct(c1) && (audio_text == false)
+			    && !(IsCombiningMark(c1) && (IsAlpha(cprev) || IsCombiningMark(cprev)))) { // a virama or tone mark inside a word is not punctuation
 				// option is set to explicitly speak punctuation characters
 				// if a list of allowed punctuation has been set up, check whether the character is in it
 				if ((option_punctuation == 1) || (wcschr(option_punctlist, c1) != NULL)) {

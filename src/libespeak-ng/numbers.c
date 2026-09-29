@@ -1018,6 +1018,7 @@ static int LookupNum2(Translator *tr, int value, int thousandplex, const int con
 	// control bit 3: use feminine form of '2' (for thousands
 	// control bit 4: speak zero tens
 	// control bit 5: variant of ordinal number (lang=hu)
+	//         bit 6: final tens and units after hundreds or thousands (use _#y form if there is one, lang=th)
 	//         bit 8   followed by decimal fraction
 	//         bit 9: use #f form for both tens and units (lang=ml)
 
@@ -1086,6 +1087,11 @@ static int LookupNum2(Translator *tr, int value, int thousandplex, const int con
 					if (number_control & 1) {
 						// look for 'e' variant
 						sprintf(string, "_%de", value);
+						found = Lookup(tr, string, ph_digits);
+					}
+					if (!found && (control & 0x40)) {
+						// after hundreds or thousands, is there a special form? (lang=th)
+						sprintf(string, "_%dy", value);
 						found = Lookup(tr, string, ph_digits);
 					}
 				} else {
@@ -1163,6 +1169,11 @@ static int LookupNum2(Translator *tr, int value, int thousandplex, const int con
 							sprintf(string, "_%d%c", units, ord_type);
 							if ((found = Lookup(tr, string, ph_digits)) != 0)
 								found_ordinal = 1;
+						}
+						if ((found == 0) && (tens > 0)) {
+							// is there a special form for units after tens? (lang=th)
+							sprintf(string, "_%dy", units);
+							found = Lookup(tr, string, ph_digits);
 						}
 						if (found == 0) {
 							if ((number_control & 1) && (control & 2)) {
@@ -1290,8 +1301,8 @@ static int LookupNum3(Translator *tr, int value, char *ph_out, bool suppress_nul
 	ph_thousands[0] = 0;
 	ph_thousand_and[0] = 0;
 
-	if ((tr->langopts.numbers & NUM_ZERO_HUNDRED) && ((control & 1) || (hundreds >= 10)))
-		say_zero_hundred = true; // lang=vi
+	if ((tr->langopts.numbers & NUM_ZERO_HUNDRED) && ((control & 1) || (hundreds >= 10)) && (tensunits > 0))
+		say_zero_hundred = true; // lang=vi, only if tens or units follow: 1005 but not 1000
 
 	if ((hundreds > 0) || say_zero_hundred) {
 		found = 0;
@@ -1432,6 +1443,8 @@ static int LookupNum3(Translator *tr, int value, char *ph_out, bool suppress_nul
 				x = 3; // ordinal number
 			if ((value < 100) && !(control & 1))
 				x |= 4; // tens and units only, no higher digits
+			else
+				x |= 0x40; // tens and units after hundreds or thousands
 			if (ordinal & 0x20)
 				x |= 0x20; // variant form of ordinal number
 		} else if (tr->langopts.numbers2 & (1 << thousandplex) && thousandplex <= 3)

@@ -500,11 +500,9 @@ Translator *SelectTranslator(const char *name)
 		tr->langopts.break_numbers = 0x278; // 12,345,6,7,8,901: a break after the digits for 10^9, 10^6, 10^5, 10^4 and 10^3
 		break;
 	case L('m', 'i'):
-	case L('m', 'y'):
 	case L('p', 'y'):
 	case L('q', 'u'):
 	case L3('q', 'u', 'c'):
-	case L('t', 'h'):
 	case L('u', 'z'):
 	{
 		tr->langopts.numbers = 0; // disable numbers until the definition are complete in _list file
@@ -513,6 +511,15 @@ Translator *SelectTranslator(const char *name)
 	case L('a', 'b'): // Abkhaz
 		// counting in twenties: 30 is 20 and 10, 57 is 40 and 17
 		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_VIGESIMAL;
+		break;
+	case L('m', 'y'): // Burmese
+	case L('t', 'h'): // Thai
+	{
+		// a word for each power of ten: thousand, ten thousand, hundred thousand, million
+		tr->langopts.numbers = NUM_DEFAULT;
+		tr->langopts.break_numbers = BREAK_TH;
+		tr->langopts.max_digits = 10;
+	}
 		break;
 	case L('a', 'f'):
 	{
@@ -1124,6 +1131,8 @@ Translator *SelectTranslator(const char *name)
 		SetupTranslator(tr, stress_lengths_id, stress_amps_id);
 		tr->langopts.stress_rule = STRESSPOSN_2R;
 		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_ROMAN;
+		if (name2 == L('m', 's'))
+			tr->langopts.numbers = NUM_ALLOW_SPACE | NUM_ROMAN; // Malaysia writes a decimal point: 3.14, 1,000
 		tr->langopts.stress_flags =  S_FINAL_DIM_ONLY | S_FINAL_NO_2;
 		tr->langopts.accents = 2; // "capital" after letter name
 	}
@@ -1739,7 +1748,8 @@ Translator *SelectTranslator(const char *name)
 		tr->langopts.tone_language = 1; // Tone language, use  CalcPitches_Tone() rather than CalcPitches()
 		tr->langopts.length_mods0 = tr->langopts.length_mods; // don't lengthen vowels in the last syllable
 		tr->langopts.numbers = NUM_DEFAULT;
-		tr->langopts.break_numbers = BREAK_INDIVIDUAL;
+		tr->langopts.break_numbers = BREAK_TH; // a word for each power of ten up to a million
+		tr->langopts.max_digits = 10;
 		break;
 	case L3('c', 'm', 'n'): // no break, just go to 'zh' case
 	case L3('y', 'u', 'e'):

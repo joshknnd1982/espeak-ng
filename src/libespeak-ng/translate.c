@@ -1701,10 +1701,14 @@ void TranslateClauseWithTerminator(Translator *tr, int *tone_out, char **voice_c
 					pw += 2;
 					ix++; // skip "word"
 				} else {
-					nx = pw - word;
-					memset(word, ' ', nx);
+					// keep the rest of the number (eg. a decimal fraction) joined to its digits
+					int n_rest = 0;
+					while ((pw[n_rest] != ' ') && (pw[n_rest] != 0))
+						n_rest++;
 					nx = pn - number_buf;
 					memcpy(word, number_buf, nx);
+					memmove(&word[nx], pw, n_rest);
+					memset(&word[nx + n_rest], ' ', (pw - word) - nx);
 					break;
 				}
 			}

@@ -509,6 +509,7 @@ typedef struct {
 #define BREAK_LAKH_HI     0x00014aa8 // b  b b b b b  b b                // 100,00,000,00,00,00,00,000
 #define BREAK_LAKH_UR     0x000052a8 // b  b b b b  b b                  // 100,00,000,00,00,00,000
 #define BREAK_INDIVIDUAL  0x00000018 // b  bb                            // 100,0,000
+#define BREAK_TH          0x00000078 // b  bbbb                          // 100,0,0,0,000 (a word for each power of ten up to a million: th, my, shn)
 
 	unsigned break_numbers;  // which digits to break the number into thousands, millions, etc (Hindi has 100,000 not 1,000,000)
 	int max_roman;
