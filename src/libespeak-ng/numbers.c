@@ -1032,7 +1032,7 @@ static int LookupNum2(Translator *tr, int value, int thousandplex, const int con
 	// control bit 4: speak zero tens
 	// control bit 5: variant of ordinal number (lang=hu)
 	//         bit 6: final tens and units after hundreds or thousands (use _#y form if there is one, lang=th)
-	//         bit 6: added to a larger part, use the "u" variant (NUM2_ADDED_VARIANT)
+	//         bit 10: added to a larger part, use the "u" variant (NUM2_ADDED_VARIANT)
 	//         bit 8   followed by decimal fraction
 	//         bit 9: use #f form for both tens and units (lang=ml)
 
@@ -1098,7 +1098,7 @@ static int LookupNum2(Translator *tr, int value, int thousandplex, const int con
 			}
 
 			if (found == 0) {
-				if ((tr->langopts.numbers2 & NUM2_ADDED_VARIANT) && (control & 0x40) && ((value < 10) || (units == 0))) {
+				if ((tr->langopts.numbers2 & NUM2_ADDED_VARIANT) && (control & 0x400) && ((value < 10) || (units == 0))) {
 					// LANG=qu,tn: a unit, or a whole ten, which is added to a larger part (101, 110)
 					if (value < 10)
 						sprintf(string, "_%du", value);
@@ -1512,7 +1512,7 @@ static int LookupNum3(Translator *tr, int value, char *ph_out, bool suppress_nul
 			x |= 0x208; // use #f form for both tens and units
 
 		if ((tr->langopts.numbers2 & NUM2_ADDED_VARIANT) && (((control & 1) && (thousandplex == 0)) || (hundreds > 0)))
-			x |= 0x40; // LANG=qu,tn: the tens and units are added to a larger part (not a multiplier of thousands)
+			x |= 0x400; // LANG=qu,tn: the tens and units are added to a larger part (not a multiplier of thousands)
 
 		if (LookupNum2(tr, tensunits, thousandplex, x | (control & 0x100), buf2) != 0) {
 			if (tr->langopts.numbers & NUM_SINGLE_AND)
