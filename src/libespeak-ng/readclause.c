@@ -840,7 +840,8 @@ int ReadClause(Translator *tr, char *buf, short *charix, int *charix_top, int n_
 			// don't announce punctuation for the alternative text inside inside <audio> ... </audio>
 			if (c1 == 0xe000+'<')  c1 = '<';
 			if (option_punctuation && iswpunct(c1) && (audio_text == false)
-			    && !(IsCombiningMark(c1) && (IsAlpha(cprev) || IsCombiningMark(cprev)))) { // a virama or tone mark inside a word is not punctuation
+			    && !(IsCombiningMark(c1) && (IsAlpha(cprev) || IsCombiningMark(cprev))) // a virama or tone mark inside a word is not punctuation
+			    && !((c1 >= 0x900) && (c1 <= 0xdff) && IsAlpha(c1))) { // not a virama or nukta inside a word of an Indic script
 				// option is set to explicitly speak punctuation characters
 				// if a list of allowed punctuation has been set up, check whether the character is in it
 				if ((option_punctuation == 1) || (wcschr(option_punctlist, c1) != NULL)) {

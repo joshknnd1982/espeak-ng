@@ -480,6 +480,7 @@ void LookupAccentedLetter(Translator *tr, unsigned int letter, char *ph_buf)
 void LookupLetter(Translator *tr, unsigned int letter, int next_byte, char *ph_buf1, int control)
 {
 	// control, bit 0:  not the first letter of a word
+	//          bit 2:  a word is spelled out character by character (not an abbreviation)
 
 	int len;
 	char single_letter[10] = { 0, 0 };
@@ -528,7 +529,16 @@ void LookupLetter(Translator *tr, unsigned int letter, int next_byte, char *ph_b
 	// if the $accent flag is set for this letter, use the accents table (below)
 	dict_flags[1] = 0;
 
-	if (Lookup(tr, &single_letter[1], ph_buf3) == 0) {
+	ph_buf3[0] = 0;
+	if (control & 4) {
+		// a name given as __* is used only when a word is spelled out, not for the letters of
+		// an abbreviation (eg. a vowel letter whose spelling name is not the vowel's sound)
+		single_letter[0] = '_';
+		Lookup(tr, single_letter, ph_buf3);
+		single_letter[0] = 0;
+	}
+
+	if ((ph_buf3[0] == 0) && (Lookup(tr, &single_letter[1], ph_buf3) == 0)) {
 		single_letter[1] = ' ';
 		if (Lookup(tr, &single_letter[2], ph_buf3) == 0)
 			TranslateRules(tr, &single_letter[2], ph_buf3, sizeof(ph_buf3), NULL, FLAG_NO_TRACE, NULL);

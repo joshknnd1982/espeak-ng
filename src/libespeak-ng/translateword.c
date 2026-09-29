@@ -948,7 +948,7 @@ static int TranslateLetter(Translator *tr, char *word, char *phonemes, int contr
 			Lookup(tr, "_cap", capital);
 	}
 	letter = towlower2(letter, tr);
-	LookupLetter(tr, letter, word[n_bytes], ph_buf, control & 1);
+	LookupLetter(tr, letter, word[n_bytes], ph_buf, control & 5);
 
 	if (ph_buf[0] == 0) {
 		// is this a subscript or superscript letter ?
@@ -999,8 +999,9 @@ static int TranslateLetter(Translator *tr, char *word, char *phonemes, int contr
 		// speak the name of the alphabet
 		current_alphabet = alphabet;
 		if ((alphabet != NULL) && !(al_flags & AL_DONT_NAME) && (al_offset != translator->letter_bits_offset)) {
-			if ((al_flags & AL_DONT_NAME) || (al_offset == translator->langopts.alt_alphabet) || (al_offset == translator->langopts.our_alphabet)) {
-				// don't say the alphabet name
+			if ((al_flags & AL_DONT_NAME) || (al_offset == translator->langopts.alt_alphabet) || (al_offset == translator->langopts.our_alphabet)
+			    || (((letter == 0x964) || (letter == 0x965)) && (translator->letter_bits_offset > 0x900) && (translator->letter_bits_offset < 0xe00))) {
+				// don't say the alphabet name (the danda and double danda are used by all the Indic scripts)
 			} else {
 				ph_buf2[0] = 0;
 				if (Lookup(translator, alphabet->name, ph_alphabet) == 0) { // the original language for the current voice
