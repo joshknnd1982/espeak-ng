@@ -50,6 +50,10 @@
 
 #define N_XML_BUF   500
 
+// room for the name of a character: the phonemes of a word, decoded, with
+// the language switches around them
+#define N_CHAR_NAME (N_WORD_PHONEMES * 4 + 64)
+
 static void DecodeWithPhonemeMode(char *buf, char *phonemes, Translator *tr, Translator *tr2, unsigned int flags[]);
 static void TerminateBufWithSpaceAndZero(char *buf, int index, int *ungetc);
 
@@ -184,7 +188,7 @@ const char *WordToString2(char buf[5], unsigned int word)
 static const char *LookupSpecial(Translator *tr, const char *string, char *text_out)
 {
 	unsigned int flags[2];
-	char phonemes[55];
+	char phonemes[N_WORD_PHONEMES];
 	char *string1 = (char *)string;
 
 	flags[0] = flags[1] = 0;
@@ -195,7 +199,7 @@ static const char *LookupSpecial(Translator *tr, const char *string, char *text_
 	return NULL;
 }
 
-static const char *LookupCharName(char buf[74], Translator *tr, int c, bool only)
+static const char *LookupCharName(char buf[N_CHAR_NAME], Translator *tr, int c, bool only)
 {
 	// Find the phoneme string (in ascii) to speak the name of character c
 	// Used for punctuation characters and symbols
@@ -203,7 +207,7 @@ static const char *LookupCharName(char buf[74], Translator *tr, int c, bool only
 	int ix;
 	unsigned int flags[2];
 	char single_letter[24];
-	char phonemes[60];
+	char phonemes[N_WORD_PHONEMES];
 	const char *lang_name = NULL;
 	char *string;
 
@@ -276,8 +280,8 @@ static int AnnouncePunctuation(Translator *tr, int c1, int *c2_ptr, char *output
 	int len;
 	int bufix1;
 	char buf[200];
-	char ph_buf[30];
-	char cn_buf[74];
+	char ph_buf[N_CHAR_NAME];
+	char cn_buf[N_CHAR_NAME];
 
 	c2 = *c2_ptr;
 	buf[0] = 0;
@@ -720,7 +724,7 @@ int ReadClause(Translator *tr, char *buf, short *charix, int *charix_top, int n_
 			tr->clause_upper_count++;
 
 			if ((option_capitals == 2) && (sayas_mode == 0) && !iswupper(cprev)) {
-				char text_buf[30];
+				char text_buf[N_CHAR_NAME];
 				if (LookupSpecial(tr, "_cap", text_buf) != NULL) {
 					j = strlen(text_buf);
 					if ((ix + j) < n_buf) {
@@ -838,8 +842,11 @@ int ReadClause(Translator *tr, char *buf, short *charix, int *charix_top, int n_
 				char *p2;
 
 				p2 = &buf[ix];
-				char cn_buf[74];
-				sprintf(p2, "%s", LookupCharName(cn_buf, tr, c1, true));
+				char cn_buf[N_CHAR_NAME];
+				const char *name = LookupCharName(cn_buf, tr, c1, true);
+				if (ix + (int)strlen(name) >= n_buf - 1)
+					name = "";
+				sprintf(p2, "%s", name);
 				if (p2[0] != 0) {
 					ix += strlen(p2);
 					announced_punctuation = c1;
@@ -1018,15 +1025,17 @@ static void TerminateBufWithSpaceAndZero(char *buf, int index, int *ungetc) {
 }
 
 static void DecodeWithPhonemeMode(char *buf, char *phonemes, Translator *tr, Translator *tr2, unsigned int flags[]) {
-	char phonemes2[55];
+	// buf has room for N_CHAR_NAME bytes; a phoneme decodes to its mnemonic,
+	// at most four characters
+	char phonemes2[N_WORD_PHONEMES * 4 + 8];
 	if (tr2 == NULL) {
 		SetWordStress(tr, phonemes, flags, -1, 0);
 		DecodePhonemes(phonemes, phonemes2);
-		sprintf(buf, "[\002%s]]", phonemes2);
+		snprintf(buf, N_CHAR_NAME, "[\002%s]]", phonemes2);
 	} else {
 		SetWordStress(tr2, phonemes, flags, -1, 0);
 	    DecodePhonemes(phonemes, phonemes2);
 			char wbuf[5];
-	    sprintf(buf, "[\002_^_%s %s _^_%s]]", ESPEAKNG_DEFAULT_VOICE, phonemes2, WordToString2(wbuf, tr->translator_name));
+	    snprintf(buf, N_CHAR_NAME, "[\002_^_%s %s _^_%s]]", ESPEAKNG_DEFAULT_VOICE, phonemes2, WordToString2(wbuf, tr->translator_name));
     }
 }
