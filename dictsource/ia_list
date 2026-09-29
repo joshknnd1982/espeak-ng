@@ -2,7 +2,7 @@
 
 // letter names
 b	be
-c	se
+c	tse
 d	de
 f	ef
 g	ge
@@ -20,26 +20,77 @@ t	te
 v	ve
 w	d'upleve
 x	iks
-y	ipsilon
+y	'ipsilon
 z	zeta
+
+// accent names, and the word for a capital letter
+_cap	maZ,uskula	// majuscula
+_acu	ats'ento||ak'ute	// accento acute
+_grv	ats'ento||gR'ave	// accento grave
+_cir	ats'ento||tsiRkumfl'ekse	// accento circumflexe
+_dia	dj'eRese	// dierese
+_tld	t'ilde
+_ced	tsed'ila	// cedilla
+_^	ats'ento||tsiRkumfl'ekse	// the caret
+_`	ats'ento||gR'ave
+_´	ats'ento||ak'ute
+_¨	dj'eRese
+
+// punctuation and symbols (names as the style manual of the Interlingua Wikipedia gives them)
+_.	p'unkto	// puncto
+_,	k'oma	// comma
+_;	p'unkto||e||v'iRgula	// puncto e virgula
+_:	d'uo||p'unktos	// duo punctos
+_?	p'unkto||de||,inteR,ogatj'on	// puncto de interrogation
+_!	p'unkto||de||,eksklamatj'on	// puncto de exclamation
+_'	ap'ostRofo	// apostropho
+_’	ap'ostRofo
+_"	v,iRgul'etas	// virgulettas
+_“	v,iRgul'etas
+_”	v,iRgul'etas
+_„	v,iRgul'etas
+_«	v,iRgul'etas
+_»	v,iRgul'etas
+_‘	v,iRgul'etas||s'imple	// virgulettas simple
+_‚	v,iRgul'etas||s'imple
+_(	paR'entese	// parenthese
+_)	paR'entese
+_[	paR'entese||kwadR'ate	// parenthese quadrate
+_]	paR'entese||kwadR'ate
+_-	tR'akto||de||unj'on	// tracto de union
+_–	l,ine'eta||m'edje	// lineetta medie
+_—	l,ine'eta||l'oNge	// lineetta longe
+/	b'aRa||obl'ikwe	// barra oblique
+%	pRo||ts'ento	$max3	// pro cento
+*	,asteR'isko	$max3
++	pl'us	$max3
+=	ekw'al	$max3	// equal
+~	t'ilde
+°	gR'ados
+$	d'olaR
+€	'eURo
+£	l'ibRa
+¥	j'en
+©	k'opiR,ait
+§	paR'agRafo	// paragrapho
 
 
 // numbers
 _0	z'ero
-_1	un
-_2	duo
-_3	tRes
+_1	'un
+_2	d'uo
+_3	tR'es
 _4	kw'atRo
 _5	ts'inkwe
-_6	seks
+_6	s'eks
 _7	s'epte
-_8	'octo
-_9	n'ovem
+_8	'okto
+_9	n'ove
 _1X	d'etse
 _20	v'inti
 _2X	vinti
-_30	tR'ente
-_3X	tRente
+_30	tR'enta
+_3X	tRenta
 _40	kwaR'anta
 _4X	kwaRanta
 _50	tsinkw'anta
@@ -54,22 +105,20 @@ _90	nov'anta
 _9X	novanta
 _0C	ts'ento
 _2C	d'uo||ts'entos
-_3C	tRes||ts'entos
+_3C	tR'es||ts'entos
 _4C	kw'atRo||ts'entos
 _5C	ts'inkwe||ts'entos
-_6C	seks||ts'entos
+_6C	s'eks||ts'entos
 _7C	s'epte||ts'entos
-_8C	'octo||ts'entos
-_9C	n'ovem||ts'entos
-_0M1	m'ille
-_2M	d'uo||m'illes
-_3M	tRes||m'illes
-_4M	kw'atRo||m'illes
-_5M	ts'inkwe||m'illes
-_6M	seks||m'illes
-_7M	s'epte||m'illes
-_8M	'octo||m'illes
-_9M	n'ovem||m'illes
+_8C	'okto||ts'entos
+_9C	n'ove||ts'entos
+_1M1	m'ile
+_0M1	m'iles	// duo milles
+_1M2	'un||milj'on
+_0M2	milj'ones
+_1M3	'un||milj'aRdo
+_0M3	milj'aRdos
+_dpt	k'oma	// 3,14 tres comma un quatro
 
 // unstressed words
 le	$nounf $u+

@@ -33,6 +33,10 @@ _0C     xanja?
 _1C     xanja?
 _0M1    t0se:N
 _1M1    t0se:N
+_1M2    t0se:N_t0se:N           // no word for a million is known: a thousand thousand
+_0M2    t0se:N_t0se:N
+_1M3    t0se:N_t0se:N_t0se:N
+_0M3    t0se:N_t0se:N_t0se:N
 _0and   u:nj@-
 _dpt    ko:ma?
 
@@ -189,3 +193,11 @@ de              $u $only
 xi              $u $only
 xiya            $u $only
 deya            $u $only
+
+// the letter o (the word o, 'or', is above: this must stay below it)
+_o	'o:xo:
+o	'o:xo:	$atstart $atend
+
+// no Belter names for punctuation are known: "'" is named in English (qdb_rules makes it a stress mark,
+// which would otherwise make it silent when punctuation is spoken)
+_'	_^_en

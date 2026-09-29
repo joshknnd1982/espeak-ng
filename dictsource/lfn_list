@@ -78,6 +78,14 @@ _o	'o
 ú	$accent
 
 _acu	sinj'eta'agu
+_cir	siR2konfl'eSe	// sirconflexe
+_dia	die**'ese	// dierese
+_tld	t'ilde
+_mcn	mak**'on
+_cap	let,e**a||maZ,o**	// letera major
+_grv	sinj'eta||non'agu	// sinieta nonagu (grave accent)
+_ced	sed'ilja	// sedilia
+_hac	ka**'on	// caron
 
 
 // Symbols
@@ -87,11 +95,52 @@ _acu	sinj'eta'agu
 $	dolaR2s
 €	eU**os
 %	peR2sento
-°	grado
+°	g**'ado
 _:	dupunto
 _;	punto||viR2gula
 _,	viR2gula
 _.	punto
+_?	s'inja||de||dem'anda	// sinia de demanda
+_!	s'inja||de||eskl'ama	// sinia de esclama
+_"	s'inja||de||s'ita	// sinia de sita
+_“	s'inja||de||s'ita
+_”	s'inja||de||s'ita
+_„	s'inja||de||s'ita
+_‘	s'inja||de||s'ita
+_‚	s'inja||de||s'ita
+_«	s'inja||de||s'ita
+_»	s'inja||de||s'ita
+_'	s'inja||de||el'idi	// sinia de elidi
+_’	s'inja||de||el'idi
+_(	b**as'eta	// braseta
+_)	b**as'eta
+_[	b**as'eta||**'eta	// braseta reta
+_]	b**as'eta||**'eta
+_{	b**as'eta||**is'ada	// braseta risada
+_}	b**as'eta||**is'ada
+_<	b**as'eta||aNg'ulo	// braseta angulo
+_>	b**as'eta||aNg'ulo
+_-	s'inja||de||Z'unta	// sinia de junta
+_–	s'inja||de||Z'unta||l'oNga	// sinia de junta longa
+_—	s'inja||de||Z'unta||l'oNga
+__	sul'ini	// sulini
+_|	b'a**a||v,eR2tik'al	// bara vertical
+_…	t**ep'unto	// trepunto
+_•	punt'on	// punton
+_^	s,iR2konfl'eSe
+_`	sinj'eta||non'agu
+_´	sinj'eta||'agu
+_¨	die**'ese
+/	b'a**a	// bara
+\	b'a**a||**,eveR2s'ada	// bara reversada
+@	k,a**ak'ol	// caracol
+&	s'inja||de||'e	// sinia de "e"
++	s'inja||de||pl'u	$max3	// sinia de plu
+~	t'ilde
+§	p,a**ag**'af	// paragraf
+£	p'aUnd	// paund
+¥	j'en	// ien
+©	di**'eto||de||aUt'o**	// direto de autor
 
 
 // Abbreviations

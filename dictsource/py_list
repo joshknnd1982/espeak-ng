@@ -171,3 +171,54 @@ bu    bu_:	$u
 //ta7   ta7_:	$u
 
 kla2t  klat22
+
+// The names of the letters: a consonant is named with the vowel 6 (the names which are commented
+// out above). A word is broken at the digits 6, 7 and 2, and the consonant before the digit is then
+// a word of one letter which must keep its sound: so the name is given when the letter is spelled
+// (_b), and when it is the only word of a clause.
+_b	b@
+b	b@	$atstart $atend
+_c	S@
+c	S@	$atstart $atend
+_d	d@
+d	d@	$atstart $atend
+_f	f@
+f	f@	$atstart $atend
+_g	g@
+g	g@	$atstart $atend
+_h	h@
+h	h@	$atstart $atend
+_j	Z@
+j	Z@	$atstart $atend
+_k	k@
+k	k@	$atstart $atend
+_l	l@
+l	l@	$atstart $atend
+_m	m@
+m	m@	$atstart $atend
+_n	n@
+n	n@	$atstart $atend
+_p	p@
+p	p@	$atstart $atend
+_q	N@
+q	N@	$atstart $atend
+_r	R@
+r	R@	$atstart $atend
+_s	s@
+s	s@	$atstart $atend
+_t	t@
+t	t@	$atstart $atend
+_v	v@
+v	v@	$atstart $atend
+_w	w@
+w	w@	$atstart $atend
+_x	x@
+x	x@	$atstart $atend
+_y	j@
+y	j@	$atstart $atend
+_z	z@
+z	z@	$atstart $atend
+
+// no Pyash names for punctuation are known: "." is named in English (py_rules makes it a pause,
+// which would otherwise also stop the English name when punctuation is spoken)
+_.	_^_en

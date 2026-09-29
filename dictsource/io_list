@@ -58,6 +58,42 @@ _,	komo
 _?	kuestionopunto
 _!	klamopunto
 
+// accent names, and the word for a capital letter (the letter names are in io_rules)
+_cap	majusk,ula	// mayuskula
+_acu	ak'uta||ats'ento	// akuta acento
+_grv	gR'ava||ats'ento	// grava acento
+_cir	tsiRkonfl'ekso	// cirkonflexo
+_dia	tRem'ao		// tremao
+_tld	t'ildo
+_ced	tsed'ilio	// cedilio
+_mcn	makR'ono
+_^	ts,iRkonfl'ekso	// cirkonflexo
+_`	gR'ava||ats'ento
+_´	ak'uta||ats'ento
+_¨	tRem'ao
+
+// punctuation and symbols (names as the Ido Wikipedia gives them)
+_'	,apostR'ofo	// apostrofo
+_’	,apostR'ofo
+_(	kRamp'ono	// krampono: every kind of bracket
+_)	kRamp'ono
+_[	kRamp'ono
+_]	kRamp'ono
+_{	kRamp'ono
+_}	kRamp'ono
+_<	kRamp'ono
+_>	kRamp'ono
+&	,ampeRs'ando	// ampersando
+*	,asteR'isko	$max3	// asterisko
++	pl'us	$max3
+%	p'o||ts'ent	$max3	// po cent
+~	t'ildo
+°	gR'adi	// gradi
+§	p,aRagR'afo	// paragrafo
+$	dol'aRo	// dolaro
+€	'eURo	// euro
+£	p'undo	// pundo
+
 
 
 

@@ -24,9 +24,12 @@ _1C		ts'ent
 _0C		tsent
 _1M1		m'il_
 _0M1		m,il_
-_0M2		mili'ono
-_0M3		mili'ardo
-_0M4		duili'ono
+_1M2		'unu||mili'ono
+_0M2		mili'onoI	// milionoj
+_1M3		'unu||mili'ardo
+_0M3		mili'ardoI	// miliardoj
+_1M4		'unu||duili'ono
+_0M4		duili'onoI	// duilionoj
 _dpt		_komo_
 
 // ordinal numbers
@@ -70,7 +73,7 @@ _!	_k@-*isigno_
 _-	dividost@-*eko
 __	subst@-*eko
 _'	apost@-*'ofo
-_"	tsito
+_"	tsit'ilo	// citilo
 ~	tildo
 °	gradoI
 %	p@-*otsento	$max3
@@ -93,9 +96,33 @@ _>	f'eRmaangulk@-*'ampo
 _«	du'oblak@-*'ampo
 _»	f'eRmadu,oblak@-*'ampo
 
+// more punctuation and symbols (names as PMEG and Vikipedio give them)
+_^	tSap'elo	// ĉapelo
+_`	maldekst@-*a||k'oRno	// maldekstra korno (grave accent)
+_´	dekst@-*a||k'oRno	// dekstra korno (acute accent)
+_¨	tRem'ao	// tremao
+_¡	inv'eRsa||k@-*is'igno	// inversa krisigno
+_¿	inv'eRsa||d,emandos'igno	// inversa demandosigno
+_“	tsit'ilo	// citilo
+_”	tsit'ilo
+_„	tsit'ilo
+_‘	tsit'ilo
+_‚	tsit'ilo
+_’	,apost@-*'ofo	// apostrofo
+_–	dZisst@-*'eko	// ĝisstreko
+_—	h,altost@-*'eko	// haltostreko
+_…	t@-*ip'unkto	// tripunkto
+_•	bulm'aRko	// bulmarko
+#	k@-*'ado	// krado
+§	p,aRag@-*'afo	// paragrafo
+€	'eURo	// eŭro
+¥	'eno	// eno
+
 
 v	vo	// not Roman numbers
 x	ikso
+q	kuo		// kuo: eo_rules gives [kwo]
+y	ipsilono	// ipsilono: eo_rules gives [i]
 
 
 

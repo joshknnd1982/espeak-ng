@@ -120,3 +120,90 @@ kei	keI_::	$u
 ku'o	k,uho_::	$u
 toi	toI_::	$u
 
+
+// lerfu: the names of the letters which are not given above.
+// A consonant is named with y (by. cy. dy. ...), a vowel with bu (.abu .ebu ...), the apostrophe is .y'y.
+// These entries must stay below the entries for the words  a e i o u  (the last entry which fits is used).
+l	l@
+m	m@
+n	n@
+r	R@
+
+// the vowels are also words (.a .e .i .o .u .y.): the name is said when the letter is spelled,
+// or when it is the only word of a clause
+_a	'abu
+_e	'ebu
+_i	'ibu
+_o	'obu
+_u	'ubu
+_y	'@bu
+a	'abu	$atstart $atend
+e	'ebu	$atstart $atend
+i	'ibu	$atstart $atend
+o	'obu	$atstart $atend
+u	'ubu	$atstart $atend
+y	'@bu	$atstart $atend
+
+_'	'@h@	// .y'y.
+þ	t'@bu	// ty.bu (thorn)
+ð	d'@bu	// dy.bu (edh)
+
+// . and , are letters of Lojban writing (the pause and the syllable break): denpa bu, slaka bu
+_.	d'enpa||b,u
+_,	sl'aka||b,u
+// symbols which Lojban reads with a word of its own (mekso): ce'i su'i du pi'i fe'i
+%	S'ehi
++	s'uhi
+=	d'u
+×	p'ihi
+÷	f'ehi
+
+// the stress mark which a capital letter becomes (LOPT_CAPS_IN_WORD): when a word is spelled, no name
+_ˈ	_
+
+_cap	t,aU	// tau: the next letter is a capital
+
+// accent marks: the lerfu words which the reference grammar proposes
+_acu	'akut_!b,u	// .akut. bu
+_grv	gR'av_!b,u	// .grav. bu
+_cir	SiRk'umfleks_!b,u	// .cirkumfleks. bu
+_tld	t'ildes_!b,u	// .tildes. bu
+_mcn	m'akRon_!b,u	// .makron. bu
+_brv	bR'evis_!b,u	// .brevis. bu
+_dot	g'apmoS_!b,u	// .gapmoc. bu
+_dia	R'elmoS_!b,u	// .relmoc. bu
+_rng	g'ap@Z,in_!b,u	// .gapyjin. bu
+_ced	sed'il@s_!b,u	// .seDIlys. bu
+_ac2	Reh'akut_!b,u	// .re'akut. bu
+_ogo	og'onjek_!b,u	// .ogoniek. bu
+_hac	x'atSek_!b,u	// .xatcek. bu
+
+// a capital letter alone: it arrives as the stress mark U+02C8 and the small letter
+ˈb	b@
+ˈc	S@
+ˈd	d@
+ˈf	f@
+ˈg	g@
+ˈj	Z@
+ˈk	k@
+ˈl	l@
+ˈm	m@
+ˈn	n@
+ˈp	p@
+ˈr	R@
+ˈs	s@
+ˈt	t@
+ˈv	v@
+ˈx	x@
+ˈz	z@
+ˈh	@h'@bu
+ˈq	k'@bu
+ˈw	v'@bu
+ˈþ	t'@bu
+ˈð	d'@bu
+ˈa	'abu	$atstart $atend
+ˈe	'ebu	$atstart $atend
+ˈi	'ibu	$atstart $atend
+ˈo	'obu	$atstart $atend
+ˈu	'ubu	$atstart $atend
+ˈy	'@bu	$atstart $atend
