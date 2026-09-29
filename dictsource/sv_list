@@ -24,25 +24,38 @@ l	El
 m	Em
 n	En
 //o	o:
+o	u:
 p	pe:
 q	ku-
 r	ER
 s	Es
 t	te:
 //u	u-
+u	u-
 v	ve:
 w	d'8b@lve:
 x	Eks
 y	y:
 z	s'E:ta
+å	o:
+ä	E:
+ö	Y:
+ü	t'yskt||'y:	// tyskt y
+æ	d'anskt||'E:	// danskt ä
+ø	d'anskt||'Y:	// danskt ö
+ë	tR'e:ma||'e:	// trema e
+ï	tR'e:ma||'i:
 
 _é	$accent
+é	$accent
+à	a	// the word, as in "5 à 6"
+_à	$accent
 
 
 _cap	st'u:t.
 _?A	b'u:kstavE-n
 _??	s'ymbu:lE-n
-_#32	bl'aNk
+_#32	m'Elansl,A:g	// mellanslag
 _#9	tab
 
 // accent names
@@ -50,7 +63,7 @@ _lig	l'i:gat,u-R
 _acu	'A:ku-t
 _ac2	d'8bE-l'A:ku-t	
 _brv	bR'e:vi:s
-_ced	s'e:dIlj
+_ced	sed'Ilj
 _cir	s'IRk8mflEks
 _dia	'Omju-d
 _dot	p'8Nkt
@@ -64,6 +77,77 @@ _tld	t'IldE-
 
 // punctuation
 _.      p'8Nkt
+_,	k'Oma	// komma
+_;	s'e:mi:k,u:lOn	// semikolon
+_:	k'u:lOn	// kolon
+_!	'u-tROpst,Ek:E-n	// utropstecken
+_?	fR'o:gE-t,Ek:E-n	// frågetecken
+_'	apOstR'o:f	// apostrof
+_"	sIt'A:t,Ek:E-n	// citattecken
+_(	v'EnstE-R||paRE-nt'e:s	// vänster parentes
+_)	h'Y:gE-R||paRE-nt'e:s	// höger parentes
+_[	v'EnstE-R||h'A:kpaRE-nt,e:s	// vänster hakparentes
+_]	h'Y:gE-R||h'A:kpaRE-nt,e:s	// höger hakparentes
+_{	v'EnstE-R||kl'amE-RpaRE-nt,e:s	// vänster klammerparentes
+_}	h'Y:gE-R||kl'amE-RpaRE-nt,e:s	// höger klammerparentes
+_<	m'IndRE-||'En	// mindre än
+_>	st'WRE-||'En	// större än
+_-	b'IndE-stR,Ek	// bindestreck
+_‐	b'IndE-stR,Ek
+_‑	b'IndE-stR,Ek
+_–	t'aNkstRE-k	// tankstreck
+_—	l'ONt||t'aNkstRE-k	// långt tankstreck
+_―	hu:Ri:sOnt'Elt||stR'Ek	// horisontellt streck
+_…	p'8Nkt||p'8Nkt||p'8Nkt	// punkt punkt punkt
+\	'OmvE-nt||sn'e:dstRE-k	// omvänt snedstreck (plain: ordinary reading said "backslash")
+__	'8ndE-s.tR,Ek	// understreck
+_|	vEt.i:k'A:lt||stR'Ek	// vertikalt streck
+#	f'yRkant	// fyrkant (plain: ordinary reading said "hash")
+_^	s'IRk8mfl,Eks	// cirkumflex
+=	l'i:ka||m'e:	// lika med (plain: ordinary reading said "equals": 2 + 2 = 4)
+~	t'IldE-	// tilde (plain: ordinary reading said it in English)
+_`	gR'A:v||'aksE-nt	// grav accent
+_´	'A:ku-t||'aksE-nt	// akut accent
+_¨	tR'e:ma	// trema
+_¶	paRagR'A:ft,Ek:E-n	// paragraftecken
+_•	l'Istp8Nkt	// listpunkt
+_·	h'alvhY:g||p'8Nkt	// halvhög punkt
+_¢	s'Ent	// cent
+_«	g'o:sY:g,On||v'EnstE-R	// gåsögon vänster
+_»	g'o:sY:g,On||h'Y:gE-R	// gåsögon höger
+_„	n'EdRE-||sIt'A:t,Ek:E-n	// nedre citattecken
+_“	v'EnstE-R||sIt'A:t	// vänster citat
+_”	h'Y:gE-R||sIt'A:t	// höger citat
+_‘	v'EnstE-R||apOstR'o:f	// vänster apostrof
+_’	h'Y:gE-R||apOstR'o:f	// höger apostrof
+_‚	n'e:dsE-Nkt||apOstR'o:f	// nedsänkt apostrof
+_¡	InvE-t.'e:Rat||'u-tROpst,Ek:E-n	// inverterat utropstecken
+_¿	InvE-t.'e:Rat||fR'o:gE-t,Ek:E-n	// inverterat frågetecken
+_†	k'Os.tE-k:E-n	// korstecken
+_‡	d'8bE-lk,o:s.tE-k:E-n	// dubbelkorstecken
+_‰	pRu:m'IlE-	// promille
+_′	pR'ImtE-k:E-n	// primtecken
+_″	d'8bE-lpR,ImtE-k:E-n	// dubbelprimtecken
+_±	pl'u-s||'ElE-R||m'i:nu-s	// plus eller minus
+_−	m'i:nu-s	// minus
+_µ	m'IkRu:	// mikro
+¬	n,e:gasx'u:n	// negation  (plain: ordinary reading said it before)
+_sup	8ph'Wjt||t'Il||	// upphöjt till: ² is "upphöjt till två"
+// these are named by the emoji file too, and were said twice when spelled
+_+	pl'u-s	// plus
+_°	gR'A:dE-R	// grader
+_§	paRagR'A:f	// paragraf
+_€	'EvRu:	// euro
+_£	p'8nd	// pund
+_¥	j'En	// yen
+_©	'8phOvsR,Etsymb,u:l	// upphovsrättssymbol
+_®	REjIstR'e:Rat||v'A:Ru-m,ERkE-	// registrerat varumärke
+_™	sx'ydat||v'A:Ru-m,ERkE-	// skyddat varumärke
+_×	g'ONE-R	// gånger
+_÷	di:vi:d'e:Rat||m'e:	// dividerat med
+_½	'e:n||h'alv	// en halv
+_¼	'e:n||fj'E:d.E-dE-l	// en fjärdedel
+_¾	tR'e:||fj'E:d.E-dE-l,aR	// tre fjärdedelar
 
 
 // numeric
@@ -99,10 +183,12 @@ _9X	n'ItI
 _0C	h'8ndRa
 _0M1	t'u-sEn
 _0M2	mIlj'u:nER
-_1M2	mIlj'u:n
-_0M3	bIlj'u:nER
-_1M3	bIlj'u:n
-_dpt    p'8Nkt
+_1M2	'e:n||mIlj'u:n	// en miljon
+_0M3	mIlj'A:d.ER	// miljarder
+_1M3	'e:n||mIlj'A:d.	// en miljard
+_0M4	bIlj'u:nER	// biljoner
+_1M4	'e:n||bIlj'u:n	// en biljon
+_dpt    k'Oma	// komma: 3,14 is "tre komma ett fyra"
 (1 : a)  f'Ws.ta
 (1 : e)  f'Ws.tE-
 (2 : a)  andRa

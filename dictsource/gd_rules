@@ -408,3 +408,7 @@ L02L01CC) n       n^
 .group z
         z        z
 
+// other characters: the minus sign before a number
+.group
+    __) - (_D      m'inus
+

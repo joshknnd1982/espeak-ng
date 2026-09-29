@@ -11,36 +11,42 @@
 // Letters
 //========
 
-_a	O:
-_b	be:
-_c	tse:
-_d	de:
+a	O:
+b	be:
+c	tse:
+d	de:
 _e	e:
-_f	Ef
-_g	ge:
-_h	hO:
-_i	i:
-_j	jVt
-_k	kO:
-_l	El
+f	Ef
+g	ge:
+h	hO:
+i	i:
+j	jVt
+k	kO:
+l	El
 _m	Em
+m	Em $atend	// the letter alone; as a word it is the article written with an apostrophe
 _n	En
-_o	o:
-_p	pe:
-_q	ku:
-_r	E@
+n	En $atend	// the letter alone; as a word it is the article written with an apostrophe
+o	o:
+p	pe:
+q	ku:
+r	E@
 _s	Es
-_t	te:
-_u	u:
-_v	faU
-_w	we:
-_x	Iks
-_y	'IpsIlVn
-_z	tsEt
-_ä	&:
-_ö	e:
-_ü	i:
-_ß	Es
+s	Es $atend	// the letter alone; as a word it is the article written with an apostrophe
+t	te:
+u	u:
+v	faU
+w	we:
+x	Iks
+y	'IpsIlVn
+z	tsEt
+ä	O:||'UmlaUt
+ö	o:||'UmlaUt
+ü	u:||'UmlaUt
+ß	Es'tsEt
+
+// accent names
+_dia	'UmlaUt
 
 
 // Symbols and punctuation
@@ -65,17 +71,17 @@ _{	gSv'aIft@||gl'am3||Uf
 _}	gSv'aIft@||gl'am3||tsu:
 _<	gle:n3
 _>	gr'e:s3
-_&	Un
-_+	plUs
-_=	glaIC
-_%	p3s'Ent
-_$	d'O:l3
-_¢	sEnt
-_£	pUnt
-_€	'OIro:
-_°	grO:t
-_#	n'Um3
-_@	&t
+&	Un
++	plUs
+=	glaIC
+%	p3s'Ent
+$	d'O:l3
+¢	sEnt
+£	pUnt
+€	'OIro:
+°	grO:t
+#	n'Um3
+@	&t
 _*	StErn
 _|	StrIC
 _~	t'Ild@
@@ -84,6 +90,20 @@ _`	gr'O:v
 _\	b'akSl&S
 _«	'anfu:rUNstse:C@
 _»	'anfu:rUNstse:C@||tsu:
+_‐	b'InStrIC@
+_‑	b'InStrIC@
+_–	g@d'aNk@StrIC	// Gedankestrich
+_—	g@d'aNk@StrIC
+_…	p'UNkt||p'UNkt||p'UNkt	// Punkt Punkt Punkt
+_“	tsi:t'O:t||'Uf	// Zitaat uff
+_”	tsi:t'O:t||tsu:	// Zitaat zu
+_„	tsi:t'O:t||'Un@	// Zitaat unne
+_‘	apo:str'Of||'Uf	// Apostroff uff
+_’	apo:str'Of	// Apostroff
+_‚	apo:str'Of||'Un@	// Apostroff unne
+−	m'i:nUs	// minus
+±	pl'Us||m'i:nUs	// plus minus
+×	m'o:l	// mol: zwee mol drei
 
 _#32	le:rtse:C@
 _??	s'Imbo:l
@@ -161,6 +181,7 @@ es	@s	$u
 en	@n	$u
 'n	n	$u
 e	@	$u
+e	e:	$atend	// the letter alone
 em	@m	$u
 'm	m	$u
 de	d@	$u

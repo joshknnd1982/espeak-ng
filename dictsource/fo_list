@@ -53,10 +53,18 @@ _3C  Trui:||h'undra
 _4C  fuirr#||h'undra
 _8C  'aUt||h'undra
 _0M1  t%3W:sUn
-_0M2  mIlj%OW:n
+_0M2  m'IljO,W:nIr	// milliónir
 _1M2  eI:n||mIlj%OW:n
 _2M2  tv%EA:r||mIlj%OW:nIr
 _3M2  tr%UJd:Zar||mIlj%OW:nIr
+_0M3  m'IljArDIr	// milliardir
+_1M3  eI:n||m'IljArD	// ein milliard
+_2M3  tv%EA:r||m'IljArDIr	// tvær milliardir
+_3M3  tr%UJd:Zar||m'IljArDIr
+_0M4  b'IljO,W:nIr	// billiónir
+_1M4  eI:n||b'IljO,W:n	// ein billión
+_2M4  tv%EA:r||b'IljO,W:nIr
+_3M4  tr%UJd:Zar||b'IljO,W:nIr
 _dpt	_k,Omma_
 _0and  u-o
 
@@ -64,6 +72,75 @@ _cap	sd'oUrr#d
 _??	t'aUghn#
 
 // Characters
+_.	p'UNktUm	// punktum
+_,	k'Omma	// komma
+_;	s'e:mik,o:lOn	// semikolon
+_:	k'o:lOn	// kolon
+_!	r'OU:bIt,Ekn	// rópitekn
+_?	sb'Urnart,Ekn	// spurnartekn
+_'	,apostr'O:fa	// apostrofa
+_"	g'OA:sar,EJ:jU	// gásareygu
+_(	kl'omba||b'irjar	// klomba byrjar
+_)	kl'omba||'Endar	// klomba endar
+_[	h'odnkl,omba||b'irjar	// hornklomba byrjar
+_]	h'odnkl,omba||'Endar	// hornklomba endar
+_{	p'urlukl,omba||b'irjar	// purluklomba byrjar
+_}	p'urlukl,omba||'Endar	// purluklomba endar
+_<	m'Inn,I||'Enn	// minni enn
+_>	sd'9rr,I||'Enn	// størri enn
+_-	b'IndIsdr,i:ga	// bindistrika
+_‐	b'IndIsdr,i:ga
+_‑	b'IndIsdr,i:ga
+_–	t'ANkasdr,i:ga	// tankastrika
+_—	l'ONg||t'ANkasdr,i:ga	// long tankastrika
+_―	v'annr9Hd||sdr'i:ga	// vatnrøtt strika
+_…	E:ll'I:psa	// ellipsa
+/	sgr'OA:sdr,i:ga	// skrástrika
+\	b'akskOA:k	// bakskák
+__	l'OA:||sdr'i:ga	// lág strika
+_|	l'Od:r9Hd||sdr'i:ga	// loddrøtt strika
+@	k'Urla	// kurla
+#	tv'uikr,Ossm,E:rtjI	// tvíkrossmerki
+%	pr'O:sEnt	// prosent
+_^	tv'uibr,odUr	// tvíbroddur
+&	'O:	// og
+*	asde:r'IsgUr	// asteriskur
++	pl'Us:	// pluss
+=	j'avnam,E:rtjI	// javnamerki
+~	t'I:lda	// tilda
+_`	b'akbr,odUr	// bakbroddur
+_´	fr'ambr,odUr	// frambroddur
+_¨	tv'uipr,I:kkUr	// tvíprikkur
+_°	sd'i:	// stig
+_§	br'o:d	// brot
+_•	p'UNkt	// punkt
+_·	m'Ivpr,I:kkUr	// miðprikkur
+_€	'Evra	// evra
+_£	sd'E:rlIngs,pUnd	// sterlingspund
+_¥	j'E:nn	// jenn
+_¢	s'E:ntUr	// sentur
+_©	'UHb:h,EA:vsr,aHd:Ur	// upphavsrættur
+_®	sgr'OA:s,EHd:	// skrásett
+_«	v'Insdra||s'Erl,i:||g'OA:sar,EJ:jU	// vinstra serlig gásareygu
+_»	h'9gra||s'Erl,i:||g'OA:sar,EJ:jU	// høgra serlig gásareygu
+_„	l'OA:||h'9gra||g'OA:sar,EJ:jU	// lág høgra gásareygu
+_“	v'Insdra||g'OA:sar,EJ:jU	// vinstra gásareygu
+_”	h'9gra||g'OA:sar,EJ:jU	// høgra gásareygu
+_‘	v'Insdra||,apostr'O:fa	// vinstra apostrofa
+_’	h'9gra||,apostr'O:fa	// høgra apostrofa
+_‚	l'OA:||h'9gra||,apostr'O:fa	// lág høgra apostrofa
+_¡	'2:vUHd||r'OU:bIt,Ekn	// øvut rópitekn
+_¿	'2:vUHd||sb'Urnart,Ekn	// øvut spurnartekn
+_†	kr'OssUr	// krossur
+_‡	d'u:bULdUr||kr'OssUr	// dupultur krossur
+_‰	pr'omIll,a	// promilla
+_×	f'aldIngarm,E:rtjI	// faldingarmerki
+_÷	b'uitIngarm,E:rtjI	// býtingarmerki
+±	pl'Us:||m'i:nUs	// pluss minus
+_−	m'i:nUsm,E:rtjI	// minusmerki
+_µ	m'I:krO	// mikro
+¬	n'E:gasj,OU:n	// negasjón
+_sup	h'OA:skrIft||	// háskrift: ² is "háskrift tvey"
 
 
 // abbreviations
@@ -309,20 +386,20 @@ aftur      $u+      // backwards
 
 // character names
 //****************
-_á   ua:
+_á   'OA:	// á
 á    ua:  $atend
 b    bE:
 c    sE:
 d    dE:
-ð    E:D
+ð    'Ed:	// edd
 f    Ef
 g    gE:
-h    ho'a:
+h    h'OA:	// há
 i    i:
-_í   ui:
+_í   f'Ir:a||'Ui:	// fyrra í
 í    ui:   $atend
-j    j'O:D
-k    k'@a:
+j    j'Od:	// jodd
+k    k'OA:	// ká
 l    El
 m    Em
 n    En
@@ -331,15 +408,33 @@ q    ku:
 r    Er:
 s    Es:
 t    tE:
-ú    e'u
+ú    '8u:	// ú
 v    vE:
 w    tv'uivE:
 x    E:xs
-_y    'yfsilOn||,I:
-_ý    'yfsilOn||,i:
-y    'yfsilOn||,I:  $atend
-ý    'yfsilOn||,i:  $atend
+_y    s'aItna||'i:	// seinna i
+_ý    s'aItna||'Ui:	// seinna í
+y    s'aItna||'i:  $atend
+ý    s'aItna||'Ui:  $atend
 z    sE:ta
+// the vowels, named when a word is spelled (alone, a vowel is read as its sound, as before)
+_a    f'Ir:a||'EA:	// fyrra a
+_æ    s'aItna||'EA:	// seinna a
+_i    f'Ir:a||'i:	// fyrra i
+_e    'e:
+_o    'o:
+_ó    'OU:
+_u    'u:
+_ø    'W:
+_g    g'e:	// ge: the entry g further down is the unit gram
+xz    E:xs	// the letter x alone: the rules make xz of x
+
+// accent names (CLDR Faroese: frambroddur, bakbroddur, tvíbroddur, tvíprikkur, tilda), said after the letter
+_acu	vi:||fr'ambr,odI	// við frambroddi
+_grv	vi:||b'akbr,odI	// við bakbroddi
+_cir	vi:||tv'uibr,odI	// við tvíbroddi
+_dia	vi:||tv'uipr,I:ktjI	// við tvíprikki
+_tld	vi:||t'I:ldU	// við tildu
 þ    T'Ordn#
 
 
@@ -228184,7 +228279,7 @@ tombola	t%Ombola
 vetrarfrí	f%o:
 samans	s%EA:mans
 fo	%Ef:o
-g	m%Il:Ime:dUr
+g	gr'am:	// gramm
 kg	k%i:lo
 km	k%i:lome:drar
 cm	nIs%an

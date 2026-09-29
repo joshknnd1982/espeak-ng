@@ -68,6 +68,7 @@ a	eI	$atend
 // accent table when speaking the name of the character.
 à	$accent $atend  // this can be a word
 á	$accent $atend
+_à	$accent
 ç	$accent
 é	$accent
 ê	$accent
@@ -137,6 +138,8 @@ _,	k0m@
 _-	h,aIf@n
 ?3 _-	daS
 _.	d0t
+?3 _.	pi@rI@d
+_.p	f,Ul||st'0p
 ?3_.p	pi@rI@d
 _:	koUl@n
 _;	sEmIk'oUl@n
@@ -5718,54 +5721,55 @@ virile		$alt2
 
 
 // Shavian (phonemic alphabet for English)
-// Community Shavian letter names
-𐑐	p'In
-𐑚	b'El
-_𐑑	t'an
-𐑛	d'Vn
-𐑒	k'i:
-𐑜	g'Il
-_𐑓	f'eI
-_𐑝	v'aI
-𐑔	T'O@n
-_𐑞	D'aU
-𐑕	s'i:
-𐑟	z'u:
-𐑖	S'aI
-𐑠	Z'oU
-𐑗	tS'A:
-𐑡	dZ'OI
-𐑘	j'En
-_𐑢	w'eI
-𐑙	s'0N
-𐑣	h'u:
-𐑤	l'am
-𐑮	r'oU
-𐑥	m'i:
-_𐑯	n'aU
-𐑦	'In
-𐑰	'i:v
-𐑧	'EdZ
-𐑱	'eIm
-𐑨	'aS
-_𐑲	'aIz
-_𐑩	@g'oU
-𐑳	'Vp
-𐑪	'0n
-_𐑴	'oUT
-𐑫	'Umf
-_𐑵	'u:z
-𐑬	'aUns
-𐑶	'OIl
-𐑭	'A:mz
-𐑷	'O:t
-_𐑸	'a:ri;@
-_𐑹	'O:r@
-𐑻	'3:rlI
-𐑼	@r'eI
-_𐑽	'i@3ri
-𐑾	'i:;@n
-_𐑿	j'u:l
+// The names of the letters of the Shaw alphabet: peep, bib, tot, dead, kick, gag ...
+𐑐	p'i:p	// peep
+𐑚	b'Ib	// bib
+_𐑑	t'0t	// tot
+𐑛	d'Ed	// dead
+𐑒	k'Ik	// kick
+𐑜	g'ag	// gag
+_𐑓	f'i:	// fee
+_𐑝	v'aU	// vow
+𐑔	T'aI	// thigh
+_𐑞	D'eI	// they
+𐑕	s'oU	// so
+𐑟	z'u:	// zoo
+𐑖	S'U@	// sure
+𐑠	m'EZ3	// measure
+𐑗	tS'3:tS	// church
+𐑡	dZ'VdZ	// judge
+𐑘	j'eI	// yea
+_𐑢	w'oU	// woe
+𐑙	h'VN	// hung
+𐑣	h,A:h'A:	// ha-ha
+𐑤	l'0l	// loll
+𐑮	r'o@	// roar
+𐑥	m'aIm	// mime
+_𐑯	n'Vn	// nun
+𐑦	'If	// if
+𐑰	'i:t	// eat
+𐑧	'Eg	// egg
+𐑱	'eIdZ	// age
+𐑨	'aS	// ash
+_𐑲	'aIs	// ice
+_𐑩	a#d'u:	// ado
+𐑳	'Vp	// up
+𐑪	'0n	// on
+_𐑴	'oUk	// oak
+𐑫	w'Ul	// wool
+_𐑵	'u:z	// ooze
+𐑬	'aUt	// out
+𐑶	'OIl	// oil
+𐑭	'A:	// ah
+𐑷	'O:	// awe
+_𐑸	'A@	// are
+_𐑹	'O@	// or
+𐑻	'3:	// err
+𐑼	a#r'eI	// array
+_𐑽	'i@3	// ear
+𐑾	'i:;@n	// ian
+_𐑿	j'u:	// yew
+𐑺	'e@	// air
 
 // Shavian short forms and single letter words
 𐑩	$nounf

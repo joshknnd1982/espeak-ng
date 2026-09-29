@@ -59,6 +59,7 @@ o         o@
 p         pe@
 q         ky
 //r         &r
+_r         &r
 s         Es
 t         te@
 _u         y
@@ -67,7 +68,9 @@ w         ve@
 x         Eks
 y         eI
 z         zEd
+à         A:	// the word, as in "5 à 6"; alone or at the end of a clause it is the letter (next line)
 à         $accent $atend
+_à         $accent
 á         $accent
 ä         $accent
 è         $accent
@@ -86,6 +89,9 @@ z         zEd
 û         $accent
 ü         $accent
 ý         $accent
+ñ         $accent	// tilde n
+ŉ         @ $u	// the article 'n written as one character
+_ŉ         t'Ik||En
 
 _cap	h'o@flEt@r
 _??	s@mb'o@l
@@ -140,6 +146,47 @@ _>	x2ro@t@r_|as
 /	stre@p	$max3
 @	beI_:
 \	trystre@p
+¢	sEnt
+
+// names of the other marks, said when a text is read character by character
+// (aandagstreep, ellips, kappie, kolpunt; the rest as CLDR names them in Afrikaans)
+_.	p'Wnt
+_–	'A:ndax2str,e@p	// aandagstreep
+_—	'Emstr,e@p	// em-streep
+_―	ho@risOnt'A:l@||b'alk	// horisontale balk
+_‐	kOp@lte@k@n	// koppelteken
+_‑	kOp@lte@k@n
+_…	El'Ips	// ellips
+_^	k'api	// kappie
+_`	x2raf,Isaks'Ent	// gravisaksent
+_´	ak,ytaks'Ent	// akuutaksent
+_¨	d'e@lte@k@n	// deelteken
+_•	k'OlpWnt	// kolpunt
+_·	m'Id@lk,Ol	// middelkol
+_“	l'INk@r||'A:nhA:lINst,e@k@n	// linkeraanhalingsteken
+_”	r'&x2t@r||'A:nhA:lINst,e@k@n	// regteraanhalingsteken
+_„	'On@rst@||'A:nhA:lINst,e@k@n	// onderste aanhalingsteken
+_‘	ap'Ostro@f||l'INks	// apostroof links
+_’	ap'Ostro@f||r'&x2s	// apostroof regs
+_‚	'On@rst@||ap'Ostro@f	// onderste apostroof
+_«	l'INks||gij@m'E	// links-guillemet
+_»	r'&x2s||gij@m'E	// regs-guillemet
+_¡	'Omx2@k,e@rd@||'Yytrupt,e@k@n	// omgekeerde uitroepteken
+_¿	'Omx2@k,e@rd@||fr'A:x2te@k@n	// omgekeerde vraagteken
+_†	d'Olkte@k@n	// dolkteken
+_‡	d'Wb@l||d'Olkte@k@n	// dubbeldolkteken
+_‰	p&rm'Il@	// permille
+_′	pr'im	// priem
+_″	d'Wb@lpr,im	// dubbelpriem
+_−	m'inWs	// minus
+_©	kup'ir&x2	// kopiereg
+_®	r@x2Istr'A:sim,&rk	// registrasiemerk
+_™	h'and@lsm,&rk	// handelsmerk
+_!	'Yytrupt,e@k@n	// uitroepteken (the rule in af_rules says "eitroep")
+_‹	'ENk@l||l'INks||gij@m'E	// enkel links-guillemet
+_›	'ENk@l||r'&x2s||gij@m'E	// enkel regs-guillemet
+¬	n@x2'e@r@N	// negering (ordinary reading said it in English)
+_sup	b'o@skrIf||	// boskrif: ² is "boskrif twee"
 
 ¥	jEn
 §	afde@l@N
@@ -195,8 +242,9 @@ _0C     'hOn@rt
 _0M1    'd'Yys@nt
 _0M2    mIlj'un
 _0M3     mIlj'art
+_0M4    bIlj'un	// biljoen, 10^12 (the long scale)
 _0and   _!En
-_dpt    'pWnt
+_dpt    k'Oma
 _roman  rum'eIns@   
 
 // ordinal numbers

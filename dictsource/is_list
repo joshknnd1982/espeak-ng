@@ -47,11 +47,18 @@ _2C  tv'W:||h'ynd@-RyD
 _3C  Tr#j'u:||h'ynd@-RyD
 _4C  fj'W:Qyrr#||h'ynd@-RyD
 _0M1  T'u:synd
-_0M2  m'IdljoUn
+_0M2  m'IdljoUnIrr#	// milljónir
 _1M2  eI:n||m'IdljoUn
-_2M2  tv'aI:rr#||m'IdljoUn
-_3M2  Tr#j'aU:rr#||m'IdljoUn
-_4M2  fj'oU:*arr#||m'IdljoUn
+_2M2  tv'aI:rr#||m'IdljoUnIrr#	// tvær milljónir
+_3M2  Tr#j'aU:rr#||m'IdljoUnIrr#
+_4M2  fj'oU:*arr#||m'IdljoUnIrr#
+_0M3  m'IdljarDarr#	// milljarðar
+_1M3  'eIdn||m'IdljarDyrr#	// einn milljarður
+_0M4  b'IdljoUnIrr#	// billjónir
+_1M4  eI:n||b'IdljoUn	// ein billjón
+_2M4  tv'aI:rr#||b'IdljoUnIrr#
+_3M4  Tr#j'aU:rr#||b'IdljoUnIrr#
+_4M4  fj'oU:*arr#||b'IdljoUnIrr#
 _dpt	_k,Omma_
 _0and  O:Q
 
@@ -83,6 +90,56 @@ _.	p'uN#hgdyrr#
 _,	k'Omma
 _;	s'E:mik,Omma
 _:	dv'i:puN#hgdyrr#
+_'	'urr#fEdl,iNgaRm,Err#JI	// úrfellingarmerki
+_‐	b'andsdrr#Ig	// bandstrik
+_‑	b'andsdrr#Ig
+_–	t'Ilsd@-RIg	// tilstrik
+_—	T'aUN#hgasd@-RIg	// þankastrik
+_―	l'aU:*RjEhd||R2'Wnd	// lárétt rönd
+_…	p'uN#hgdyrr#||p'uN#hgdyrr#||p'uN#hgdyrr#	// punktur punktur punktur
+_|	l'oUD@-RjEhd||l'i:na	// lóðrétt lína
+_@	v'Isdm,Err#JI	// vistmerki
+@	C'aU:	// hjá, in an address (ordinary reading said "at" in English)
+%	p@-R'oU:sEn#d	// prósent (ordinary reading said it in English)
+_^	h'ahdyrr#	// hattur
+*	sdj'aRdn#a	// stjarna (ordinary reading said it in English)
+~	t'Ilda	// tilda (ordinary reading said it in English)
+_`	,Wf'y:Qyrr#||b@-R'Odyrr#	// öfugur broddur
+_´	f@-R'amb@-ROdyrr#	// frambroddur
+_¨	tv'i:dE:bItl#	// tvídepill
+_°	g@-R'aU:Da	// gráða
+_§	k'ablam,Err#JI	// kaflamerki
+_¶	'Ebhn#Isg@-R,eInaRm,Err#JI	// efnisgreinarmerki
+_•	'yhbdaln,iNgaRm,Err#JI	// upptalningarmerki
+_·	m'IDjyd,E:bItl#	// miðjudepill
+_£	p'ynd	// pund
+_¥	j'E:n	// jen
+_¢	s'En#d	// sent
+_€	'Ev@-Ra	// evra
+_«	f@-R'ansgarr#||J'aI:sal,ahbIrr#||v'Insd@-RI	// franskar gæsalappir vinstri
+_»	f@-R'ansgarr#||J'aI:sal,ahbIrr#||h'aIQ@-RI	// franskar gæsalappir hægri
+_„	l'aUxsdaID||J'aI:salWhb	// lágstæð gæsalöpp
+_“	J'aI:sal,ahbIrr#||'Obhn#asd	// gæsalappir opnast
+_”	J'aI:sal,ahbIrr#||l'O:gasd	// gæsalappir lokast
+_‘	v'Insd@-Ra||h'Wg	// vinstra högg
+_’	h'aIQ@-Ra||h'Wg	// hægra högg
+_‚	l'aUxsdaIhd||h'aIQ@-Ra||h'Wg	// lágstætt hægra högg
+_¡	,Wf'yxd||'yhbhr#oUb,ynaRm,Err#JI	// öfugt upphrópunarmerki
+_¿	,Wf'yxd||sb'yRdn#iNg,aRmErr#JI	// öfugt spurningarmerki
+_†	'u:*REld,iNgaRm,Err#JI	// úreldingarmerki
+_‡	tv'W:val#d||'u:*REld,iNgaRm,Err#JI	// tvöfalt úreldingarmerki
+_‰	p@-R'oU:mItl#	// prómill
+_′	m'i:nud,ymErr#JI	// mínútumerki
+_″	tv'i:hWg	// tvíhögg
+_×	s'Innym	// sinnum
+_÷	d'eI:liNg,aRmErr#JI	// deilingarmerki
+±	pl'u:s||m'i:nys	// plús mínus (ordinary reading said it in English)
+_−	m'i:nysm,Err#JI	// mínusmerki
+_µ	m'i:g@-RoU	// míkró
+¬	n'eI:dyn	// neitun (ordinary reading said it in English)
+_©	h'W:vynd,aR*RjEhd,aRmErr#JI	// höfundarréttarmerki
+_®	sg@-R'aU:D||v'W:*Rym,Err#JI	// skráð vörumerki
+_™	sg@-R'aU:sEhd||v'W:*Rym,Err#JI	// skrásett vörumerki
 
 // abbreviations
 
@@ -407,6 +464,35 @@ y    'yfsilOn||,I:  $atend
 ý    'yfsilOn||,i:  $atend
 z    sE:ta
 þ    T'Ordn#
+a    a:
+e    E:
+é    jE:
+i    I:
+o    O:
+ó    oU:
+u    y:
+ú    u:
+æ    aI:
+ö    W:
+xz   E:xs	// the letter x alone: the rules make xz of x
+ø    d'anstd||'W:	// danskt ö
+
+// The accents of the letters of other languages (Íslensk táknaheiti), said after
+// the name of the letter: a með tvídepli, e með bakbroddi, c með krók ...
+_acu	mE:D||b@-R'OdI	// með broddi
+_grv	mE:D||b'agb@-ROdI	// með bakbroddi
+_cir	mE:D||h'ahdI	// með hatti
+_dia	mE:D||tv'i:dEblI	// með tvídepli
+_tld	mE:D||b'IlJy	// með bylgju
+_ced	mE:D||g@-R'oU:g	// með krók
+_hac	mE:D||g@-R'i:;y	// með kríu
+_brv	mE:D||sg'aU:l#	// með skál
+_mcn	mE:D||R2'aU:	// með rá
+_ogo	mE:D||l'Ihcy	// með lykkju
+_rng	mE:D||hr#'iNg	// með hring
+_stk	mE:D||Tv'Err#sd@-RIJI	// með þverstriki
+_dot	mE:D||d'EblI	// með depli
+_ac2	mE:D||tv'ib@-ROdI	// með tvíbroddi
 
 
 // MAIN WORD DICTIONARY

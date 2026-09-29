@@ -68,6 +68,10 @@ _0M1      t'u-:s@n
 _1M1      'Et||t'u-:s@n
 _0M2      m'Illi:;,u:n@R
 _1M2      'e:n||m'Illi:;,u:n
+_0M3      m'Illi:;,A:Rd@R	// milliarder
+_1M3      'e:n||m'Illi:;,A:Rd	// en milliard
+_0M4      b'Illi:;,u:n@R	// billioner
+_1M4      'e:n||b'Illi:;,u:n	// en billion
 
 _0and     u:g
 _dpt      kOmmA
@@ -130,19 +134,85 @@ _]	h'YyRa#||h'A:ke:paRaNt'e:s
 ^	sIRku-mflEks
 __	u-ndaRStR@k
 _`	'OmvEndt||ApUstR'u:f
+_{	v'EnstRa#||kl'Amma#	// venstre klamme
+_}	h'YyRa#||kl'Amma#	// høyre klamme
+_‐	b'InnEstR@k	// bindestrek
+_‑	b'InnEstR@k
+_–	t'ANkEstR@k	// tankestrek
+_—	l'AN||t'ANkEstR@k	// lang tankestrek
+_―	v'AnREt:||stR'e:k	// vannrett strek
+_…	pR'Ik:||pR'Ik:||pR'Ik:	// prikk prikk prikk
+_|	vERti:k'A:l||stR'e:k	// vertikal strek
+~	t'Ilda#	// tilde (plain: ordinary reading said it before, in English)
+_´	A:'ku-t:||Aks'AN	// akutt aksent
+_¨	tR'e:mA	// trema
+_°	gR'A:d@R	// grader
+_§	paRAgR'A:f	// paragraf
+_¶	'AvsnIt:st,ENn	// avsnittstegn
+_•	p'u-Nkt	// punkt
+_·	m'IdtstIlt||p'u-Nkt	// midtstilt punkt
+_£	p'u-nn	// pund
+_¥	j'En	// yen
+_¢	s'Ent	// cent
+_¤	vAl'u-:tAsymb,u:l	// valutasymbol
+_©	k'OpiR,Ajt	// copyright
+_®	REgIstR'e:Rt||v'A:R@m,aRk@	// registrert varemerke
+_™	v'A:R@m,aRk@	// varemerke
+_€	'Eu-Ru	// euro
+_«	v'EnstRa#||'AnfWRS,ElstENn	// venstre anførselstegn
+_»	h'YyRa#||'AnfWRS,ElstENn	// høyre anførselstegn
+_„	l'Avt||v'EnstRa#||'AnfWRS,ElstENn	// lavt venstre anførselstegn
+_“	v'EnstRa#||sIt'A:t	// venstre sitat
+_”	h'YyRa#||sIt'A:t	// høyre sitat
+_‘	v'EnstRa#||ApUstR'u:f	// venstre apostrof
+_’	h'YyRa#||ApUstR'u:f	// høyre apostrof
+_‚	'ENkElt||l'Avt||'AnfWRS,ElstENn	// enkelt lavt anførselstegn
+_¡	'Op:n'e:d||'u-tROpst,ENn	// opp-ned utropstegn
+_¿	'Op:n'e:d||sp'WRSmOlst,ENn	// opp-ned spørsmålstegn
+_†	k'ORStENn	// korstegn
+_‡	d'Ob:@ltk,ORStENn	// dobbeltkorstegn
+_‰	pRu:m'Il@	// promille
+_′	pR'ImtENn	// primtegn
+_″	d'Ob:Elt||pR'ImtENn	// dobbelt primtegn
+_×	g'AN@R	// ganger
+_÷	d'Elt||p'o:	// delt på
+±	pl'u-s||'Ell@R||m'i:nu-:s	// pluss eller minus  (plain: ordinary reading said it before)
+_−	m'i:nu-:s	// minus
+_µ	m'IkRu:	// mikro
+½	'e:n||h'Al	// en halv  (plain: ordinary reading said it before)
+¼	'e:n||kv'ARt	// en kvart  (plain: ordinary reading said it before)
+_¾	tR'e:||kv'ARt	// tre kvart
+¬	nEgAS'u:n	// negasjon  (plain: ordinary reading said it before)
+_sup	h'e:v@t||	// hevet: ² is "hevet to"
 
 _#09	tA:b
 _#32	mEllOmRu:m
 
 _acu	A:'ku-t:
-_ced	s'e:dIlla#
+_ced	sed'Ilja#	// cedille
 _cir	s'IRku-mflEks
 _dia	tR'e:mA
 _grv	gR'A:vi:s
 _tld	t'Ilda#
+_lig	lIgat'u-:R	// ligatur
+_hac	h'A:ka#	// hake
+_brv	bR'e:va#	// breve
+_mcn	m'A:kROn	// makron
+_ogo	kv'Ist	// kvist
+_rng	R'IN	// ring
+_stk	stR'e:k	// strek
+_dot	pR'Ik:	// prikk
+_ac2	d'Ob@l||A:'ku-t:	// dobbel akutt
+_cap	st'u:R	// stor (bokstav)
 
 é	$accent
-ü	$accent
+ü	u-:||t'Wdl@R	// u med tødler
+ä	A:||t'Wdl@R
+ö	u:||t'Wdl@R
+à	A:	// the word, as in "5 à 6"
+_à	$accent
+ǿ	Y:||A:'ku-t:
+ǽ	a:||A:'ku-t:
 
 
 // abbreviations
@@ -287,6 +357,14 @@ _å     o:
 å      o:   $atend
 _i     i:
 i      i:   $atend
+
+// the other vowels
+e	e:
+o	u:
+u	u-:
+y	y:
+æ	a:
+ø	Y:
 
 
 // English Words

@@ -11,7 +11,34 @@
 //	letter	names
 _a	a:
 _e	e:
-à	$accent	
+_t	te:
+_u	u:
+a	a:	$atend	// the letter alone; inside a sentence a is the word
+b	be:
+c	TSe:
+_d	de:
+f	Ef
+g	ge:
+h	ha:
+i	i:
+j	jot
+k	ka:
+l	El
+m	Em
+n	En
+o	o:
+p	pe:
+q	ku:
+r	Er
+_s	Es
+v	faU
+w	ve:
+x	iks
+y	'ypsilon	// Ypsilon [ˈʏpsilɔn]
+z	TSEt
+ß	EsTS'Et	// Eszett
+ç	$accent
+_à	$accent
 â							$accent
 ä							$accent
 ë	$accent
@@ -25,6 +52,15 @@ _e	e:
 ù							$accent
 û	$accent
 ü	$accent
+//	accent names: Accent aigu, Accent grave, Accent circonflexe, Ëmlaut, cédille
+_acu	akseAte:g'y:
+_grv	akseAgr'a:f
+_cir	akseAsirkoAfl'Eks
+_dia	'@EmlAUt
+_ced	sed'ij
+_tld	t'ild@E	// Tilde
+//	grouss: capital
+_cap	groUs
 //
 //	intonation
 de			$u
@@ -40,26 +76,123 @@ wéi		$u
 //	numbers
 _0	nul
 _1	e:nt
-_2	TSve:
+_2	TSwe:	// zwee [tsweː]
 _3	draI
-_4	vOIeR
+_4	f'OIeR	// véier [ˈfɜɪɐ]
 _5	f@En@Ef
 _6	zEks
-_7	si:v@En
+_7	z'i:v@En	// siwen [ˈziːvən]
 _8	a:xt
 _9	neN
 _10	TSeN
 _11	e:l@Ef
 _12	TSwiEl@Ef
+_13	dr'aITSeN	// dräizéng
+_14	f'OIeRTSeN	// véierzéng
+_15	f'ofTSeN	// fofzéng
+_16	z'iEXTSeN	// siechzéng
+_17	z'iv@EnTSeN	// siwwenzéng
+_18	'uEXTSeN	// uechtzéng
+_19	n'onTSeN	// nonzéng
 _20	TSwanTS@EX
 _30	dr@Es@EX
-_0C	honeRt
-_0M1	daUz@End
+_40	f'OIeRTS@EX	// véierzeg
+_50	f'ofTS@EX	// fofzeg
+_60	z'EXTS@EX	// sechzeg
+_70	z'iv@EnTS@EX	// siwwenzeg
+_80	'axTS@EX	// achtzeg
+_90	n'onTS@EX	// nonzeg
+//	the tens after the units: een-an-zwanzeg, een-a-véierzeg (the n of "an" is dropped before f and s).
+//	The units before tens, hundreds and thousands carry the stress: EENanzwanzeg, ZWEEhonnert
+_1a	'e:n	// een
+_2a	TSw'e:
+_3a	dr'aI
+_4a	f'OIeR
+_5a	f'@En@Ef
+_6a	z'Eks
+_7a	z'i:v@En
+_8a	'a:xt
+_9a	n'eN
+_2X	an,TSwanTS@EX
+_3X	an,dr@Es@EX
+_4X	a,fOIeRTS@EX
+_5X	a,fofTS@EX
+_6X	a,zEXTS@EX
+_7X	a,ziv@EnTS@EX
+_8X	an,axTS@EX
+_9X	an,nonTS@EX
+_1C	h'oneRt	// honnert (not "eent honnert")
+_0C	,honeRt	// honnert, after the unit that carries the stress
+_0M1	d,aUz@Ent	// dausend, after the number that carries the stress
+_1M1	d'aUz@Ent
+_1M2	'EN||milj'oUn	// eng Millioun
+_0M2	milj'oUn@En	// Milliounen
+_1M3	'EN||milj'a:rt	// eng Milliard
+_0M3	milj'a:rd@En	// Milliarden
+_1M4	'EN||bilj'oUn	// eng Billioun
+_0M4	bilj'oUn@En	// Billiounen
+_2fx	TSwoU	// zwou Milliounen
+_dpt	k'oma:	// Komma
 //
 //	punctuations
 _.	punkt
 _,	koma:
 _*	staEr
+_;	Str'eXpuNt	// Stréchpunkt
+_:	d'op@ElpuNt	// Doppelpunkt
+_!	'AUsrufTSe:X@En	// Ausruffzeechen
+_?	fr'o:TSe:X@En	// Frozeechen
+_'	ap'ostrof	// Apostroph
+_"	g'Enz@EfOIzeRXeR	// Gänseféisercher
+_(	kl'ameR||'op	// Klammer op
+_)	kl'ameR||TS'oU	// Klammer zou
+_[	'Ek@EX||kl'ameR||'op	// eckeg Klammer op
+_]	'Ek@EX||kl'ameR||TS'oU	// eckeg Klammer zou
+_<	m'aneR||vOI	// manner wéi
+_>	mOI||gr'oUs||vOI	// méi grouss wéi
+_-	b'ind@EStreX	// Bindestréch
+_‐	b'ind@EStreX
+_‑	b'ind@EStreX
+_–	g@Ed'aNk@EStreX	// Gedankestréch
+_—	g@Ed'aNk@EStreX
+_…	p'uNt||p'uNt||p'uNt	// Punkt Punkt Punkt
+/	sl'ES	// Slash (said before in English)
+\	b'EkslES	// Backslash
+__	'@EneRStreX	// Ënnerstréch
+_|	vErtik'a:l@E||Str'eX	// vertikale Stréch
+_@	'EtTSe:X@En	// At-Zeechen
+@	'Et	// ät, in an address (said before in English)
+%	proTS'Ent	// Prozent (it was said in English: 50% is "fofzeg Prozent")
+_^	d'a:x	// Daach
+=	gl'aIX	// gläich (it was said in English)
+~	t'ild@E	// Tilde
+_`	akseAgr'a:f	// Accent grave
+_´	akseAte:g'y:	// Accent aigu
+_¨	tr'e:ma:	// Trema
+_°	gr'a:t	// Grad
+_§	paragr'a:f	// Paragraf
+_¥	j'En	// Yen
+_¢	s'Ent	// Cent
+_©	k'opireIt	// Copyright
+_®	'ag@Edro:@En	// agedroen
+_™	m'ark@EnTSe:X@En	// Markenzeechen
+_“	g'Enz@EfOIzeRXeR||l'eNks	// Gänseféisercher lénks
+_”	g'Enz@EfOIzeRXeR||r'iEts	// Gänseféisercher riets
+_„	g'Enz@EfOIzeRXeR||'@En@En	// Gänseféisercher ënnen
+_‘	ap'ostrof||l'eNks	// Apostroph lénks
+_’	ap'ostrof||r'iEts	// Apostroph riets
+_‚	ap'ostrof||'@En@En	// Apostroph ënnen
+_¡	'@Emg@EdrOInt||'AUsrufTSe:X@En	// ëmgedréint Ausruffzeechen
+_¿	'@Emg@EdrOInt||fr'o:TSe:X@En	// ëmgedréint Frozeechen
+_†	d'olX	// Dolch
+_‡	d'uEb@El@En||d'olX	// duebelen Dolch
+_‰	prom'il	// Promill
+_×	m'o:l	// mol
+_÷	g@Ed'e:lt||d'u:eRX	// gedeelt duerch
+±	pl'us||m'i:nus	// plus minus
+−	m'i:nus	// Minus
+¼	@E||f'OI@Er@El	// e Véierel
+_¾	dr'aI||f'OI@Er@El	// dräi Véierel
 //
 //	abbreviations
 CSV		$abbrev
@@ -35668,3 +35801,10 @@ zypriotin	TSiprio:tin
 zypriotinnen	TSiprio:tin@En
 spadzéieren	SpadzOI@Er@En
 Stäerkste		StaEeRkst@E
+//
+//	letter names (here because the Lexikon above has entries for e, t and u)
+e	e:	$atend	// the letter alone; inside a sentence e is the article
+t	te:	$atend	// the letter alone; inside a sentence 't is the pronoun
+u	u:	$atend	// the letter alone; inside a sentence u is the preposition (u)
+d	de:	$atend	// the letter alone; inside a sentence d' is the article
+s	Es	$atend	// the letter alone; inside a sentence 's is the pronoun

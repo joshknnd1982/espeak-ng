@@ -11,8 +11,8 @@
 é	$accent
 ê	$accent
 ä	$accent
-ë	$accent
-ï	$accent
+ë	e:||tR'E:ma	// e med trema
+ï	i:||tR'E:ma	// i med trema
 ö	$accent
 ü	$accent
 č	$accent
@@ -20,23 +20,27 @@
 ş	$accent
 ž	$accent
 ñ	$accent
+// the vowels of Danish with the accent aigu that marks stress
+ǿ	W||Aks,AN||Eg'y
+ǽ	E:||Aks,AN||Eg'y
+ǻ	O:||Aks,AN||Eg'y
 
 // accent names
-_lig	ligatur
-_acu	akj'u:t
-_ac2	dV@lakj'u:t
-_brv	br'i:v
-_ced	s@d'ila
-_cir	s'3:kVmfl,Eks
+_lig	ligat'u3-
+_acu	Aks,AN||Eg'y	// accent aigu
+_ac2	d'Vb@lt||Aks,AN||Eg'y	// dobbelt accent aigu
+_brv	bR'e:v@	// breve
+_ced	sed'ilj@	// cedille
+_cir	si3-kOmfl'Eks	// cirkumfleks
 _dia	'omlyd
-_dot	wiDd'0tabVv
-_grv	aks'aN gr'a:v
+_dot	pR'Ek	// prik
+_grv	Aks,AN||gR'A:v	// accent grave
 _hac	h'atS,Ek
-_mcn	m'akr,0n
+_mcn	m'AkROn	// macron
 _ogo	'0g0n,Ek
-_rng	ring
-_stk	str'ouk
-_tld	tild@
+_rng	b'Vl@	// bolle, as in bolle-å
+_stk	stR'aI	// streg
+_tld	t'ild@	// tilde
 
 _smc	sm'O:lk,ap
 _rev	riv'3:sd
@@ -52,7 +56,7 @@ _cap	stoVt||boustaw
 _?A	boustaw
 _??	symbol
 _#9	tab
-_#32	blank
+_#32	m'?El@-mR?Om	// mellemrum
 
 *	'&sd@-r,isg	$max3
 %	pRos'End	$max3
@@ -278,6 +282,9 @@ x	Eks
 y	y
 z	sEt
 ø   W
+_a	&:
+_æ	E:
+_å	O:
 
 // PB English words
 bondage      _^_EN
@@ -11388,3 +11395,57 @@ nå nV $atstart // PB Nå, der er du
 (de her) d'i||her
 (de der) d'i||der
 (gå på af) gO||p'O||&
+//
+// Names of punctuation marks and symbols, said when a text is read character by character
+// (as NVDA and CLDR name them in Danish). They are at the end of the file because lines in
+// rules format further up ("_) stone" and others) define _) by mistake; the last entry wins.
+_"	'&nf?W3-s@-lst,?Ajn	// anførselstegn
+_(	v'?enstR?V||pAR&nt'e:?s	// venstre parentes
+_)	h'?VjR?V||pAR&nt'e:?s	// højre parentes
+_[	v'?enstR?V||f'?i3-k?&nt@-D||pAR&nt'e:?s	// venstre firkantet parentes
+_]	h'?VjR?V||f'?i3-k?&nt@-D||pAR&nt'e:?s	// højre firkantet parentes
+_{	v'?enstR?V||t'?ubO:w	// venstre tuborg
+_}	h'?VjR?V||t'?ubO:w	// højre tuborg
+_<	m'?endR?V||'?En	// mindre end
+_>	st'?W3-?V||'?En	// større end
+_‐	bin@-sdrAi	// bindestreg
+_‑	bin@-sdrAi
+_–	k'?O:t||t'?Ank?EstR,aI	// kort tankestreg
+_—	l'?AN||t'?Ank?EstR,aI	// lang tankestreg
+_―	v'?Andr?VD||stR'aI	// vandret streg
+_…	pR'?ek||pR'?ek||pR'?ek	// prik prik prik
+_|	l'VDR&#t||stR'aI	// lodret streg
+_^	si3-kOmfl'Eks	// cirkumfleks
+~	t'ild@	// tilde  (plain: ordinary reading said it before)
+_`	Aks,AN||gR'A:v	// accent grave
+_´	Aks,AN||Eg'y	// accent aigu
+_¨	tR'E:ma	// trema
+_°	gR'AD?V	// grader
+_¶	'?Awsn?itst,?Ajn	// afsnitstegn
+_•	p'?ONt?Ajn	// punkttegn
+_·	'?VphVj@-D||p'?ONt?Om	// ophøjet punktum
+_«	v'?enstR?V||fR'?Ansk||'&nf?W3-s@-lst,?Ajn	// venstre fransk anførselstegn
+_»	h'?VjR?V||fR'?Ansk||'&nf?W3-s@-lst,?Ajn	// højre fransk anførselstegn
+_‹	'?Enk@-lt||v'?enstR?V||fR'?Ansk||'&nf?W3-s@-lst,?Ajn	// enkelt venstre fransk anførselstegn
+_›	'?Enk@-lt||h'?VjR?V||fR'?Ansk||'&nf?W3-s@-lst,?Ajn	// enkelt højre fransk anførselstegn
+_„	l'&vt||h'?VjR?V||'&nf?W3-s@-lst,?Ajn	// lavt højre anførselstegn
+_“	v'?enstR?V||'&nf?W3-s@-lst,?Ajn	// venstre anførselstegn
+_”	h'?VjR?V||'&nf?W3-s@-lst,?Ajn	// højre anførselstegn
+_‘	v'?enstR?V||apostr'Vf	// venstre apostrof
+_’	h'?VjR?V||apostr'Vf	// højre apostrof
+_‚	l'&v||h'?VjR?V||apostr'Vf	// lav højre apostrof
+_¡	'?Vmv?Ent||udRVbstAjn	// omvendt udråbstegn
+_¿	'?Vmv?Ent||spWrsmOlstAjn	// omvendt spørgsmålstegn
+_†	k'?O:st?Ajn	// korstegn
+_‡	d'?Vbltk?O:st,?Ajn	// dobbeltkorstegn
+_‰	pRom'il@	// promille
+±	pl'?us||m'i:nus	// plus minus  (plain: ordinary reading said it before)
+_−	m'i:nus	// minus
+¬	n,?eg?&S'?on	// negation  (plain: ordinary reading said it before)
+_¤	v?&l'?ut&t,?Ajn	// valutategn
+_¦	bR'ut||l'VDR&#t||stR'aI	// brudt lodret streg
+_sup	h'Ev@-D||	// hævet: ² is "hævet to"
+_©	kVpirAjt	// copyright (named by the emoji file too: said twice when spelled)
+_€	'?WwR?o	// euro
+_®	registr'ErVD||v'Ar@-mErk@-	// registreret varemærke
+_™	v'Ar@-mErk@-	// varemærke

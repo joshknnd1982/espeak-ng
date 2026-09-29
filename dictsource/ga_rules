@@ -627,6 +627,10 @@
 .group z
         z          _^_EN
 
+// other characters: the minus sign before a number
+.group
+    __) - (_D      m'i:n;a#s
+
 
 
 

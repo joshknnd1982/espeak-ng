@@ -33,6 +33,36 @@ w	ve:
 x	Iks
 y	EI
 z	zEt
+a	a:
+o	o:
+_u	y
+ĳ	l'AN@||'EI	// lange ij, as one character
+
+// Letters with an accent: the name of the letter and the name of the accent
+// (e accent aigu, e accent grave, e accent circonflexe, e trema, c cedille, n tilde)
+á	$accent
+é	$accent
+í	$accent
+ó	$accent
+ú	$accent
+_à	$accent
+à	a:	// the word, as in "5 à 6"
+è	$accent
+ì	$accent
+ò	$accent
+ù	$accent
+â	$accent
+ê	$accent
+î	$accent
+ô	$accent
+û	$accent
+ä	$accent
+ë	$accent
+ï	$accent
+ö	$accent
+ü	$accent
+ç	$accent
+ñ	$accent
 
 _s	Es
 s	Es	$atend
@@ -48,14 +78,14 @@ _??	s'imbo:l
 
 // accent names
 _lig	l'ixa:tyr
-_acu	'a:ix,y
-_ac2	d'8bEl'a:ixy	
+_acu	Aks,A~||te:Q'y	// accent aigu
+_ac2	d'8b@l||Aks,A~||te:Q'y	// dubbel accent aigu
 _brv	b@-*'e:v@
-_ced	s'e:dIl@
-_cir	s'IrkOnfle:ks@
-_dia	'8mlVUt
+_ced	se:d'ij@	// cedille
+_cir	Aks,A~||sIrkO~fl'Eks	// accent circonflexe
+_dia	tr'e:ma:	// trema
 _dot	p'8nt
-_grv	Q@-*'a:v@
+_grv	Aks,A~||Qr'a:f	// accent grave
 _hac	h'a:tSEk
 _mcn	m'Ak@-*On
 _ogo	'o:xo:nEk
@@ -81,8 +111,8 @@ _(	h'a:kj@_|'o:pe:n@n
 _)	h'a:kj@sl'Wyt@n
 _{	_|,Akko:l'a:d@_!'o:p@n@n
 _}	_|,Akko:l'a:d@sl'Wyt@n
-_[	r'Ext@h'a:k _!'o:p@n@n
-_]	r'Ext@ h'a:ksl'Wyt@n
+_[	r'Ext@||h'a:k||'o:p@n@n	// rechte haak openen
+_]	r'Ext@||h'a:k||sl'Wyt@n	// rechte haak sluiten
 _-	k'OpElt,e:k@n
 +	pl'8s
 *	st'E*rEt;@
@@ -118,6 +148,48 @@ _●	s'Irk@l
 ×	m'a:l
 ÷	d'e:l@nd'o:r
 
+// names of the other marks, said when a text is read character by character
+// (as CLDR and NVDA name them in Dutch). The symbols that the emoji file names
+// get a name here too: named by the emoji file alone, they are said twice when spelled.
+_‐	k'OpElt,e:k@n	// koppelteken
+_‑	k'OpElt,e:k@n
+_―	h,o:rizOnt'a:l@||b'Alk	// horizontale balk
+_«	gij@m'Et||n'a:r||l'INks	// guillemet naar links
+_»	gij@m'Et||n'a:r||r'Exts	// guillemet naar rechts
+_‹	'ENk@l@||gij@m'Et||n'a:r||l'INks	// enkele guillemet naar links
+_›	'ENk@l@||gij@m'Et||n'a:r||r'Exts	// enkele guillemet naar rechts
+_„	l'a:x||'a:nha:lInxste:k@n	// laag aanhalingsteken
+_‚	l'a:Q@||a:pOstr'Of	// lage apostrof
+_¡	,OmQ@k'Irt||'Wyt@-*upt,e:k@n	// omgekeerd uitroepteken
+_¿	,OmQ@k'Irt||v@-*'a:xte:k@n	// omgekeerd vraagteken
+_†	o:b@l'Isk	// obelisk
+_‡	d'8b@l@||o:b@l'Isk	// dubbele obelisk
+_‰	pro:m'Il@	// promille
+_′	pr'Ajm	// prime
+_″	d'8b@l@||pr'Ajm	// dubbele prime
+_´	Aks,A~||te:Q'y	// accent aigu
+_·	h'o:Q@||p'8nt	// hoge punt
+_¨	tr'e:ma:	// trema
+_°	Qr'a:d@n	// graden
+_§	s'Eksi	// sectie
+_¶	pa:ra:Qr'a:ft,e:k@n	// paragraafteken
+_+	pl'8s	// plus
+_±	pl'8smin,8s	// plusminus
+_−	m'In	// min
+_¬	ne:Q'a:tsi	// negatie
+_€	'Y:ro:	// euro
+_£	p'Ont	// pond
+_¥	j'En	// yen
+_¢	s'Ent	// cent
+_©	k'Opir,Ajt	// copyright
+_®	Q@d,e:po:n'Irt	// gedeponeerd
+_™	h'AndElsm,Erk	// handelsmerk
+_×	m'a:l	// maal
+_÷	d'e:l@n||d'o:r	// delen door
+_½	@n||h'Alf	// een half
+_¼	'e:n||v'ird@	// één vierde
+_¾	dr'i||v'ird@	// drie vierde
+
 
 // numbers
 _0	n'8l
@@ -147,7 +219,7 @@ _5X	v'EIft@x
 _6X	z'Est@x
 _7X	z'e:v@nt@x
 _8X	t'Axt@x
-_9X	n'e:g@nt@x
+_9X	n'e:Q@nt@x
 _0C	h'Ond@rt
 _0M1	d'WyzEnt
 _0M2	m'iljun
