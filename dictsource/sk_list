@@ -31,6 +31,7 @@ _o	o:
 p	pe:
 q	kve:
 r	eR
+ŕ	d,l-he:'eR
 ř	eR^
 _s	es
 š	eS
@@ -48,11 +49,12 @@ _z	zet
 ž	Zet
 
 ě	$accent
+ß	'ostRe:||'es
 
 // accent names
 _lig	l'igat,u:Rov,ane:
 _acu	s_d'l:Zn^om
-//_ac2		
+_ac2	s_dv'oma||d'l:Zn^ami
 _brv	bR'eve
 _ced	s_ts'ed;illoU
 _cir	s'ostRi;,eSkoU
@@ -108,7 +110,7 @@ _{	zloZena:||z'a:tvoRka
 _|	zvisla:||tS'iaRa
 _}	zloZena:||z'atvoRit;
 _~	vl-novka
-_ 	tvr-da:||m'edzeRa    // U+00A0  no-break-space
+_ 	tvr-da:||m'edzeRa    // U+00A0  no-break-space
 _¡	obra:t;eni:||v'i:kRitSn^i:k
 _¦	pReRuSena:||tS'iaRa
 _¨	pRehla:ska
@@ -174,6 +176,19 @@ _✔	tutSne:||z'aSkr-tnut;ie
 _➔	Si:pka||'vpRavo
 _➢	odRa:Zka||'v||tvaRe||S'i:pki
 
+// names of marks and symbols when they are spelled or read with punctuation on
+_—	d'l-ha:||p'oml-tSka	// dlhá pomlčka
+_…	tR'i||b'otki	// tri bodky
+_‹	l'omena:||z'a:tvoRka	// lomená zátvorka
+_›	l'omena:||z'atvoRit;	// lomená zatvoriť
+_№	tS'i:slo	// číslo
+_−	m'i:nus	// mínus
+_©	k'opiRajt	// kopirajt
+_®	R'egistR,ovana:||zn'a:mka	// registrovaná známka
+_™	'opxodna:||zn'a:mka	// obchodná známka
+_€	'euRo	// euro
+_°	st'upen^	// stupeň
+
 
 // Numbers
 _0    n'ula
@@ -213,7 +228,7 @@ _2M1  dv'et;'isi:ts
 _0M2  m'ilio:nou   // others, 5-9
 _0MA2 m'ilio:ni   // for 2,3,4 million
 _1M2  m'ilio:n    // for 1 million
-_0M3  m'iljaRt
+_0M3  m'ilja:Rt
 _0MA3 m'iljaRdi
 _1M3  m'iljaRda
 _2M3  dv'em'iljaRdi

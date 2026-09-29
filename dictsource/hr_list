@@ -93,6 +93,40 @@ _í	$accent
 _ó	$accent
 _ú	$accent
 
+ä	'uml&Ut||'a
+ö	'uml&Ut||'o
+ü	'uml&Ut||'u
+
+// letters with the accent marks of Serbo-Croatian accentuation (double grave, inverted breve)
+_ȁ	kr*'atkos,Il&znI||'a	// kratkosilazni a
+_ȃ	d'ugos,Il&znI||'a	// dugosilazni a
+_ȅ	kr*'atkos,Il&znI||'E	// kratkosilazni e
+_ȇ	d'ugos,Il&znI||'E	// dugosilazni e
+_ȉ	kr*'atkos,Il&znI||'i	// kratkosilazni i
+_ȋ	d'ugos,Il&znI||'i	// dugosilazni i
+_ȍ	kr*'atkos,Il&znI||'o	// kratkosilazni o
+_ȏ	d'ugos,Il&znI||'o	// dugosilazni o
+_ȕ	kr*'atkos,Il&znI||'u	// kratkosilazni u
+_ȗ	d'ugos,Il&znI||'u	// dugosilazni u
+_ȑ	kr*'atkos,Il&znI||R'@	// kratkosilazni r
+_ȓ	d'ugos,Il&znI||R'@	// dugosilazni r
+// Cyrillic е and и with the grave accent
+_ѐ	gr*'avIs||'E	// gravis e
+_ѝ	gr*'avIs||'i	// gravis i
+// the accent marks written as combining characters (as in accented Serbian Cyrillic)
+_̏	kr*'atkos,Il&znI||n'agl&s&k	// kratkosilazni naglasak U+030F
+_̑	d'ugos,Il&znI||n'agl&s&k	// dugosilazni naglasak U+0311
+_̀	kr*'atkoUzl,&znI||n'agl&s&k	// kratkouzlazni naglasak U+0300
+_́	d'ugoUzl,&znI||n'agl&s&k	// dugouzlazni naglasak U+0301
+_̄	z'an&gl,&sn&||d'uZIn&	// zanaglasna dužina U+0304
+_ß	'oStr*o||'Es	// oštro es
+// Serbian and Bosnian: akcenat (Croatian naglasak)
+?4 _̏	kr*'atkos,Il&znI||'aktsEn&t	// kratkosilazni akcenat
+?4 _̑	d'ugos,Il&znI||'aktsEn&t	// dugosilazni akcenat
+?4 _̀	kr*'atkoUzl,&znI||'aktsEn&t	// kratkouzlazni akcenat
+?4 _́	d'ugoUzl,&znI||'aktsEn&t	// dugouzlazni akcenat
+?4 _̄	p'ost&kts,En&tsk&||d'uZIn&	// postakcenatska dužina
+
 _ar	'Arapsko
 _cyr	tS;'iRilitsa
 
@@ -106,19 +140,21 @@ _ced	ts'EdIl&
 _cir	ts'iRkUmflEks
 _dia	'uml&Ut
 _dot	t'otSk&
-_grv	n'agl&s&k
+?4 _dot	t'atSk&
+_grv	gr*'avIs
 _hac	kv'atSIts&
 _mcn	m'akr**on
 _ogo	'ogonEk
-_rng	r**'iNg
-_stk	kr**'oz
+   _rng	kr*'uZItS;
+?2 _rng	p'r-stEn
+_stk	pr**'EtsR2t&no
 _tld	t'ild&
 
 
 // symbols
    _??	znak          // unknown symbol
    _?A	slovo         // unknown letter
-   _cap	k'apIt&l      // ?? use English until I find the correct word
+   _cap	v'ElIko
 
    ©	'aUtoRsk&||pr*av&
    *	zvj'ezdits&	$max3
@@ -151,7 +187,6 @@ _tld	t'ild&
 ?2 _"	n'avod
    _‚	'otvoReni||n'avodnIk
    _„	sp'uSteni||n'avodnIk
-?2 _„	z&tvoReni||n'avodnIk
    _…	tr*'i||t'otSke
 ?4 _…	tr*'i||t'atSke
    †	kr*'iZ
@@ -172,11 +207,11 @@ _tld	t'ild&
    ˘	br*'evis
    ¨	pr*'ijegl&s
 ?2 ¨	pr*'egl&s
-   _«	'otvoReni||n'avodnIk
+   _«	z'atvoReni||n'avodnIk
    _­	pr*'ivr*emen&||ts'r-t'its&
    ·	p'ut&
    ¸	sed'il&
-   _»	z'atvoReni||n'avodnIk
+   _»	'otvoReni||n'avodnIk
    ®	R'egistr*atsIj&
    ł	l@||s&||ts'r-t'itsom
    ×	p'ut&
@@ -210,17 +245,41 @@ _tld	t'ild&
 ?2 _[	'otvoRen&||'ugl&st&
    _]	z'atvoRen&||'ugl&t&
 ?2 _]	z'atvoRen&||'ugl&st&
-   __	ts'r-t&
+   __	p'odvl&k&
    _`	gr*'avis
    _{	'otvoRen&||v'ititS&st&
    _|	'okomits&
 ?2 _|	'uspR&vn&
    _}	z'atvoRen&||v'ititS&st&
 
+// names of marks and symbols when they are spelled or read with punctuation on
+// (the symbols whose only entry was in *_emoji were said twice when spelled, or cut to their first word)
+_›	z'atvoR,EnI||n'avodnIk	// zatvoreni navodnik
+_£	f'unt&	// funta
+_¥	j'en	// jen
+_¢	ts'Ent	// cent
+_№	br*'oj	// broj
+_±	pl'us||m'inUs	// plus minus
+_−	m'inUs	// minus
+_¡	pr*'Eokr*,EnUtI||'usklItSnIk	// preokrenuti uskličnik
+_¿	pr*'Eokr*,EnUtI||'upItnIk	// preokrenuti upitnik
+_ 	tvR2d'i||r*'azm&k	// tvrdi razmak U+00A0
+_©	'aUt,oRsk&||pr*'av&	// autorska prava
+_®	r*'EgIstr*,IR&no	// registrirano
+_™	z'aStItnI||zn'ak	// zaštitni znak
+_€	'EURo	// euro
+_/	k'os&||ts'r-t&	// kosa crta
+_\	'obr-nUt&||k'os&||ts'r-t&	// obrnuta kosa crta
+?2 _¡	pr*'Eokr*,EnUtI||'uzvItSnIk	// preokrenuti uzvičnik
+?2 _®	r*'EgIstr*,ov&no	// registrovano
+?2 _™	Z'ig	// žig
+?4 _€	'Evr*o	// evro
+
 
 // Numbers
    _0    n'ul&
    _1    j'ed&n
+   _1f   j'edn&
    _2    dv'a
    _2f   dv'ije
 ?2 _2f   dv'E
@@ -269,32 +328,40 @@ _tld	t'ild&
    _0M1  t'isUtS;&
    _0MA1 t'isUtS;e
    _1M1  t'isUtS;U
+   _1MA1 t'isUtS;&
 ?2 _0M1  h'il^,&d&
 ?2 _0MA1 h'il^,&de
 ?2 _1M1  h'il^,&dU
-?2 _1MA1  jedn&||hil^&d&
+?2 _1MA1 h'il^,&d&
 ?3 _0M1  h'il^ad&
 ?3 _0MA1 h'il^ade
 ?3 _1M1  h'il^adU
+?3 _1MA1 h'il^ad&
 
    _0M2  m'ilijU:na
    _0MA2 m'ilijU:na
    _1M2  m'ilijU:n
+   _1MA2 m'ilijU:n
 ?4 _0M2  m'ilijO:na
 ?4 _0MA2 m'ilijO:na
 ?4 _1M2  m'ilijO:n
+?4 _1MA2 m'ilijO:n
 
    _0M3  m'ilia:RdI
    _0MA3 m'ilia:Rde
    _1M3  m'ilia:RdU
+   _1MA3 m'ilia:Rd&
 ?2 _0M3  milijA:rdI
 ?2 _0MA3 milijA:rde
 ?2 _1M3  milijA:rdU
+?2 _1MA3 milijA:rd&
 
    _0M4  b'ilijU:na
    _1M4  b'ilijU:n
+   _1MA4 b'ilijU:n
 ?4 _0M4  b'ilijO:na
 ?4 _1M4  b'ilijO:n
+?4 _1MA4 b'ilijO:n
 
    _dpt  _:z'a*Ez_
    _roman  r*'imsko

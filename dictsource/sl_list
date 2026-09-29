@@ -45,6 +45,22 @@ y	'ipsilon
 ü	$accent
 ß	'o:stri||s'@
 
+// vowels with the accent marks of Slovenian (ostrivec, krativec, strešica)
+á	'a:||zOstR'i:wtsEm
+à	'a:||skRat'i:wtsEm
+é	'e:||zOstR'i:wtsEm
+è	'e:||skRat'i:wtsEm
+ê	'e:||sstR'e:SitsO
+í	'i:||zOstR'i:wtsEm
+ì	'i:||skRat'i:wtsEm
+ó	'o:||zOstR'i:wtsEm
+ò	'o:||skRat'i:wtsEm
+ô	'o:||sstR'e:SitsO
+ú	'u:||zOstR'i:wtsEm
+ù	'u:||skRat'i:wtsEm
+ŕ	R'@||zOstR'i:wtsEm
+ř	R'@||sklj'u:kitsO
+
 а	a:
 б	b@
 в	v@
@@ -82,6 +98,21 @@ y	'ipsilon
 
 // accent names
 _dia	spREgl'asom
+_acu	zOstR'i:wtsEm
+_grv	skRat'i:wtsEm
+_cir	sstR'e:SitsO
+_hac	sklj'u:kitsO
+_tld	st'i:ldO
+_rng	skR'o:StsEm	// s krožcem
+_ced	stsEd'i:ljO	// s cediljo
+_dot	s||p'i:kO	// s piko
+_ac2	zdv#'o:jnim||OstR'i:wtsEm	// z dvojnim ostrivcem
+_ogo	zOg'O:NkOm	// z ogonkom
+_mcn	zmakR'O:nOm	// z makronom
+_lig	ligat'u:Ra	// ligatura
+
+// character names
+_cap	vEl'i:ki
 
 // languages
 _cyr	tsiR'i:litSni
@@ -103,9 +134,9 @@ _!	klic'a:j
 _?	upRaS'a:j
 _"	naREkOv'a:j
 _'	En'o:jni||naREkOv'a:j
-_`	OstR'i:vEts
+_`	kRat'i:vEts
 _,	v'e:jitsa
-_-	pOS'e:wnitsa
+_-	vEz'a:j
 _:	dv#'o:p'i:tSjE
 _;	p'Odp'i:tSjE
 _(	OklEp'a:j
@@ -119,6 +150,46 @@ __	pOttS@Rt'a:j
 _<	jE||m'a:njSe
 _>	jE||v'etSjE
 _|	nawp'i:tSna||tS'@Rta
+
+// names of marks and symbols when they are spelled or read with punctuation on
+_^	stR'e:Sitsa	// strešica
+_~	t'i:lda	// tilda
+_«	l'e:vi||dv#'o:jni||naREkOv'a:j	// levi dvojni narekovaj
+_»	d'e:sni||dv#'o:jni||naREkOv'a:j	// desni dvojni narekovaj
+_‹	l'e:vi||En'o:jni||naREkOv'a:j	// levi enojni narekovaj
+_›	d'e:sni||En'o:jni||naREkOv'a:j	// desni enojni narekovaj
+_„	sp'o:dn^i||naREkOv'a:j	// spodnji narekovaj
+_“	zg'o:Rn^i||naREkOv'a:j	// zgornji narekovaj
+_”	k'o:ntSni||naREkOv'a:j	// končni narekovaj
+_‚	En'o:jni||sp'o:dn^i||naREkOv'a:j	// enojni spodnji narekovaj
+_‘	En'o:jni||zg'o:Rn^i||naREkOv'a:j	// enojni zgornji narekovaj
+_’	OpuStS'a:j	// opuščaj
+_–	pOmiSlj'a:j	// pomišljaj
+_—	d'o:wgi||pOmiSlj'a:j	// dolgi pomišljaj
+_·	sREd'i:nska||p'i:ka	// sredinska pika
+_•	kR'o:glitsa	// kroglica
+_§	paR'a:gRaf	// paragraf
+_°	stOp'i:nja	// stopinja
+_©	awt'o:RskE||pRav'i:tsE	// avtorske pravice
+_®	REgistR'i:RanO	// registrirano
+_™	blag'o:wna||zn'a:Nka	// blagovna znamka
+_€	'e:vRO	// evro
+_£	f'u:nt	// funt
+_¥	j'e:n	// jen
+_¢	ts'e:nt	// cent
+_№	StEv'i:wka	// številka
+_±	pl'u:s||m'i:nus	// plus minus
+_×	kR'a:t	// krat
+_÷	dElj'e:nO	// deljeno
+_‰	pROm'i:w	// promil
+_¶	Otst'a:vEk	// odstavek
+_†	kR'i:ZEts	// križec
+_µ	m'i:kRO	// mikro
+_−	m'i:nus	// minus
+_%	Otst'o:tEk	// odstotek
+_¡	Ob@Rnj'e:ni||klits'a:j	// obrnjeni klicaj
+_¿	Ob@Rnj'e:ni||upRaS'a:j	// obrnjeni vprašaj
+_ 	nEdEl^'i:vi||pREsl'e:dEk	// nedeljivi presledek U+00A0
 
 
 // numbers
@@ -157,24 +228,32 @@ _0C	stO
 
 _0M1	t'i:sOtS
 _1M1	t'i:sOtS
+_0MA1	t'i:sOtS
+_0MB1	t'i:sOtS
 
 _1M2	'Enmilij'o:n
 _2M2	dv#'a:milij'o:na
 _3M2	tR'i:jEmilij'o:ni
 _4M2	St'i:Rijemilij'o:ni
 _0M2	milij'o:now
+_0MA2	milij'o:now
+_0MB2	milij'o:now
 
 _1M3	'E:namilij'a:Rda
 _2M3	dv#'emilij'a:Rdi
 _3M3	tR'i:milij'a:Rde
 _4M3	St'i:Rimilij'a:Rde
 _0M3	milij'a:Rd
+_0MA3	milij'a:Rd
+_0MB3	milij'a:Rd
 
 _1M4	'Enbilij'o:n
 _2M4	dv#'a:bilij'o:na
 _3M4	tR'i:jebilij'o:ni
 _4M4	St'i:Rijebilij'o:ni
 _0M4	bilij'o:now
+_0MA4	bilij'o:now
+_0MB4	bilij'o:now
 
 _0and	in
 _dpt	_ts,e:lih_

@@ -104,7 +104,7 @@ _`      akts'Ent
 _'      ap'ostrVf
 \       bEksl'ES  $max3
 _>      b'ol;Sy
-_       d;if'is
+_-      d;if'is
 $       d'ollV#r
 _:      dvV#it'otS;iji
 ^       kr'ySka
@@ -116,7 +116,7 @@ _(      l;'evV#ja||k@-r'uglV#ja||sk'opka#
 _[      l;'evV#ja||kvad@-r'AtnV#ja||sk'opka#
 _«      l;'evV#ja||kav'ytS;ka#||j'8lV#tS;ka#
 +       pl;'u"s
-_       pV#ttS;'8rk;ivV#n;ijI
+__      pV#ttS;'8rk;ivV#n;ijI
 %       prV#ts'Ent
 =       ravn'o
 #       r;iS'otka
@@ -134,6 +134,45 @@ _]      p@-r'AvV#ja||kvad@-r'AtnV#ja||sk'opka#
 _»      p@-r'AvV#ja||kav'ytS;ka#||j'8lV#tS;ka#
 *       zv;'8zdV#tS;ka#
 _,      zVpit'aja
+
+// names of marks and symbols when they are spelled or read with punctuation on (as NVDA's Russian symbols)
+_„	l;'evVja||kav'ytS;ka#||l'Apka#	// левая кавычка лапка
+_“	l;'evVja||dvVjn'Aja||kav'ytS;ka#	// левая двойная кавычка
+_”	p@-r'AvVja||dvVjn'Aja||kav'ytS;ka#	// правая двойная кавычка
+_‚	n;'iZn;Vja||Vd;in'otS;nVja||kav'ytS;ka#	// нижняя одиночная кавычка
+_‘	l;'evVja||Vd;in'otS;nVja||kav'ytS;ka#	// левая одиночная кавычка
+_’	p@-r'AvVja||Vd;in'otS;nVja||kav'ytS;ka#	// правая одиночная кавычка
+_‹	l;'evVja||uglVv'Aja||Vd;in'otS;nVja||kav'ytS;ka#	// левая угловая одиночная кавычка
+_›	p@-r'AvVja||uglVv'Aja||Vd;in'otS;nVja||kav'ytS;ka#	// правая угловая одиночная кавычка
+_–	kVr'otkVjI||t;'ir;i	// короткое тире
+_—	dl;'innVjI||t;'ir;i	// длинное тире
+_…	mnVgVt'otS;ijI	// многоточие
+_·	s@-r;'edn;Vja||t'otS;ka#	// средняя точка
+_•	m'Ark;ir	// маркер
+_§	par'Ag@-rVf	// параграф
+_¶	abz'Ats	// абзац
+_°	g@-r'Adus	// градус
+_©	'AftVrskVjI||p@-r'AvV	// авторское право
+_®	zVr;ig;ist@-r;'irVvVnnyj||tVv'Arnyj||zn'Ak	// зарегистрированный товарный знак
+_™	tVv'Arnyj||zn'Ak	// товарный знак
+_€	j'ev@-rV	// евро
+_£	f'unt	// фунт
+_¥	Ij'ena#	// иена
+_¢	ts'Ent	// цент
+_₽	@-r'ubl	// рубль
+_±	pl;'u"s||m;'inus	// плюс минус
+_×	umn'oZyt;	// умножить
+_÷	@-rVz;d;il;'it;||n'A	// разделить на
+_‰	p@-rVm;'ill;i	// промилле
+_µ	m;'ik@-rV	// микро
+_†	k@-r;'es;t;ik	// крестик
+_′	St@-r;'ix	// штрих
+_″	dvVjn'oj||St@-r;'ix	// двойной штрих
+_−	m;'inus	// минус
+_¡	p;ir;iv;'8rnutyj||vVskl;its'At;ilnyj||zn'Ak	// перевёрнутый восклицательный знак
+_¿	p;ir;iv;'8rnutyj||vVp@-rVs;'it;ilnyj||zn'Ak	// перевёрнутый вопросительный знак
+_ 	n;iraz@-r'yvnyj||p@-rVb;'el	// неразрывный пробел U+00A0
+_́	zn'Ak||udar;'en;ija	// знак ударения U+0301
 
 // particles (частицы)
 ж       S $u         // same as the particle form
@@ -337,6 +376,9 @@ _с      Es
 э       E
 ю       ju
 я       ja
+
+// capital letter (заглавная)
+_cap    zagl'AvnVja
 
 // exceptions (слова-исключения)
 интернет          IntE#rn'Et // интэрнэ́т -- "internet"

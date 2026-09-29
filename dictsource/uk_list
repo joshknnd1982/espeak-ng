@@ -19,7 +19,7 @@
 "  podv'i:jna||l'apka
 #  RES'i:tka
 $  d'olaR
-%  vi:ds'otok
+%  Bi:ts'ot[ki:B
 &  ampeRs'and
 //'  odIn'aRna||l'apka
 //(  Bi:dkR'eta||d'uZka
@@ -27,7 +27,6 @@ $  d'olaR
 *  z'i:RotSka
 +  pl^'us
 ,  k'oma
--  m'i:nus
 .  kR'apka
 /  kos'a||R'Iska
 :  dB'i:||kR'apkI
@@ -41,7 +40,6 @@ $  d'olaR
 \  ob'ERnEna||kos'a||R'Iska
 ]  zakR'eta||kBadR'atna||d'uZka
 ^  daS'ok
-\\_  n'IZn^e||pi:dkR'EslEn:ja
 `  hRaf'i:s
 {  B'i:dkReta||fi:h'uRna||d'uZka
 |  BERtIk'al^na||R'Iska
@@ -52,6 +50,51 @@ $  d'olaR
 »  z'akRIti:||lapk'I
 …  tR'e||kR'apkI
 
+// names of marks and symbols when they are spelled or read with punctuation on
+// (as NVDA's Ukrainian symbols; they do not change how a mark is read in text)
+_?	zn'ak||pIt['ann^a	// знак питання
+_'	ap'ost[Rof	// апостроф
+_(	Bi:dkR'eta||d'uZka	// відкрита дужка
+_)	zakR'eta||d'uZka	// закрита дужка
+_-	dEf'i:s	// дефіс
+__	n'IZn^e||pi:dkR'EslEn:ja	// нижнє підкреслення
+_„	podB'i:jn^i:||nIzk'i:||l'apkI	// подвійні низькі лапки
+_“	l^'i:Ba||l'apka	// ліва лапка
+_”	pR'aBa||l'apka	// права лапка
+_‚	odIn'aRn^i:||n'Izki:||l'apkI	// одинарні низькі лапки
+_‘	l^'i:BIj||ap'ost[Rof	// лівий апостроф
+_’	ap'ost[Rof	// апостроф
+_‹	l^'i:Ba||kut[oB'a||l'apka	// ліва кутова лапка
+_›	pR'aBa||kut[oB'a||l'apka	// права кутова лапка
+_–	koR'ot[kE||t[IR'E	// коротке тире
+_—	d'ofhE||t[IR'E	// довге тире
+_·	i:nt[I2Rp'unkt[	// інтерпункт
+_•	m'aRkER	// маркер
+_§	paR'ahRaf	// параграф
+_¶	abz'ats	// абзац
+_°	hR'adus	// градус
+_©	aft['oRskE||pR'aBo	// авторське право
+_®	zaRI2jI2st[R'oBanIj||t[oB'aRnIj||zn'ak	// зареєстрований товарний знак
+_™	t[oRhoB'El^na||m'aRka	// торговельна марка
+_€	j'EBRo	// євро
+_£	f'unt[	// фунт
+_¥	j'Ena	// єна
+_¢	ts'Ent[	// цент
+_₴	hR'IBn^a	// гривня
+_№	n'omER	// номер
+_±	pl^'us||m'i:nus	// плюс мінус
+_×	pomn'oZIt[I	// помножити
+_÷	podi:l'It[I	// поділити
+_‰	pRom'i:lE	// проміле
+_µ	m'i:kRo	// мікро
+_†	xREst['Ik	// хрестик
+_−	m'i:nus	// мінус
+_%	Bi:ts'ot[ok	// відсоток
+_¡	pERI2B'ERnut[Ij||zn'ak||'oklIku	// перевернутий знак оклику
+_¿	pERI2B'ERnut[Ij||zn'ak||pIt['ann^a	// перевернутий знак питання
+_ 	nERozR'IBnIj||pRob'i:l	// нерозривний пробіл U+00A0
+_́	zn'ak||n'aholosu	// знак наголосу U+0301
+
 
 // NUMBERS
 //********
@@ -59,6 +102,9 @@ $  d'olaR
 _0	n'ul^
 _1	od'en
 _2	dB'a
+_1f	odn'a
+_2f	dB'i:
+_dpt	_:k'oma_
 _3	tR'I
 _4	tSot'eRe
 _5	pj'at;
@@ -97,10 +143,18 @@ _9C	devjats'ot
 
 // large numbers, short scale
 _0C	st'o
-_0M1	t'esjatSa
-_0M2	mi:l;j'on
-_0M3	bi:l;j'on
-_0M4	tRel;j'on
+_1MA1	t['IsjatSa
+_0MA1	t['IsjatSi:
+_0M1	t['IsjatS
+_1MA2	mi:l^j'on
+_0MA2	mi:l^j'onI
+_0M2	mi:l^j'on^i:B
+_1MA3	mi:l^j'aRd
+_0MA3	mi:l^j'aRdI
+_0M3	mi:l^j'aRdi:B
+_1MA4	t[RIl^j'on
+_0MA4	t[RIl^j'onI
+_0M4	t[RIl^j'on^i:B
 _0M5    kvadRal;j'on
 _0M6    kvi:ntel;j'on
 _0M7    sEkstel;j'on
@@ -131,10 +185,20 @@ _й  jot
 ф  Ef
 х  xa
 ц  tsE
-ч  tSa
+ч  tSE
 ш  Sa
 щ  StSa
 ь  m|jak'Ij||zn'ak
+
+// the letters that are also words (б, в, ж, з, й), when they stand alone
+б  bE  $atstart $atend
+в  BE  $atend
+ж  ZE  $atstart $atend
+з  zE  $atend
+й  jot  $atend
+
+// capital letter (велика)
+_cap  BEl'Ika
 
 
 // ABBREVIATIONS

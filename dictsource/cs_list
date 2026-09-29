@@ -28,11 +28,12 @@ n	en
 ň	en^
 _o	o:
 ó	dl'oUhe:,o:
-ô	uo:
+ô	$accent
 p	pe:
 q	kve:
 r	eR
 ř	eR^
+ŕ	dl'oUhe:,eR
 _s	es
 š	eS
 t	te:
@@ -41,16 +42,18 @@ _u	u:
 ú	dl'oUhe:,u:
 ů	'u:s_kR'oUZkem
 _v	ve:
-w	dv'ojve:
+w	dv'ojite:,ve:
 x	iks
 y	ipsilon
-ý	dl'oUe:,ipsilon
+ý	dl'oUhe:,ipsilon
 _z	zet
 ž	Zet
 
+ä	$accent
 ë	$accent
 ö	$accent
 ü	$accent
+ß	'ostRe:||'es
 
 
 _#9	t'ap
@@ -64,7 +67,7 @@ _lig	l'igat,uRa
 _acu	tS'a:Rka
 _ac2	dvj'etS'a:Rki
 _brv	'obloUtSek
-_ced	ts'eJila
+_ced	ts'edila
 _cir	stR^'i:Ska
 _dia	tR'ema
 _dot	t'etSka	
@@ -74,7 +77,7 @@ _mcn	m'akRon
 _ogo	'ogonek
 _rng	kR'oUZek
 _stk	S'ikma:tS'a:Rka
-_tld	c'ilda
+_tld	t'ilda
 
 
 
@@ -83,12 +86,12 @@ _'	apostRof
 _"	uvozovki
 _,	tSa:Rka
 _-	mi:nus
-_;	zdR^edn^i:k
+_;	stR^/edn^i:k
 _?	otazn^i:k
 __	pottr-Zen^i:
 _`	'obRa:ts,ena:||tS'a:Rka
 _(	za:voRka
-_)	za:vorkazavR^i:t
+_)	z'a:voRka||z'avR^i:t
 _[	hR'anata:||z'a:voRka
 _]	hR'anata:||z'avR^i:t
 _{	sl'oZena:||z'a:voRka
@@ -102,13 +105,13 @@ _:	dv'ojtetSka
 *	hvjezJitSka	$max3
 =	Rovno	$max3
 *	hvjezJitSka	$max3
-%	pRotsento	$max3
+%	pR'otsent	$max3
 +	plus	$max3
-!	vigR^itSn^i:k	$max3
+!	vikR^/itSn^i:k	$max3
 €	eURo
 @	zavina:tS
 &	ampr-sent
-#	gR^i:Zek
+#	kR^/i:Zek
 /	lomeno
 \	beksleS
 
@@ -117,8 +120,51 @@ _:	dv'ojtetSka
 ÷	Jeleno
 §	paRagRaf
 ~	tilda
-^	zdR^i:Ska
+^	stR^/i:Ska
 ©	k'opiRajt
+
+// names of marks and symbols when they are spelled or read with punctuation on
+// (the names of several words in cs_emoji are cut to their first word there)
+_+	pl'us	// plus
+_«	dv'ojita:||l'omena:||z'a:voRka	// dvojitá lomená závorka
+_»	dv'ojita:||l'omena:||z'avR^i:t	// dvojitá lomená zavřít
+_‹	l'omena:||z'a:voRka	// lomená závorka
+_›	l'omena:||z'avR^i:t	// lomená zavřít
+_„	d'oln^i:||'uvoz,ofki	// dolní uvozovky
+_“	h'oRn^i:||'uvoz,ofki	// horní uvozovky
+_”	pR'ave:||h'oRn^i:||'uvoz,ofki	// pravé horní uvozovky
+_‚	d'oln^i:||j'ednod,uxa:||'uvoz,ofka	// dolní jednoduchá uvozovka
+_‘	h'oRn^i:||j'ednod,uxa:||'uvoz,ofka	// horní jednoduchá uvozovka
+_’	'apostRof	// apostrof
+_–	p'oml-tSka	// pomlčka
+_—	dl'oUha:||p'oml-tSka	// dlouhá pomlčka
+_…	tR^/'i||t'etSki	// tři tečky
+_•	'odRa:Ska	// odrážka
+_‰	pR'omile	// promile
+_§	p'aRagRaf	// paragraf
+_°	st'upen^	// stupeň
+_©	k'opiRajt	// kopirajt
+_®	R'egistR,ovana:||zn'a:mka	// registrovaná známka
+_™	'oxRana:||zn'a:mka	// ochranná známka
+_€	'eURo	// euro
+_£	l'ibRa	// libra
+_¥	j'en	// jen
+_¢	ts'ent	// cent
+_№	tS'i:slo	// číslo
+_±	pl'us||m'i:nus	// plus mínus
+_−	m'i:nus	// mínus
+_×	kR'a:t	// krát
+_÷	J'eleno	// děleno
+_¶	'otstavets	// odstavec
+_µ	m'ikRo	// mikro
+_¡	'obRa:ts,eni:||v'ikR^/itSn^i:k	// obrácený vykřičník
+_¿	'obRa:ts,eni:||'otazn^i:k	// obrácený otazník
+_ 	n'eJel,itelna:||m'ezeRa	// nedělitelná mezera U+00A0
+_́	tS'a:Rka	// čárka U+0301
+_̌	h'a:tSek	// háček U+030C
+_̊	kR'oUZek	// kroužek U+030A
+_̈	pR^/'ehla:ska	// přehláska U+0308
+_%	pR'otsento	// procento: the name of the sign
 
 
 // Numbers
@@ -126,6 +172,7 @@ _0	n'ula
 _1	j'eden
 _2	dv'a
 _2f	dvj'e
+_1a	j'edna
 _3	tR^/i
 _4	tSt'iR^i
 _5	p'jet
@@ -296,6 +343,7 @@ i        i:    $atend    // letter-i
 k        ka:   $atend    // letter-k
 o        o:    $atend    // letter-o
 s        es    $atend
+u        u:    $atend
 v        ve:   $atend
 z        zet   $atend
 

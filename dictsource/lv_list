@@ -43,6 +43,8 @@ v   ve:_:
 w   dubve:_:
 x   iks_:
 y   igRek_:
+?2 y y_:
+ȳ   y::_!
 z   ze:_:
 ž   Ze:_:
 
@@ -109,12 +111,20 @@ _0C     ||s'imti
 _1C     s'imts
 _0M1    t'u:kstuo:Si
 _1M1    t'u:kstuo:tis
+_1MA1   t'u:kstuo:tis
+_0MA1   t'u:kstuo:Si
 _0M2    m'iljo:ni
 _1M2    m'iljo:ns
+_1MA2   m'iljo:ns
+_0MA2   m'iljo:ni
 _1M3    m'iljaRds
 _0M3    m'iljaRdi
+_1MA3   m'iljaRds
+_0MA3   m'iljaRdi
 _1M4    tR'iljons
 _0M4    tR'iljoni
+_1MA4   tR'iljons
+_0MA4   tR'iljoni
 _1M5    kv'adRiljo:ns
 _0M5    kv'adRiljo:ni
 _1M6    kv'intiljo:ns
@@ -203,8 +213,12 @@ _1M10o  n'oniljo:nais
 ?2 _1C     s'ymts
 ?2 _0M1    t'yukstu:Si
 ?2 _1M1    t'yukstu:tis
+?2 _1MA1  t'yukstu:tis
+?2 _0MA1  t'yukstu:Si
 ?2 _0M2    m'il^jo:ni
 ?2 _1M2    m'il^jo:ns
+?2 _1MA2  m'il^jo:ns
+?2 _0MA2  m'il^jo:ni
 ?2 _dpt    k'omats_
 
 
@@ -288,6 +302,23 @@ _{      f'igu:Riekava
 _|      sta:vsvi:tRa
 _}      f'igu:Riekava||ts'iet
 _~      tilde
+
+// names of marks and symbols when they are spelled or read with punctuation on
+_„	'apakSe:ja:s||p'e:din^as	// apakšējās pēdiņas
+_“	p'e:din^as	// pēdiņas
+_”	p'e:din^as||ts'iet	// pēdiņas ciet
+_’	'apostRo:fs	// apostrofs
+_…	d'auDz`puNkte	// daudzpunkte
+_·	v'iduspuNkts	// viduspunkts
+_•	'aizzi:me	// aizzīme
+_№	n'umuRs	// numurs
+_†	kR'ustin^S	// krustiņš
+_−	m'i:nuss	// mīnuss
+_¡	'apgRiezta||'izsaukuma||z'i:me	// apgriezta izsaukuma zīme
+_ 	n'edala:ma:||'atstaRpe	// nedalāmā atstarpe U+00A0
+_©	'autoRtiesi:bas	// autortiesības
+_®	R'eJistRE:ta||pR'etSu||z'i:me	// reģistrēta preču zīme
+_™	pR'etSu||z'i:me	// preču zīme
 _¦      s'adali:ta||st'a:vsvi:tRa
 _«      p'e:din^as
 _´      aku:ts

@@ -10,6 +10,7 @@
 и	$u $pause
 у	$u $combine
 с	$combine
+г	g@	$atend	// letter name
 г	god'ina $hasdot
 
 (а в)   %av
@@ -25,6 +26,7 @@ _г	g@
 ж	Z@
 з	z@
 _й	'ikr,atko
+й	'ikr,atko	$atstart $atend	// the letter standing alone
 к	k@
 л	l@
 м	m@
@@ -43,6 +45,15 @@ _с	s@
 ь	'erm,aL@k
 ъ	'erg,olam
 
+// и and е with the stress mark: ѝ ѐ
+_ѝ	'i||s||udar'enie
+ѝ	'i||s||udar'enie	$atstart $atend	// the letter standing alone
+ѐ	'e||s||udar'enie
+
+// letters of the old orthography
+ѣ	j'at
+ѫ	g'olam||j'us
+
 _а	a
 _е	e
 _и	i
@@ -54,10 +65,11 @@ x	_^_EN   // not Roman number
 
 _??	znak
 _?A	b'ukva
+_cap	gL'avno
 
 
 // symbols
-%	prots'ent	$max3
+%	prots'enta	$max3
 +	plus	$max3
 =	e||r'avno||n,a
 #	d'i;es;	$max3
@@ -86,24 +98,57 @@ _[ l;,ava||kvadr,atna||sk'oba
 _] d;,asna||kvadr,atna||sk'oba
 ^ kol'ibka
 __ d,olna||tSert'a
-_` graf
+_` t'eSko||,udar'eni;,e
 _{ l;,ava||v@lno,obrazna||sk'oba
 _| vertik,alna||tSert'a
 _} d;,asna||v@lno,obrazna||sk'oba
 _~ v@ln'itSka
 _. t'otSka
-_Ў obr,aten||udiv'itelen
-_ї obr,aten||v@pros'itelen
+_¡ obr,aten||udiv'itelen
+_¿ obr,aten||v@pros'itelen
 _« l;,ava||dv,oina||tri,@galna||sk'oba
 … $pause
 _… mnogot'otSie
-_ѓ florin
+_ƒ florin
 _† _^_EN
 _‡ _^_EN
 _– k,@so||tir'e
 _— d,@lgo||tir'e
 _¦ prek,@snata||tSert'a
 _» d;,asna||dv,oina||tri,@galna||sk'oba
+
+// names of marks and symbols when they are spelled or read with punctuation on
+_„	l'evi:||kav'itSki:	// леви кавички
+_“	d'esni:||kav'itSki:	// десни кавички
+_”	d'esni:||kav'itSki:	// десни кавички
+_‚	d'oLna||,edin'itSna||kav'itSka	// долна единична кавичка
+_‘	l'ava||,edin'itSna||kav'itSka	// лява единична кавичка
+_’	d;'asna||,edin'itSna||kav'itSka	// дясна единична кавичка
+_‹	l'ava||'@gLova||sk'oba	// лява ъглова скоба
+_›	d;'asna||'@gLova||sk'oba	// дясна ъглова скоба
+_·	sr'edna||t'otSka	// средна точка
+_•	t'otSka||z,aizbr,ojav'ane	// точка за изброяване
+_§	p,aragr'af	// параграф
+_¶	abz'ats	// абзац
+_°	gr'adus	// градус
+_©	aft'orsko||pr'avo	// авторско право
+_®	r,egistrir'ana||m'arka	// регистрирана марка
+_™	t@rg'ofska||m'arka	// търговска марка
+_€	'evro	// евро
+_£	p'aunt	// паунд
+_¥	j'ena	// йена
+_¢	ts'ent	// цент
+_±	pl'us||m'inus	// плюс минус
+_×	,umnoZ'eno||po	// умножено по
+_÷	del'eno||na	// делено на
+_‰	prom'iL	// промил
+_µ	m'ikro	// микро
+_†	kr'@st	// кръст
+_−	m'inus	// минус
+_%	prots'ent	// процент
+_ 	n,eprek@sv'aem||,interv'aL	// непрекъсваем интервал U+00A0
+_̀	,udar'eni;,e	// ударение U+0300
+_́	,udar'eni;,e	// ударение U+0301
 
 № n'omer
 // abbreviations
@@ -127,6 +172,10 @@ _» d;,asna||dv,oina||tri,@galna||sk'oba
 _0	n'uLa
 _1	edn'o
 _2	dv'e
+_1f	edn'a
+_2f	dv'e
+_1a	ed'in
+_2a	dv'a
 _3	tr'i
 _4	tS'etiri
 _5	p'et

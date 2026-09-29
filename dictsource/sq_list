@@ -9,6 +9,7 @@ c	ts@
 d	d@
 dh	D@
 _e	e
+ë	@
 f	f@
 g	g@
 gj	dZ;@
@@ -73,8 +74,10 @@ _9X	n'Vnt@/Djet%@/
 
 _0C	c,ind
 _0M1	m,ij@/
-_0M2	miLi'On
-_0M3	miLi'ard
+_1M2	n^'I#||miLi'On
+_0M2	miLi'On@
+_1M3	n^'I#||miLi'ard
+_0M3	miLi'ard@
 _0and	%E
 _dpt	_pR'esja
 
@@ -90,7 +93,7 @@ _cap	_Em'aDE
 .	pik  $max3	// pikë
 =	baRab'aRt	// barabart
 !	piktSud'itsE  $max3	// pikëuditëse
-%	p@tSindja  $max3 // pëçindja
+%	p@Rc'ind  $max3 // përqind
 @	manki		// manki
 &	_DE		// dhe
 /	pj'Estim	// pjestim
@@ -108,7 +111,7 @@ _<	m'@E||v,OgEl	// më e vogel
 _>	m'@Em'aDE	// më e madhe
 _?	pikpytjE	// pikëpytje
 __	n,Vn||v'iz	// nën vizë
-_"	apOstROf	// apostrof
+_"	TOn^'VzA	// thonjëza
 _(	kll'apaE||v'Og@l  // kllapa e vogël (e majtë)
 _)	kll'apaE||v'Og@lE||dj'aTt // kllapa e vogël (e djathtë)
 _[	kll'apaE||m'aDE	// kllapa e madhe
@@ -116,6 +119,39 @@ _]	kll'apaE||m'aDEE||dj'aTt
 _{	kll'apaE||m'EsmE
 _}	kll'apaE||m'EsmEE||dj'aTt
 _\	vizEmaItT'yEsE
+
+// names of marks and symbols when they are spelled or read with punctuation on
+_'	,apOstR'Of	// apostrof
+_«	TOn^'VzA||h'ap@sE	// thonjëza hapëse
+_»	TOn^'VzA||mb'yll@sE	// thonjëza mbyllëse
+_„	TOn^'VzA||h'ap@sE	// thonjëza hapëse
+_“	TOn^'VzA||mb'yll@sE	// thonjëza mbyllëse
+_”	TOn^'VzA||mb'yll@sE	// thonjëza mbyllëse
+_’	,apOstR'Of	// apostrof
+_|	v'iz@||v,ERtik'aLe	// vizë vertikale
+_–	v'iz@	// vizë
+_—	v'iz@||E||dZ;'at@	// vizë e gjatë
+_…	tR'i||p'ikA	// tri pika
+_§	p,aRagR'af	// paragraf
+_°	gR'ad@	// gradë
+_©	t@||dR'eItat||E||,aut'ORIt	// të drejtat e autorit
+_®	i||R,EdZ;istR'uAR	// i regjistruar
+_™	m'ARk@||tREgt'aRE	// markë tregtare
+_€	E'uRO	// euro
+_£	pa'und	// paund
+_¥	j'en	// jen
+_¢	ts'Ent	// cent
+_№	n'um@R	// numër
+_±	pL'us||min'us	// plus minus
+_×	h'ER@	// herë
+_÷	pjes@t'im	// pjesëtim
+_‰	pROm'il	// promil
+_†	kR'yc	// kryq
+_−	min'us	// minus
+_¡	p,ik@tSud'it@sE||E||p@Rmb'ysuR	// pikëçuditëse e përmbysur
+_¿	p,ik@p'yEtje||E||p@Rmb'ysuR	// pikëpyetje e përmbysur
+_µ	m'ikRO	// mikro
+_%	p@Rc'ind	// përqind
 
 // unstressed words
 i	$u+
