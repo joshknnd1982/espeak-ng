@@ -996,12 +996,12 @@ static int TranslateChar(Translator *tr, char *ptr, int prev_in, unsigned int c,
 			}
 		}
 		break;
-	case L('f', 'r'):
+	}
+	if (((c == 0xa0) || (c == 0x202f) || (c == 0x2007)) && iswdigit(prev_in) && iswdigit(next_in)
+	    && ((tr->langopts.thousands_sep == ' ') || (tr->langopts.numbers & NUM_ALLOW_SPACE))) {
 		// a no-break space (or narrow or figure space) between digits separates the
 		// groups of thousands, as a space does: 1 000 000
-		if (((c == 0xa0) || (c == 0x202f) || (c == 0x2007)) && iswdigit(prev_in) && iswdigit(next_in))
-			return ' ';
-		break;
+		return ' ';
 	}
 	if (IsDigit09(c) && !iswalpha(prev_in))
 		return c; // a digit which does not follow a letter belongs to a number, not to a word which uses digits as letters (lang=py)
