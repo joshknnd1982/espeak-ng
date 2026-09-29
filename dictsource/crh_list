@@ -54,7 +54,18 @@ u      u:
 ü      y:
 v      v;e
 y      je
-z      ;es
+z      z|;e
+
+// letters which are not in the alphabet
+w      w;e
+x      Iks
+// a with the circumflex, which softens the consonant before it: "qalpaqlı a"
+â      q,ALpAqL'@||'A:
+
+_cap   byj'yk     // büyük (arif)
+
+// accent names: the circumflex is said before the letter, as â is "qalpaqlı a"
+_cir   q,ALpAqL'@   $accent_before
 
 
 // NUMBERS
@@ -185,8 +196,23 @@ _& Amp;ers'And
 _` Arq,A||cWtS;yrIlm;,e||L'Af
 _' Apostr'of
 __ Ast@n,@||s'@z@N@s
-_« soLQ,A||cWst|;erIlJ;,en||Ec;,i||cWs|;el,I||t@rn,Aq||iSAr;et'I
-_» sAQ:,A||cWst|;erIlJ;,en||Ec;,i||cWs|;el,I||t@rn,Aq||iSAr;et'I
+// « and » were "solğa (sağğa) kösterilgen eki köşeli tırnaq işareti": a name that long
+// is not said at all with --punct (it overflows eSpeak NG's buffer for a mark's name)
+_« soLQ,A||cWst|;erIlJ;,en||t@rn,Aq	// solğa kösterilgen tırnaq
+_» sAQ:,A||cWst|;erIlJ;,en||t@rn,Aq	// sağğa kösterilgen tırnaq
+
+// more marks, named with the words of the names above
+_„ t@rn,Aq||iSAr;et'I	// tırnaq işareti
+_“ t@rn,Aq||iSAr;et'I
+_” t@rn,Aq||iSAr;et'I
+_‘ Apostr'of
+_’ Apostr'of
+_‚ Apostr'of
+_– t;ir;'e		// tire
+_— uz'un||t;ir;'e	// uzun tire
+_· ort'A||noqt'A	// orta noqta
+_° d|;er;edZ;;'e	// derece (º above is the ordinal sign, not the degree sign)
+_§ p,A*Agr'Af	// paragraf
 
 .  noqt'A
 +  plys $max3

@@ -35,17 +35,25 @@ x	iks
 y	jE
 z	zE
 
+// letters with the circumflex (düzeltme işareti), as they are named: "şapkalı a"
+â	SapkaL'@||'a
+î	SapkaL'@||'i
+û	SapkaL'@||'u
+// other accented letters which tr_rules gives a sound to: name the letter and its accent
+ô	$accent
+ä	$accent
+
 _cap	byj'Yk
 _??	sEmb'Ol
 _?A	haRf
 
 // accent names
-//_lig	
+_lig	bitiS'Ik	// bitişik (harf)
 _acu	vURg'UimI
-_ac2	tS'IftvURg'UimI	
+_ac2	tS'IftvURg'UimI
 _brv	k@s'aLtmaimI
-_ced	h'aRf
-_cir	Sapk'a
+_ced	tS&nJ'&limI	// çengel imi
+_cir	SapkaL'@	$accent_before	// "şapkalı e"
 _dia	UmLa'Ut
 _dot	YstnOkt'a
 _grv	'aksanimI
@@ -53,7 +61,7 @@ _hac	t'ERsSapk'a
 _mcn	uz'atmaimI
 _ogo	ogon'Ek
 _rng	haLk'a
-//_stk	
+_stk	ORt'atSIzg'I	// orta çizgi
 _tld	tIld'E
 
 
@@ -92,6 +100,49 @@ __	,aLttSIzg'I
 +	aRt@		$max3
 €	avRO
 
+// more names of marks and symbols, said when spelling and with --punct
+// (brackets as "aç/kapa parantez" above; the other names are those of the Unicode CLDR for Turkish)
+_[	'atS||kWSel'I||pa*ant'Ez
+_]	kap'a||kWSel'I||pa*ant'Ez
+_{	'atS||sYsl'Y||pa*ant'Ez
+_}	kap'a||sYsl'Y||pa*ant'Ez
+_<	kytS'YktYR
+_>	byj'YktYR
+_|	dik'Ej||tSIzg'I
+_`	'aksan||iSa*et'I
+_«	s'oLa||bak'an||kWSel'I||t@Rn'ak||iSa*et'I	// sola bakan köşeli tırnak işareti
+_»	s'a:||bak'an||kWSel'I||t@Rn'ak||iSa*et'I
+_„	s'a:||'aLt||t@Rn'ak||iSa*et'I	// sağ alt tırnak işareti
+_“	s'OL||t@Rn'ak||iSa*et'I	// sol tırnak işareti
+_”	s'a:||t@Rn'ak||iSa*et'I
+_‚	s'a:||'aLt||k'EsmE||iSa*et'I	// sağ alt kesme işareti
+_—	uz'Un||ti*'E	// uzun tire
+_·	ORt'a||nOkt'a
+_•	mad:'E||im'I	// madde imi
+_€	avR'O
+_£	stERl'In
+_¥	j'En
+_¢	s'Ent
+_₽	R'UblE
+_₺	t'YRk||li*as'@	// as tr_emoji reads them in text
+_₼	azERbajdZ'an||manat'@
+_₸	kazakIst'an||tEnJes'I
+_₴	UkR'ajna||gRIvnas'@
+_©	tel'If||hak:'@||iSa*et'I
+_®	tEsdZ'Il||iSa*et'I
+_™	tidZa*'I||maRk'a||iSa*et'I
+_×	tS'aRpma||iSa*et'I
+_÷	b'WlmE||iSa*et'I
+±	aRt'@||eks'i	$max3	// artı eksi: read in English in ordinary text before, now in Turkish there too
+_‰	bInd'E
+_¡	t'ERs||Ynl'Em||iSa*et'I
+_¿	t'ERs||so*'U||iSa*et'I
+// the accents standing alone, named as the accent names above
+_¨	UmLa'Ut
+_´	vURg'UimI
+_¸	tS&nJ'&limI
+_¯	uz'atmaimI
+
 
 _0	s@f'@R
 _1	b'iR
@@ -120,6 +171,7 @@ _2C	'icijyz
 _0M1	b'in
 _0M2	milj'on
 _0M3	milj'ar
+_0M4	tRIlj'On
 _dpt	_viRg,Yl_|
 
 

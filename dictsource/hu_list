@@ -437,7 +437,7 @@ _brv	fe:lkYR2
 _ced	tse:dillE
 _cir	tsiR2kumflEks
 _dia	tR2e:mA
-//_dot          // dot above	
+_dot	fElSY:pont	// felső pont (dot above)
 _grv	tompA
 _hac	pipA
 _mcn	mAkR2on    // ?? macron
@@ -5342,7 +5342,7 @@ l	Ell
 m	Emm
 n	Enn
 p	pe:
-q	ku
+q	ku:
 r	ERR
 s	S_
 s	ES  $atend
@@ -5354,6 +5354,18 @@ y	ipsilon
 z	ze:
 _é	e:
 é	$atend
+// the other vowels are named by their sound, short or long
+_á	a:
+_i	i
+_í	i:
+_o	o
+_ó	o:
+_ö	Y
+_ő	Y:
+_u	u
+_ú	u:
+_ü	y
+_ű	y:
 
 V		// this means that "v  ve:" is only used for lower-case
 X
@@ -5372,6 +5384,7 @@ ny	En^
 ä	$accent
 æ	$accent
 ç	$accent
+ë	$accent
 ñ	$accent
 ø	$accent
 ß	_^_DE
@@ -5466,7 +5479,26 @@ _″	duplA|ApostR2o:f
 ∞	vEgtElEn
 ≠	nEmEJEnlY:
 _ˇ	lEfEle:n^i:l
-_¡	AlSo:indEks
+_¡	f'oR2di:tot:||f'Elki;a:lto:jEl	// fordított felkiáltójel (was "alsóindex", the name of a subscript)
+
+// more names of marks and symbols, said when spelling and with --punct (names of the Unicode CLDR)
+_¿	f'oR2di:tot:||k'e:R2dY:jEl	// fordított kérdőjel
+_¨	tR2'e:mA
+_´	'e:lES||'e:kEzEt	// éles ékezet
+_¸	ts'e:dillE
+_¯	m'AkR2on
+_©	k'opiR2ajtjEl	// copyright-jel
+_®	b'EjEJzEt:
+_™	v'e:djEJ
+_€	'EuR2o:
+_£	f'ont
+_¥	j'En
+_¢	ts'Ent
+_₽	R2'ubEl
+_₺	t'YR2Yk||l'i:R2A	// as hu_emoji reads them in text
+_₼	'AzER2bAjdZa:ni||m'AnAt
+_₴	'ukR2a:n||hR2'ivn^A
+_₸	k'AzAhsta:ni||t'EngE
 
 
 // Alphabets

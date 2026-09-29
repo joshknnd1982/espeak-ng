@@ -37,46 +37,81 @@ _0M1	hEz'ar
 _1M1	hEz'ar
 _0M2	mIl'jon
 _1M2	mIl'jon
+_0M3	mIlj'aR		// milyar
 
 _0and	_u
 _dpt	_xal
 _??	tipa
-_cap	mezin   // or "ya mezin" after the letter
+_cap	mEz'In   // mezin; or "ya mezin" after the letter
 
 
 // characters
-// letter names
+// letter names: a, be, ce, çe, de ... with the vowel of the letter e, not of ê
 _a	a
-b	be
-c	dZe
-ç	tSe
-d	dE
+b	bE#
+c	dZE#
+ç	tSE#
+d	dE#
 _e	E
 _ê	e
-f	fe
-g	ge
-h	he
+f	fE#
+g	gE#
+h	hE#
 _i	I
 _î	i
-j	Ze
-k	ka
-l	le
-m	me
-n	ne
+j	ZE#
+k	kE#
+l	lE#
+m	mE#
+n	nE#
 _o	o
-p	p#
-q	q
-r	Re
-s	se
-ş	Se
-t	tE
-u	u
+p	pE#
+q	qE#
+r	RE#
+s	sE#
+ş	SE#
+t	tE#
+u	U
 _û	u
-v	ve
-w	we
-x	xe
-y	je
-z	ze
+v	vE#
+w	wE#
+x	xE#
+y	jE#
+z	zE#
+// ö and ü of Turkish names: named by their sound, as in Turkish (kurdish rules read ö as î)
+ö	Y
+ü	y
+
+// accent names
+_cir	kUm'Ik	// kumik
+
+// names of marks, as Kurmanji writing guides name them (xalbendî: dabir, dunik, kevanek ...)
+_'	dab'IR		// dabir
+_"	dUn'Ik		// dunik
+_„	dUn'Ik
+_“	dUn'Ik
+_”	dUn'Ik
+_«	k,oSEdUn'Ik	// koşedunik
+_»	k,oSEdUn'Ik
+_‘	jEkn'Ik		// yeknik
+_’	jEkn'Ik
+_‚	jEkn'Ik
+_…	sex'al		// sêxal
+_^	kUm'Ik		// kumik
+_(	k,Evan'Ek	// kevanek
+_)	k,Evan'Ek
+_[	k,oSEk,Evan'Ek	// koşekevanek
+_]	k,oSEk,Evan'Ek
+_{	k,EmbERk,Evan'Ek	// kemberkevanek
+_}	k,EmbERk,Evan'Ek
+_–	bEnd'Ik		// bendik
+_—	xez'Eka||,axaft'Ine	// xêzeka axaftinê
+__	bInx'Et		// binxet
+_§	b'ES		// beş (Unicode CLDR)
+// these were read in English in ordinary text: now they are read in Kurdish there too
+/	dab'ES	$max3		// dabeş
+\	dab'ESa||tS'Ep	$max3	// dabeşa çep
+~	k,Evanxez'Ek	$max3	// kevanxêzek
 
 
 _,	behnok

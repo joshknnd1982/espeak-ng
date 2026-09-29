@@ -29,7 +29,7 @@ n	&n
 o	o:
 ö	Y:
 p	pe:
-q	qu:
+q	ku:
 r	&r
 s	&s
 t	te:
@@ -42,6 +42,7 @@ z	tset
 å	r'uotsalainen'o:
 š	h'at:u&s
 ž	h'at:uts,et
+ü	s'aksalainen'y:	// saksalainen y
 
 
 
@@ -50,7 +51,7 @@ _!	hu:tomerk:i
 _?	kysymysmerk:I
 _"	lainaus
 _#	risu
-_$	dollarin
+_$	d'ol:ari
 _%	prosent:i
 _&	etmerk:i
 _'	heit:o
@@ -67,6 +68,52 @@ _<	p'ienempIk'uin
 _>	s'u:rempIk'uin
 _-	vi:va
 __	alavi:va
+
+// names of more marks and symbols, said when spelling and with --punct
+// (the names are those of the Unicode CLDR for Finnish)
+_,	p'ilk:u
+_;	p'uolip,iste
+_|	p'ystyv,i:va
+_^	s'irkumfl,eksI
+_`	gr'avIs
+_«	v'asen||k'ulmal,ainausm,erk:I	// vasen kulmalainausmerkki
+_»	'oikea||k'ulmal,ainausm,erk:I
+_„	'oikea||'alal,ainausm,erk:I	// oikea alalainausmerkki
+_“	v'asen||l'ainausm,erk:I	// vasen lainausmerkki
+_”	'oikea||l'ainausm,erk:I
+_‚	'oikea||'alah,eit:om,erk:I	// oikea alaheittomerkki
+_‘	v'asen||h'eit:om,erk:I	// vasen heittomerkki
+_’	'oikea||h'eit:om,erk:I
+_–	l'yhyt||'ajatusv,i:va	// lyhyt ajatusviiva
+_—	p'itk&||'ajatusv,i:va	// pitkä ajatusviiva
+_…	k'olme||p'istet:&	// kolme pistettä
+_·	r'ivinkesk,inen||p'iste
+_•	l'uet:elom,erk:I	// luettelomerkki
+_°	'aste
+_§	p'yk&l&m,erk:I	// pykälämerkki
+_¶	k'ap:alem,erk:I
+_©	t'ekij&n,oikeusm,erk:I
+_®	r'ekister,Yity||m'erk:I
+_™	t'avaram,erk:I
+_€	'euro
+_¥	j'eni
+_¢	s'ent:I
+_₽	r'upla
+_₺	t'urkin||l'i:ra	// as fi_emoji reads them in text
+_₼	'azerbaidZ,anin||m'anat
+_₴	'ukrainan||hr'yvnia
+_₸	k'azakst,anin||t'eNge
+_×	k'ertolaskum,erk:I
+_÷	j'akolaskum,erk:I
+±	pl'us||m'i:nus	$max3	// read in English in ordinary text before: now in Finnish there too
+_‰	pr'omil:e
+_¡	k'&:nteinen||h'u:tom,erk:I	// käänteinen huutomerkki
+_¿	k'&:nteinen||k'ysymysm,erk:I
+_¨	tr'e:ma
+_´	'aku:t:I
+_¸	s'edIljI
+_¯	m'akron
+
 +	plus	$max3
 *	asteriski	$max3
 =	'yht&k'uin	$max3
@@ -86,7 +133,15 @@ _ced	s'edIljI
 _cir	s'irkumfl,eksI
 _dia	'umlaut
 _grv	gr'avIs
-_tld	tilde
+_tld	t'ilde
+_hac	h'at:u	$accent_before	// hattu, as in š "hattu-äs"
+_mcn	m'akron
+_ogo	'ogonek
+_rng	r'eNNas
+_stk	p'oik:Iv,i:va
+_dot	'yl&p,iste
+_ac2	k'aksoisak,u:t:I
+_lig	l'igat,u:rI
 
 // numbers
 _0       n'olla

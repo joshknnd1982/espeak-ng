@@ -34,7 +34,7 @@ q	kuu:
 r	eRR
 s	ess
 t	tee:
-u	u:
+u	uu:
 v	vee:
 w	k'aksisvee:
 x	ik:s
@@ -69,6 +69,50 @@ _>	su:rem
 _-	kri:ps
 __	al:lkri:ps
 
+// names of more marks and symbols, said when spelling and with --punct
+// (the names are those of the Unicode CLDR for Estonian, and EKI's for the dashes)
+_;	semik'o:lon
+_|	vertik'a:l||j,o:n	// vertikaaljoon
+_^	tsirkumfl'eks
+_`	gr'a:vis
+_«	t'opeltn,o:l||v'asakule	// topeltnool vasakule
+_»	t'opeltn,o:l||p'aremale
+_„	'alumine||j'utU1m,&rk:	// alumine jutumärk
+_“	v'asakule||k'aldu||j'utU1m,&rk:	// vasakule kaldu jutumärk
+_”	p'aremale||k'aldu||j'utU1m,&rk:
+_‚	'alumine||'yhek,ordne||j'utU1m,&rk:	// alumine ühekordne jutumärk
+_‘	v'asakule||k'aldu||'ylA1k,oma	// vasakule kaldu ülakoma
+_’	p'aremale||k'aldu||'ylA1k,oma
+_–	m'8t:e||kri:ps	// mõttekriips
+_—	'emm||kri:ps	// emm-kriips
+_…	m'8t:ep,unk:tid	// mõttepunktid
+_·	k'eskmine||p'unk:t
+_•	m'umm
+_°	kr'a:d
+_§	p'aragrahv
+_¶	p'aragrahvim,&rk:
+_©	'autori||'8igus
+_®	r'egistr,e:ritud
+_™	k'aubam,&rk:
+_£	n'ae:l
+_¥	j'e:n
+_¢	s'ent
+_₽	r'ubla
+_₺	t'yrgi||l'i:r
+_₼	,aserbaidZ'a:ni||m'anA1t	// as et_emoji reads them in text
+_₴	'ukraina||gr'ivna
+_₸	k'asahst,ani||t'eNge
+_×	k'orrutusm,&rk:
+_÷	j'agamism,&rk:
+±	pl'us:s||m'i:nus	$max3	// read in English in ordinary text before: now in Estonian there too
+_‰	prom'il:im,&rk:
+_¡	p'Y:rd||h,yi:jum,&rk:
+_¿	p'Y:rd||k,ys^I1m,&rk:
+_¨	t'&pid
+_´	ak'u:t
+_¸	sed'i:
+_¯	m'ak:ron
+
 +	plus:s	$max3
 *	t&R:n	$max3
 =	v8R:dus||m&rk:	$max3
@@ -84,12 +128,20 @@ $	tol:larit
 ~	tilde
 
 _acu	ak'u:t
-_brv	ka:r
-_ced	sedi:
-_cir	katus
-_dia	t&pid
-_grv	gra:vis
-_tld	tilde
+_brv	k'a:r
+_ced	sed'i:
+_cir	tsirkumfl'eks	// tsirkumfleks; "katus" is said of š and ž
+_dia	t'&pid
+_grv	gr'a:vis
+_tld	t'ilde
+_hac	h'a:k	// haak (the name EKI gives; "katus" is said informally)
+_mcn	m'ak:ron
+_ogo	p'Y:rdsed,i:	// pöördsedii (EKI; also ogonek)
+_dot	'ylA1puNkt	// ülapunkt
+_ac2	t'opeltak,u:t	// topeltakuut
+_lig	ligA1t'u:r	// ligatuur
+_rng	'ylA1s,8:r	// ülasõõr (å, ů)
+_stk	l'&biv||k'al:d||kri:ps	// läbiv kaldkriips (ø, ł)
 
 // numbers
 _0       n'ul:l
@@ -126,11 +178,11 @@ _0C      sadA1_
 _1C      sadA1
 _0M1     tuhA1t
 _1M1     tuhA1t          // no '1' before thousand
-_0M2     mil^jon
+_0M2     mil^jonit        // partitive after a number: kaks miljonit
 _1M2     mil^jon
-_0M3     mil^jard
+_0M3     mil^jardit
 _1M3     mil^jard
-_0M4     bil^jon
+_0M4     bil^jonit
 _1M4     bil^jon
 _dpt     komA1        // comma
 

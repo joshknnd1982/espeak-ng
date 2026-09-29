@@ -29,9 +29,30 @@ w      d'Ob:El,ve:
 x      Eks
 z      sEt
 
+// the vowels, named by their sound, and the letters which had no name
+// (e, i and l are also words: they are given further down)
+o      o:
+u      u:
+y      y:
+å      O:
+ä      &:
+æ      &:
+ö      Y:
+ø      Y:
+ŋ      EN:
+// á is a letter of the alphabet, named by its sound: long, where a is short
+// (a stays as it was when it stands alone in text)
+á      A:
+_a     A
+// ń and ñ are the same letter as ŋ, written so in Sweden and in older texts: äŋ
+ń      EN:
+ñ      EN:
+
+_cap   st'uorra:    // stuorra (bokstávva)
+
 
 // numbers
-_0      n'u-l:a
+_0      n'Ol:a	// nålla
 _1      'akta:
 _2      kuokta
 _3      kolomo
@@ -59,6 +80,15 @@ _6X      k'ut:alok
 _7X      k'ietSauPlok
 _8X      k'Aktsalok
 _9X      'aktsielok
+// the tens alone end in -låhke; before a unit it is -låk: guoktalåhke (20), guoktalåkakta (21)
+_20      k'uoktalohkie
+_30      k'olomolohkie
+_40      n'el:jalohkie
+_50      v'it:alohkie
+_60      k'ut:alohkie
+_70      k'ietSauPlohkie
+_80      k'Aktsalohkie
+_90      'aktsielohkie
 _0C      tS'uotie
 _1C      tS'uohtie
 _0M1      t'u:hAt
@@ -90,6 +120,7 @@ _17o       l'ogienaN'ieht:Sit
 _18o       l'ogienaN'AvtsAt
 _19o       l'ogienan'avtsAt
 _2Xo       kuoktalo:got
+_20o       kuoktalo:got	// 20th alone (_20 above would otherwise give the cardinal)
 _0Co       tSuotA:t
 _0M1o       tu:vsAnat
 
@@ -130,7 +161,7 @@ __	u-ndaRStR@k
 _`	'OmvEndt||ApUstR'u:f
 €	euro
 
-_#09	tA:b
+_#9	tA:b	// was given as _#09, which is never looked up
 _#32	mEllOmRu:m
 
 _acu	A:'ku-t:
@@ -139,6 +170,12 @@ _cir	s'IRku-mflEks
 _dia	tR'e:mA
 _grv	gR'A:vi:s
 _tld	t'Ilda
+
+// the accents standing alone, named as the accent names above
+_¨	tR'e:mA
+_´	A:'ku-t:
+_¸	s'e:dIlla
+~	t'Ilda	$max3	// read in English in ordinary text before: now as the tilde above
 
 é	$accent
 ü	$accent
@@ -726,6 +763,10 @@ _O     o:
 O      o:   $atend
 _i     i:
 i      i:   $atend
+_e     e:
+e      e:   $atend
+_l     El
+l      El   $atend
 
 
 // English Words
