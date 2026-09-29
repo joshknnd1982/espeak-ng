@@ -40,6 +40,18 @@ x    ks@
 y    i||g@-*'eak@
 z    z@
 
+// Letters of the Romanian-based spelling, which has single letters where the
+// spelling of this file has ã, â, sh, ts, nj, lj, dz: they have the same names
+_ă   @
+_î   y
+_ș   S@
+_ş   S@
+_ț   ts@
+_ţ   ts@
+_ń   n^@
+_ľ   l^@
+_ḑ   dz@
+
 
 // Numbers
 
@@ -105,6 +117,10 @@ _1M3 'unu||milj'aRdu
 _2M3 d'aUy||milj'aRde
 
 _dpt viRJ'il@
+
+// names of marks said when a text is read character by character
+_,   viRJ'il@
+_-   kr'atim@
 
 
 // Symbols

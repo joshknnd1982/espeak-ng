@@ -95,30 +95,46 @@
 
 // 1. General characteristics
 // 1.1 Symbols 
-_cap	m'aJ^us   // eg: "Capital-B"
+_cap	maZ'uskula   // eg: "Capital-B"
 _??	s'imbOl
-_#9`	tab
+_#9	taBulaD'o
+?3 _#9	taBulaD'o**
 ?1  _#32	esp'aj
 ?2  _#32	esp'aj
 
 // 1.1.1 Accent names
 _lig	l^iQaD'u**a
-_acu	aQ'ut
-_ac2	d'Oble||aQ'ut	
-_brv	b**'ew
+_acu	amb||aks,en||aQ'ut
+?3 _acu	am||aks,ent||aQ'ut
+?4 _acu	amb||ats,ent||aQ'ut
+_ac2	am||d,obble||aks,en||aQ'ut
+?2 _ac2	am||d,oble||aks,en||aQ'ut
+?3 _ac2	an||d,oble||aks,ent||aQ'ut
+?4 _ac2	an||d,obble||ats,ent||aQ'ut
+_brv	am||b**'ew
 _ced	t**Enk'aDa
-_cir	siRkumfl'Eks
-_dia	di'E**esi
+_cir	amb||aks,en||siRkumfl'Eks
+?3 _cir	am||aks,en||siRkumfl'Eks
+?4 _cir	amb||ats,en||siRkumfl'Ets
+_dia	am||di'E**ezi
+?3 _dia	an||di'E**ezi
+?4 _dia	an||di'@**ezi
 _dac	d'Oble||aQ'ut	
-_dot	p'un
-?2	_dot	p'unt
-_grv	g**'ew
-_hac	,antisiRkuMfl'Eks
-_mcn	m'ak**on
-_ogo	OQon'Ek    // diacrític que es fa servir en polonès i lituà. En cast, "colita".
-_rng	an'el^     // diacrític en forma de rodoneta
-_stk	b'aRa	  
-_tld	t'itl^a
+_dot	am||p'un
+?2	_dot	am||p'unt
+_grv	amb||aks,en||g**'ew
+?3 _grv	am||aks,en||g**'ew
+?4 _grv	amb||ats,en||g**'ew
+_hac	amb||aks,en||,antisiRkumfl'Eks
+?3 _hac	am||aks,ent||,antisi**kumfl'Eks
+?4 _hac	amb||ats,ent||,antisi**kumfl'Ets
+_mcn	am||mak**'o
+_ogo	amb||oQon'ek    // diacrític que es fa servir en polonès i lituà. En cast, "colita".
+_rng	amb||an'el^     // diacrític en forma de rodoneta
+_stk	baR'aDa
+_tld	am||t'il^l^a
+?3 _tld	an||t'il^a
+?4 _tld	an||t'illa
 
 // 1.1.2 Names of symbols
     _.	pun
@@ -150,6 +166,122 @@ _{	'Ob**e||kl'aws
 _}	t'anka||kl'aws
 _«	'Ob**e||kum'Etes
 _»	t'anka||kum'Etes
+
+// Names of more marks and symbols, said when a text is read character by character
+_-	gion'Et
+?2 _-	gion'et
+?4 _-	gion'@t
+_–	gi'o
+_—	gi,o||l^'aRk
+_…	p,uns||suspens'iws
+_|	b,aRa||beRtik'al
+?3 _|	b,aRa||ve**tik'al
+?4 _|	b,aRa||ve2**tik'al
+_“	'OB**e||kom'Etes||'altes
+?2 _“	'OB**e||kom'etes||'altes
+?4 _“	'OB**e||kom'@tes||'altes
+_”	t'aNka||kom'Etes||'altes
+?2 _”	t'aNka||kom'etes||'altes
+?4 _”	t'aNka||kom'@tes||'altes
+_‘	'OB**e||kom'Eta||s'imple
+?2 _‘	'OB**e||kom'eta||s'imple
+?4 _‘	'OB**e||kom'@ta||s'imple
+_’	ap'Ost**of
+_‚	kom'Eta||iMfe**i'oR
+?2 _‚	kom'eta||iMfe**i'oR
+?3 _‚	kom'eta||iMfe**i'o**
+?4 _‚	kom'@ta||iMfe**i'o
+_„	kom'Etes||iMfe**i'oRs
+?2 _„	kom'etes||iMfe**i'oRs
+?3 _„	kom'etes||iMfe**i'o**s
+?4 _„	kom'@tes||iMfe**i'os
+_‹	'OB**e||kom'Eta||aNgul'aR
+?2 _‹	'OB**e||kom'eta||aNgul'aR
+?3 _‹	'OB**e||kom'eta||aNgul'a**
+?4 _‹	'OB**e||kom'@ta||aNgul'a
+_›	t'aNka||kom'Eta||aNgul'aR
+?2 _›	t'aNka||kom'eta||aNgul'aR
+?3 _›	t'aNka||kom'eta||aNgul'a**
+?4 _›	t'aNka||kom'@ta||aNgul'a
+_·	p,un||vol'at
+?2 _·	p,un||bol'at
+?3 _·	p,un||vol'at
+_•	p'ik
+_°	g**'aw
+_×	m,ultiplik'at||pe**
+_÷	diBiD'it||pe**
+?3 _÷	diviD'it||pe**
+?4 _÷	diviD'it||pe**
+// ± and ¬ also in ordinary text, which read them (in English) before
+±	m,es||o||m'En^s
+?2 ±	m,es||o||m'en^s
+?4 ±	m,es||o||m'@jns
+_†	k**'Ew
+?2 _†	k**'ew
+_‡	k**,Ew||d'obble
+?2 _‡	k**,ew||d'oble
+_‰	pe**||m'il
+_´	aks,en||aQ'ut
+?3 _´	aks,ent||aQ'ut
+?4 _´	ats,ent||aQ'ut
+_¨	di'E**ezi
+?4 _¨	di'@**ezi
+_¯	mak**'o
+_ª	,a||vol'aDa
+?2 _ª	,a||bol'aDa
+?3 _ª	,a||vol'aDa
+_º	,O||vol'aDa
+?2 _º	,O||bol'aDa
+?3 _º	,o||vol'aDa
+_−	m'En^s
+?2 _−	m'en^s
+?4 _−	m'@jns
+_′	p**'ima
+_″	d,obble||p**'ima
+?2 _″	d,oble||p**'ima
+_¦	b,aRa||paRt'iDa
+¬	neQasi'o
+_µ	m'ik**o
+_¤	s,imbol||de||mon'EDa
+?2 _¤	s,imbol||de||mon'eDa
+?4 _¤	s,imbol||de||mon'@Da
+_←	fl,etSa||esk'ERa
+_→	fl,etSa||d**'Eta
+?2 _→	fl,etSa||d**'eta
+?4 _→	fl,etSa||d**'@ta
+_↑	fl,etSa||am'un
+?3 _↑	fl,etSa||am'unt
+?4 _↑	fl,etSa||am'unt
+_↓	fl,etSa||aB'al^
+?3 _↓	fl,etSa||av'al^
+?4 _↓	fl,etSa||av'aj
+_≠	dife**'en||de
+_≤	men,o**||o||iQw'al||ke
+_≥	maZ,o**||o||iQw'al||ke
+_∞	iMfin'it
+_≈	ap**oksim,aDam,en||iQw'al
+?3 _≈	ap**oksim,aDam,ent||iQw'al
+_√	aR,El||kwaD**'aDa
+_©	k,OpiR'ajt
+_®	m,aRka||ReZist**'aDa
+_™	m,aRka||komeRsi'al
+_€	'Ew**o
+?2 _€	'ew**o
+_£	l^'iw**a
+_¥	j'En
+?2 _¥	j'en
+_¢	s'Entim
+?4 _¢	s'@ntim
+_&	,i||komeRsi'al
+_$	d'Ola**
+_sup	supe**'indeks
+_sub	sub'indeks
+// fractions, also in ordinary text (they were read in English)
+½	um||m'itS
+¼	uN||kw'aRt
+¾	t**,Es||kw'aRs
+?2 ¾	t**,es||kw'aRs
+?3 ¾	t**,es||kw'a**ts
 
 =	iQw'al    $max3
 +	m'es      $max3
@@ -239,8 +371,12 @@ _8C	b,ujts'ens
 _9C	n,Ows'ens
 ?3 _9C	n,Ows'ents
 _0M1	m'il
+_1M1	m'il
 _0M2	mili'ons
 _1M2    ummili'o
+_0M4	bili'ons
+_1M4	umbili'o
+_1a	'un	// before thousands and millions
 _dpt	_k'oma
 //_roman	Rom'a
 
@@ -858,12 +994,17 @@ caldrà  $verbf
 // "letter" name, then include the letter name here, with the letter
 // prefixed by a _ character.
 
+_a      a
 _i      i
-_o      'O
+_u      u
+_o      O
+?3 _o   o
+_e      E
+?2 _e   e
 
 b	b'e
 c	s'e
-ç	s,et**@nk'aDa
+ç	s,e||t**enk'aDa
 d	d'e
 f	'efa
 g	Z'e
@@ -882,12 +1023,72 @@ q	k'u
 r	'eRa
 s	'esa
 t	t'e
-?1  v	b'e||b'aSa
-?2  v	b'e||b'aiSa
-w	v'e||d'obbla
+?1  v	b,e||b'aSa
+?2  v	b,e||b'ajSa
+w	v,e||d'obble
+?2 w	b,e||d'oble
+?3 w	v,e||d'oble
 x	iks
-y	'i||g**EQa
+y	,i||g**'eQa
 z	z'Eta
+
+// Valencian names (AVL): efe, ele, eme, ene, erre, esse; jota and zeta with [o] and [e]
+?3 f	'efe
+?3 j	Z'ota
+?3 l	'ele
+?3 m	'eme
+?3 n	'ene
+?3 r	'eRe
+?3 s	'ese
+?3 z	z'eta
+// Balearic says [v]: the letter is "ve"
+?4 v	v'e
+?4 y	,i||g**'@Qa
+?4 z	z'@ta
+
+// the letters a and o standing alone at the end of a clause, where the words
+// "a" and "o" cannot be
+a	'a	$atend
+o	'O	$atend
+?3 o	'o	$atend
+
+// letters with accents: "a amb accent obert", "e amb accent tancat", "i amb dièresi"
+à	,a||amb||aks,en||oB'ERt
+?2 à	,a||amb||aks,en||oB'ER
+?3 à	,a||am||aks,ent||oB'E**t
+?4 à	,a||amb||ats,ent||oB'E**t
+è	,E||amb||aks,en||oB'ERt
+?2 è	,e||amb||aks,en||oB'ER
+?3 è	,e||am||aks,ent||oB'E**t
+?4 è	,E||amb||ats,ent||oB'E**t
+ò	,O||amb||aks,en||oB'ERt
+?2 ò	,O||amb||aks,en||oB'ER
+?3 ò	,o||am||aks,ent||oB'E**t
+?4 ò	,O||amb||ats,ent||oB'E**t
+é	,E||amb||aks,en||taNk'at
+?2 é	,e||amb||aks,en||taNk'at
+?3 é	,e||am||aks,en||taNk'at
+?4 é	,E||amb||ats,en||taNk'at
+í	,i||amb||aks,en||taNk'at
+?3 í	,i||am||aks,en||taNk'at
+?4 í	,i||amb||ats,en||taNk'at
+ó	,O||amb||aks,en||taNk'at
+?3 ó	,o||am||aks,en||taNk'at
+?4 ó	,O||amb||ats,en||taNk'at
+ú	,u||amb||aks,en||taNk'at
+?3 ú	,u||am||aks,en||taNk'at
+?4 ú	,u||amb||ats,en||taNk'at
+ï	,i||am||di'E**ezi
+?3 ï	,i||an||di'E**ezi
+?4 ï	,i||an||di'@**ezi
+ü	,u||am||di'E**ezi
+?3 ü	,u||an||di'E**ezi
+?4 ü	,u||an||di'@**ezi
+
+// the first half of the ela geminada: "ela amb punt volat"
+ŀ	,ela||am||p,un||vol'at
+?2 ŀ	,ela||am||p,un||bol'at
+?3 ŀ	,ele||am||p,un||vol'at
 
 // 1.5.1 Greek letters
 α	'alfa
@@ -897,7 +1098,7 @@ z	z'Eta
 ε	'Epsilo2n
 ζ	z'Eta
 η	'Eta
-T	t'Eta
+θ	t'Eta
 ι	j'Ota
 κ	k'apa
 λ	l'amda
@@ -2088,6 +2289,7 @@ dodecaedre	$alt2
 dodecaedres	$alt2
 doler	$alt2
 e	$alt2
+?2 e	e	// the name of the letter e in the western dialects
 ebri	$alt2
 ebris	$alt2
 efeb	$alt2

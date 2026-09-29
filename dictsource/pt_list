@@ -84,6 +84,11 @@ _ó	$accent
 õ	$accent
 ú	$accent
 ü	$accent
+è	$accent
+ä	$accent
+ë	$accent
+ï	$accent
+ö	$accent
 ß	Est|s'Et
 
 
@@ -164,6 +169,7 @@ _−	m'enUs
 ?1 ™	m,a*k&||R#eZis#t'ad&
 ?2 ™	m,a*k&||R#eZis#t*'ad&
 _,	v'i*gul&
+_.	p'o~NtU
 _-	'ifeIN
 _/	b'aR#&
 _:	d,oIs#||p'o~Ntus#
@@ -202,6 +208,80 @@ _"	,as#p&||d'upl&
 ?1 ª	O*d#in'al||fymin'i~nU
 ?2 ª	o*d#in'aU||femin'i~nU
 °	g*'aU
+
+// names of more marks and symbols, said when a text is read character by character
+// (the names from the emoji file are cut to their first word there)
+?1 _–	m,eI&||x'iSk&
+?2 _–	m,eI&||x'isk&
+?1 _—	t*,&vys'&U~
+?2 _—	t*,aves'&U~
+?1 _…	x,etis'e~Nsj&S
+?2 _…	x,etSis'e~Nsj&s
+?1 _•	m,&*k&d'o*
+?2 _•	m,a*kad'o*
+?1 _«	,ab*y||,aSp&z||,&~Ngul'a*yS
+?2 _«	,ab*i||,asp&z||,&~Ngul'a*ys
+?1 _»	f,ES&||,aSp&z||,&~Ngul'a*yS
+?2 _»	f,ES&||,asp&z||,&~Ngul'a*ys
+?1 _“	,ab*y||'aSp&S
+?2 _“	,ab*i||'asp&s
+?1 _”	f,ES&||'aSp&S
+?2 _”	f,ES&||'asp&s
+?1 _‘	,ab*y||,aSp&S||s'i~NplyS
+?2 _‘	,ab*i||,asp&s||s'i~Nplys
+?1 _’	,&p'OSt*ufU
+?2 _’	,ap'Ost*ofU
+?1 _„	,aSp&Z||b'aIS&S
+?2 _„	,asp&z||b'aIS&s
+?1 _‚	,aSp&||s,i~NplyZ||b'aIS&
+?2 _‚	,asp&||s,i~Nplyz||b'aIS&
+?1 _‹	,ab*y||,aSp&||,&~Ngul'a*
+?2 _‹	,ab*i||,asp&||,&~Ngul'a*
+?1 _›	f,ES&||,aSp&||,&~Ngul'a*
+?2 _›	f,ES&||,asp&||,&~Ngul'a*
+?1 _†	k*'uS
+?2 _†	k*'us
+?1 _‡	k*,uZ||d'upl&
+?2 _‡	k*,uz||d'upl&
+?1 _‰	pu*||m'il
+?2 _‰	po*||m'iU
+_¨	t*'em&
+_¯	m'ak*o~N
+_′	pl'ik&
+_″	pl,ik&||d'upl&
+_¦	b,ax&||k,eb*'ad&
+// ± and ¬ also in ordinary text, which read them (in English) before
+?1 ¬	n,eg&s'&U~
+?2 ¬	n,egas'&U~
+?1 _¤	s,i~NbulU||dy||mu'Ed&
+?2 _¤	s,i~NbolU||dZy||mo'Ed&
+?1 ±	m,aIz||oU||m'enUS
+?2 ±	m,aIz||oU||m'enUs
+_©	k,Opi*'aIt
+?1 _®	m,a*k&||x,eZiSt'ad&
+?2 _®	m,a*k&||x,eZist*'ad&
+?1 _™	m,a*k&||k,umy*si'Al
+?2 _™	m,a*k&||k,ome*si'aU
+_€	'eU*U
+?1 _↑	s,Et&||,&s'im&
+?2 _↑	s,Et&||,as'im&
+?1 _↓	s,Et&||,&b'aISU
+?2 _↓	s,Et&||,ab'aISU
+?1 _←	s,Et&||Sk'e*d&
+?2 _←	s,Et&||,esk'e*d&
+?1 _→	s,Et&||d,i*'eIt&
+?2 _→	s,Et&||dZ,i*'eIt&
+?1 _≠	d,ify*'e~Nty||dy
+?2 _≠	dZ,ife*'e~NtSy||dZy
+?1 _≤	myn,O*||,ow||igw'Al||&
+?2 _≤	men,O*||,ow||igw'aw||a
+?1 _≥	maI,O*||,ow||igw'Al||&
+?2 _≥	maI,O*||,ow||igw'aw||a
+?1 _≈	,&p*us,im&d&m'e~Nty||igw'Al
+?2 _≈	,ap*os,imad&m'e~NtSy||igw'aU
+_∞	,i~Nfin'itU
+?1 _√	x&,iS||kw,&d*'ad&
+?2 _√	xa,is||kw,ad*'ad&
 
 
 
@@ -1848,11 +1928,17 @@ há	$u+
 
 // block of letter names
 _a	a
+?1 _a	'a	// European: keep the open [a] of the name before an accent's name (a til)
 _e	E
 _o	O
 a	a $atend $sentence	// assume (open) letter-a at end of sentence
 e	e $atend $sentence	// assume (mid-close) letter-e at end of sentence
 o	o $atend $sentence	// assume (mid-close) letter-o at end of sentence
+?1 e	E $atend $sentence	// European: the names of these letters are é and ó
+?1 o	O $atend $sentence
+á	$accent $atend	// these are not words at the end of a clause: name the letter
+à	$accent $atend
+ó	$accent $atend
 
 
 // block of adverbs

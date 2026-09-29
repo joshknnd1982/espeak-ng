@@ -25,7 +25,7 @@ s	Es
 t	te
 v	ve
 w	we
-x	Eks
+x	'eks
 z	zEt
 ñ	en^e
 
@@ -34,6 +34,7 @@ _e	e
 _i	i
 _o	o
 _y	igR'Ek	$atend
+_cap	l'EteR||kapit'al
 
 // these letters are in pap_rules, but the letter names include the accent name
 á	$accent
@@ -46,8 +47,9 @@ _y	igR'Ek	$atend
 // ù	$accrnt
 
 // accent names
-_acu	skERpi
-_grv	gRave
+_acu	aks'Ent||sk'ERpi
+_grv	aks'Ent||gR'ave
+_dia	tR'ema
 
 
 // numbers
@@ -74,7 +76,25 @@ _9X	nob'enta
 _0C	sj'en
 _0M1	m'il
 _0M2	mi'on
+_1M2	'un||mi'on
+_1M1	m'il
+_1a	'un	// before thousands and millions
 _dpt	_kOma/
+
+// names of the marks, said when a text is read character by character
+_.	p'unto
+_,	k'Oma
+_;	p'unto||i||k'Oma
+_:	d'os||p'unto
+_?	s'igno||di||inteRogaS'oN
+_!	s'igno||di||sklamaS'oN
+_…	punt'onan||suspens'ivo
+_-	gj'oN
+_(	paR'entesis||h'abRi
+_)	paR'entesis||s'eRa
+/	sl'ES
+_"	kom'ija
+%	poRS'ento	// also in ordinary text, which said it in English
 
 
 // common function words

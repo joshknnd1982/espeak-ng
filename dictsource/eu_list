@@ -31,6 +31,8 @@ x	'iSa
 y	'i||gr'ekoa
 z	'z'eta
 
+_cap	maI'uskula
+_ç	$accent	// ze zediladuna (the rules read it as a sound)
 _a	a
 _e	e
 _i	i
@@ -80,6 +82,10 @@ _0C	e,un
 _0M1	m'il^a
 _0M2	mil^'ioI
 _1M2	mil^'ioI||bat
+_1M1	m'il^a
+_0M4	bil^'ioI
+_1M4	bil^'ioI||bat
+%	e'uneko	// said before the number (50% ehuneko berrogeita hamar); also in ordinary text
 _0and	eta
 _dpt	_koma
 
@@ -93,6 +99,35 @@ _? gald'era
 _: b'i||p'untu
 _; puntu||eta||koma
 _/ b'arra
+_'	ap'ost**ofoa
+_’	ap'ost**ofoa
+_"	kom'atSoak
+_“	kom'atSoak||i**'ekiak
+_”	kom'atSoak||itS'iak
+_«	kom'atSo||ang'eluaR2ak||i**'ekiak
+_»	kom'atSo||ang'eluaR2ak||itS'iak
+_(	pa**'entesi||i**'ekia
+_)	pa**'entesi||itS'ia
+_[	kortS'ete||i**'ekia
+_]	kortS'ete||itS'ia
+_{	g'iltza||i**'ekia
+_}	g'iltza||itS'ia
+_…	et'enpuntuak
+_–	m'aR2a
+_—	m'aR2a||luz'ea
+__	azp'imaR2a
+_|	b'aR2a||Bert'ikala
+\	alD'e**antzizko||B'aR2a	// \ @ * + = & $ also in ordinary text, which read them in English
+@	a||BilD'ua
+&	'eta
+$	dol'ar
+_°	gr'aDu
+_€	eU**'oa
+*	iz'artSoa
++	g'eI
+=	berD'in
+_¡	aR2'iDu**am'arka||i**'ekia
+_¿	galD'e**am'arka||i**'ekia
 
 // Accent characters
 
@@ -101,6 +136,7 @@ _acu az'entuduna
 _grv kam'utsa
 _cir zirk'unfleSua
 _dia d'jeresiduna
+_ced zeD'il2aDuna
 
 // characters
 á 'a||a'zentuduna

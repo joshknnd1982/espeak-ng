@@ -6,69 +6,106 @@
 
 
 a	a
-b	b@
+_b	b'e
 c	ka
-ċ	tS@e
-d	dee
+_ċ	tS'e
+_d	d'e
 e	e
-f	effe
-g	gie
-ġ	dZe
-h	akka
-ħ	h'@
+_f	f'e
+_g	g'e
+_ġ	dZ'e
+_h	'ak:a
+_ħ	h'e
 i	i
-j	ie
-k	k'@
-l	elle
-m	emme
-n	enne
+_j	j'e
+_k	k'e
+_l	l'e
+_m	m'e
+_n	n'e
 o	o
-p	pe
-q	'@
-r	erre
-s	esse
-t	te
+_p	p'e
+_q	?'e
+_r	r'e
+_s	s'e
+_t	t'e
 u	u
-v	ve
-w	u'@
-x	eSSe
+_v	v'e
+_w	w'e
+_x	S'e
 y	y
-z	tsee
-ż	z'@
+_z	ts'e
+_ż	z'e
+// consonants standing alone are letters; those that can be articles (l- ċ- d- n- r- s-
+// t- x- ż- z-) only at the end of a clause, which an article never ends
+b	b'e
+ċ	tS'e	$atend
+d	d'e	$atend
+f	f'e
+g	g'e
+ġ	dZ'e
+h	'ak:a
+ħ	h'e
+j	j'e
+k	k'e
+l	l'e	$atend
+m	m'e
+n	n'e	$atend
+p	p'e
+q	?'e
+r	r'e	$atend
+s	s'e	$atend
+t	t'e	$atend
+v	v'e
+w	w'e
+x	S'e	$atend
+z	ts'e	$atend
+ż	z'e	$atend
+
+// accented vowels (à è ì ò ù): "a bl-aċċent"
+_grv	bl,at:S'ent
+_à	$accent
+_è	$accent
+_ì	$accent
+_ò	$accent
+_ù	$accent
 
 
 
 
 
 
-_.	punt
-_, 	koma
-_!	punt ta’ esklamazzjoni
-_?	mistoqsija
-_"	kwoUts
-_#	hash
-_$	dollaru:
-_%	procentuali:
+_.	p'unt
+_,	v'irgola
+_;	p'unt||u||v'irgola
+_:	z'ewdZ||p'unti
+_!	p'unt||esklamat:'iv
+_?	p'unt||inter:ogat:'iv
+_"	virgol'et:i
+_“	virgol'et:i
+_”	virgol'et:i
+_«	virgol'et:i
+_»	virgol'et:i
+_#	haS
+_$	dol:'aru
+%	fil||m'ija	// also in ordinary text: 50% ħamsin fil-mija
 _&	u
-_'	accent
-_:	koUl@n
-_;	semIk'oUl@n
+_'	ap:'ostrofu
+_’	ap:'ostrofu
 €	ewro
-_(	parentezi tondi
-_)	parentezi tondi
-_[	parentezi kwadri
-_]	parentezi kwadri
-_{	alkua:lto
-_}	lop:ua:lto
-_<	iz'@ minn
-_>	akbar minn
-_-	haIf@n
-__	alavi:va
+_(	par'entesi||mift'uha
+_)	par'entesi||ma:l'u?a
+_[	par'entesi||kw'adra||mift'uha
+_]	par'entesi||kw'adra||ma:l'u?a
+_<	iz'a:r||min:
+_>	'akbar||min:
+_-	s'ing
+_–	s'ing
+_—	s'ing
+_…	el'is:i
 +	plus	$max3
 *	stil:a	$max3
-=	i:kw@lz	$max3
-/	kaut:a
-\	keno
+=	ugw'a:li	$max3
+/	izb'ar:a
 £	sterlina
 @	_at
 ~	tilde
@@ -79,48 +116,89 @@ __	alavi:va
 
 
 
-_0	z'e*o
-_1	ui:h'@d
-_2	nei:n
-_3	tli:eta
-_4	erba
-_5	h'@amsa
-_6	si:t:a
-_7	seba:
-_8	tmi:ni:a
-_9	dydin'asa
-_10	a'@ra
-_11	h'@daSe
-_12	tnaSe
-_13	tletaSe
-_14	erbataSe
-_15	h'@mistaSe
-_16	sitaSe
-_17	sbataSe
-_18	tmintaSe
-_19	tsetaSe
-_2X	oSerin
-_3X	tl'@ti:n
-_4X	erbai:n
-_5X	h'@amsi:n
-_6X	sit:i:n
-_7X	s'@bei:n
-_8X	tmeni:n
-_9X	d,ydin'isei:n
-_0C	mi:a
-_1C	mi:au
-_0M1	elf
-_1M1
-_2M1	elfeiun          
-3000	tlet: elef
-4000	erbatelef
-_0M2	m'iliun
-2000000	z'@euge  m'iliuni
-_0M3	bi'li'un
-_2M3	z'@euge bi'li'uni
-_3M3	tlet: bi'li'uni
-_4M3	erba bi'li'uni
-_5M3	h'@ames bi'li'uni
+_0	z'ero
+_1	w'iehet
+_2	tn'ejn
+_3	tl'ieta
+_4	'erba:
+_5	h'amsa
+_6	s'it:a
+_7	s'eba:
+_8	tm'ienja
+_9	d'isa:
+_10	'a:Sra
+_11	hd'aS
+_12	tn'aS
+_13	tlet:'aS
+_14	erbat'aS
+_15	hmist'aS
+_16	sit:'aS
+_17	sbat'aS
+_18	tmint'aS
+_19	tsat'aS
+_2X	oSr'i:n
+_3X	tlet'i:n
+_4X	erb'i:n
+_5X	hams'i:n
+_6X	sit:'i:n
+_7X	seb'i:n
+_8X	tmen'i:n
+_9X	dis'i:n
+_0and	u
+_0C	m'ija
+_1C	m'ija
+_2C	mit'ejn
+_3C	tl,iet||m'ija
+_4C	'erba||m'ija
+_5C	h'ames||m'ija
+_6C	s'it:||m'ija
+_7C	s'eba||m'ija
+_8C	tm'ien||m'ija
+_9C	d'isa||m'ija
+_0M1	'elf
+_1M1	'elf
+_2M1	elf'ejn
+_3M1	tl'it:||'elef
+_4M1	'erbat||'elef
+_5M1	h'amest||'elef
+_6M1	s'it:||'elef
+_7M1	s'ebat||'elef
+_8M1	tm'int||'elef
+_9M1	d'isat||'elef
+_10M1	'a:Sart||'elef
+_11M1	hd'aSil||'elf
+_12M1	tn'aSil||'elf
+_13M1	tlet:'aSil||'elf
+_14M1	erbat'aSil||'elf
+_15M1	hmist'aSil||'elf
+_16M1	sit:'aSil||'elf
+_17M1	sbat'aSil||'elf
+_18M1	tmint'aSil||'elf
+_19M1	tsat'aSil||'elf
+_100M1	m'it:||'elf
+_300M1	tl,iet||m'it:||'elf
+_400M1	'erba||m'it:||'elf
+_500M1	h'ames||m'it:||'elf
+_600M1	s'it:||m'it:||'elf
+_700M1	s'eba||m'it:||'elf
+_800M1	tm'ien||m'it:||'elf
+_900M1	d'isa||m'it:||'elf
+_0M2	milj'un
+_1M2	milj'un
+_2M2	z'ewdZ||milj'uni
+_3M2	tl,iet||milj'uni
+_4M2	'erba||milj'uni
+_5M2	h'ames||milj'uni
+_6M2	s'it:||milj'uni
+_7M2	s'eba||milj'uni
+_8M2	tm'ien||milj'uni
+_9M2	d'isa||milj'uni
+_10M2	'a:Sar||milj'uni
+_100M2	m'it:||milj'un
+_0M3	bilj'un
+_1M3	bilj'un
+_2M3	z'ewdZ||bilj'uni
+_dpt	p'unt
 
 
 

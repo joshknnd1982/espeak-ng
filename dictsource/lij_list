@@ -8,23 +8,59 @@ f	'Ef:e
 g	dZe
 h	aka
 _i	i
-j	'i||_l'uNga/
+j	i||l'uNgu	// i longo
 k	kapa
 l	Ele
 m	Eme
 n	Ene
 _o	u
 p	pe
-q	ku
+q	k'y	// qu
 r	ERe
 s	Ese
 t	te
-_u	u
-v	vu
-w	d,udZav'e
+_u	'y	// the letter u is [y]
+v	v'e
+w	v'e||d'udZu	// ve doggio
 x	'i:Ze
-y	'i||gR'e:ga
+y	i||gR'e:gu	// i grego
 z	zita
+
+// letters of the Genoese alphabet that were missing
+æ	'E:
+ç	s'e	// çe
+ñ	'eNe	// eñe
+
+// accent names, said after the letter: "a con l'açento grave", "e co-o çirconflesso",
+// "o co-i doî ponti"
+_grv	k,uN||las,eNtu||gR'a:ve
+_acu	k,uN||las,eNtu||ag'ysu
+_cir	k,u:||siRkuNfl'esu
+_dia	k,ui||du,i:||p'uNti
+_ced	sed'idZa
+// the accented letters of Genoese are named as the base letter and the accent;
+// those that are not words are also named when they stand alone at the end of a clause
+_à	$accent
+_è	$accent
+_é	$accent
+_ò	$accent
+_ó	$accent
+ì	$accent $atend
+ù	$accent $atend
+â	$accent $atend
+ê	$accent $atend
+î	$accent $atend
+ô	$accent $atend
+û	$accent $atend
+ä	$accent $atend
+ë	$accent $atend
+ï	$accent $atend
+ö	$accent $atend
+ü	$accent $atend
+// not Genoese letters (the rules read them as à ì ù)
+_á	$accent
+_í	$accent
+_ú	$accent
 
 // symbols
 /	b'a:Ra
@@ -39,6 +75,20 @@ $   d'Olaj
 £   sterl'iNe
 %   iN||Se||s'eNtu
 ‰   iN||Se||m'ile
+
+// names of the marks, said when a text is read character by character
+_.	p'uNtu
+_,	v'i:Rgu:la
+_;	p,uNtu||e||v'i:Rgu:la
+_:	du,i:||p'uNti
+_?	p,uNtu||iNteRugat'i:vu
+_!	p,uNtu||esklamat'i:vu
+_'	ap'OstRu:fu
+_(	paReNt,e:Zi||av'E:Rta
+_)	paReNt,e:Zi||seR'a:
+_"	viRgul'ete
+_-	tRat'iN
+_…	tR,ej||p'uNti
 
 // numbers
 // numbers

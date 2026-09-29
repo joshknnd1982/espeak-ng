@@ -72,6 +72,7 @@ o	_!o
 _ô	$accent
 ö       $accent
 œ	o||@||lie
+oe	o||@||lie	// œ standing alone
 p	pe
 q	ky
 _r	Er
@@ -85,6 +86,7 @@ u	_!y
 ü	$accent
 v	ve
 w	dubl@v'e
+?2 w	w'e
 _x	iks
 x	_!iks
 _y      _!i:gr'Ek
@@ -112,6 +114,8 @@ _tld	t'ild
 // character names
 
 _cap	maZysk'yl
+_sup	Ekspoz'A~	// exposant, for superscript letters and digits
+_sub	E~d'is	// indice
 _?A	l'Etr
 _??	sE~b'oll
 _#9	tabylasiO~
@@ -149,6 +153,39 @@ _‘	apostr'Of
 _µ	mikr'o
 _§	sEksj'O~
 _∞	infini
+_–	tirE||d@mikadrat'E~
+_—	tirE||kadrat'E~
+_…	pwE~||d@||syspA~sj'O~
+_•	p'ys
+_€	Yr'o
+_©	kOpir'ajt
+_®	mark||depoz'e
+_™	mark||d@||fabr'ik
+_“	uvre||gijmE||A~gl'E
+_”	fErme||gijmE||A~gl'E
+_„	gijmE||b'a
+_‚	gijmE||sE~pl@||b'a
+_‹	uvre||gijmE||s'E~pl
+_›	fErme||gijmE||s'E~pl
+_¡	pwE~||dEksklamasjO~||E~vErs'e
+_†	krw'a
+_‡	dubl@||krw'a
+_‰	pur||m'il
+_´	aksA~tEg'y
+_¨	trem'a
+_−	mw'E~
+_′	pr'im
+_″	dubl@||pr'im
+_¤	sE~bOl||mOnet'Er
+_←	flES||g'oS
+_→	flES||drw'at
+_↑	flES||vEr||l@||'o
+_↓	flES||vEr||l@||b'a
+_≠	difer'A~||d@
+_≤	E~ferjWr||u||eg'al
+_≥	syperjWr||u||eg'al
+_≈	prEsk||eg'al
+_√	rasin||kar'e
 
 
 // symbols that are normally spoken when reading text
@@ -170,7 +207,7 @@ _&	_e_komErsi'al
 ½	W~_d@m'i
 ¾	trwa_k'ar
 ™	markd@fabrik
-¬	tirE_fakyltatif
+¬	negasj'O~
 ¦	separatWr||vEtikal
 ©	_^_en
 _«	uvre||gijm'E
@@ -253,7 +290,8 @@ _roman	rom'E~
 (51 ème)	sE~kA~te:yniEm
 (61 ème)	swasA~te:yniEm
 (81 ème)	katr@vE~:yniEm
-(91 ème)	nonA~te:yniEm
+?2 (71 ème)	sEptA~te:yniEm
+?2 (91 ème)	nonA~te:yniEm
 
 //The Francophone Swiss use huitante for 80 (as well as the same 70 and 90 as the Belgians)
 ?3 _7X	sEptA~t
@@ -264,7 +302,9 @@ _roman	rom'E~
 ?3 _9X	nonA~t
 ?3 _91	nonA~te:W~
 
-(81 ème)	yit3A~te:yniEm
+?3 (71 ème)	sEptA~te:yniEm
+?3 (81 ème)	yit3A~te:yniEm
+?3 (91 ème)	nonA~te:yniEm
 
 
 
@@ -642,6 +682,9 @@ rien	ri'E~n2 $u+
 a	a $atend $only
 à	a $atend $only
 y       _|igr'Ek $atend $only
+(vas y)	vazi	// not the letter's name
+(allez y)	alezi
+(allons y)	alO~zi
 ô	$atend
 
 
@@ -672,6 +715,33 @@ tunis           tynis
 (1 ère)	pr@mjEr
 (1 ères)	pr@mjErz2
 (1 èrement)	pr@mjErmA~
+(1 re)	pr@mjEr
+(1 res)	pr@mjErz2
+(2 nd)	s@gO~
+(2 nds)	s@gO~z2
+(2 nde)	s@gO~d
+(2 ndes)	s@gO~dz2
+
+// the ordinal ending e: 2e deuxième, 21e vingt et unième, 81e quatre-vingt-unième
+_#e	iEm
+_#es	iEmz2
+_x#e	Er	// 1e: première
+_1ox	pr@mj
+_1o	yn
+_9o	nWv
+_21o	vE~te:yn
+_31o	trA~te:yn
+_41o	karA~te:yn
+_51o	sE~kA~te:yn
+_61o	swasA~te:yn
+_80o	katr@vE~t
+_0Co	sA~t	// deux-centième
+?2 _71o	sEptA~te:yn
+?2 _91o	nonA~te:yn
+?3 _71o	sEptA~te:yn
+?3 _80o	yit3A~t
+?3 _81o	yit3A~te:yn
+?3 _91o	nonA~te:yn
 
 
 (n'est ce pas)   n'Es||p'az2

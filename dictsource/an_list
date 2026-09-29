@@ -6,11 +6,14 @@
 _cap	m'aJ^uskla   // should be after the letter
 _??	simb'Olo
 _#32	Esp'aTjo
+_#9	taBulaD'or
+_sup	soBreskr'ito
+_sub	suBeskr'ito
 
 
 // accent names
 _lig	liQaD'ura
-_acu	akT'ento aQ'uDo
+_acu	akT'ento||aQ'uDo
 _ac2	d'Ople||aQ'uDo	
 _brv	br'eu
 _ced	TeD'il^a
@@ -98,11 +101,14 @@ _1C	Tj'Ento
 _1C0	Tj'En
 _2C	doTj'Entos
 _3C	tresTj'Entos
+_4C	kwatroTj'Entos
+_5C	TinkoTj'Entos
 _6C	seITj'Entos
 _7C	sjEteTj'Entos
 _8C	gwitoTj'Entos
 _9C	nowTj'Entos
 _0M1	m'il
+_1M1	m'il
 _0M2	mil^'ons
 _1M2	un||mil^'on
 _0M4	bil^'ons
@@ -198,6 +204,72 @@ _(	uBr'ir||parent'esi
 _)	TaRR'ar||parent'esi
 _{	uBr'ir||kl'aU
 _}	TaRR'ar||kl'aU
+
+// names of the punctuation marks and symbols, said when a text is read
+// character by character (Ortografia de l'aragones, 2023; NVDA)
+_.	p'unto
+_,	k'oma
+_;	p'unto||i||k'oma
+_:	d'os||p'untos
+_'	apostr'ofo
+_’	apostr'ofo
+_‘	uBr'ir||kom'eta||s'impla
+_"	kom'etas
+_“	uBr'ir||kom'etas
+_”	TaRR'ar||kom'etas
+_„	d'ople||kom'eta||imferj'Or
+_‚	kom'eta||imferj'Or
+_«	uBr'ir||kom'etas||angul'as
+_»	TaRR'ar||kom'etas||angul'as
+_‹	uBr'ir||kom'eta||angul'ar
+_›	TaRR'ar||kom'eta||angul'ar
+_<	men'or||kE
+_>	maj'Or||kE
+_–	gj'on||k'urto
+_—	gj'on||l'arQo
+_…	p'untos||suspens'iBos
+__	gj'om||b'aSo
+_^	Tirkumfl'eSo
+~	birQul'il^a
+_`	akT'ento||Qr'aU
+_´	akT'ento||aQ'uDo
+_¨	djEr'esi
+_¯	makr'On
+_·	p'unto||Bol'aU
+_•	bin^'Eta
+_§	sekTj'on
+_¶	markaD'or||De||paraQr'afo
+_©	dr'eItos||DaUt'or
+_®	m'arka||RetSistr'aDa
+_™	m'arka||komerTj'al
+_¥	j'En
+_¢	Tent'aBos
+_¤	simb'olo||De||mon'eDa
+_†	kr'uT
+_‡	d'ople||kr'uT
+_×	multiplik'aU||por
+_÷	diBiD'iu||por
+±	m'as||u||m'enos
+−	m'enos
+_µ	m'ikro
+_‰	por||m'il
+_¦	b'aRRa||Bertik'al||tal^'aDa
+_′	pr'ima
+_″	pr'ima||D'ople
+½	m'ejO
+¼	kw'arto
+¾	tr'es||kw'artos
+_←	fl'etSa||,enta||la||k'utSa
+_→	fl'etSa||,enta||la||Dr'eIta
+↑	fl'etSa||ent'alto
+↓	fl'etSa||entaB'aSo
+≠	difer'ent||kE
+_≤	men'or||u||iQw'al||kE
+_≥	maj'Or||u||iQw'al||kE
+_∞	imfin'ito
+≈	kw'asi||iQw'al||kE
+_√	RaD'iT||kwaDr'aDa
+¬	n'o||lotS'iko
 
 
 // unstressed words

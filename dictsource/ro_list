@@ -34,13 +34,15 @@ q	kju
 r	re
 _s	se
 ş	Se
+ș	Se	// s with comma below
 t	te
 ţ	tse
+ț	tse	// t with comma below
 _u	u
 v	ve
 w	dublu've
 x	iks
-y	'igrek
+y	igr'ek
 z	zet
 
 â	,ydin'a $atend
@@ -50,28 +52,31 @@ z	zet
 
 _??	ka*akt'er
 _cap	maZusk'ul@
+_sup	,ekspon'ent	// superscript
+_sub	'inditSe	// subscript
 
 // accent names
 _lig	ligat'ur@
-_acu	askuts'it
-_ac2	 d'ubluasku'tsit	
-_brv	k@tS'ul@
-_ced	sed'il@
-_cir	tSirkumfl'eks
-_dia	t@-*'em@
-_dot	punkt
-_grv	g@-*'av
-_hac	h'atSek
-_mcn	mak@-*'on
-_ogo	ogon'ek
-//_rng	
-_stk	sl'eS	
-_tld	t'ild@
+_acu	ku||aktS,ent||askuts'it
+_ac2	ku||d,ublu||aktS,ent||askuts'it
+_brv	ku||k@tS'ul@
+_ced	ku||sed'il@
+_cir	ku||tS,irkumfl'eks
+_dia	ku||t@-*'em@
+_dot	ku||p'unkt
+_grv	ku||aktS,ent||g@-*'av
+_hac	ku||h'atSek
+_mcn	ku||mak@-*'on
+_ogo	ku||ogon'ek
+_rng	ku||tS,erkul'ets
+_stk	ku||b'a*@
+_tld	ku||t'ild@
 
 
 // punctuation and symbols
 
 _,	v'irgul@
+_.	p'unkt
 _:	do'u@p'unkte
 _;	p'unkt||Siv'irgul@
 _!	eksklam'a*e
@@ -105,6 +110,65 @@ _#32	sp'atsiU
 /	sleS
 €	'eU*o
 °	g@-*ade
+
+// names of more marks and symbols, said when a text is read character by character
+_–	l'inje||sk'urt@
+_—	l'inje||l'uNg@
+_…	p'unkte||de||susp'ensje
+_^	tS,irkumfl'eks
+_`	aktS'ent||g@-*'av
+_§	p,a*ag@-*'af
+_•	bul'in@
+_£	l'i*@
+_¥	j'en
+_¢	tS'ent
+_©	k,opir'ajt
+_®	m'ark@||,yn@-*edZist@-*'at@
+_™	m'ark@||k,omertSj'al@
+_«	desk'ide||g,ilim'elele||,uNgjul'a*e
+_»	ynk'ide||g,ilim'elele||,uNgjul'a*e
+_„	desk'ide||g,ilim'elele
+_“	desk'ide||g,ilim'elele
+_”	ynk'ide||g,ilim'elele
+_‘	desk'ide||g,ilim'elele||s'imple
+_’	,apost@-*'of
+_‚	gil'imea||Z'os
+_‹	gil'imea||,uNgjul'a*@||st'yNga
+_›	gil'imea||,uNgjul'a*@||d@-*'eapta
+_¡	s'emnul||,eksklam@*'iI||,invers'at
+_¿	s'emnul||,ynt@-*eb@*'iI||,invers'at
+_·	p'unkt||medj'an
+_×	,ynmults'it||ku
+_÷	,ymp@rts'it||la
+±	pl'us||m'inus
+_¶	,alin'eat
+_†	k@-*'utSe
+_‡	k@-*'utSe||d'ubl@
+_‰	la||m'ie
+_´	aktS'ent||,askuts'it
+_¨	t@-*'em@
+_¯	mak@-*'on
+½	o||Z,um@t'ate
+¼	un||sf'ert
+¾	t@-*'eI||sfert'urI^
+_−	m'inus
+_′	p@-*'im
+_″	sek'und
+_¦	b'a*@||,ynt@-*e*'upt@
+¬	neg'atsje
+_µ	m'ik@-*o
+_¤	simb'ol||m,onet'ar
+_←	s@dZ'eat@||st'yNga
+_→	s@dZ'eat@||d@-*'eapta
+_↑	s@dZ'eat@||s'us
+_↓	s@dZ'eat@||Z'os
+_≠	d,ife*'it||de
+_≤	maI||m'ik||saU||eg'al
+_≥	maI||m'a*e||saU||eg'al
+_∞	,infin'it
+_≈	,ap@-*oks,imat'iv||eg'al
+_√	r,adik'al
+_€	e'u*o
 
 
 // numeric
@@ -171,6 +235,44 @@ _0M2	mil'jOane
 _1M2	'unmil'jon
 _0M3	mil'jarde
 _1M3	'unmil'jard
+
+// "de" after a round number of hundreds: o sută de mii, două sute de milioane
+_100M1	,os'ut@||de||m'iI
+_200M1	d'ou@||s'ute||de||m'iI
+_300M1	t@-*'eI||s'ute||de||m'iI
+_400M1	p'at@-*u||s'ute||de||m'iI
+_500M1	tS'intSI^||s'ute||de||m'iI
+_600M1	S'ase||s'ute||de||m'iI
+_700M1	S'apte||s'ute||de||m'iI
+_800M1	'opt||s'ute||de||m'iI
+_900M1	n'oU@||s'ute||de||m'iI
+_100M2	,os'ut@||de||mil'jOane
+_200M2	d'ou@||s'ute||de||mil'jOane
+_300M2	t@-*'eI||s'ute||de||mil'jOane
+_400M2	p'at@-*u||s'ute||de||mil'jOane
+_500M2	tS'intSI^||s'ute||de||mil'jOane
+_600M2	S'ase||s'ute||de||mil'jOane
+_700M2	S'apte||s'ute||de||mil'jOane
+_800M2	'opt||s'ute||de||mil'jOane
+_900M2	n'oU@||s'ute||de||mil'jOane
+_100M3	,os'ut@||de||mil'jarde
+_200M3	d'ou@||s'ute||de||mil'jarde
+_300M3	t@-*'eI||s'ute||de||mil'jarde
+_400M3	p'at@-*u||s'ute||de||mil'jarde
+_500M3	tS'intSI^||s'ute||de||mil'jarde
+_600M3	S'ase||s'ute||de||mil'jarde
+_700M3	S'apte||s'ute||de||mil'jarde
+_800M3	'opt||s'ute||de||mil'jarde
+_900M3	n'oU@||s'ute||de||mil'jarde
+// the feminine "una" before "mii": douăzeci și una de mii
+_21M1	d'ou@zetSI^||Si||'una||de||m'iI
+_31M1	t@-*'eIzetSI^||Si||'una||de||m'iI
+_41M1	p'at@-*uzetSI^||Si||'una||de||m'iI
+_51M1	tS'inzetSI^||Si||'una||de||m'iI
+_61M1	S'aIzetSI^||Si||'una||de||m'iI
+_71M1	S'aptezetSI^||Si||'una||de||m'iI
+_81M1	'optzetSI^||Si||'una||de||m'iI
+_91M1	n'oU@zetSI^||Si||'una||de||m'iI
 _0M4	bil'jOane
 _1M4	'unbil'jon
 _0M5	bil'jarde
