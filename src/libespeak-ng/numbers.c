@@ -1368,6 +1368,8 @@ static int LookupNum3(Translator *tr, int value, char *ph_out, bool suppress_nul
 		if ((hundreds > 0) || say_zero_hundred) {
 			if ((tr->langopts.numbers & NUM_AND_HUNDRED) && ((control & 1) || (ph_thousands[0] != 0)))
 				Lookup(tr, "_0and", ph_thousand_and);
+			else if ((tr->langopts.numbers2 & NUM2_AND_ROUND_HUNDREDS) && (tensunits == 0) && (ordinal == 0) && ((control & 1) || (ph_thousands[0] != 0)))
+				Lookup(tr, "_0and", ph_thousand_and); // lang=pt: mil e quinhentos, um milhão e duzentos mil
 
 			suppress_null = true;
 

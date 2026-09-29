@@ -882,6 +882,7 @@ Translator *SelectTranslator(const char *name)
 		tr->langopts.stress_flags = S_FINAL_VOWEL_UNSTRESSED | S_MID_DIM;
 		tr->langopts.param[LOPT_SUFFIX] = 1;
 		tr->langopts.numbers = NUM_SINGLE_STRESS | NUM_DECIMAL_COMMA | NUM_HUNDRED_AND | NUM_OMIT_1_HUNDRED | NUM_OMIT_1_THOUSAND | NUM_VIGESIMAL;
+		tr->langopts.numbers2 = NUM2_AND_ROUND_HUNDREDS | NUM2_PERCENT_BEFORE; // mila eta bostehun; ehuneko berrogeita hamar (50%)
 	}
 		break;
 	case L('f', 'a'): // Farsi
@@ -1049,7 +1050,8 @@ Translator *SelectTranslator(const char *name)
 	case L('h', 't'): // Haitian Creole
 		tr->langopts.stress_rule = STRESSPOSN_1R; // stress on final syllable
 		tr->langopts.stress_flags = S_NO_AUTO_2 | S_FINAL_DIM; // don't use secondary stress
-		tr->langopts.numbers = NUM_SINGLE_STRESS | NUM_OMIT_1_HUNDRED | NUM_NOPAUSE | NUM_ROMAN | NUM_VIGESIMAL | NUM_DFRACTION_4;
+		// numbers are written as in French: 1 000,5 (decimal comma, space between thousands)
+		tr->langopts.numbers = NUM_SINGLE_STRESS | NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_OMIT_1_HUNDRED | NUM_NOPAUSE | NUM_ROMAN | NUM_VIGESIMAL | NUM_DFRACTION_4;
 		break;
 	case L('h', 'u'): // Hungarian
 	{
@@ -1312,6 +1314,11 @@ Translator *SelectTranslator(const char *name)
 	case L3('l', 'f', 'n'): // Lingua Franca Nova: the voice file adds NUM_THOUS_SPACE and NUM_DECIMAL_COMMA
 		tr->langopts.numbers = NUM_DEFAULT | NUM_ALLOW_SPACE; // groups of thousands are written with spaces: 45 678
 		break;
+	case L3('l', 'i', 'j'): // Ligurian
+		// numbers are written as in Italian: 1.000,5
+		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_DFRACTION_2;
+		tr->langopts.param[LOPT_UNPRONOUNCABLE] = 1; // as before (default): disable check for unpronouncable words
+		break;
 	case L('l', 't'): // Lithuanian
 	{
 		tr->encoding = ESPEAKNG_ENCODING_ISO_8859_4;
@@ -1390,7 +1397,9 @@ Translator *SelectTranslator(const char *name)
 		tr->encoding = ESPEAKNG_ENCODING_ISO_8859_3;
 		tr->langopts.param[LOPT_REGRESSIVE_VOICING] = 0x100; // devoice at end of word
 		tr->langopts.stress_rule = STRESSPOSN_2R; // penultimate
-		tr->langopts.numbers = NUM_DEFAULT;
+		// units before tens with "u": wieħed u għoxrin; mija u wieħed; elf u mija
+		tr->langopts.numbers = NUM_SWAP_TENS | NUM_AND_UNITS | NUM_HUNDRED_AND | NUM_OMIT_1_HUNDRED | NUM_OMIT_1_THOUSAND;
+		tr->langopts.numbers2 = NUM2_AND_ROUND_HUNDREDS;
 	}
 		break;
 	case L('n', 'l'): // Dutch
@@ -1464,7 +1473,7 @@ Translator *SelectTranslator(const char *name)
 		tr->langopts.stress_rule = STRESSPOSN_1R; // stress on final syllable
 		tr->langopts.stress_flags =  S_FINAL_DIM_ONLY | S_FINAL_NO_2 | S_INITIAL_2 | S_PRIORITY_STRESS;
 		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_DFRACTION_2 | NUM_HUNDRED_AND | NUM_AND_UNITS | NUM_ROMAN_CAPITALS;
-		tr->langopts.numbers2 = NUM2_MULTIPLE_ORDINAL | NUM2_NO_TEEN_ORDINALS | NUM2_ORDINAL_NO_AND;
+		tr->langopts.numbers2 = NUM2_MULTIPLE_ORDINAL | NUM2_NO_TEEN_ORDINALS | NUM2_ORDINAL_NO_AND | NUM2_AND_ROUND_HUNDREDS;
 		tr->langopts.max_roman = 5000;
 		SetLetterVowel(tr, 'y');
 		ResetLetterBits(tr, 0x2);
