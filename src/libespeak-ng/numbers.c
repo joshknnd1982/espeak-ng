@@ -1370,6 +1370,12 @@ static int LookupNum3(Translator *tr, int value, char *ph_out, bool suppress_nul
 				if ((hundreds == 1) && (tr->langopts.numbers2 & NUM2_OMIT_1_HUNDRED_ONLY) && ((control & 1) == 0)) {
 					// only look for special 100 if there are previous thousands
 				} else {
+					if ((!found) && (thousandplex > 0) && (thousandplex <= 3) && (tr->langopts.numbers2 & (1 << thousandplex))) {
+						// variant (feminine) form of n-hundred before thousands, as for tens and units (LANG=el)
+						sprintf(string, "_%dCf", hundreds);
+						found = Lookup(tr, string, ph_digits);
+					}
+
 					if ((!found) && (tensunits == 0)) {
 						// is there a special pronunciation for exactly n00 ?
 						sprintf(string, "_%dC0", hundreds);
@@ -1692,11 +1698,16 @@ static int TranslateNumber_1(Translator *tr, char *word, char *ph_out, char *ph_
 
 		if (prev_thousands == 0) {
 			int next_char;
+			// signs which are said as a word after the number, so that the number is not
+			// in isolation: % ° ‰ and currency signs (LANG=cv, mn: 50% is the attributive form)
+			static const unsigned short sign_words[] = {
+				'$', '%', 0xa3, 0xa5, 0xb0, 0x58f, 0x2030, 0x20ac, 0x20ae, 0x20b8, 0x20bd, 0x20be, 0x20c0, 0 };
+
 			p2 = &word[n_digits];
 			while (*p2 == ' ')
 				p2++;
 			utf8_in(&next_char, p2);
-			if ((decimal_point == 0) && (ordinal == 0) && (!iswalpha(next_char) || (wtab[0].flags & FLAG_HYPHEN_AFTER))) {
+			if ((decimal_point == 0) && (ordinal == 0) && ((!iswalpha(next_char) && !lookupwchar(sign_words, next_char)) || (wtab[0].flags & FLAG_HYPHEN_AFTER))) {
 				// Look for special pronunciation for this number in isolation, ie. not
 				// followed by a word, except a suffix after a hyphen (LANG=cv)
 				sprintf(string, "_%ldn", value);

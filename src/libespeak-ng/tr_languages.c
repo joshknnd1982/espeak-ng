@@ -510,6 +510,10 @@ Translator *SelectTranslator(const char *name)
 		tr->langopts.numbers = 0; // disable numbers until the definition are complete in _list file
 	}
 		break;
+	case L('a', 'b'): // Abkhaz
+		// counting in twenties: 30 is 20 and 10, 57 is 40 and 17
+		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_VIGESIMAL;
+		break;
 	case L('a', 'f'):
 	{
 		static const short stress_lengths_af[8] = { 170, 140, 220, 220,  0, 0, 250, 270 };
@@ -563,6 +567,10 @@ Translator *SelectTranslator(const char *name)
 		tr->encoding = ESPEAKNG_ENCODING_ISO_8859_2;
 		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_DFRACTION_3;
 	}
+		break;
+	case L('b', 'a'): // Bashkir
+		// decimal comma, and the fraction said as a number (3,14 = 3 whole 14), as for Tatar
+		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_DFRACTION_4;
 		break;
 	case L('b', 'e'): // Belarusian
 	{
@@ -656,7 +664,7 @@ Translator *SelectTranslator(const char *name)
 		SetLetterBits(tr, LETTERGP_VOWEL2, (const char *)cv_vowels);
 		SetLetterBits(tr, LETTERGP_C, (const char *)cv_consonants);
 
-		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_OMIT_1_HUNDRED | NUM_OMIT_1_THOUSAND;
+		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_OMIT_1_HUNDRED | NUM_OMIT_1_THOUSAND; // 10 000 as well as 10.000
 	}
 		break;
 	case L('c', 'y'): // Welsh
@@ -776,7 +784,8 @@ Translator *SelectTranslator(const char *name)
 		tr->langopts.unstressed_wd2 = 2;
 		tr->langopts.param[LOPT_SONORANT_MIN] = 130; // limit the shortening of sonorants before short vowels
 
-		tr->langopts.numbers = NUM_SINGLE_STRESS | NUM_DECIMAL_COMMA;
+		// the decimal fraction said as a number (3,14 = τρία κόμμα δεκατέσσερα), and 10 000 as well as 10.000
+		tr->langopts.numbers = NUM_SINGLE_STRESS | NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_DFRACTION_2;
 		tr->langopts.numbers2 = NUM2_THOUSANDPLEX_VAR_THOUSANDS | NUM2_MULTIPLE_ORDINAL | NUM2_ORDINAL_NO_AND;
 
 		if (name2 == L3('g', 'r', 'c')) {
@@ -1079,8 +1088,11 @@ Translator *SelectTranslator(const char *name)
 		SetLetterBits(tr, LETTERGP_C, hy_consonants);
 		SetLetterBits(tr, LETTERGP_C, hy_consonants2); // add 'j'
 		tr->langopts.max_initial_consonants = 6;
-		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_OMIT_1_HUNDRED;
+		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_OMIT_1_HUNDRED | NUM_OMIT_1_THOUSAND; // 1984 = հազար ինը հարյուր ...
 	}
+		break;
+	case L3('h', 'y', 'w'): // West Armenian, which uses the hy dictionary: the same numbers as for Armenian
+		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_OMIT_1_HUNDRED | NUM_OMIT_1_THOUSAND;
 		break;
 			
 	case L('i', 'o'): // Ido International Auxiliary Language 
@@ -1191,7 +1203,7 @@ Translator *SelectTranslator(const char *name)
 		tr->letter_bits_offset = OFFSET_GEORGIAN;
 		tr->langopts.max_initial_consonants = 7;
 		tr->langopts.max_digits = 32;
-		tr->langopts.numbers = NUM_VIGESIMAL | NUM_AND_UNITS | NUM_OMIT_1_HUNDRED |NUM_OMIT_1_THOUSAND | NUM_DFRACTION_5 | NUM_ROMAN;
+		tr->langopts.numbers = NUM_VIGESIMAL | NUM_AND_UNITS | NUM_OMIT_1_HUNDRED |NUM_OMIT_1_THOUSAND | NUM_DFRACTION_5 | NUM_ROMAN | NUM_ROMAN_ORDINAL | NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE; // 3,14 and 10 000; XIX საუკუნე = მეცხრამეტე
 
 		tr->langopts.alt_alphabet = OFFSET_CYRILLIC;
 		tr->langopts.alt_alphabet_lang = L('r', 'u');
@@ -1215,7 +1227,7 @@ Translator *SelectTranslator(const char *name)
 		tr->langopts.lengthen_tonic = 0;
 		tr->langopts.param[LOPT_SUFFIX] = 1;
 
-		tr->langopts.numbers =  NUM_OMIT_1_HUNDRED | NUM_DFRACTION_6;
+		tr->langopts.numbers =  NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_OMIT_1_HUNDRED | NUM_DFRACTION_6; // 3,14 and 10 000
 		tr->langopts.max_initial_consonants = 2;
 		SetLengthMods(tr, 3); // all equal
 	}
@@ -1263,7 +1275,8 @@ Translator *SelectTranslator(const char *name)
 	}
 		break;
 	case L('k', 'y'): // Kyrgyx
-		tr->langopts.numbers = NUM_DEFAULT;
+		// decimal comma, 10 000, and decimal fractions as for Kazakh (3,14 = 3 whole, of a hundred 14)
+		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_DFRACTION_6;
 		break;
 	case L('l', 'a'): // Latin
 	{
@@ -1348,7 +1361,7 @@ Translator *SelectTranslator(const char *name)
 		tr->langopts.param[LOPT_SUFFIX] = 1;
 		tr->langopts.word_gap = 1; // natural word gap
 		tr->langopts.vowel_pause = 1;
-		tr->langopts.numbers = NUM_OMIT_1_HUNDRED | NUM_DFRACTION_6;
+		tr->langopts.numbers = NUM_ALLOW_SPACE | NUM_OMIT_1_HUNDRED | NUM_DFRACTION_6; // 10 000 as well as 10,000
 		tr->langopts.max_initial_consonants = 3;
 		SetLengthMods(tr, 3);
 	}
@@ -1387,6 +1400,9 @@ Translator *SelectTranslator(const char *name)
 		SetLetterVowel(tr, 'y');
 		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_HUNDRED_AND | NUM_ALLOW_SPACE | NUM_1900 | NUM_ORDINAL_DOT;
 	}
+		break;
+	case L3('n', 'o', 'g'): // Nogai
+		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE; // 3,14 and 603 549
 		break;
 	case L('o', 'm'): // Oromo
 	{
@@ -1661,7 +1677,7 @@ Translator *SelectTranslator(const char *name)
 		SetupTranslator(tr, stress_lengths_fr, stress_amps_fr);
 		tr->langopts.stress_rule = STRESSPOSN_1R; // stress on final syllable
 		tr->langopts.stress_flags = S_NO_AUTO_2; // no automatic secondary stress
-		tr->langopts.numbers = NUM_SINGLE_STRESS | NUM_DECIMAL_COMMA | NUM_OMIT_1_HUNDRED | NUM_OMIT_1_THOUSAND | NUM_DFRACTION_4;
+		tr->langopts.numbers = NUM_SINGLE_STRESS | NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_OMIT_1_HUNDRED | NUM_OMIT_1_THOUSAND | NUM_DFRACTION_4; // 10 000 as well as 10.000
 	}
 		break;
 	case L('u', 'k'): // Ukrainian
