@@ -93,10 +93,10 @@ echo "... chr (Cherokee)" # thousand and above as in the CLDR spell-out rules
 
 test_phon chr "tl'0~43_ g'o:sd'i~43_ s'o:gw'o~43_ t'0:l'i~43_ ts'o:'i~43_ n'&~:g'i~43_ h'i:sg'i~43_ s'u:d'0:l'i~43_ g'0:l'i:gw'o:g'i~43_ ts'u:n'e~:l'0~43_ s'o:n'e~:l'0~43_" "0 1 2 3 4 5 6 7 8 9" "units"
 test_phon chr "sg'o:h'i~43_ s'0:d'u~43_ t'0:l'i:d'u~43_ ts'o:g'0:d'u~43_ n'i~:g'0:d'u~43_ h'i:sg'0:d'u~43_ d'0:l'0:d'u~43_ g'0:l'i:gw'0:d'u~43_ n'e~:l'0:d'u~43_ s'o:n'e~:l'0:d'u~43_" "10 11 12 13 14 15 16 17 18 19" "teens"
-test_phon chr "t'0:l'i:sg'o~43_ ts'o:sg'o~43_ n'&~:g'i:sg'o~43_ h'i:sg'i:sg'o~43_ s'u:d'0:l'i:sg'o~43_ g'0:l'i:gw'o:g'i:sg'o~43_ ts'u:n'e~:l'i:sg'o~43_ s'o:n'e~:l'i:sg'o~43_" "20 30 40 50 60 70 80 90" "tens"
-test_phon chr "t'0:l'i:sg'o~43_ s'o:gw'o~43_ s'o:n'e~:l'i:sg'o~43_ s'o:n'e~:l'0~43_" "21 99" "tens and units"
-test_phon chr "s'o:gw'o~43_ sg'o:h'i:tsgw'0~43_ s'o:gw'o~43_ sg'o:h'i:tsgw'0~43_ s'o:gw'o~43_ t'0:l'i~43_ sg'o:h'i:tsgw'0~43_ s'o:n'e~:l'0~43_ sg'o:h'i:tsgw'0~43_ s'o:n'e~:l'i:sg'o~43_ s'o:n'e~:l'0~43_" "100 101 200 999" "hundreds"
-test_phon chr "s'o:gw'o~43_ 'i:j'0:g'0:j'&~:l'i~43_ s'o:gw'o~43_ 'i:j'0:g'0:j'&~:l'i~43_ t'0:l'i~43_ sg'o:h'i:tsgw'0~43_ ts'o:sg'o~43_ n'&~:g'i~43_ t'0:l'i~43_ 'i:j'0:g'0:j'&~:l'i~43_ t'0:l'i:sg'o~43_ h'i:sg'i~43_" "1000 1234 2025" "thousands"
+test_phon chr "t'0:l'i:sg'o:h'i~43_ ts'o:'i:sg'o:h'i~43_ n'&~:g'i:sg'o:h'i~43_ h'i:sg'i:sg'o:h'i~43_ s'u:d'0:l'i:sg'o:h'i~43_ g'0:l'i:gw'0:sg'o:h'i~43_ ts'u:n'e~:l'0:sg'o:h'i~43_ s'o:n'e~:l'0:sg'o:h'i~43_" "20 30 40 50 60 70 80 90" "tens"
+test_phon chr "t'0:l'i:sg'o~43_ s'o:gw'o~43_ s'o:n'e~:l'0:sg'o~43_ s'o:n'e~:l'0~43_" "21 99" "tens and units"
+test_phon chr "s'o:gw'o~43_ sg'o:h'i:tsgw'0~43_ s'o:gw'o~43_ sg'o:h'i:tsgw'0~43_ s'o:gw'o~43_ t'0:l'i~43_ sg'o:h'i:tsgw'0~43_ s'o:n'e~:l'0~43_ sg'o:h'i:tsgw'0~43_ s'o:n'e~:l'0:sg'o~43_ s'o:n'e~:l'0~43_" "100 101 200 999" "hundreds"
+test_phon chr "s'o:gw'o~43_ 'i:j'0:g'0:j'&~:l'i~43_ s'o:gw'o~43_ 'i:j'0:g'0:j'&~:l'i~43_ t'0:l'i~43_ sg'o:h'i:tsgw'0~43_ ts'o:'i:sg'o~43_ n'&~:g'i~43_ t'0:l'i~43_ 'i:j'0:g'0:j'&~:l'i~43_ t'0:l'i:sg'o~43_ h'i:sg'i~43_" "1000 1234 2025" "thousands"
 test_phon chr "s'o:gw'o~43_ 'i:j'u:gw'0:d'i:n'&~:d'0~43_ s'o:gw'o~43_ 'i:j'0:t'0:l'0:d'i:n'&~:d'&~43_" "1000000 1000000000" "large"
 test_phon chr "ts'o:'i~43_ g'o:sd'0:j'i~43_ s'o:gw'o~43_ n'&~:g'i~43_" "3.14" "decimal"
 
