@@ -7,9 +7,9 @@ c	si
 d	di
 f	ef
 g	Ji
-h	etSi
-j	Je
-k	ke
+h	'eitSi
+j	J'ei
+k	k'ei
 l	el
 _m	em
 n	en
@@ -21,8 +21,63 @@ t	ti
 v	vi
 w	dabalju
 x	eks
-y	jai
+y	w'ai
 z	zedi
+
+// The vowels are named by their own sound. u is also a word, and a and i
+// are parts of words, so the names are given with _ (used only when spelling).
+_a	a
+_e	e
+_i	i
+_o	o
+_u	u
+
+_cap	her'ufi||k'ubwa	// herufi kubwa, capital letter
+
+// Names of punctuation marks and symbols (alama za uakifishaji), said when they
+// are read with --punct or spelled.
+_.	n'ukta	// nukta
+_,	mk'ato	// mkato
+_;	n'ukta||mk'ato	// nukta mkato
+_:	n'ukta||mb'ili	// nukta mbili
+_?	al'ama||j'a||k,uul'iza	// alama ya kuuliza
+_!	al'ama||j'a||mSaNg'ao	// alama ya mshangao
+_'	R,itif'aa	// ritifaa
+_"	al'ama||z'a||dond'oo	// alama za dondoo
+_(	fuNg'ua||mab'ano	// fungua mabano
+_)	f'uNga||mab'ano	// funga mabano
+_[	fuNg'ua||mab'ano||j'a||m@-*'aba	// fungua mabano ya mraba
+_]	f'uNga||mab'ano||j'a||m@-*'aba	// funga mabano ya mraba
+_-	kist'aRi	// kistari
+_‐	kist'aRi	// kistari
+_–	kist'aRi||kiR'efu	// kistari kirefu
+_—	kist'aRi||kiR'efu	// kistari kirefu
+__	mst'aRi||w'a||tS'ini	// mstari wa chini
+_/	mkw'aJu	// mkwaju
+_…	n'ukta||t'atu	// nukta tatu
+_*	n^'ota	// nyota
+_%	,asilim'ia	// asilimia
+_$	d'ola	// dola
+_&	n'a	// na
+_+	Juml'iSa	// jumlisha
+_=	s'awa||n'a	// sawa na
+_°	n^'uzi	// nyuzi
+_£	pa'uni	// pauni
+_€	j'uRo	// yuro
+_¥	j'eni	// yeni
+_©	iS'aRa||j'a||h,akimil'iki	// ishara ya hakimiliki
+_‘	al'ama||z'a||dond'oo	// alama za dondoo
+_’	R,itif'aa	// ritifaa
+_“	al'ama||z'a||dond'oo	// alama za dondoo
+_”	al'ama||z'a||dond'oo	// alama za dondoo
+_„	al'ama||z'a||dond'oo	// alama za dondoo
+_®	,ilij,osaJil'iwa	// iliyosajiliwa
+_™	tS'apa||j'a||b,iaS'aRa	// chapa ya biashara
+
+// the words said for these symbols in ordinary text (they were said in English)
++	Juml'iSa	$max3	// jumlisha
+=	s'awa||n'a	$max3	// sawa na
+&	n'a	$max3	// na
 
 
 // numbers
@@ -65,19 +120,12 @@ _6M1    ,elfus'ita
 _7M1    ,elfus'aba
 _8M1    ,elfun'ane
 _9M1    ,elfut'isa
-_1M2	l'akim'oJa
-_2M2	l'aki_|mb'ili
-_3M2	l'akit'atu
-_4M2	l'aki'n-ne
-_5M2	l'akit'ano
-_6M2	l'akis'ita
-_7M2	l'akis'aba
-_8M2	l'akin'ane
-_9M2	l'akit'isa
-_0M3	_|mili'oni  // 1,000,000
-_0M4	_|bili'oni
+_0M2	_|mili'oni	// milioni, 1,000,000 (said before its number: milioni mbili)
+_0M3	_|bili'oni	// bilioni, 1,000,000,000
+_0M4	_|trili'oni
 _dpt    _nukta
 _0and   _|na
+%	,asilim'ia	$max3	// asilimia, said before the number: 50% = asilimia hamsini
 
 
 li      $u   // it
@@ -202,3 +250,6 @@ zanzibar  $3
 
 
 
+
+// symbols which were said in English in ordinary text: said again, with their names above
+/	mkw'aJu	$max3	// mkwaju

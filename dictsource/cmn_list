@@ -22,9 +22,20 @@ _7X tS;h'i55s.i.35_|
 _8X p'A55s.i.35_|
 _9X tS;'iou21s.i.35_|
 _0C pai214_|
-_0M1 tS;h'iE55n_|        // 1,000
-_0M2 w'A51n_|            // 10,000
-//_0M3 j'i51_|             // 100,000,000
+_1C ji51pai214_|          // 一百 yìbǎi
+// Numbers are counted in myriads: _0M0 is a thousand, _0M1 ten thousand (wàn),
+// _0M2 a hundred million (yì). "One" before them takes its changed tone, and
+// "two" before them is liǎng.
+_0M0 tS;h'iE55n_|         // 千 1,000
+_1M0 ji51tS;h'iE55n_|     // 一千 yìqiān
+_2M0 liA21NtS;h'iE55n_|   // 两千 liǎngqiān
+_0M1 w'A51n_|             // 万 10,000
+_1M1 ji35w'A51n_|         // 一万 yíwàn
+_2M1 liA21Nw'A51n_|       // 两万 liǎngwàn
+_0M2 j'i51_|              // 亿 100,000,000
+_1M2 ji35j'i51_|          // 一亿 yíyì
+_2M2 liA21Nj'i51_|        // 两亿 liǎngyì
+%    pai21f@55nts.i.55    // 百分之, said before the number: 50% = 百分之五十
 
 // Latin letters with Chinese accent
 // This will make letter within English sentense translated not correctly. i.e. "ma is a horse". "a" will be translated as ei51.
@@ -94,6 +105,182 @@ _0M2 w'A51n_|            // 10,000
 ㄨ wu55
 ㄩ y55
 
+// Pinyin letters with a tone mark: the name of the tone (一声, 二声, 三声, 四声)
+// and then the vowel, said in that tone. Used only when spelling: in a text
+// the letter is a syllable of its own.
+_ā	ji55s.@55N||A55	// yi1 sheng1 a1
+_á	@r51s.@55N||A35	// er4 sheng1 a2
+_ǎ	sa55ns.@55N||A214	// san1 sheng1 a3
+_à	si[51s.@55N||A51	// si4 sheng1 a4
+_ō	ji55s.@55N||o55	// yi1 sheng1 o1
+_ó	@r51s.@55N||o35	// er4 sheng1 o2
+_ǒ	sa55ns.@55N||o214	// san1 sheng1 o3
+_ò	si[51s.@55N||o51	// si4 sheng1 o4
+_ē	ji55s.@55N||o-55	// yi1 sheng1 e1
+_é	@r51s.@55N||o-35	// er4 sheng1 e2
+_ě	sa55ns.@55N||o-214	// san1 sheng1 e3
+_è	si[51s.@55N||o-51	// si4 sheng1 e4
+_ī	ji55s.@55N||i55	// yi1 sheng1 i1
+_í	@r51s.@55N||i35	// er4 sheng1 i2
+_ǐ	sa55ns.@55N||i214	// san1 sheng1 i3
+_ì	si[51s.@55N||i51	// si4 sheng1 i4
+_ū	ji55s.@55N||u55	// yi1 sheng1 u1
+_ú	@r51s.@55N||u35	// er4 sheng1 u2
+_ǔ	sa55ns.@55N||u214	// san1 sheng1 u3
+_ù	si[51s.@55N||u51	// si4 sheng1 u4
+_ǖ	ji55s.@55N||y55	// yi1 sheng1 v1
+_ǘ	@r51s.@55N||y35	// er4 sheng1 v2
+_ǚ	sa55ns.@55N||y214	// san1 sheng1 v3
+_ǜ	si[51s.@55N||y51	// si4 sheng1 v4
+_ŏ	sa55ns.@55N||o214	// o with a breve, written for ǒ
+_ĕ	sa55ns.@55N||o-214	// e with a breve, written for ě
+_ĭ	sa55ns.@55N||i214	// i with a breve, written for ǐ
+_ŭ	sa55ns.@55N||u214	// u with a breve, written for ǔ
+ü	y55	// yu1, also when it stands alone
+ê	E55	// ê, also when it stands alone
+_ń	@r51s.@55N||@35n	// er4 sheng1 n
+_ň	sa55ns.@55N||@214n	// san1 sheng1 n
+_ǹ	si[51s.@55N||@51n	// si4 sheng1 n
+_ḿ	@r51s.@55N||@35m	// er4 sheng1 m
+
+// the tone marks of bopomofo, which are also written alone
+_ˉ	ji55s.@55N	// 一声
+_ˊ	@r51s.@55N	// 二声
+_ˇ	sa55ns.@55N	// 三声
+_ˋ	si[51s.@55N	// 四声
+_˙	tS;hi55Ns.@55N	// 轻声
+
+_cap	tA51S;iE214	// 大写
+
+
+// Names of punctuation marks and symbols, said when they are read with --punct
+// or spelled (GB/T 15834 names for the marks of Chinese writing).
+_.	t'iE214n	// 点
+_,	tou53X'Au51	// 逗号
+_;	f@55nX'Au51	// 分号
+_:	mAu53X'Au51	// 冒号
+_!	tha53nX'Au51	// 叹号
+_?	wu@53nX'Au51	// 问号
+_'	t,a55nji21nX'Au51	// 单引号
+_"	s.w,A55Nji21nX'Au51	// 双引号
+_(	ts,uo21khuo53X'Au51	// 左括号
+_)	j,iou53khuo53X'Au51	// 右括号
+_[	ts,uo21fA55Nkhuo53X'Au51	// 左方括号
+_]	j,iou51fA55Nkhuo53X'Au51	// 右方括号
+_{	ts,uo21XwA55khuo53X'Au51	// 左花括号
+_}	j,iou51XwA55khuo53X'Au51	// 右花括号
+_<	S;j,Au21jy35X'Au51	// 小于号
+_>	t,A51jy35X'Au51	// 大于号
+_-	tS;iE21nX'Au51	// 减号
+__	S;,iA53XwA53S;'iE51n	// 下划线
+_/	S;iE35k'A51N	// 斜杠
+_\	f,a21nS;iE35k'A51N	// 反斜杠
+_|	s.u53S;'iE51n	// 竖线
+_@	ai53th'@51	// 艾特
+_#	tS;i21NX'Au51	// 井号
+_$	mei21j'y&35n	// 美元
+_%	p,ai21f@55nX'Au51	// 百分号
+_^	th,uo55tsi[51f'u35	// 脱字符
+_&	Xo-35X'Au51	// 和号
+_*	S;i55NX'Au51	// 星号
+_+	tS;iA55X'Au51	// 加号
+_=	t@21NX'Au51	// 等号
+_~	p,o55lA53NX'Au51	// 波浪号
+_`	f,a35nji21nX'Au51	// 反引号
+_¡	t,Au51ka21ntha53nX'Au51	// 倒感叹号
+_¿	t,Au53wu@53nX'Au51	// 倒问号
+_‘	ts,uo21ta55nji21nX'Au51	// 左单引号
+_’	j,iou51ta55nji21nX'Au51	// 右单引号
+_“	ts,uo21s.wA55Nji21nX'Au51	// 左双引号
+_”	j,iou51s.wA55Nji21nX'Au51	// 右双引号
+_‐	l,iE35ntsi[51f'u35	// 连字符
+_–	l,iE35ntS;iE55X'Au51	// 连接号
+_—	ph,o51ts.o-35X'Au51	// 破折号
+_―	ph,o51ts.o-35X'Au51	// 破折号
+_…	s.,@21NlyE53X'Au51	// 省略号
+_·	tS;,iE51nko-35X'Au51	// 间隔号
+_§	ts.,A55NtS;iE35X'Au51	// 章节号
+_°	t'u51	// 度
+_€	ou55j'y&35n	// 欧元
+_£	ji55Np'A51N	// 英镑
+_¥	j'y&35n	// 元
+_¢	mei21f'@55n	// 美分
+_©	p,a21ntS;hy&35nfu35X'Au51	// 版权符号
+_®	ts.,u53tsho-51s.A55Npj'Au55	// 注册商标
+_™	s.A55Npj'Au55	// 商标
+_•	S;,iA53Nmu51fu35X'Au51	// 项目符号
+_‰	tS;h,iE55nf@55nX'Au51	// 千分号
+_†	tS;iE53nX'Au51	// 剑号
+_‡	s.w,A55NtS;iE53nX'Au51	// 双剑号
+_×	ts.h@35NX'Au51	// 乘号
+_÷	ts.hu35X'Au51	// 除号
+_±	ts.,@53Nfu53X'Au51	// 正负号
+_¤	X,uo53pi51fu35X'Au51	// 货币符号
+_¨	f,@55nji55nf'u35	// 分音符
+_´	tS;,iE55nji55nf'u35	// 尖音符
+_¸	z.,ua21nji55nf'u35	// 软音符
+_。	tS;y53X'Au51	// 句号
+_、	tu@53nX'Au51	// 顿号
+_，	tou53X'Au51	// 逗号
+_．	t'iE214n	// 点
+_；	f@55nX'Au51	// 分号
+_：	mAu53X'Au51	// 冒号
+_？	wu@53nX'Au51	// 问号
+_！	tha53nX'Au51	// 叹号
+_「	ts,uo35ji21nX'Au51	// 左引号
+_」	j,iou51ji21nX'Au51	// 右引号
+_『	ts,uo21s.wA55Nji21nX'Au51	// 左双引号
+_』	j,iou51s.wA55Nji21nX'Au51	// 右双引号
+_《	ts,uo21s.u55mi35NX'Au51	// 左书名号
+_》	j,iou51s.u55mi35NX'Au51	// 右书名号
+_〈	ts,uo21ta55ns.,u55mi35NX'Au51	// 左单书名号
+_〉	j,iou51ta55ns.,u55mi35NX'Au51	// 右单书名号
+_（	ts,uo21khuo53X'Au51	// 左括号
+_）	j,iou53khuo53X'Au51	// 右括号
+_【	ts,uo21fA55Nth,ou35khuo53X'Au51	// 左方头括号
+_】	j,iou51fA55Nth,ou35khuo53X'Au51	// 右方头括号
+_〔	ts,uo21liou51tS;j,Au21khuo53X'Au51	// 左六角括号
+_〕	j,iou53liou51tS;j,Au21khuo53X'Au51	// 右六角括号
+_［	ts,uo21fA55Nkhuo53X'Au51	// 左方括号
+_］	j,iou51fA55Nkhuo53X'Au51	// 右方括号
+_｛	ts,uo21XwA55khuo53X'Au51	// 左花括号
+_｝	j,iou51XwA55khuo53X'Au51	// 右花括号
+_～	p,o55lA53NX'Au51	// 波浪号
+_〜	p,o55lA53NX'Au51	// 波浪号
+_・	tS;,iE51nko-35X'Au51	// 间隔号
+_‧	tS;,iE51nko-35X'Au51	// 间隔号
+_￥	j'y&35n	// 元
+_＄	mei21j'y&35n	// 美元
+_％	p,ai21f@55nX'Au51	// 百分号
+_＃	tS;i21NX'Au51	// 井号
+_＆	Xo-35X'Au51	// 和号
+_＊	S;i55NX'Au51	// 星号
+_＋	tS;iA55X'Au51	// 加号
+_＝	t@21NX'Au51	// 等号
+_＠	ai53th'@51	// 艾特
+_＿	S;,iA53XwA53S;'iE51n	// 下划线
+_／	S;iE35k'A51N	// 斜杠
+_＼	f,a21nS;iE35k'A51N	// 反斜杠
+_｜	s.u53S;'iE51n	// 竖线
+_－	tS;iE21nX'Au51	// 减号
+_＜	S;j,Au21jy35X'Au51	// 小于号
+_＞	t,A51jy35X'Au51	// 大于号
+_＂	s.w,A55Nji21nX'Au51	// 双引号
+_＇	t,a55nji21nX'Au51	// 单引号
+
+// the words said for these symbols in ordinary text (they were said in English)
++	tS;'iA55	$max3	// 加
+=	t@21Nj'y35	$max3	// 等于
+#	tS;i21NX'Au51	$max3	// 井号
+@	ai53th'@51	$max3	// 艾特
+&	X'o-35	$max3	// 和
+*	S;i55NX'Au51	$max3	// 星号
+~	p,o55lA53NX'Au51	$max3	// 波浪号
+
+// symbols which were said in English in ordinary text: said again, with their names above
+/	S;iE35k'A51N	$max3	// 斜杠
+\	f,a21nS;iE35k'A51N	$max3	// 反斜杠
+±	ts.,@53Nfu53X'Au51	$max3	// 正负号
 $textmode
 
 // Most frequent pronunciations of the 3799 most common characters (from Unihan database ftp://ftp.unicode.org/Public/UNIDATA/Unihan.zip, kHanyuPinlu field with some corrections)

@@ -23,6 +23,28 @@ w	wE
 x	iks
 z	zE
 
+// The vowels are named by their own sound; y, æ, ø and å (in Danish names and
+// loanwords) as in Danish.
+a	a
+e	E
+i	i
+o	o
+u	u
+y	y
+æ	&
+ø	W
+å	O
+
+_cap	naq'innEq||'aNis,o:q	// naqinneq angisooq, capital letter
+
+// accent names, in Danish as the letter names (the old spelling, before 1973, marked long vowels
+// with â ê î ô û, and ĸ was written for q)
+_cir	s,iRkumfl'Eks	// cirkumfleks
+_acu	aks'aN||Eg'y	// accent aigu
+_grv	aks'aN||gR'a:v	// accent grave
+_tld	t'il@	// tilde
+ĸ	kR'a	// kra, the old letter for q
+
 // y
 // æ
 // ø
@@ -49,7 +71,6 @@ _16 arfErs'anil#it
 _17 arfErsanEqm'arl#uk
 _18 arfErsanEqp'iNasut
 _19 arfErsanEqs'isamat
-_20 inukn'a:l#uQu
 
 // Danish numbers
 _0	'nOl
@@ -120,3 +141,87 @@ _7Xo	h&lfj'&rsenstyv@n@ // 72.
 _8Xo	firsenstyv@n@ // 82.
 _9Xo	h&lf'Emsenstyv@n@ // 95.
 
+
+// Names of punctuation marks and symbols. Greenlandic has no names of its own in use: CLDR gives
+// the Danish names for kl (annotations/kl.xml), as the Danish numbers are used above. The names are
+// those of CLDR da, in the phonemes of this table.
+_.	p'ONtOm	// punktum
+_,	k'Oma	// komma
+_;	s,emik'o:lOn	// semikolon
+_:	k'o:lOn	// kolon
+_!	'uDRO:bst,ajn	// udråbstegn
+_?	sp'WRsmO:lst,ajn	// spørgsmålstegn
+_¡	'OmvEnt||'uDRO:bst,ajn	// omvendt udråbstegn
+_¿	'OmvEnt||sp'WRsmO:lst,ajn	// omvendt spørgsmålstegn
+_'	apOstR'Of	// apostrof
+_’	apOstR'Of
+_‘	apOstR'Of
+_"	'anfWRs@lst,ajn	// anførselstegn
+_“	'anfWRs@lst,ajn
+_”	'anfWRs@lst,ajn
+_„	'anfWRs@lst,ajn
+_«	'anfWRs@lst,ajn
+_»	'anfWRs@lst,ajn
+_(	st'a:tpaRant,es	// startparentes
+_)	sl'utpaRant,es	// slutparentes
+_[	v'EnstR@||f'irkant@t||paRant'es	// venstre firkantet parentes
+_]	h'Oj@||f'irkant@t||paRant'es	// højre firkantet parentes
+_{	v'EnstR@||akol'a:D@	// venstre akkolade
+_}	h'Oj@||akol'a:D@	// højre akkolade
+_<	m'indR@||'en	// mindre end
+_>	st'WR@||'en	// større end
+_-	b'in@stRaj	// bindestreg
+_‐	b'in@stRaj
+_–	t'aNk@stRaj	// tankestreg
+_—	l'aN||t'aNk@stRaj	// lang tankestreg
+_―	v'andR@t||stR'aj	// vandret streg
+__	l'aw||stR'aj	// lav streg
+_/	sk'RO:stRaj	// skråstreg
+_\	'OmvEnt||sk'RO:stRaj	// omvendt skråstreg
+_|	l'o:DR@t||stR'aj	// lodret streg
+_@	sn'a:b@l||'a	// snabel-a
+_#	h'aStak	// hashtag
+_%	pRos'Ent	// procent
+_‰	pRom'il@	// promille
+_&	'O:t,ajn	// og-tegn
+_*	ast@R'isk	// asterisk
+_+	pl'ust,ajn	// plustegn
+_=	l'i:||mE	// lig med
+_×	g'aN@t,ajn	// gangetegn
+_÷	divis'jo:nst,ajn	// divisionstegn
+_±	pl'us||m'inus	// plus/minus
+_~	t'il@	// tilde
+_^	aks'aN||s,iRkumfl'Eks	// accent circumfleks
+_`	aks'aN||gR'a:v	// accent grave
+_´	aks'aN||Eg'y	// accent aigu
+_¨	tRE:m'a	// tréma
+_…	'uD@la:D@ls@sp,Rik@R	// udeladelsesprikker
+_·	m'id@||p,Rik	// midterprik
+_•	p'ONtt,ajn	// punkttegn
+_§	paRagR'af	// paragraf
+_¶	'awsnitst,ajn	// afsnitstegn
+_°	gR'a:D@R	// grader
+_†	k'o:st,ajn	// korstegn
+_©	k'Opiraj	// copyright
+_®	Regist'Re:R@t||v'a:R@mERk@	// registreret varemærke
+_™	v'a:R@mERk@	// varemærke
+_€	'ewRo	// euro
+_£	p'un	// pund
+_¥	j'En	// yen
+_¢	s'Ent	// cent
+_$	d'OlaR	// dollar
+
+// the words said for these symbols in ordinary text (they were said in English)
+%	pRos'Ent	$max3	// procent
++	pl'us	$max3	// plus
+=	l'i:||mE	$max3	// lig med
+
+// symbols which were said in English in ordinary text: said again, with their names above
+/	sk'RO:stRaj	$max3	// skråstreg
+@	sn'a:b@l||'a	$max3	// snabel-a
+#	h'aStak	$max3	// hashtag
+&	'O	$max3	// og, and (the sign is named above)
+*	ast@R'isk	$max3	// asterisk
+~	t'il@	$max3	// tilde
+\	'OmvEnt||sk'RO:stRaj	$max3	// omvendt skråstreg
+±	pl'us||m'inus	$max3	// plus/minus

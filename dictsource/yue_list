@@ -19,9 +19,173 @@ _7X     cat1sap6||
 _8X     baat3sap6||
 _9X     gau2sap6||
 _0C     baak3||
-_0M1    cin1||                 // 1,000
-_0M2    baak3maan6||             // 10,000
-_0M3    jik1||                     // 100,000,000
+// Numbers are counted in myriads: _0M0 is a thousand, _0M1 ten thousand (萬),
+// _0M2 a hundred million (億). "Two" before them is 兩.
+_0M0    cin1||                  // 千 1,000
+_2M0    loeng5||cin1||          // 兩千
+_0M1    maan6||                 // 萬 10,000
+_2M1    loeng5||maan6||         // 兩萬
+_0M2    jik1||                  // 億 100,000,000
+_2M2    loeng5||jik1||          // 兩億
+_dpt    dim2||                  // 點, the decimal point
+%       baak3fan6zi1||          // 百分之, said before the number: 50% = 百分之五十
+
+// Letter names for the voice which reads Latin letters as Jyutping (condition 2):
+// the names of the letters as they are said in Hong Kong Cantonese (as given by
+// Wiktionary), also when the letter stands alone. The other voice reads Latin
+// letters with the English voice.
+?2 a    'ei1
+?2 b    b'i1
+?2 c    s'i1
+?2 d    d'i1
+?2 e    j'i1
+?2 f    'e1||f'u4
+?2 g    z'i1
+?2 h    'i1k||c'yu4
+?2 i    'aai1
+?2 j    z'ei1
+?2 k    k'ei1
+?2 l    'e1||l'ou4
+?2 m    'e1m
+?2 n    'e1n
+?2 o    'ou1
+?2 p    p'i1
+?2 q    k'iu1
+?2 r    'aa1||l'ou4
+?2 s    'e1||s'i4
+?2 t    t'i1
+?2 u    j'u1
+?2 v    w'i1
+?2 w    d'a1p||b'u4||l'iu4
+?2 x    'i1k||s'i4
+?2 y    w'ai1
+?2 z    j'i6||s'e1t
+
+_cap    daai6||kaai2    // 大楷
+
+// Names of punctuation marks and symbols, said when they are read with --punct
+// or spelled (the names of the marks of Chinese writing, read in Cantonese).
+_.	d'i2m	// 點
+_,	d|au6h'ou6	// 逗號
+_;	f|a1n|h'ou6	// 分號
+_:	m|ou6h'ou6	// 冒號
+_!	g,a2m|t|aa3n|h'ou6	// 感嘆號
+_?	m|a6n|h'ou6	// 問號
+_'	d,aa1n|j|a5n|h'ou6	// 單引號
+_"	s,oe1N|j|a5n|h'ou6	// 雙引號
+_(	z,o2k|u3t|h'ou6	// 左括號
+_)	j,au6k|u3t|h'ou6	// 右括號
+_[	z,o2f|ong1k|u3t|h'ou6	// 左方括號
+_]	j,au6f|ong1k|u3t|h'ou6	// 右方括號
+_{	z,o2f|aa1k|u3t|h'ou6	// 左花括號
+_}	j,au6f|aa1k|u3t|h'ou6	// 右花括號
+_<	s,iu2j|yu1h'ou6	// 小於號
+_>	d,aai6j|yu1h'ou6	// 大於號
+_-	g|aa2m|h'ou6	// 減號
+__	d|ai2s'i3n	// 底線
+_/	c|e4s'i3n	// 斜線
+_\	f,aa2n|c|e4s'i3n	// 反斜線
+_|	s|yu6s'i3n	// 豎線
+_@	'e1t	// at
+_#	z|e2N|h'ou6	// 井號
+_$	j'yu4n	// 元
+_%	b,aa3k|f|a6n|h'ou6	// 百分號
+_^	t,yu3t|z|i6f'u4	// 脫字符
+_&	w|o4h'ou6	// 和號
+_*	s|i1N|h'ou6	// 星號
+_+	g|aa1h'ou6	// 加號
+_=	d|a2N|h'ou6	// 等號
+_~	b,o1l|ong6h'ou6	// 波浪號
+_`	f,aa2n|j|a5n|h'ou6	// 反引號
+_¡	d,ou3g|a2m|t|aa3n|h'ou6	// 倒感嘆號
+_¿	d,ou3m|a6n|h'ou6	// 倒問號
+_‘	z,o2d|aa1n|j|a5n|h'ou6	// 左單引號
+_’	j,au6d|aa1n|j|a5n|h'ou6	// 右單引號
+_“	z,o2s|oe1N|j|a5n|h'ou6	// 左雙引號
+_”	j,au6s|oe1N|j|a5n|h'ou6	// 右雙引號
+_‐	l,i4n|z|i6f'u4	// 連字符
+_–	l,i4n|z|i3p|h'ou6	// 連接號
+_—	p,o3z|i3t|h'ou6	// 破折號
+_―	p,o3z|i3t|h'ou6	// 破折號
+_…	s,aang2l|oe6k|h'ou6	// 省略號
+_·	g,aa3n|g|aa3k|h'ou6	// 間隔號
+_§	z,oe1N|z|i3t|h'ou6	// 章節號
+_°	d'ou6	// 度
+_€	au1j'yu4n	// 歐元
+_£	j|i1N|b'ong6	// 英鎊
+_¥	j'yu4n	// 元
+_¢	s'i1n	// 仙
+_©	b,aa2n|k|yu4n|f|u4h'ou6	// 版權符號
+_®	z,yu3c|aa3k|s|oe1N|b'iu1	// 註冊商標
+_™	s|oe1N|b'iu1	// 商標
+_•	h,ong6m|u6k|f|u4h'ou6	// 項目符號
+_‰	c,i1n|f|a6n|h'ou6	// 千分號
+_†	g|i3m|h'ou6	// 劍號
+_‡	s,oe1N|g|i3m|h'ou6	// 雙劍號
+_×	s|i4N|h'ou6	// 乘號
+_÷	c|eoi4h'ou6	// 除號
+_±	z,i3N|f|u6h'ou6	// 正負號
+_¤	f,o3b|ai6f|u4h'ou6	// 貨幣符號
+_¨	f,a1n|j|a1m|f'u4	// 分音符
+_´	z,i1m|j|a1m|f'u4	// 尖音符
+_¸	j,yu5n|j|a1m|f'u4	// 軟音符
+_。	g|eoi3h'ou6	// 句號
+_、	d|eo6n|h'ou6	// 頓號
+_，	d|au6h'ou6	// 逗號
+_．	d'i2m	// 點
+_；	f|a1n|h'ou6	// 分號
+_：	m|ou6h'ou6	// 冒號
+_？	m|a6n|h'ou6	// 問號
+_！	g,a2m|t|aa3n|h'ou6	// 感嘆號
+_「	z,o2j|a5n|h'ou6	// 左引號
+_」	j,au6j|a5n|h'ou6	// 右引號
+_『	z,o2s|oe1N|j|a5n|h'ou6	// 左雙引號
+_』	j,au6s|oe1N|j|a5n|h'ou6	// 右雙引號
+_《	z,o2s|yu1m|i4N|h'ou6	// 左書名號
+_》	j,au6s|yu1m|i4N|h'ou6	// 右書名號
+_〈	z,o2d|aa1n|s,yu1m|i4N|h'ou6	// 左單書名號
+_〉	j,au6d|aa1n|s,yu1m|i4N|h'ou6	// 右單書名號
+_（	z,o2k|u3t|h'ou6	// 左括號
+_）	j,au6k|u3t|h'ou6	// 右括號
+_【	z,o2f|ong1t,au4k|u3t|h'ou6	// 左方頭括號
+_】	j,au6f|ong1t,au4k|u3t|h'ou6	// 右方頭括號
+_〔	z,o2l|u6k|g,o3k|k|u3t|h'ou6	// 左六角括號
+_〕	j,au6l|u6k|g,o3k|k|u3t|h'ou6	// 右六角括號
+_［	z,o2f|ong1k|u3t|h'ou6	// 左方括號
+_］	j,au6f|ong1k|u3t|h'ou6	// 右方括號
+_｛	z,o2f|aa1k|u3t|h'ou6	// 左花括號
+_｝	j,au6f|aa1k|u3t|h'ou6	// 右花括號
+_～	b,o1l|ong6h'ou6	// 波浪號
+_〜	b,o1l|ong6h'ou6	// 波浪號
+_・	g,aa3n|g|aa3k|h'ou6	// 間隔號
+_‧	g,aa3n|g|aa3k|h'ou6	// 間隔號
+_￥	j'yu4n	// 元
+_＄	j'yu4n	// 元
+_％	b,aa3k|f|a6n|h'ou6	// 百分號
+_＃	z|e2N|h'ou6	// 井號
+_＆	w|o4h'ou6	// 和號
+_＊	s|i1N|h'ou6	// 星號
+_＋	g|aa1h'ou6	// 加號
+_＝	d|a2N|h'ou6	// 等號
+_＠	'e1t	// at
+_＿	d|ai2s'i3n	// 底線
+_／	c|e4s'i3n	// 斜線
+_＼	f,aa2n|c|e4s'i3n	// 反斜線
+_｜	s|yu6s'i3n	// 豎線
+_－	g|aa2m|h'ou6	// 減號
+_＜	s,iu2j|yu1h'ou6	// 小於號
+_＞	d,aai6j|yu1h'ou6	// 大於號
+_＂	s,oe1N|j|a5n|h'ou6	// 雙引號
+_＇	d,aa1n|j|a5n|h'ou6	// 單引號
+
+// the words said for these symbols in ordinary text (they were said in English)
++	g'aa1	$max3	// 加
+=	d|a2N|j'yu1	$max3	// 等於
+#	z|e2N|h'ou6	$max3	// 井號
+@	'e1t	$max3	// at
+&	t'u4N	$max3	// 同
+*	s|i1N|h'ou6	$max3	// 星號
+~	b,o1l|ong6h'ou6	$max3	// 波浪號
 // Character column of following list is the same as zh_list
 // corresponding jyutping is generated using online tool
 // https://cantonesetojyutping.appspot.com/canto 
@@ -3825,3 +3989,8 @@ _0M3    jik1||                     // 100,000,000
 办  baan6
 波  bo1
 哲  zit3
+
+// symbols which were said in English in ordinary text: said again, with their names above
+/	c|e4s'i3n	$max3	// 斜線
+\	f,aa2n|c|e4s'i3n	$max3	// 反斜線
+±	z,i3N|f|u6h'ou6	$max3	// 正負號
