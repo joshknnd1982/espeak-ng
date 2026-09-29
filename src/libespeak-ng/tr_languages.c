@@ -605,7 +605,7 @@ Translator *SelectTranslator(const char *name)
 		tr->encoding = ESPEAKNG_ENCODING_ISO_8859_5;
 		tr->langopts.param[LOPT_UNPRONOUNCABLE] = 1; // disable check for unpronouncable words
 		tr->langopts.stress_rule = STRESSPOSN_1L;
-		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_OMIT_1_HUNDRED;
+		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_OMIT_1_HUNDRED | NUM_DFRACTION_2;
 		tr->langopts.numbers2 = NUM2_THOUSANDPLEX_VAR_THOUSANDS | NUM2_THOUSANDS_VAR1; // variant numbers before thousands
 	}
 		break;
@@ -618,7 +618,8 @@ Translator *SelectTranslator(const char *name)
 		tr->langopts.param[LOPT_REGRESSIVE_VOICING] = 0x107; // devoice at end of word, and change voicing to match a following consonant (except v)
 		tr->langopts.param[LOPT_REDUCE] = 2;
 		tr->langopts.stress_rule = STRESSPOSN_2R;
-		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_OMIT_1_HUNDRED | NUM_HUNDRED_AND | NUM_AND_UNITS | NUM_SINGLE_AND | NUM_ROMAN | NUM_ROMAN_ORDINAL | NUM_ROMAN_CAPITALS;
+		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_OMIT_1_HUNDRED | NUM_HUNDRED_AND | NUM_AND_UNITS | NUM_SINGLE_AND | NUM_DFRACTION_2 | NUM_ROMAN | NUM_ROMAN_ORDINAL | NUM_ROMAN_CAPITALS;
+		tr->langopts.numbers2 = NUM2_THOUSANDPLEX_VAR_THOUSANDS; // variant (feminine) numbers before thousands
 		tr->langopts.thousands_sep = ' '; // don't allow dot as thousands separator
 	}
 		break;
@@ -1044,8 +1045,8 @@ Translator *SelectTranslator(const char *name)
 		tr->langopts.spelling_stress = true;
 		tr->langopts.accents = 1;
 
-		tr->langopts.numbers = NUM_SINGLE_STRESS | NUM_HUNDRED_AND | NUM_OMIT_1_HUNDRED | NUM_DECIMAL_COMMA | NUM_THOUS_SPACE | NUM_DFRACTION_2 | NUM_ROMAN_CAPITALS;
-		tr->langopts.numbers2 = NUM2_THOUSANDPLEX_VAR_THOUSANDS | NUM2_THOUSANDPLEX_VAR_MILLIARDS | NUM2_THOUSANDS_VAR5;
+		tr->langopts.numbers = NUM_SINGLE_STRESS | NUM_HUNDRED_AND | NUM_OMIT_1_HUNDRED | NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_DFRACTION_2 | NUM_ROMAN_CAPITALS;
+		tr->langopts.numbers2 = NUM2_THOUSANDPLEX_VAR_THOUSANDS | NUM2_THOUSANDPLEX_VAR_MILLIARDS | NUM2_THOUSANDS_VAR1; // _1MA after 21, 31 ...
 		tr->langopts.our_alphabet = OFFSET_CYRILLIC; // don't say "cyrillic" before letter names
 
 		SetLetterVowel(tr, 'y');
@@ -1332,7 +1333,7 @@ Translator *SelectTranslator(const char *name)
 		tr->langopts.unstressed_wd1 = 0;
 		tr->langopts.unstressed_wd2 = 2;
 		tr->langopts.param[LOPT_DIERESES] = 1;
-		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_OMIT_1_HUNDRED | NUM_DFRACTION_4 | NUM_ORDINAL_DOT;
+		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_OMIT_1_HUNDRED | NUM_DFRACTION_4 | NUM_ORDINAL_DOT;
 		tr->langopts.numbers2 = NUM2_THOUSANDS_VAR4;
 		tr->langopts.max_roman = 5000;
 	}
@@ -1349,7 +1350,8 @@ Translator *SelectTranslator(const char *name)
 		tr->langopts.spelling_stress = true;
 		tr->encoding = ESPEAKNG_ENCODING_ISO_8859_4;
 		tr->langopts.max_digits = 33;
-		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_OMIT_1_HUNDRED | NUM_DFRACTION_4 | NUM_ORDINAL_DOT;
+		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_OMIT_1_HUNDRED | NUM_DFRACTION_4 | NUM_ORDINAL_DOT;
+		tr->langopts.numbers2 = NUM2_THOUSANDS_VAR1; // singular thousand, million after 1, 21, 31 ...
 		tr->langopts.stress_flags = S_NO_AUTO_2 | S_FINAL_DIM | S_FINAL_DIM_ONLY | S_EO_CLAUSE1;
 	}
 		break;
@@ -1369,8 +1371,8 @@ Translator *SelectTranslator(const char *name)
 		tr->letter_bits_offset = OFFSET_CYRILLIC;
 
 		tr->langopts.stress_rule = STRESSPOSN_3R; // antipenultimate
-		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_AND_UNITS | NUM_OMIT_1_HUNDRED | NUM_OMIT_1_THOUSAND | NUM_DFRACTION_2;
-		tr->langopts.numbers2 = NUM2_THOUSANDPLEX_VAR_THOUSANDS | NUM2_THOUSANDPLEX_VAR_MILLIARDS | NUM2_THOUSANDS_VAR2;
+		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_HUNDRED_AND | NUM_AND_UNITS | NUM_SINGLE_AND | NUM_OMIT_1_HUNDRED | NUM_OMIT_1_THOUSAND | NUM_DFRACTION_2;
+		tr->langopts.numbers2 = NUM2_THOUSANDPLEX_VAR_THOUSANDS | NUM2_THOUSANDPLEX_VAR_MILLIARDS | NUM2_THOUSANDS_VAR1;
 	}
 		break;
 	case L('m', 'n'): // Mongolian (Khalkha)
@@ -1526,7 +1528,7 @@ Translator *SelectTranslator(const char *name)
 		tr->langopts.spelling_stress = true;
 		tr->langopts.param[LOPT_COMBINE_WORDS] = 4; // combine some prepositions with the following word
 
-		tr->langopts.numbers = NUM_OMIT_1_HUNDRED | NUM_DFRACTION_2 | NUM_ROMAN;
+		tr->langopts.numbers = NUM_ALLOW_SPACE | NUM_OMIT_1_HUNDRED | NUM_DFRACTION_2 | NUM_ROMAN;
 		tr->langopts.numbers2 = NUM2_THOUSANDS_VAR2;
 		tr->langopts.thousands_sep = 0; // no thousands separator
 		tr->langopts.decimal_sep = ',';
@@ -1617,7 +1619,7 @@ Translator *SelectTranslator(const char *name)
 		tr->langopts.stress_rule = STRESSPOSN_1R;
 		tr->langopts.stress_flags =  S_FINAL_DIM_ONLY | S_FINAL_NO_2 | S_FINAL_VOWEL_UNSTRESSED;
 		SetLetterVowel(tr, 'y');
-		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_HUNDRED_AND | NUM_AND_UNITS | NUM_DFRACTION_4;
+		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_HUNDRED_AND | NUM_AND_HUNDRED | NUM_AND_UNITS | NUM_DFRACTION_4;
 		tr->langopts.accents = 2; // "capital" after letter name
 	}
 		break;
@@ -1733,6 +1735,7 @@ Translator *SelectTranslator(const char *name)
 	case L('u', 'k'): // Ukrainian
 	{
 		Translator_Russian(tr);
+		tr->langopts.numbers = (tr->langopts.numbers & ~NUM_DFRACTION_BITS) | NUM_DFRACTION_2; // decimal fraction read as a number
 	}
 		break;
 	case L('u', 'r'): // Urdu
@@ -1857,7 +1860,7 @@ static void Translator_Russian(Translator *tr)
 	tr->langopts.stress_rule = STRESSPOSN_SYLCOUNT;
 	tr->langopts.stress_flags = S_NO_AUTO_2;
 
-	tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_OMIT_1_HUNDRED | NUM_DFRACTION_5;
+	tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_OMIT_1_HUNDRED | NUM_DFRACTION_5;
 	tr->langopts.numbers2 = NUM2_THOUSANDPLEX_VAR_THOUSANDS | NUM2_THOUSANDS_VAR1 |
 	                       NUM2_FRACTION_FEMININE; // variant numbers before thousands and in decimal fractions
 	tr->langopts.max_digits = 32;
