@@ -2779,8 +2779,8 @@ int LookupDictList(Translator *tr, char **wordptr, char *ph_out, unsigned int *f
 		if (((c = *word1++) == 0) || (c == ' '))
 			break;
 
-		if ((c == '.') && (length > 0) && (IsDigit09(word[length-1])))
-			break; // needed for lang=hu, eg. "december 2.-ig"
+		if ((c == '.') && (length > 0) && (IsDigit09(word[length-1])) && !IsDigit09(*word1))
+			break; // needed for lang=hu, eg. "december 2.-ig", but not inside a decimal fraction (a word "10" must not swallow "10.25")
 
 		word[length] = c;
 	}

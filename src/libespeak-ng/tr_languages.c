@@ -493,9 +493,14 @@ Translator *SelectTranslator(const char *name)
 
 	switch (name2)
 	{
+	case L4('p', 'i', 'q', 'd'): // Klingon
+		tr->langopts.numbers = NUM_DEFAULT;
+		// each place from the thousands to the millions has a word of its own (SaD, netlh, bIp, 'uy'),
+		// so each of these digits becomes a group of its own, named by _0M1 to _0M4 (and Saghan _0M5)
+		tr->langopts.break_numbers = 0x278; // 12,345,6,7,8,901: a break after the digits for 10^9, 10^6, 10^5, 10^4 and 10^3
+		break;
 	case L('m', 'i'):
 	case L('m', 'y'):
-	case L4('p', 'i', 'q', 'd'): // piqd
 	case L('p', 'y'):
 	case L('q', 'u'):
 	case L3('q', 'u', 'c'):
@@ -839,7 +844,7 @@ Translator *SelectTranslator(const char *name)
 			tr->langopts.stress_flags = S_FINAL_SPANISH | S_FINAL_DIM_ONLY | S_FINAL_NO_2 | S_NO_AUTO_2 | S_FIRST_PRIMARY;
 		} else if (name2 == L('i', 'a')) {
 			tr->langopts.stress_flags = S_FINAL_SPANISH | S_FINAL_DIM_ONLY | S_FINAL_NO_2;
-			tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_OMIT_1_HUNDRED | NUM_OMIT_1_THOUSAND | NUM_ROMAN | NUM_ROMAN_AFTER;
+			tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_OMIT_1_HUNDRED | NUM_OMIT_1_THOUSAND | NUM_ROMAN | NUM_ROMAN_AFTER;
 		} else if (name2 == L('a', 'n')) {
 			tr->langopts.stress_flags = S_FINAL_SPANISH | S_FINAL_DIM_ONLY | S_FINAL_NO_2;
 			tr->langopts.numbers = NUM_SINGLE_STRESS | NUM_DECIMAL_COMMA | NUM_AND_UNITS | NUM_OMIT_1_HUNDRED | NUM_OMIT_1_THOUSAND | NUM_ROMAN | NUM_ROMAN_ORDINAL;
@@ -1272,6 +1277,9 @@ Translator *SelectTranslator(const char *name)
 		tr->langopts.max_roman = 5000;
 	}
 		break;
+	case L3('l', 'f', 'n'): // Lingua Franca Nova: the voice file adds NUM_THOUS_SPACE and NUM_DECIMAL_COMMA
+		tr->langopts.numbers = NUM_DEFAULT | NUM_ALLOW_SPACE; // groups of thousands are written with spaces: 45 678
+		break;
 	case L('l', 't'): // Lithuanian
 	{
 		tr->encoding = ESPEAKNG_ENCODING_ISO_8859_4;
@@ -1501,6 +1509,11 @@ Translator *SelectTranslator(const char *name)
 		tr->langopts.numbers2 =  NUM2_PERCENT_BEFORE;
 		tr->langopts.break_numbers = BREAK_LAKH_HI;
 	}
+		break;
+	case L3('q', 'y', 'a'): // Quenya
+		// Only the numbers 1-12 and a few from 13 to 19 are attested, and no later words for the tens,
+		// so as for Sindarin speak numbers as individual digits (_0 to _9 in qya_list), except for 10, 11 and 12
+		tr->langopts.numbers = 0;
 		break;
 	case L3('s', 'j', 'n'): // Sindarin
 		// Only the numbers 1-12 are attested, so speak numbers as individual

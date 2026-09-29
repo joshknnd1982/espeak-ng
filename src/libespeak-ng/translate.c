@@ -997,6 +997,9 @@ static int TranslateChar(Translator *tr, char *ptr, int prev_in, unsigned int c,
 		}
 		break;
 	}
+	if (IsDigit09(c) && !iswalpha(prev_in))
+		return c; // a digit which does not follow a letter belongs to a number, not to a word which uses digits as letters (lang=py)
+
 	// handle .replace rule in xx_rules file
 	return SubstituteChar(tr, c, next_in, ptr, insert, wordflags);
 }
@@ -1743,8 +1746,7 @@ void TranslateClauseWithTerminator(Translator *tr, int *tone_out, char **voice_c
 							// the next group only has 1 digits, make it three
 							*pn++ = '0';
 							*pn++ = '0';
-						}
-						if (tr->langopts.break_numbers & (1 << (nx-2))) {
+						} else if (tr->langopts.break_numbers & (1 << (nx-2))) {
 							// the next group only has 2 digits (eg. Indian languages), make it three
 							*pn++ = '0';
 						}
