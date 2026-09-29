@@ -503,7 +503,6 @@ Translator *SelectTranslator(const char *name)
 	case L('p', 'y'):
 	case L('q', 'u'):
 	case L3('q', 'u', 'c'):
-	case L('u', 'z'):
 	{
 		tr->langopts.numbers = 0; // disable numbers until the definition are complete in _list file
 	}
@@ -661,6 +660,16 @@ Translator *SelectTranslator(const char *name)
 		// there is no "and" between the parts, eg. 121 = sogwo sgohitsgwa talisgo sogwo
 		tr->langopts.numbers = NUM_DEFAULT;
 		tr->langopts.max_digits = 14; // up to _0M4 (10^12)
+	}
+		break;
+	case L3('c', 'r', 'h'): // Crimean Tatar
+	{
+		tr->langopts.param[LOPT_UNPRONOUNCABLE] = 1; // disable check for unpronouncable words (as by default)
+		tr->langopts.dotless_i = 1; // I is the capital of ı, İ of i, as in Turkish
+
+		// 3,14 is written with a decimal comma and read "üç virgül on dört";
+		// thousands are grouped with a space (or a dot): 10 000
+		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_DFRACTION_2;
 	}
 		break;
 	case L('c', 'v'): // Chuvash
@@ -1227,6 +1236,14 @@ Translator *SelectTranslator(const char *name)
 		tr->langopts.alt_alphabet_lang = L('r', 'u');
 	}
 		break;
+	case L3('k', 'a', 'a'): // Karakalpak
+	{
+		tr->langopts.param[LOPT_UNPRONOUNCABLE] = 1; // disable check for unpronouncable words (as by default)
+
+		// decimal comma, thousands grouped with a space; júz (100) without "bir"
+		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_OMIT_1_HUNDRED | NUM_DFRACTION_2;
+	}
+		break;
 	case L('k', 'k'): // Kazakh
 	{
 		static const unsigned char stress_amps_tr[8] = { 18, 16, 20, 21, 20, 21, 21, 20 };
@@ -1602,7 +1619,7 @@ Translator *SelectTranslator(const char *name)
 		tr->langopts.stress_flags = S_FINAL_DIM_ONLY | S_FINAL_NO_2 | S_2_TO_HEAVY; // move secondary stress from light to a following heavy syllable
 		tr->langopts.long_stop = 130;
 
-		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_SWAP_TENS | NUM_OMIT_1_HUNDRED | NUM_DFRACTION_2 | NUM_ORDINAL_DOT;
+		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_OMIT_1_HUNDRED | NUM_DFRACTION_2 | NUM_ORDINAL_DOT; // tens before units: guoktalåkakta (21)
 		SetLetterVowel(tr, 'y');
 		tr->langopts.spelling_stress = true;
 		tr->langopts.intonation_group = 3; // less intonation, don't raise pitch at comma
@@ -1711,10 +1728,21 @@ Translator *SelectTranslator(const char *name)
 		tr->langopts.param[LOPT_SUFFIX] = 1;
 
 		if (name2 == L('a', 'z'))
-			tr->langopts.numbers = NUM_SINGLE_STRESS | NUM_DECIMAL_COMMA  | NUM_ALLOW_SPACE | NUM_OMIT_1_HUNDRED | NUM_OMIT_1_THOUSAND | NUM_DFRACTION_2;
-		else
+			tr->langopts.numbers = NUM_SINGLE_STRESS | NUM_DECIMAL_COMMA  | NUM_ALLOW_SPACE | NUM_OMIT_1_HUNDRED | NUM_OMIT_1_THOUSAND | NUM_DFRACTION_6; // 3,14: üç tam yüzdə on dörd
+		else {
 			tr->langopts.numbers = NUM_SINGLE_STRESS | NUM_DECIMAL_COMMA | NUM_OMIT_1_HUNDRED | NUM_OMIT_1_THOUSAND | NUM_DFRACTION_2;
+			tr->langopts.numbers2 = NUM2_PERCENT_BEFORE; // 50% is "yüzde elli", as %50 is
+		}
 		tr->langopts.max_initial_consonants = 2;
+	}
+		break;
+	case L('t', 'k'): // Turkmen
+	{
+		tr->langopts.param[LOPT_UNPRONOUNCABLE] = 1; // disable check for unpronouncable words (as by default)
+
+		// decimal comma, thousands grouped with a space; 3,14 is read with "bitin" and the
+		// hundredths before the fraction, as tk_list gives them: üç bitin ýüzden on dört
+		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_DFRACTION_6;
 	}
 		break;
 	case L('t', 't'): // Tatar
@@ -1736,6 +1764,13 @@ Translator *SelectTranslator(const char *name)
 	{
 		Translator_Russian(tr);
 		tr->langopts.numbers = (tr->langopts.numbers & ~NUM_DFRACTION_BITS) | NUM_DFRACTION_2; // decimal fraction read as a number
+	}
+		break;
+	case L('u', 'z'): // Uzbek
+	{
+		// decimal comma, thousands grouped with a space; yuz (100) and ming (1000) without "bir";
+		// 3,14 is read with "butun" and the hundredths before the fraction: uch butun yuzdan oʻn toʻrt
+		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_OMIT_1_HUNDRED | NUM_OMIT_1_THOUSAND | NUM_DFRACTION_6;
 	}
 		break;
 	case L('u', 'r'): // Urdu
