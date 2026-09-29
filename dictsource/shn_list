@@ -59,26 +59,97 @@ _8XXXXX   pEt2||sEn
 _9XXXXX   kaw3||sEn
 _1XXXXXX  nEN3||la:n5      // ၼိုင်ႈလၢၼ်ႉ
 
+// The entries _1XX ... _1XXXXXX above are not keys the program looks up, so from a hundred up only the first
+// digit was said.  These are the keys it uses, with the same words: a word for each power of ten up to a
+// million (C code: BREAK_TH), and ဢဵတ်း for 1 after tens and hundreds (_1y, as in _11 and _21).
+_1y	?et4	// ဢဵတ်း
+_0C	pa:k2	// ပၢၵ်ႇ
+_0M1	heN	// ႁဵင် (written heg above)
+_0M2	mWn2	// မိုၼ်ႇ
+_0M3	sEn	// သႅၼ်
+_0M4	la:n5	// လၢၼ်ႉ
+_dpt	tS;ut4	// ၸုတ်း
+
+// letter names: begin
+// Letter names for spelling: each consonant with its inherent a, in the tone the rules give a consonant that
+// stands alone (ka5).  The plain entries above say a consonant that the rules have cut out of a word as its
+// bare sound, so the names for a letter alone come after them with $atstart $atend.
+// The vowel signs are said as their vowel by the rules; the tone marks have no entry: the rules cut words at
+// the tone marks and would read any name inside words.
+_ၵ	k'a5
+_ၶ	k_h'a5
+_င	N'a5
+_ၸ	tS;'a5
+_သ	s'a5
+_ၺ	J'a5
+_တ	t'a5
+_ထ	t_h'a5
+_ၼ	n'a5
+_ပ	p'a5
+_ၽ	p_h'a5
+_ၾ	f'a5
+_မ	m'a5
+_ယ	j'a5
+_ရ	r'a5
+_လ	l'a5
+_ဝ	w'a5
+_ႁ	h'a5
+_ဢ	'a5
+_ၷ	g'a5	// a letter for loan words
+ၷ	g'a5	$atstart $atend
+_ၹ	z'a5	// a letter for loan words
+ၹ	z'a5	$atstart $atend
+_ၻ	d'a5	// a letter for loan words
+ၻ	d'a5	$atstart $atend
+_ႀ	T'a5	// a letter for loan words
+ႀ	T'a5	$atstart $atend
+_ၿ	b'a5	// a letter for loan words
+ၿ	b'a5	$atstart $atend
+
+// The program says the name of the alphabet (in English, Myanmar) before a letter of another alphabet
+// that is spelled, and it does not know that this alphabet is the language's own: the name is left silent.
+_my	_|
+// letter names: end
+
 // Wordlist
 ၵ   k
+ၵ	k'a5	$atstart $atend	// the letter's name when it stands alone
 ၶ   k_h
+ၶ	k_h'a5	$atstart $atend	// the letter's name when it stands alone
 င   N
+င	N'a5	$atstart $atend	// the letter's name when it stands alone
 ၸ   tS
+ၸ	tS;'a5	$atstart $atend	// the letter's name when it stands alone
 သ   s
+သ	s'a5	$atstart $atend	// the letter's name when it stands alone
 ၺ   J
+ၺ	J'a5	$atstart $atend	// the letter's name when it stands alone
 တ   t
+တ	t'a5	$atstart $atend	// the letter's name when it stands alone
 ထ   t_h
+ထ	t_h'a5	$atstart $atend	// the letter's name when it stands alone
 ၼ   n
+ၼ	n'a5	$atstart $atend	// the letter's name when it stands alone
 ပ   p
+ပ	p'a5	$atstart $atend	// the letter's name when it stands alone
 ၽ   p_h
+ၽ	p_h'a5	$atstart $atend	// the letter's name when it stands alone
 ၾ   f
+ၾ	f'a5	$atstart $atend	// the letter's name when it stands alone
 မ   m
+မ	m'a5	$atstart $atend	// the letter's name when it stands alone
 ယ   j
+ယ	j'a5	$atstart $atend	// the letter's name when it stands alone
 ရ   r
+ရ	r'a5	$atstart $atend	// the letter's name when it stands alone
 လ   l
+လ	l'a5	$atstart $atend	// the letter's name when it stands alone
 ဝ   w
+ဝ	w'a5	$atstart $atend	// the letter's name when it stands alone
 ႁ   h
+ႁ	h'a5	$atstart $atend	// the letter's name when it stands alone
 ဢ   a
+ဢ	'a5	$atstart $atend
 ၵႃ  ka
 ၵႃႇ  ka2
 ၵႃႈ  ka3

@@ -36,73 +36,142 @@ z	zEd
 
 _??	aks.ara   // 'unknown character'
 
-// letter names
+// signs: begin
+// a consonant with the halant, which takes its vowel away: said with a short i before it
+ಕ್	ik
+ಖ್	ik#
+ಗ್	ig
+ಘ್	ig#
+ಙ್	iN
+ಚ್	ic
+ಛ್	ic#
+ಜ್	iJ
+ಝ್	iJ#
+ಞ್	in^
+ಟ್	it.
+ಠ್	it.#
+ಡ್	id.
+ಢ್	id.#
+ಣ್	in.
+ತ್	it
+ಥ್	it#
+ದ್	id
+ಧ್	id#
+ನ್	in
+ಪ್	ip
+ಫ್	ip#
+ಬ್	ib
+ಭ್	ib#
+ಮ್	im
+ಯ್	ij
+ರ್	ir
+ಲ್	il
+ಳ್	il.
+ವ್	iv
+ಶ್	iS;
+ಷ್	is.
+ಸ್	is
+ಹ್	ih
+ಱ್	ir
+ೞ್	il.
+ಫ಼್	if
+ಜ಼್	iz
 
-ಕ್	ka
-ಖ್	k#a
-ಗ್	ga
-ಘ್	g#a
-ಙ್	Na
-ಚ್	ca
-ಛ್	c#a
-ಜ್	Ja
-ಝ್	J#a
-ಞ್	n^a
-ಟ್	t.a
-ಠ್	t.#a
-ಡ್	d.a
-ಢ್	d.#a
-ಣ್	n.a
-ತ್	ta
-ಥ್	t#a
-ದ್	da
-ಧ್	d#a
-ನ್	na
-ಪ್	pa
-ಫ್	p#a
-ಬ್	ba
-ಭ್	b#a
-ಮ್	ma
-ಯ್	ja
-ರ್	ra
-ಱ್	ra
-ಲ್	la
-ಳ್	l.a
-ವ್	va
-ಶ್	S;a
-ಷ್	s.a
-ಸ್	sa
-ಹ್	ha
-ೞ್	fa
-U+c82	am
-U+c83	ah
-U+cbc	nukta
-U+cbd	avagraha
-U+ccd	vattu
-ಫ಼್	fa
-ಜ಼್	za
+// signs
+U+c80	c'andrab,indu	// ಚಂದ್ರಬಿಂದು (the spacing form)
+U+c82	s'onne	// ಸೊನ್ನೆ
+U+c83	v'isarga	// ವಿಸರ್ಗ
+U+cbc	n'ukta	// ನುಕ್ತ
+U+cbd	'avagr,aha	// ಅವಗ್ರಹ
+U+ccd	h'alanta	// ಹಲಂತ
+// signs: end
 
 
-// combining vowels, precede by a click so they can be distinguished from stand-alone vowels
-ಾ	#X2a::
-ಿ	#X1i
-ೀ	#X2i::
-ು	#X1u
-ೂ	#X2u::
-ೃ	#X1ru
-ೄ	#X2r-:
-ೆ	#X1e
-ೇ	#X2e::
-ೈ	#X2aI
-ೊ	#X1o
-ೋ	#X2o::
-ೌ	#X2aU
+// letter names: begin
+// vowel signs and other signs, by the names they have in school
+ಾ	'il.i	// ಇಳಿ
+ಿ	g'ud.isu	// ಗುಡಿಸು
+ೀ	g'ud.is,ina||d'i:rg#a	// ಗುಡಿಸಿನ ದೀರ್ಘ
+ು	k'ombu	// ಕೊಂಬು
+ೂ	k'ombina||'il.i	// ಕೊಂಬಿನ ಇಳಿ
+ೃ	v'at.ras,ul.i	// ವಟ್ರಸುಳಿ
+ೄ	v'at.ras,ul.i||d'i:rg#a	// ವಟ್ರಸುಳಿ ದೀರ್ಘ
+ೆ	'etva	// ಎತ್ವ
+ೇ	'etvada||d'i:rg#a	// ಎತ್ವದ ದೀರ್ಘ
+ೈ	'aItva	// ಐತ್ವ
+ೊ	'otva	// ಒತ್ವ
+ೋ	'otvada||d'i:rg#a	// ಒತ್ವದ ದೀರ್ಘ
+ೌ	'aUtva	// ಔತ್ವ
+ೕ	d'i:rg#a	// ದೀರ್ಘ
+ೖ	'aItva	// ಐತ್ವ
+ಁ	c'andrab,indu	// ಚಂದ್ರಬಿಂದು
+ೱ	J'ihva:m,u:li:ja	// ಜಿಹ್ವಾಮೂಲೀಯ
+ೲ	'upad#m,a:ni:ja	// ಉಪಧ್ಮಾನೀಯ
+ಱ	S;'akat.,are:p#a	// ಶಕಟರೇಫ
+ೞ	r'al.a	// ರಳ
+
+// consonants: the letter is named with its inherent vowel
+ಕ	k'a
+ಖ	k#'a
+ಗ	g'a
+ಘ	g#'a
+ಙ	N'a
+ಚ	c'a
+ಛ	c#'a
+ಜ	J'a
+ಝ	J#'a
+ಞ	n^'a
+ಟ	t.'a
+ಠ	t.#'a
+ಡ	d.'a
+ಢ	d.#'a
+ಣ	n.'a
+ತ	t'a
+ಥ	t#'a
+ದ	d'a
+ಧ	d#'a
+ನ	n'a
+ಪ	p'a
+ಫ	p#'a
+ಬ	b'a
+ಭ	b#'a
+ಮ	m'a
+ಯ	j'a
+ರ	r'a
+ಲ	l'a
+ಳ	l.'a
+ವ	v'a
+ಶ	S;'a
+ಷ	s.'a
+ಸ	s'a
+ಹ	h'a
+
+// vowels: the name is the sound. Some of them are words too, so these are used for spelling only
+_ಅ	'a
+_ಆ	'a:
+_ಇ	'i
+_ಈ	'i:
+_ಉ	'u
+_ಊ	'u:
+_ಋ	r'u
+_ೠ	r'u:
+_ಌ	l'u	// the rare vowel letters vocalic l and ll, named by their sound
+_ೡ	l'u:
+_ಎ	'e
+_ಏ	'e:
+_ಐ	'aI
+_ಒ	'o
+_ಓ	'o:
+_ಔ	'aU
+
+_cap	kj'a:pit.al	// ಕ್ಯಾಪಿಟಲ್
+// letter names: end
 
 
 // symbols
 %	pratis.ata
 !	a:sc#arjac#inhe
-_?	aks.ara
+_?	pr'aS;na:rt#aka||c'ihne	// ಪ್ರಶ್ನಾರ್ಥಕ ಚಿಹ್ನೆ (was aks.ara, the word for 'letter')
 .	pu:rn.avira:ma
 ,	alpavira:ma
 ¼	ka:lu
@@ -113,6 +182,51 @@ _?	aks.ara
 (3 / 4)	mukka:lu
 ÷	b#a:ga:ka:ra
 &	mattu
+
+// more marks and symbols, with the names of Kannada school grammar (ಲೇಖನ ಚಿಹ್ನೆಗಳು) and of NVDA's Kannada
+// symbol list.  / \ @ # * + = ~ ± were read in English in ordinary text: they are read here in Kannada now.
+_;	'ard#avira:ma	// ಅರ್ಧವಿರಾಮ
+_:	v'ivaran.a:tmaka||c'ihne	// ವಿವರಣಾತ್ಮಕ ಚಿಹ್ನೆ
+_'	'alpa||pr'ad#a:na	// ಅಲ್ಪ ಪ್ರಧಾನ
+_"	'udd#aran.a||c'ihne	// ಉದ್ಧರಣ ಚಿಹ್ನೆ
+_(	'ed.a||'a:varan.a	// ಎಡ ಆವರಣ
+_)	b'ala||'a:varan.a	// ಬಲ ಆವರಣ
+_[	'ed.a||c'aUkat.t.u||'a:varan.a	// ಎಡ ಚೌಕಟ್ಟು ಆವರಣ
+_]	b'ala||c'aUkat.t.u||'a:varan.a	// ಬಲ ಚೌಕಟ್ಟು ಆವರಣ
+_{	'ed.a||p'us.pa:varan.a	// ಎಡ ಪುಷ್ಪಾವರಣ
+_}	b'ala||p'us.pa:varan.a	// ಬಲ ಪುಷ್ಪಾವರಣ
+_<	k'ad.ime	// ಕಡಿಮೆ
+_>	h'eccu	// ಹೆಚ್ಚು
+_-	s'amjo:Jaka||c'ihne	// ಸಂಯೋಜಕ ಚಿಹ್ನೆ
+__	'ad.d.agere	// ಅಡ್ಡಗೆರೆ
+/	'o:reja||g'ere	// ಓರೆಯ ಗೆರೆ
+\	'ed.a||'o:reja||g'ere	// ಎಡ ಓರೆಯ ಗೆರೆ
+_|	'udda||g'ere	// ಉದ್ದ ಗೆರೆ
+@	'et.||d'a||r'e:t.	// ಎಟ್ ದ ರೇಟ್
+#	hj'a:S;	// ಹ್ಯಾಶ್
+_^	kj'a:ret.	// ಕ್ಯಾರೆಟ್
+*	n'aks.atra	// ನಕ್ಷತ್ರ
++	s'aNkalana	// ಸಂಕಲನ
+=	s'amasu:caka	// ಸಮಸೂಚಕ
+~	t.'ild.a:	// ಟಿಲ್ಡಾ
+_`	gr'a:v	// ಗ್ರಾವ್
+_‘	'ed.a||'alpa||pr'ad#a:na	// ಎಡ ಅಲ್ಪ ಪ್ರಧಾನ
+_’	b'ala||'alpa||pr'ad#a:na	// ಬಲ ಅಲ್ಪ ಪ್ರಧಾನ
+_“	'ed.a||'udd#aran.a	// ಎಡ ಉದ್ಧರಣ
+_”	b'ala||'udd#aran.a	// ಬಲ ಉದ್ಧರಣ
+_«	'ed.a||dv'iko:nada||'a:varan.a	// ಎಡ ದ್ವಿಕೋನದ ಆವರಣ
+_»	b'ala||dv'iko:nada||'a:varan.a	// ಬಲ ದ್ವಿಕೋನದ ಆವರಣ
+_–	'en||d.j'a:S;	// ಎನ್ ಡ್ಯಾಶ್
+_—	'em||d.j'a:S;	// ಎಮ್ ಡ್ಯಾಶ್
+_…	c'ukke||c'ukke||c'ukke	// ಚುಕ್ಕೆ ಚುಕ್ಕೆ ಚುಕ್ಕೆ
+_•	'amS;a||s'u:caka	// ಅಂಶ ಸೂಚಕ
+_§	v'ib#a:ga	// ವಿಭಾಗ
+_°	d.'igri	// ಡಿಗ್ರಿ
+_£	p'aUn.d.	// ಪೌಂಡ್
+_¥	j'en	// ಯೆನ್
+_¢	s'en.t.	// ಸೆಂಟ್
+_×	g'un.a:ka:ra	// ಗುಣಾಕಾರ
+±	s'aNkalana||'at#ava:||vj'avakalana	// ಸಂಕಲನ ಅಥವಾ ವ್ಯವಕಲನ
 
 
 // numbers
@@ -227,6 +341,7 @@ _0C0	n'u:ru
 _1C0	nu:ru
 _2C0	'innu:ru
 _3C0	m'unnu:ru
+_4C0	n'a:nu:ru	// ನಾನೂರು
 _5C0	'aInu:ru
 _9C0	ombainu:ru
 
@@ -234,6 +349,7 @@ _0C	n'u:ra:
 _1C	nu:ra:
 _2C	'innu:ra:
 _3C	m'unnu:ra:
+_4C	n'a:nu:ra:	// ನಾನೂರಾ
 _5C	'aInu:ra:
 _9C	ombainu:ra:
 
@@ -241,8 +357,8 @@ _0M1	s'a:virada
 _0M1x	s'a:vira
 _0M2x	l'akSa    // 100,000
 _0M2	l'akSada
-_0M3	k'ot.i     // 100,00,000
-_0M4	b'ilion   // ?? English
+_0M3	k'o:t.i     // 100,00,000
+_0M4	s'a:vira||k'o:t.i	// ಸಾವಿರ ಕೋಟಿ, 1000,00,00,000 (was the English word billion)
 _dpt	_d'as.a:ms.a
 
 // abbreviations

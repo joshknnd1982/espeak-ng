@@ -60,30 +60,30 @@ _9X	s@mb'ilanpuluh
 _0C	R'atus_|
 _1C	s@R2'atus_|
 _0M1	R'ibu_
-_1M1	s@r'ibu_
+_1M1	s@R2'ibu_
 _0M2	dZ'uta_
 _1M2	s@dZ'uta_
 _0M3	m'iljaR
 _1M3	s@m'iljaR
 _dpt	_k,oma_
 
-_cap	b'EsaR    // after the letter
+_cap	b@s'aR    // besar, after the letter
 _??	k,odeh'uR2uf
 
 // accented letters
-_lig	d'aIgRaf
-_acu	akj'ut
-_ac2	dub@lakj'ut
+_lig	lig'atuR	// ligatur
+_acu	'aks@n||t'iR2us	// aksen tirus
+_ac2	'aks@n||t'iR2us||g'anda	// aksen tirus ganda
 _brv	bR2'i:v
 _ced	s@d'ila
 _cir	t'opi
 _dia	'umlaUt
-_dot	d'Ot
-_grv	gR2'av
-_hac	h'atSEk
+_dot	t'itik	// titik
+_grv	'aks@n||R2@nd'ah	// aksen rendah
+_hac	h'atSE2k
 _mcn	m'akR2On
-_ogo	'OgonEk
-_rng	R2'iNg
+_ogo	'OgonE2k
+_rng	tS'intSin	// cincin
 _stk	stR'ok
 _tld	t'ild@
 
@@ -106,9 +106,9 @@ _(	k,uR2uN||b'uka
 _)	k,uR2uN||t'utup
 __	g,aR2is||b'awah
 _-	t,andah'ubuN
-_{	k,uR2uN||kuR2'awal
+_{	k,uR2uN||kuR2,awal||b'uka
 _}	k,uR2uN||kuR2,awal||t'utup
-_[	k,uR2uN||s'iku
+_[	k,uR2uN||s,iku||b'uka
 _]	k,uR2uN||s,iku||t'utup
 _:	t,iti?||d'ua
 _;	t,iti?||k'oma
@@ -118,6 +118,40 @@ _>	l,Ebih||d'aR2i
 _,	k'oma
 _.	t'iti?
 _?	t,anda||t'an^a
+
+// more marks and symbols, with the names of the Unicode CLDR annotations for Indonesian (the names for speech).
+// ± was read in English in ordinary text: it is read in Indonesian now.
+_|	g,aR2is||v@Rt'ikal	// garis vertikal
+_`	t,anda||'aks@n||R2@nd'ah	// tanda aksen rendah
+_¡	t,anda||s'ER2u||t@Rb'alik	// tanda seru terbalik
+_¿	t,anda||t'an^a||t@Rb'alik	// tanda tanya terbalik
+_«	gil@m'Et||k'iR2i	// guillemet kiri
+_»	gil@m'Et||k'anan	// guillemet kanan
+_‘	ap'ostR2of||k'iR2i	// apostrof kiri
+_’	ap'ostR2of||k'anan	// apostrof kanan
+_‚	ap'ostR2of||k,anan||b'awah	// apostrof kanan bawah
+_“	t,anda||p@t'ik||k'iR2i	// tanda petik kiri
+_”	t,anda||p@t'ik||k'anan	// tanda petik kanan
+_„	t,anda||p@t'ik||k,anan||b'awah	// tanda petik kanan bawah
+_–	'En||d'ES	// en dash
+_—	'Em||d'ES	// em dash
+_…	E2l'ipsis	// elipsis
+_·	t,itik||t@N'ah	// titik tengah
+_§	bag'ian	// bagian
+_¶	t,anda||paR2'agR2af	// tanda paragraf
+_°	d@R2'adZat	// derajat
+_¥	j'En	// yen
+_¢	s'En	// sen
+_•	b'ul@t	// bullet
+_×	t,anda||p@Rkal'ian	// tanda perkalian
+_÷	t,anda||p@mbag'ian	// tanda pembagian
+±	pl'us||m'inus	// plus-minus
+_′	pR2'aIm	// prime
+_″	pR2'aIm||g'anda	// prime ganda
+_©	h'ak||tS'ipta	// hak cipta
+_™	m'ER2@k||d'agaN	// merek dagang
+_®	t@Rd'aftaR	// terdaftar (the emoji list's name, which is said twice when spelled)
+_€	E2'uR2o	// euro (the same)
 
 
 // unstressed words

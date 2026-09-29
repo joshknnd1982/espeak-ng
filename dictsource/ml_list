@@ -5,11 +5,15 @@
 
 // letter names (consonants)
 
-U+d02	'a#m
-U+d03	visarg@m
-U+d3d   avagraha
-U+d4d	c#andraka:r@m
-U+d4e	c#il.ac#aram  // ??
+// signs: begin
+U+d00	'anusv,a:r@m	// അനുസ്വാരം (the combining form above)
+U+d01	c'andr@b,indu	// ചന്ദ്രബിന്ദു
+U+d02	'anusv,a:r@m	// അനുസ്വാരം
+U+d03	v'is@rg@m	// വിസർഗം
+U+d3d	praS;l'e:s.@m	// പ്രശ്ലേഷം
+U+d4d	c'andr@k:,ala	// ചന്ദ്രക്കല
+U+d4e	c'Ill@ks.,ar@m	// ചില്ലക്ഷരം (the program puts U+D4E for the virama and joiner of a chillu written the old way)
+// signs: end
 
 ൺ	_'yn.  // chillu consonants
 ൻ	_in
@@ -17,6 +21,9 @@ U+d4e	c#il.ac#aram  // ??
 ൽ	_il
 ൾ	_'yl.
 ൿ	_ik
+ൔ	_'ym	// the chillus of ma, ya and zha (Unicode 9)
+ൕ	_'yj
+ൖ	_'yr.
 ണൎ	_'yn.  // eSpeak uses unofficial 0xd4e for "virama + U+200d" to indicate 'chillu' characters
 നൎ	_in
 റൎ	_'yR
@@ -26,21 +33,86 @@ U+d4e	c#il.ac#aram  // ??
 
 
 
-// combining vowels, precede by a click so they can be distinguished from stand-alone vowels
-ാ	#X2a::
-ി	#X1i
-ീ	#X2i::
-ു	#X1u
-ൂ	#X2u::
-ൃ	#X1ri
-ൄ	#X2ri::
-െ	#X1e
-േ	#X2e::
-ൈ	#X2aI
-ൊ	#X1o
-ോ	#X2o::
-ൌ	#X2aU
-ൗ	#X2aU
+// letter names: begin
+// vowel signs and other signs, by the names they have in school
+ാ	d'i:rg#@m	// ദീർഘം
+ി	v'al.l.i	// വള്ളി
+ീ	k'et.:uv,al.l.i	// കെട്ടുവള്ളി
+ു	'uka:r@c,ihn@m	// ഉകാരചിഹ്നം (the shape names കുനിപ്പ്, ചുഴിപ്പ് are one writer's coinage, not established)
+ൂ	'u:ka:r@c,ihn@m	// ഊകാരചിഹ്നം
+ൃ	Ryk'a:r@c,ihn@m	// ഋകാരചിഹ്നം
+ൄ	R'y:ka:r@c,ihn@m	// ൠകാരചിഹ്നം
+െ	p'ul.l.i	// പുള്ളി
+േ	k'et.:up,ul.l.i	// കെട്ടുപുള്ളി
+ൈ	'aIka:r@c,ihn@m	// ഐകാരചിഹ്നം
+ൊ	p'ul.l.i||d'i:rg#@m	// പുള്ളി ദീർഘം
+ോ	k'et.:up,ul.l.i||d'i:rg#@m	// കെട്ടുപുള്ളി ദീർഘം
+ൌ	'aUka:r@c,ihn@m	// ഔകാരചിഹ്നം
+ൗ	'aUka:r@c,ihn@m	// ഔകാരചിഹ്നം
+൰	p'at:y	// പത്ത്
+൱	n'u:R2y	// നൂറ്
+൲	'a:jir@m	// ആയിരം
+൳	k'a:l	// കാൽ
+൴	'ara	// അര
+൵	muk:'a:l	// മുക്കാൽ
+
+// consonants: the letter is named with its inherent vowel
+ക	k'a
+ഖ	k#'a
+ഗ	g'a
+ഘ	g#'a
+ങ	N'a
+ച	c'a
+ഛ	c#'a
+ജ	J'a
+ഝ	J#'a
+ഞ	n^'a
+ട	t.'a
+ഠ	t.#'a
+ഡ	d.'a
+ഢ	d.#'a
+ണ	n.'a
+ത	t'a
+ഥ	t#'a
+ദ	d'a
+ധ	d#'a
+ന	n'a
+പ	p'a
+ഫ	p#'a
+ബ	b'a
+ഭ	b#'a
+മ	m'a
+യ	j'a
+ര	r'a
+റ	R2'a
+ല	l'a
+ള	l.'a
+ഴ	r.'a
+വ	v'a
+ശ	S;'a
+ഷ	s.'a
+സ	s'a
+ഹ	h'a
+
+// vowels: the name is the sound. Some of them are words too, so these are used for spelling only
+_അ	'a
+_ആ	'a:
+_ഇ	'i
+_ഈ	'i:
+_ഉ	'u
+_ഊ	'u:
+_ഋ	R'y
+_ൠ	R'y:
+_ഌ	l'y	// vocalic l, named by its sound like ൡ
+_എ	;'e
+_ഏ	;'e:
+_ഐ	'aI
+_ഒ	'o
+_ഓ	'o:
+_ഔ	'aU
+
+_cap	kj'a:pit.t.al	// ക്യാപിറ്റൽ
+// letter names: end
 
 
 // speak Latin letters as English
@@ -82,6 +154,42 @@ _,	aNkuS;@m
 _;	ro:d#ini
 _?	co:dj@cihn@m
 _!	a:S;c@rjacihn@m
+
+// more marks and symbols, with the names A. R. Rajaraja Varma gave in Sahityasahyam (ഭിത്തിക, വലയം, കോഷ്ഠം,
+// ഉദ്ധരണി, ശൃംഖല, രേഖ) and otherwise the English word as Malayalam speakers say it.
+// / \ @ # ~ ± were read in English in ordinary text: they are read here in Malayalam now.
+_:	b#'it:ika	// ഭിത്തിക
+_'	'ot.t.a||'udd#@ran.i	// ഒറ്റ ഉദ്ധരണി
+_"	'udd#@ran.i	// ഉദ്ധരണി
+_(	'id.@t:e||v'al@j@m	// ഇടത്തെ വലയം
+_)	v'al@t:e||v'al@j@m	// വലത്തെ വലയം
+_[	'id.@t:e||k'o:s.t.#@m	// ഇടത്തെ കോഷ്ഠം
+_]	v'al@t:e||k'o:s.t.#@m	// വലത്തെ കോഷ്ഠം
+_-	S;'ryNk#ala	// ശൃംഖല
+_–	r'e:k#a	// രേഖ
+_—	r'e:k#a	// രേഖ
+__	'ad.ivara	// അടിവര
+/	sl'a:s.y	// സ്ലാഷ്
+\	b'a:k:sla:s.y	// ബാക്ക്സ്ലാഷ്
+_|	l'amb@re:k#a	// ലംബരേഖ
+@	'at.t.y||d'a||R2'e:t.t.y	// അറ്റ് ദ റേറ്റ്
+#	h'a:s.y	// ഹാഷ്
+_^	k'a:r@t.t.y	// കാരറ്റ്
+~	t.'ild.y	// ടിൽഡ്
+_`	gr'e:vy	// ഗ്രേവ്
+_‘	'id.@t:e||'ot.t.a||'udd#@ran.i	// ഇടത്തെ ഒറ്റ ഉദ്ധരണി
+_’	v'al@t:e||'ot.t.a||'udd#@ran.i	// വലത്തെ ഒറ്റ ഉദ്ധരണി
+_“	'id.@t:e||'udd#@ran.i	// ഇടത്തെ ഉദ്ധരണി
+_”	v'al@t:e||'udd#@ran.i	// വലത്തെ ഉദ്ധരണി
+_•	b'ul.l.@t.t.y	// ബുള്ളറ്റ്
+_§	s'eks.@n	// സെക്ഷൻ
+_°	d.'igri	// ഡിഗ്രി
+_£	p'aUn.t.y	// പൗണ്ട്
+_¥	j'en	// യെൻ
+_¢	s'end2y	// സെന്റ്
+_×	g'un.@n@m	// ഗുണനം
+_÷	h'ar@n.@m	// ഹരണം
+±	pl'asy||m'aIn@sy	// പ്ലസ് മൈനസ്
 
 
 // numbers
@@ -190,6 +298,9 @@ _9Xf	t'on.n.u:t.t.
 _0M2x	l'aks.am
 _0M2	l'aks.at.t.i
 _0M3	k'o:t.i
+_1M2x	'oru||l'aks.@m	// ഒരു ലക്ഷം
+_1M2	'oru||l'aks.at.t.i
+_1M3	'oru||k'o:t.i	// ഒരു കോടി
 
 _dpt	_d'aS;a:mS;@m_
 

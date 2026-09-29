@@ -29,22 +29,64 @@
 ஹ்	iC
 U+b82	VnUsvVRV
 ஃ	VgH
-U+bcd	ot.RU
+U+bcd	p'ul.l.i	// புள்ளி
 
 ஏ	je:
 
-// combining vowels, precede by a click so they can be distinguished from stand-alone vowels
-ா	#X2a::
-ி	#X1i
-ீ	#X2i::
-ு	#X1u
-ூ	#X2u::
-ெ	#X1e
-ே	#X2e::
-ை	#X2aI
-ொ	#X1o
-ோ	#X2o::
-ௌ	#X2aU
+// letter names: begin
+// vowel signs and other signs, by the names they have in school
+// (the signs of u and uu have several shapes; they are named as the pair of i and ii is)
+ா	t'un.aIkka:l	// துணைக்கால்
+ி	m'e:lvil,VNgU	// மேல்விலங்கு
+ீ	m'e:lvil,VNgUtS:Uz.i	// மேல்விலங்குச் சுழி
+ு	k'i:z.vil,VNgU	// கீழ்விலங்கு
+ூ	k'i:z.vil,VNgUtS:Uz.i	// கீழ்விலங்குச் சுழி
+ெ	'ot.RaIkkombU	// ஒற்றைக்கொம்பு
+ே	'irVt.t.,aIkk,ombU	// இரட்டைக்கொம்பு
+ை	'in.aIkkombU	// இணைக்கொம்பு
+ொ	'ot.RaIkkombU||t'un.aIkka:l	// ஒற்றைக்கொம்பு துணைக்கால்
+ோ	'irVt.t.,aIkk,ombU||t'un.aIkka:l	// இரட்டைக்கொம்பு துணைக்கால்
+ௌ	'ot.RaIkkombU||k'ombUkka:l	// ஒற்றைக்கொம்பு கொம்புக்கால்
+ௗ	k'ombUkka:l	// கொம்புக்கால்
+
+// consonants: the letter is named with its inherent vowel
+க	k'V
+ங	N'V
+ச	tS'V	// ச: named cha, so that it is not said like ஸ sa
+ஜ	dZ'V
+ஞ	n^'V
+ட	t.'V
+ண	m'u:nRU||s'uz.i||n.'V	// மூன்று சுழி ண (the three n letters are told apart as speakers do when spelling)
+த	t'V
+ந	n'V
+ன	'irVn.d.U||s'uz.i||n'V	// இரண்டு சுழி ன
+ப	p'V
+ம	m'V
+ய	j'V
+ர	r'V
+ற	R'V
+ல	l'V
+ள	l.'V
+ழ	z.'V
+வ	v'V
+ஶ	S'V
+ஷ	s.'V
+ஸ	s'V
+ஹ	H'V
+
+// vowels: the name is the sound. Some of them are words too, so these are used for spelling only
+_அ	'a
+_ஆ	'a:
+_இ	'i
+_ஈ	'i:
+_உ	'u
+_ஊ	'u:
+_எ	;'e
+_ஐ	'aI
+_ஒ	'o
+_ஓ	'o:
+_ஔ	'aU
+// letter names: end
 
 
 
@@ -81,7 +123,7 @@ _??	kuRij,i:d.U_
 _cap	kapit.Vl    // English
 _.	mut.RU||pul.l.i	// முற்று புள்ளி
 _,	ka:l||pul.l.i	// கால் புள்ளி
-_;	a:raIb||pul.l.i	// ஆரைப் புள்ளி
+_;	'araIp||p'ul.l.i	// அரைப் புள்ளி
 _:	mukka:l||pul.l.i	// முக்கால் புள்ளி
 _(	id.V||piRaI	// இட பிறை
 _)	vVlV||piRaI       // வல பிறை
@@ -94,7 +136,7 @@ _}	vVlV||gVn.Vm	// வல கணம்
 _"	me:Rgo:l.	// மேற்கோள்
 _'	ot.RaI||m'e:Rgo:l.	// ொற்றை மேற்கோள்
 __	ad.ig||ko:d.U	// அடிக் கோடு
-_-	in.aIppUg	// இணைப்புக்
+_-	'in.aIkko:d.U	// இணைக்கோடு
 
 \	p'in||s,a:jvU	// பின் சாய்வு
 !	vijVppU		// வியப்பு
@@ -130,6 +172,28 @@ _…	v'id.UnilaI
 ●	v'Vt.t.Vm
 †	kuttUva:l.
 ‡	'i*Vt.t.aIk||k'uttUva:l.
+
+// more marks and symbols, named as in Tamil (the names NVDA's Tamil symbol list uses).
+// @ and ~ were read in English in ordinary text; they are read here in Tamil now (an _x entry would
+// make them silent in ordinary text).
+@	'Vt.	// அட் (at)
+~	t.'ild.a:	// டில்டா
+_^	k'e:rVt.	// கேரட்
+_`	gr'a:v	// க்ராவ்
+_‘	'id.V||'ot.RaI||m'e:Rgo:l.	// இட ஒற்றை மேற்கோள்
+_’	v'VlV||'ot.RaI||m'e:Rgo:l.	// வல ஒற்றை மேற்கோள்
+_“	'id.V||m'e:Rgo:l.	// இட மேற்கோள்
+_”	v'VlV||m'e:Rgo:l.	// வல மேற்கோள்
+_„	k'i:z.||m'e:Rgo:l.	// கீழ் மேற்கோள்
+_‚	'ot.RaIk||k'i:z.||m'e:Rgo:l.	// ஒற்றைக் கீழ் மேற்கோள்
+_–	;'en||s'iRUgo:d.U	// என் சிறுகோடு
+_—	;'em||s'iRUgo:d.U	// எம் சிறுகோடு
+_·	n'Vd.Uppul.l.i	// நடுப்புள்ளி
+_¶	p'VttikkURi	// பத்திக்குறி
+_°	p'a:gaI	// பாகை
+_£	p'aUn.d.U	// பவுண்டு
+_¥	j'en	// யென்
+_¢	s'ent.	// சென்ட்
 
 ௰	pVttU
 ௱	nu:RU

@@ -62,7 +62,7 @@ _9X	s@mb'ilanpuloh
 _0C	R'atus_|
 _1C	s@*'atus_|
 _0M1	R'ibu_
-_1M1	s@r'ibu_
+_1M1	s@R'ibu_
 _0M2	dZ'ut@_
 _1M2	s@dZ'ut@_
 _0M3	b'ili@n
@@ -70,23 +70,23 @@ _1M3	s@b'ili@n
 _dpt	_p'@rpul'uhan_
 
 
-_cap	b'EsaR    // after the letter
+_cap	b@s'ar    // besar, after the letter
 _??	k,odeh'uR2uf
 
 // accented letters
-_lig	d'aIgRaf
-_acu	akj'ut
+_lig	lig'ator	// ligatur
+_acu	'aks@n||t'iRos	// aksen tirus
 _ac2	dub@lakj'ut
 _brv	bR2'i:v
 _ced	s@d'ila
-_cir	t'opi
+_cir	siRk'umflE2ks	// sirkumfleks
 _dia	'umlaUt
-_dot	d'Ot
-_grv	gR2'av
-_hac	h'atSEk
+_dot	t'ite?	// titik
+_grv	'aks@n||b@R'at	// aksen berat
+_hac	h'atSE2k
 _mcn	m'akR2On
-_ogo	'OgonEk
-_rng	R2'iNg
+_ogo	'OgonE2k
+_rng	tS'intSen	// cincin
 _stk	stR'ok
 _tld	t'ild@
 
@@ -104,9 +104,9 @@ __	g,aR2is||b'awah
 _-	t,andah'ubuN
 +	c'ampor
 =	s,am@||d'@Nan
-_{	k,uR2uN||kuR2'awal
+_{	k,uR2uN||kuR2,awal||b'uk@
 _}	k,uR2uN||kuR2,awal||t'utup
-_[	k,uR2uN||s'iku
+_[	k,uR2uN||s,iku||b'uk@
 _]	k,uR2uN||s,iku||t'utup
 _:	t,iti?||d'u@
 _;	t,iti?||k'om@
@@ -121,6 +121,40 @@ _.	t'iti?
 _?	t,and@||t'an^@
 /	stR2'ok
 _\	'bEkslES
+
+// more marks and symbols, with the names of the Unicode CLDR annotations for Malay (the names for speech).
+// ± was read in English in ordinary text: it is read in Malay now.
+_|	b'ar||m@n@g'a?	// bar menegak
+_`	'aks@n||b@R'at	// aksen berat, as the accent on a letter
+_¡	t,anda||s'ER2u||t@Rb'ale?	// tanda seru terbalik
+_¿	t,and@||t'an^@||t@Rb'ale?	// tanda tanya terbalik
+_«	s,udot||b@Rg,and@||k'iRi	// sudut berganda kiri
+_»	s,udot||b@Rg,and@||k'anan	// sudut berganda kanan
+_‘	k,om@||'atas||k'iRi	// koma atas kiri
+_’	k,om@||'atas||k'anan	// koma atas kanan
+_‚	k,om@||b,awah||k'anan	// koma bawah kanan
+_“	t,and@||p@t'e?||k'iRi	// tanda petik kiri
+_”	t,and@||p@t'e?||k'anan	// tanda petik kanan
+_„	t,and@||p@t'ikan||b'awah	// tanda petikan bawah
+_–	s'ENkaN||'En	// sengkang en
+_—	s'ENkaN||'Em	// sengkang em
+_…	E2l'ipsis	// elipsis
+_·	t,ite?||t@N'ah	// titik tengah
+_§	b,ahag'ian	// bahagian
+_¶	t,and@||p@R@Ng'an	// tanda perenggan
+_°	d'ardZah	// darjah
+_€	j'uRo	// euro (in ordinary text the word euro is read in English, as this list has it)
+_¥	j'En	// yen
+_¢	s'En	// sen
+_•	b'ul@t	// bulet
+_×	s,imbol||p@ndaR'aban	// simbol pendaraban
+_÷	s,imbol||p@mbahag'ian	// simbol pembahagian
+±	c,ampor||t'ola?	// campur tolak
+_′	pR'im@	// prima
+_″	pR,im@||g,and@||d'u@	// prima ganda dua
+_©	h'a?||tS'ipt@	// hak cipta
+_™	t,and@||dag'aNan	// tanda dagangan
+_®	b@Rd'aftar	// berdaftar (the emoji list's name, which is said twice when spelled)
 
 
 

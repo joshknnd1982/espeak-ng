@@ -225,3 +225,9 @@
 .group  ဲ
     ဲ   a
 
+.group
+    // a hyphen before a number is the minus sign
+    __) - (_D    @n'a404
+    D_) - (_D    _         // between numbers (a telephone number, a range): not a minus
+    _) - (_D     @n'a404   // also after a word that the program has cut at the asat
+
