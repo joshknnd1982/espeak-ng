@@ -52,8 +52,8 @@ s'upras;l;sk;i s;m;'Es.na z;m;'ilavats:a s;n;'Edats; z;n;'uxani\" 'as;p;Ekt r'as
 супрасльскі смешна змілавацца снедаць знюханы аспект расселіна вусце змёрзціся" "Cyrl"
 test_phon bg "'ax tS'udna b@Lg'arska z'em;o
 pol'uSvaj ts@ft;'aSti: Z'ita" "Ах чудна българска земьо, полюшвай цъфтящи жита." "Cyrl"
-test_phon bn "m'alOS,ij 'Obojd#,O Sr'omik,Oder b'i*udd#,e tS'OlOm,an_:_: m'egat#r'i_:_: 'ob#idZ,ane Se d'eSe S'Oto S'Oto 'ob#ib,aSik,e 'at.Ok k'O*etS#,e Se d'eSer 'imigr,eSOn p'uliS
-dZ'ader 'at.Ok k'O*a h'OtS#e
+test_phon bn "m'alO,eSi,aj 'Obojd#,O Sr'omik,Oder b'i*udd#,e tS'OlOm,an_:_: m'egat#r'i_:_: 'ob#idZ,ane Se d'eSe S'Oto S'Oto 'ob#ib,aSik,e 'at.Ok k'O*etS#,e Se d'eSer 'imigr,eSOn p'uliS
+dZ'ader 'at.Ok k'O*a h'OetS#,e
 t,ader pr'aj 'O*d#ek,Oi b'aNlad,eSi n'agO*,ik" "মালয়েশিয়ায় অবৈধ শ্রমিকদের বিরুদ্ধে চলমান 'মেগা-থ্রি' অভিযানে সে দেশে শত শত অভিবাসীকে আটক করেছে সে দেশের ইমিগ্রেশন পুলিশ। যাদের আটক করা হয়েছে, তাদের প্রায় অর্ধেকই বাংলাদেশী নাগরিক।" "Beng"
 test_phon bs "l^'ub&znI f'En^eRdZ,Ij& tS'adZ;&vog l'its& x'otS;E d'a m'i p'ok&ZE St'os" "Љубазни фењерџија чађавог лица хоће да ми покаже штос." "Cyrl"
 test_phon bs "l^'ub&znI f'En^eRdZ,Ij& tS'adZ;&vog l'its& x'otS;E d'a m'i p'ok&ZE St'os" "Ljubazni fenjerdžija čađavog lica hoće da mi pokaže štos." "Latn"
@@ -151,9 +151,9 @@ test_phon kl  "inu'itS; tam'armik in,uNN'orput nammin,E:rs,inn,a:ssusEq'arl#utsi
 silaq,assus'Ermik t,arn'il#u nal,uNN'issusianik pil'ErsuQ,a:p:ut
 ,imm,inn'ul#u ili,orfiQEqatsiQ,i:t:ariaqaralu'arput qat'aNNutsiQ,i:t:ut pEqatsiQ'i:nnErup an'Ers,a:vani" "Inuit tamarmik inunngorput nammineersinnaassuseqarlutik assigiimmillu ataqqinassuseqarlutillu pisinnaatitaaffeqarlutik. Silaqassusermik tarnillu nalunngissusianik pilersugaapput, imminnullu iliorfigeqatigiittariaqaraluarput qatanngutigiittut peqatigiinnerup anersaavani." "Latn"
 test_phon kn "'onde: b#'a:s.e s'a:lalla 'at#ava: s'a:lo:d,illa" "ಒಂದೇ ಭಾಷೆ ಸಾಲಲ್ಲ ಅಥವಾ ಸಾಲೋದಿಲ್ಲ" "Knda"
-test_phon kok ",VnUk'a:*c@h'Vl@-nt'@2c#e:k'a:*d 'e:k:1
-s,@:0b#@ik'a:r m,@nUk'a:rs.@h'Vl@-nt'@2jo:k'a:rshIr'Vw'ind'u k,@o:k'a:r g,@O:k'a:rr@2w,@ 'O:r ,Vd#Ik'a:*k@a:k'a:rr@2o:k'a:rshIr'Vw'ind'u k,@e:k'a:r m,@a:k'a:rm@le:k'a:r m,@e:k'a:rshIr'Vw'ind'u J,@3n@h'Vl@-nt'@2m@Ja:k'a:*t s@:0h'Vl@-nt'@2w:0@t,@n@h'Vl@-nt'@2t@h'Vl@-nt'@2*@ta:k'a:r 'O:r s,@:0m@a:k'a:rn@ta:k'a:r p@h'Vl@-nt'@2ra:k'a:*p@h'Vl@-nt'@2t H,@E:k'a:r
-,Un@h'Vl@-nt'@2H@e:k'a:rshIr'Vw'ind'u b,@Uk'a:*d@h'Vl@-nt'@2d#Ik'a:r 'O:r ,Vn@h'Vl@-nt'@2t@ra:k'a:*t@h'Vl@-nt'@2ma:k'a:r k,@ik'a:r d,@e:k'a:rn p@h'Vl@-nt'@2ra:k'a:*p@h'Vl@-nt'@2t H,@E:k'a:r 'O:r p,@r@2s@:0h'Vl@-nt'@2p@r ,Un@h'Vl@-nt'@2H@e:k'a:rshIr'Vw'ind'u b#,@a:k'a:*ica:k'a:rr@2e:k'a:r k,@e:k'a:r b#,@a:k'a:rw@ s,@:0e:k'a:r b,@r@2h'Vl@-nt'@2ta:k'a:rw@ k,@r@2na:k'a:r c,@a:k'a:rH@Ik'a:*e:" "अनुच्छेद १. सभी मनुष्यों को गौरव और अधिकारों के मामले में जन्मजात स्वतन्त्रता और समानता प्राप्त है । उन्हें बुद्धि और अन्तरात्मा की देन प्राप्त है और परस्पर उन्हें भाईचारे के भाव से बर्ताव करना चाहिए ।" "Deva"
+test_phon kok ",VnUcc#'e:d 'e:k
+s@:0b#'i::0 m@n'Us.jo~ k'o::0 g'O:r@2w,@ 'O:r ,Vd#Ik'a:*o~ k'e::0 m,a:ml'e::0 m'e~:1n J,@3nm@J'a:t sw:0@t'Vntr@2t,a: 'O:r s@:0m'a:nt,a: pr'a:pt H'E::0
+UnH'e~:1n b'Udd#I:0 'O:r ,Vnt@*'a:tma: k'i::0 d'e:n pr'a:pt H'E::0 'O:r p@r'Vsp@r UnH'e~:1n b#,a:ica:*'e::0 k'e::0 b#'a:w@- s'e::0 b@*t'a:w@- k'Vrn,a: c'a:HI;,e:" "अनुच्छेद १. सभी मनुष्यों को गौरव और अधिकारों के मामले में जन्मजात स्वतन्त्रता और समानता प्राप्त है । उन्हें बुद्धि और अन्तरात्मा की देन प्राप्त है और परस्पर उन्हें भाईचारे के भाव से बर्ताव करना चाहिए ।" "Deva"
 test_phon ko "kh'isu-,u-j g'ojudZ;,oq@n,u-n 'ips-uLq-,i*im'annaj,a h'aqo th'u-qp-j@Lh,an g'isu*,u-n ph'i*jotSh,i; 'antha" "키스의 고유조건은 입술끼리 만나야 하고 특별한 기술은 필요치 않다." "Hang"
 test_phon ku  "hEm'u mI*'ov az'ad_:_: u_! dI wEq'aR_:_: u maf'an dE# wEkh'Ev t'en dInj'aje
 eU xw8d'i h'IS_:_: u SU'uR 'In_:_: u d'Ive l'I hEmb'ER h'Ev bI z,IhnIj,EtEk'E# bRat'Ije b,IlIv'In" "Hemû mirov azad û di weqar û mafan de wekhev tên dinyayê. Ew xwedî hiş û şuûr in û divê li hember hev bi zihniyeteke bratiyê bilivin." "Latn"
@@ -223,7 +223,7 @@ r'a:j@3g,@d.
 p'a:l@g#,@r@2s,@H sa:t'a:*a: b'Vnd@c,i H'a:k d'Ili; 'a:He:" "आरक्षणासाठी आक्रमक झालेल्या मराठा क्रांती मोर्चाने आज मुंबई, नवी मुंबई, ठाणे, रायगड, पालघरसह सातारा बंदची हाक दिली आहे." "Deva"
 test_phon ms "s@m'u@ m,anus'i@ d,ilah'irkan b'Ebas_:_: dan s,amaR'at@ d,aRi s'@gi k@m,uli'a_|an_:_: dan h'a?h'a?
 m@R'Ek@ m@mp'un^aI p@mik'iRan_:_: dan p@Ras'a_|an h'ati_:_: dan h@nd'aklah b@Rt'inda? di _|ant'aR@ s'atu s'am@ l'aIn d'@Nan s@m'aNat p@*rs,aUdaR'a_|an" "Semua manusia dilahirkan bebas dan samarata dari segi kemuliaan dan hak-hak. Mereka mempunyai pemikiran dan perasaan hati dan hendaklah bertindak di antara satu sama lain dengan semangat persaudaraan." "Latn"
-test_phon mt  "'Ilbned'emIn c'ollla ,iuIt,ui:ld'eu h'i:lsa 'u ,ugu'alI f'Ided,eIniu'Ita 'u d'eed,erIt:I;'iui:t
+test_phon mt  "'Ilbned'emIn c'ollla ,iuIt,ui:ld'eu h'i:lsa 'u ,ugu'alI f'Ided,eIniu'Ita 'u d'ed,erIt:I;'iui:t
 'uma m,o:nI;'ia b'i:rra:dZ'unI; 'u b'i:lk,u:Seients'ea 'u 'andom Ig'i:bu r'uhhom j'istax_:_: S,eulS'eIn b'i: sp'Irtu t'a:_:_: ah'ua" "Il-bnedmin kollha jitwieldu ħielsa u ugwali fid-dinjità u d-drittijiet. Huma mogħnija bir-raġuni u bil-kuxjenza u għandhom igibu ruħhom ma' xulxin bi spirtu ta' aħwa." "Latn"
 test_phon nb "vo:R s'a:Ra# s'u-:lu-:_:_: fRA b'ade:,YyA sp'Ilta# j'u: vh'Ist_:_: u:g kw'Ikkst@p_! i: mi:n t'aksi:
 bl'o:baRS,ylte:t,Yy" "Vår sære Zulu fra badeøya spilte jo whist og quickstep i min taxi. Blåbærsyltetøy." "Latn"
