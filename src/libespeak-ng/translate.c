@@ -1184,8 +1184,9 @@ void TranslateClauseWithTerminator(Translator *tr, int *tone_out, char **voice_c
 		prev_out2 = prev_out;
 		utf8_in2(&prev_out, &sbuf[ix-1], 1);
 
-		if (tr->langopts.tone_numbers && IsDigit09(prev_out) && IsAlpha(prev_out2)) {
+		if (tr->langopts.tone_numbers && IsDigit09(prev_out) && IsAlpha(prev_out2) && (prev_out2 < 0x3040)) {
 			// tone numbers can be part of a word, consider them as alphabetic
+			// (after a romanised syllable, not after an ideograph: 是1,999元)
 			prev_out = 'a';
 		}
 
@@ -1299,8 +1300,8 @@ void TranslateClauseWithTerminator(Translator *tr, int *tone_out, char **voice_c
 			// allow certain punctuation within a word (usually only apostrophe)
 			if (!IsAlpha(c) && !IsSpace(c) && (wcschr(tr->punct_within_word, c) == 0)) {
 				if (IsAlpha(prev_out)) {
-					if (tr->langopts.tone_numbers && IsDigit09(c) && !IsDigit09(next_in)) {
-						// allow a tone number as part of the word
+					if (tr->langopts.tone_numbers && IsDigit09(c) && !IsDigit09(next_in) && (prev_out < 0x3040)) {
+						// allow a tone number as part of the word (after a romanised syllable)
 					} else if ((c == 0x200d) && IsEmoji(prev_out) && IsEmoji(next_in)) {
 						// keep U+200D ZERO WIDTH JOINER between two emoji in the word,
 						// so the sequence can match a multi-codepoint emoji dictionary
@@ -1557,7 +1558,7 @@ void TranslateClauseWithTerminator(Translator *tr, int *tone_out, char **voice_c
 			} else if (lookupwchar(breaks, c) != 0)
 				c = ' '; // various characters to treat as space
 			else if (iswdigit(c)) {
-				if (tr->langopts.tone_numbers && IsAlpha(prev_out) && !IsDigit(next_in)) {
+				if (tr->langopts.tone_numbers && IsAlpha(prev_out) && !IsDigit(next_in) && (prev_out < 0x3040)) {
 				} else if ((prev_out != ' ') && !iswdigit(prev_out)) {
 					if ((prev_out != tr->langopts.decimal_sep) || ((decimal_sep_count == true) && (tr->langopts.decimal_sep == ','))) {
 						c = ' ';

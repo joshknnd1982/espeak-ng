@@ -1032,6 +1032,7 @@ static int LookupNum2(Translator *tr, int value, int thousandplex, const int con
 	// control bit 4: speak zero tens
 	// control bit 5: variant of ordinal number (lang=hu)
 	//         bit 6: final tens and units after hundreds or thousands (use _#y form if there is one, lang=th)
+	//         bit 6: added to a larger part, use the "u" variant (NUM2_ADDED_VARIANT)
 	//         bit 8   followed by decimal fraction
 	//         bit 9: use #f form for both tens and units (lang=ml)
 
@@ -1039,6 +1040,7 @@ static int LookupNum2(Translator *tr, int value, int thousandplex, const int con
 	int ix;
 	int units;
 	int tens;
+	int tens_found; // the tens which were found in the dictionary (the twenties for NUM_VIGESIMAL)
 	int is_ordinal;
 	int used_and = 0;
 	int found_ordinal = 0;
@@ -1052,6 +1054,7 @@ static int LookupNum2(Translator *tr, int value, int thousandplex, const int con
 
 	units = value % 10;
 	tens = value / 10;
+	tens_found = tens;
 
 	found = 0;
 	ph_ordinal[0] = 0;
@@ -1095,7 +1098,17 @@ static int LookupNum2(Translator *tr, int value, int thousandplex, const int con
 			}
 
 			if (found == 0) {
-				if (control & 2) {
+				if ((tr->langopts.numbers2 & NUM2_ADDED_VARIANT) && (control & 0x40) && ((value < 10) || (units == 0))) {
+					// LANG=qu,tn: a unit, or a whole ten, which is added to a larger part (101, 110)
+					if (value < 10)
+						sprintf(string, "_%du", value);
+					else
+						sprintf(string, "_%dXu", tens);
+					found = Lookup(tr, string, ph_digits);
+				}
+
+				if (found) {
+				} else if (control & 2) {
 					// the final tens and units of a number
 					if (number_control & 1) {
 						// look for 'e' variant
@@ -1158,8 +1171,18 @@ static int LookupNum2(Translator *tr, int value, int thousandplex, const int con
 				if ((ph_tens[0] == 0) && (tr->langopts.numbers & NUM_VIGESIMAL)) {
 					// tens not found,  (for example) 73 is 60+13
 					units = (value % 20);
-					sprintf(string, "_%dX", tens & 0xfe);
+					tens_found = tens & 0xfe;
+					sprintf(string, "_%dX", tens_found);
 					Lookup(tr, string, ph_tens);
+				}
+
+				if ((units > 0) && (ph_tens[0] != 0) && (found_ordinal == 0)) {
+					// the form of the tens which is used when units follow, if there is one
+					// (LANG=mto: 46 = vijxtkupxik tojtik, but 40 = vijxtkupx)
+					char ph_tensv[50];
+					sprintf(string, "_%dXv", tens_found);
+					if (Lookup(tr, string, ph_tensv) != 0)
+						strcpy(ph_tens, ph_tensv);
 				}
 
 				ph_digits[0] = 0;
@@ -1172,7 +1195,12 @@ static int LookupNum2(Translator *tr, int value, int thousandplex, const int con
 						found_ordinal = 1;
 						ph_ordinal[0] = 0;
 					} else {
-						if (control & 8) {
+						if ((tr->langopts.numbers2 & NUM2_ADDED_VARIANT) && (ph_tens[0] != 0)) {
+							// LANG=qu,tn: the form of a unit which is added to the tens (21)
+							sprintf(string, "_%du", units);
+							found = Lookup(tr, string, ph_digits);
+						}
+						if ((found == 0) && (control & 8)) {
 							// is there a variant form of this number?
 							sprintf(string, "_%df", units);
 							found = Lookup(tr, string, ph_digits);
@@ -1305,6 +1333,7 @@ static int LookupNum3(Translator *tr, int value, char *ph_out, bool suppress_nul
 	char ph_thousands[211];
 	char ph_hundred_and[12];
 	char ph_thousand_and[12];
+	char ph_zero_first[20];
 
 	ordinal = control & 0x22;
 	hundreds = value / 100;
@@ -1313,6 +1342,13 @@ static int LookupNum3(Translator *tr, int value, char *ph_out, bool suppress_nul
 
 	ph_thousands[0] = 0;
 	ph_thousand_and[0] = 0;
+	ph_zero_first[0] = 0;
+
+	if ((tr->langopts.numbers2 & NUM2_ZERO_TENS) && (control & 1) && (value > 0)
+	    && (value < ((tr->langopts.numbers2 & NUM2_MYRIADS) ? 1000 : 100))) {
+		// LANG=zh, this group starts with a zero, after higher digits: 1,0100 = one wan zero one bai
+		Lookup(tr, "_0", ph_zero_first);
+	}
 
 	if ((tr->langopts.numbers & NUM_ZERO_HUNDRED) && ((control & 1) || (hundreds >= 10)) && (tensunits > 0))
 		say_zero_hundred = true; // lang=vi, only if tens or units follow: 1005 but not 1000
@@ -1366,10 +1402,17 @@ static int LookupNum3(Translator *tr, int value, char *ph_out, bool suppress_nul
 			control |= 1;
 		}
 
+		if ((tr->langopts.numbers2 & NUM2_ADDED_VARIANT) && (thousandplex == 0) && (control & 1) && (hundreds > 0) && (tensunits == 0)) {
+			// LANG=qu: the hundreds are the last part, added to thousands: 1100 = waranqa pachakniyuq
+			if (Lookup(tr, "_0Cu", ph_10T))
+				strcpy(ph_100, ph_10T);
+		}
+
 		ph_digits[0] = 0;
 
 		if ((hundreds > 0) || say_zero_hundred) {
-			if ((tr->langopts.numbers & NUM_AND_HUNDRED) && ((control & 1) || (ph_thousands[0] != 0)))
+			if ((tr->langopts.numbers & NUM_AND_HUNDRED) && ((control & 1) || (ph_thousands[0] != 0))
+			    && !((thousandplex > 0) && (tr->langopts.numbers2 & NUM2_SWAP_THOUSANDS))) // LANG=tn: said before the thousands word
 				Lookup(tr, "_0and", ph_thousand_and);
 			else if ((tr->langopts.numbers2 & NUM2_AND_ROUND_HUNDREDS) && (tensunits == 0) && (ordinal == 0) && ((control & 1) || (ph_thousands[0] != 0)))
 				Lookup(tr, "_0and", ph_thousand_and); // lang=pt: mil e quinhentos, um milhão e duzentos mil
@@ -1468,14 +1511,27 @@ static int LookupNum3(Translator *tr, int value, char *ph_out, bool suppress_nul
 		if ((tr->translator_name == L('m', 'l')) && (thousandplex == 1))
 			x |= 0x208; // use #f form for both tens and units
 
-		if ((tr->langopts.numbers2 & NUM2_ZERO_TENS) && ((control & 1) || (hundreds > 0))) {
-			// LANG=zh,
-			x |= 0x10;
-		}
+		if ((tr->langopts.numbers2 & NUM2_ADDED_VARIANT) && (((control & 1) && (thousandplex == 0)) || (hundreds > 0)))
+			x |= 0x40; // LANG=qu,tn: the tens and units are added to a larger part (not a multiplier of thousands)
 
 		if (LookupNum2(tr, tensunits, thousandplex, x | (control & 0x100), buf2) != 0) {
 			if (tr->langopts.numbers & NUM_SINGLE_AND)
 				ph_hundred_and[0] = 0; // don't put 'and' after 'hundred' if there's 'and' between tens and units
+		}
+
+		if ((tr->langopts.numbers2 & NUM2_ZERO_TENS) && (tensunits > 0) && ((control & 1) || (hundreds > 0))) {
+			// LANG=zh, after higher digits: say "zero" for a gap of zeros before the tens or units
+			// (101, 1024), and say "one" before "ten" (110 = one bai one shi)
+			char ph_prefix[40];
+			char ph_buf[sizeof(buf2)];
+
+			ph_prefix[0] = 0;
+			if ((hundreds > 0) ? (tensunits < 10) : (ph_zero_first[0] == 0))
+				Lookup(tr, "_0", ph_prefix);
+			if ((tensunits / 10) == 1)
+				Lookup(tr, "_1", &ph_prefix[strlen(ph_prefix)]);
+			snprintf(ph_buf, sizeof(ph_buf), "%s%s", ph_prefix, buf2);
+			strcpy(buf2, ph_buf);
 		}
 	} else {
 		if (ph_ordinal2[0] != 0) {
@@ -1486,9 +1542,71 @@ static int LookupNum3(Translator *tr, int value, char *ph_out, bool suppress_nul
 		}
 	}
 
-	sprintf(ph_out, "%s%s%c%s", buf1, ph_hundred_and, phonEND_WORD, buf2);
+	sprintf(ph_out, "%s%s%s%c%s", ph_zero_first, buf1, ph_hundred_and, phonEND_WORD, buf2);
 
 	return 0;
+}
+
+static int LookupVigesimal(Translator *tr, int value, char *ph_out, int ph_size)
+{
+	// A number counted in twenties (NUM2_VIGESIMAL_FULL, LANG=nci,quc):
+	// value = a*8000 + b*400 + c*20 + d, each of a, b, c, d from 0 to 19.
+	// The parts are the dictionary entries _aV3, _bV2, _cV1 and _d (1 to 19). A part which
+	// follows a larger part uses its "u" form (_cV1u, _du) if there is one, else it follows _0and.
+	// Returns 0 if the number is too large or a part has no entry.
+
+	int place;
+	int n;
+	int power = 8000;
+	int len = 0;
+	bool first = true;
+	char string[16];
+	char ph_part[N_WORD_PHONEMES];
+	char ph_and[20];
+
+	ph_out[0] = 0;
+	if (value >= 20*8000)
+		return 0;
+	if (value == 0)
+		return Lookup(tr, "_0", ph_out);
+
+	ph_and[0] = 0;
+	Lookup(tr, "_0and", ph_and);
+	for (place = 3; place >= 0; place--) {
+		n = value / power;
+		value %= power;
+		power /= 20;
+		if (n == 0)
+			continue;
+
+		ph_part[0] = 0;
+		if (!first) {
+			if (place > 0)
+				sprintf(string, "_%dV%du", n, place);
+			else
+				sprintf(string, "_%du", n);
+			if (Lookup(tr, string, ph_part) == 0)
+				ph_part[0] = 0;
+		}
+		if (ph_part[0] == 0) {
+			if (place > 0)
+				sprintf(string, "_%dV%d", n, place);
+			else
+				sprintf(string, "_%d", n);
+			if (Lookup(tr, string, ph_part) == 0)
+				return 0;
+			if (!first && (ph_and[0] != 0)) {
+				len += snprintf(&ph_out[len], ph_size - len, "%s%c", ph_and, phonEND_WORD);
+				if (len >= ph_size)
+					return 0;
+			}
+		}
+		len += snprintf(&ph_out[len], ph_size - len, "%s%c", ph_part, phonEND_WORD);
+		if (len >= ph_size)
+			return 0;
+		first = false;
+	}
+	return 1;
 }
 
 static bool CheckThousandsGroup(char *word, int group_len)
@@ -1534,6 +1652,7 @@ static int TranslateNumber_1(Translator *tr, char *word, char *ph_out, char *ph_
 	int skipwords = 0;
 	int group_len;
 	int len;
+	int zero_group = 0;
 	char *p;
 	char string[32]; // for looking up entries in **_list
 	char buf1[100];
@@ -1674,6 +1793,21 @@ static int TranslateNumber_1(Translator *tr, char *word, char *ph_out, char *ph_
 	if ((value == 0) && prev_thousands)
 		suppress_null = true;
 
+	if ((tr->langopts.numbers2 & NUM2_ZERO_TENS) && prev_thousands && (value > 0)) {
+		// LANG=zh, say "zero" before a group which starts with a zero (1,0100: said by LookupNum3),
+		// or which follows a group of zeros (1,0000,1000 = one yi zero one qian)
+		zero_group = 1;
+		if (value >= ((tr->langopts.numbers2 & NUM2_MYRIADS) ? 1000 : 100)) {
+			zero_group = 2;
+			for (ix = 3; ix < 3 + group_len; ix++) {
+				if (word[-ix] != '0') {
+					zero_group = 0;
+					break;
+				}
+			}
+		}
+	}
+
 	if (tr->translator_name == L('h', 'u')) {
 		// variant form of numbers when followed by hyphen and a suffix starting with 'a' or 'e' (but not a, e, az, ez, azt, ezt
 		if ((thousandplex < wtab_remaining) && (wtab[thousandplex].flags & FLAG_HYPHEN_AFTER) && (thousands_exact == 1) && hu_number_e(&word[suffix_ix], thousandplex, value))
@@ -1691,6 +1825,23 @@ static int TranslateNumber_1(Translator *tr, char *word, char *ph_out, char *ph_
 					// found an exact match for N thousand
 					value = 0;
 					suppress_null = true;
+					if (zero_group == 1)
+						zero_group = 2; // LookupNum3 does not see this group
+				}
+				if ((tr->langopts.numbers2 & NUM2_ADDED_VARIANT) && prev_thousands && (thousands_exact & 1)) {
+					// LANG=qu: the thousands are the last part, added to millions: 1,001,000 = hunu waranqayuq
+					sprintf(string, "_0M%du", thousandplex);
+					if (Lookup(tr, string, buf1))
+						snprintf(ph_append, sizeof(ph_append), "%s", buf1);
+				}
+				if ((tr->langopts.numbers2 & NUM2_SWAP_THOUSANDS) && (tr->langopts.numbers & NUM_AND_HUNDRED) && prev_thousands) {
+					// LANG=tn: "and" goes before the thousands word, which is said first:
+					// 2,500,000 = two million and thousand five hundred
+					char ph_and[12];
+
+					Lookup(tr, "_0and", ph_and);
+					snprintf(buf1, sizeof(buf1), "%s%c%s", ph_and, phonEND_WORD, ph_append);
+					snprintf(ph_append, sizeof(ph_append), "%s", buf1);
 				}
 			}
 		}
@@ -1760,7 +1911,17 @@ static int TranslateNumber_1(Translator *tr, char *word, char *ph_out, char *ph_
 
 	}
 
-	LookupNum3(tr, value, ph_buf, suppress_null, thousandplex, prev_thousands | ordinal | decimal_point);
+	if (zero_group == 2)
+		Lookup(tr, "_0", ph_zeros);
+
+	if (tr->langopts.numbers2 & NUM2_VIGESIMAL_FULL) {
+		// LANG=nci,quc: the whole number is counted in twenties
+		if (LookupVigesimal(tr, value, ph_buf, sizeof(ph_buf)) == 0) {
+			flags[0] &= ~FLAG_SKIPWORDS;
+			return 0; // too large, speak as individual digits
+		}
+	} else
+		LookupNum3(tr, value, ph_buf, suppress_null, thousandplex, prev_thousands | ordinal | decimal_point);
 	if ((thousandplex > 0) && (tr->langopts.numbers2 & NUM2_SWAP_THOUSANDS))
 		len = sprintf(ph_out, "%s%s%c%s%s", ph_zeros, ph_append, phonEND_WORD, ph_buf2, ph_buf);
 	else

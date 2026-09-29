@@ -90,7 +90,9 @@ static const ALPHABET alphabets[] = {
 	{ "_braille", 0x2800,        0x2800, 0x28ff, 0, AL_NO_SYMBOL },
 	{ "_ja",    0x3040,          0x3040, 0x30ff, 0, AL_NOT_CODE },
 	{ "_zh",    OFFSET_CJK,      0x3100, 0x9fff, 0, AL_NOT_CODE | AL_IDEOGRAPHS },
-	{ "_ko",    0xa700,          0xa700, 0xd7ff, L('k', 'o'), AL_NOT_CODE | AL_WORDS },
+	// Hangul syllables and Jamo Extended-B; U+A700 to U+ABFF are other scripts, among them Latin
+	// Extended-D (the saltillo ꞌ of Mesoamerican languages) and the small Cherokee letters
+	{ "_ko",    0xa700,          0xac00, 0xd7ff, L('k', 'o'), AL_NOT_CODE | AL_WORDS },
 	{ "_shaw",  OFFSET_SHAVIAN,  0x10450, 0x1047F, L('e', 'n'), 0 },
 	{ NULL, 0, 0, 0, 0, 0 }
 };
@@ -499,10 +501,47 @@ Translator *SelectTranslator(const char *name)
 		// so each of these digits becomes a group of its own, named by _0M1 to _0M4 (and Saghan _0M5)
 		tr->langopts.break_numbers = 0x278; // 12,345,6,7,8,901: a break after the digits for 10^9, 10^6, 10^5, 10^4 and 10^3
 		break;
-	case L('m', 'i'):
+	case L('m', 'i'): // Maori
+		// 21 = rua tekau mā tahi, 101 = kotahi rau mā tahi, 120 = kotahi rau rua tekau
+		tr->langopts.numbers = NUM_AND_UNITS | NUM_HUNDRED_AND_DIGIT;
+		break;
+	case L('q', 'u'): // Quechua
+		// the last part of a compound number takes -yuq/-niyuq (the "u" variant):
+		// 11 = chunka hukniyuq, 101 = pachak hukniyuq, 110 = pachak chunkayuq, 1000 = waranqa
+		tr->langopts.numbers = NUM_OMIT_1_HUNDRED | NUM_OMIT_1_THOUSAND;
+		tr->langopts.numbers2 = NUM2_ADDED_VARIANT;
+		break;
+	case L3('q', 'u', 'c'): // K'iche'
+		// don't spell the start of words such as xb'an, tz'i', ch'o as unpronouncable:
+		// the rules read them
+		tr->langopts.param[LOPT_UNPRONOUNCABLE] = 1;
+
+		// counted in twenties (_NV1 and _NV2 in quc_list): 21 = juk'al jun, 100 = o'k'al,
+		// 1000 = kaq'o' lajk'al
+		tr->langopts.numbers = NUM_DEFAULT;
+		tr->langopts.numbers2 = NUM2_VIGESIMAL_FULL;
+		tr->langopts.break_numbers = 0; // the number is not split into groups of three digits
+		tr->langopts.max_digits = 6;
+		break;
+	case L3('m', 't', 'o'): // Totontepec Mixe
+		tr->langopts.param[LOPT_UNPRONOUNCABLE] = 1; // as for the languages without options of their own
+
+		// counted in twenties up to a hundred (_2X iiꞌpx, _4X vïjxtkupx, 30 = 20+10,
+		// 99 = 80+19), with -ïk after 40, 60, 80 when units follow (_4Xv); then mokupx
+		// (100) and miijl (1000); a part added to a larger one is joined with ja (_0and)
+		tr->langopts.numbers = NUM_VIGESIMAL | NUM_OMIT_1_HUNDRED | NUM_HUNDRED_AND | NUM_AND_HUNDRED | NUM_THOUSAND_AND;
+		tr->langopts.max_digits = 6; // no word for a million
+		break;
+	case L3('n', 'c', 'i'): // Classical Nahuatl
+		tr->langopts.param[LOPT_UNPRONOUNCABLE] = 1; // disable check for unpronouncable words
+		// counted in twenties (_NV1, _NV2, _NV3 in nci_list): 21 = cempohualli once,
+		// 400 = centzontli, 8000 = cenxiquipilli
+		tr->langopts.numbers = NUM_DEFAULT;
+		tr->langopts.numbers2 = NUM2_VIGESIMAL_FULL;
+		tr->langopts.break_numbers = 0; // the number is not split into groups of three digits
+		tr->langopts.max_digits = 6;
+		break;
 	case L('p', 'y'):
-	case L('q', 'u'):
-	case L3('q', 'u', 'c'):
 	{
 		tr->langopts.numbers = 0; // disable numbers until the definition are complete in _list file
 	}
@@ -968,6 +1007,12 @@ Translator *SelectTranslator(const char *name)
         tr->langopts.tone_language = 1; // Tone language, use  CalcPitches_Tone() rather than CalcPitches()
         tr->langopts.tone_numbers = 1; // a number after letters indicates a tone number (eg. pinyin or jyutping)
         tr->langopts.ideographs = 1;
+
+        // numbers are counted in myriads, as in the other Chinese languages
+        tr->langopts.numbers = NUM_DEFAULT;
+        tr->langopts.numbers2 = NUM2_MYRIADS | NUM2_ZERO_TENS | NUM2_PERCENT_BEFORE;
+        tr->langopts.break_numbers = BREAK_MYRIADS;
+        tr->langopts.max_digits = 10;
     }
         break;
 	case L('h','e'): // Hebrew
@@ -993,6 +1038,9 @@ Translator *SelectTranslator(const char *name)
 		{
 			tr->langopts.stress_rule = STRESSPOSN_1R;      // stress on final syllable
 			tr->langopts.length_mods0 = tr->langopts.length_mods;  // don't lengthen vowels in the last syllable
+
+			// decimal comma, as in Paraguay; 100 = sa, 1000 = su (without "one")
+			tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_OMIT_1_HUNDRED | NUM_OMIT_1_THOUSAND;
 		}
 		break;
 	case L('h', 'i'): // Hindi
@@ -1668,6 +1716,15 @@ Translator *SelectTranslator(const char *name)
 
 
 		tr->langopts.numbers = NUM_AND_UNITS | NUM_HUNDRED_AND | NUM_SINGLE_AND | NUM_OMIT_1_HUNDRED;
+		if (name2 == L('s', 'w')) {
+			// 10000 = elfu kumi, 1000000 = milioni moja, 50% = asilimia hamsini
+			tr->langopts.numbers2 = NUM2_SWAP_THOUSANDS | NUM2_PERCENT_BEFORE;
+		} else {
+			// 21 = masome a mabedi le bongwe, 101 = lekgolo le bongwe, 1100 = sekete le lekgolo,
+			// 2000 = dikete tse pedi
+			tr->langopts.numbers = NUM_AND_UNITS | NUM_HUNDRED_AND | NUM_AND_HUNDRED | NUM_OMIT_1_HUNDRED;
+			tr->langopts.numbers2 = NUM2_SWAP_THOUSANDS | NUM2_ADDED_VARIANT;
+		}
 	}
 		break;
 	case L('t', 'a'): // Tamil
@@ -1850,11 +1907,13 @@ Translator *SelectTranslator(const char *name)
 		tr->langopts.word_gap = 0x21; // length of a final vowel is less dependent on the next consonant, don't merge consonant with next word
 		tr->langopts.textmode = true;
 		tr->langopts.listx = 1; // compile *_listx after *_list
-		if (name2 == L3('y', 'u', 'e')) {
-			tr->langopts.numbers = NUM_DEFAULT;
-			tr->langopts.numbers2 = NUM2_ZERO_TENS;
-			tr->langopts.break_numbers = BREAK_INDIVIDUAL;
-		}
+
+		// numbers are counted in myriads (10000 = one wan, 10^8 = one yi), with "zero"
+		// for a gap of zeros, and "percent" before the number
+		tr->langopts.numbers = NUM_DEFAULT;
+		tr->langopts.numbers2 = NUM2_MYRIADS | NUM2_ZERO_TENS | NUM2_PERCENT_BEFORE;
+		tr->langopts.break_numbers = BREAK_MYRIADS;
+		tr->langopts.max_digits = 10; // longer numbers (telephone numbers) are spoken as individual digits
 	}
 		break;
 	default:

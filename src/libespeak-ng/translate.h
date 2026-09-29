@@ -483,9 +483,11 @@ typedef struct {
 #define NUM2_OMIT_1_HUNDRED_ONLY   0x00020000 // omit "one" before hundred only if there are no previous digits
 #define NUM2_ORDINAL_AND_THOUSANDS 0x00040000 // same variant for ordinals and thousands (#o = #a)
 #define NUM2_ORDINAL_DROP_VOWEL    0x00080000 // drop final vowel from cardial number before adding ordinal suffix (currently only tens and units)
-#define NUM2_ZERO_TENS             0x00100000 // say zero tens
+#define NUM2_ZERO_TENS             0x00100000 // say "zero" once for a gap of zeros, and "one ten" after higher digits (LANG=zh)
 #define NUM2_FRACTION_FEMININE     0x00200000 // use feminine units in decimal fractions
 #define NUM2_AND_ROUND_HUNDREDS    0x00400000 // 'and' before exact hundreds that follow thousands or millions (lang=pt, eu, mt)
+#define NUM2_ADDED_VARIANT         0x00800000 // a last part added to a larger part uses the "u" variant: _1u, _1Xu, _0Cu, _0M1u (LANG=qu,tn)
+#define NUM2_VIGESIMAL_FULL        0x01000000 // count in twenties, 400s and 8000s from _NV1, _NV2, _NV3 and _1 to _19 (LANG=nci,quc)
 
 #define NUM2_THOUSANDPLEX_VAR_THOUSANDS 0x00000002
 #define NUM2_THOUSANDPLEX_VAR_MILLIARDS 0x00000008
