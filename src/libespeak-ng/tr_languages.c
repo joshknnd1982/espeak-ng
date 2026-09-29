@@ -548,8 +548,10 @@ Translator *SelectTranslator(const char *name)
 	}
 		break;
 	case L('a', 'r'): // Arabic
-		tr->transpose_min = OFFSET_ARABIC; // for ar_list, use 6-bit character codes
-		tr->transpose_max = 0x65f;
+		// for ar_list, use 6-bit character codes; U+0620 to U+065E only, so that the signs and punctuation
+		// U+0600 to U+061F do not share their codes with the letters and harakat U+0640 to U+065F
+		tr->transpose_min = 0x620;
+		tr->transpose_max = 0x65e;
 		tr->transpose_map = NULL;
 		tr->letter_bits_offset = OFFSET_ARABIC;
 		tr->langopts.numbers = NUM_SWAP_TENS | NUM_AND_UNITS | NUM_HUNDRED_AND | NUM_OMIT_1_HUNDRED | NUM_AND_HUNDRED | NUM_THOUSAND_AND | NUM_OMIT_1_THOUSAND;
@@ -907,7 +909,9 @@ Translator *SelectTranslator(const char *name)
 		tr->transpose_map = transpose_map_fa;
 		tr->letter_bits_offset = OFFSET_ARABIC;
 
-		tr->langopts.numbers = NUM_AND_UNITS | NUM_HUNDRED_AND;
+		// "o" (and) after thousands and millions, also before hundreds and when the next group is zero
+		// (hezAr o jek, hezAr o devist); 1000 is "hezAr", not "jek hezAr"
+		tr->langopts.numbers = NUM_AND_UNITS | NUM_HUNDRED_AND | NUM_AND_HUNDRED | NUM_THOUSAND_AND | NUM_OMIT_1_THOUSAND;
 		tr->langopts.param[LOPT_UNPRONOUNCABLE] = 1; // disable check for unpronouncable words
 
 		tr->chars_ignore = chars_ignore_zwnj_hyphen; // replace ZWNJ by hyphen
@@ -961,6 +965,7 @@ Translator *SelectTranslator(const char *name)
 		tr->langopts.param[LOPT_APOSTROPHE] = 2; // bit 1  Apostrophe at end of word is part of the word, for words like בָּגָאז׳
 		tr->langopts.stress_flags = S_NO_AUTO_2; // don't use secondary stress
 		tr->langopts.numbers = NUM_DFRACTION_2 | NUM_AND_UNITS | NUM_HUNDRED_AND | NUM_SINGLE_AND;
+		tr->langopts.our_alphabet = OFFSET_HEBREW; // don't say "Hebrew" before each letter when spelling
 	}
 		break;
 	case L('g', 'a'): // irish
@@ -1462,6 +1467,12 @@ Translator *SelectTranslator(const char *name)
 		SetLetterVowel(tr, 'y');
 	}
 		break;
+	case L('p', 's'): // Pashto
+		tr->langopts.param[LOPT_UNPRONOUNCABLE] = 1; // disable check for unpronouncable words
+		tr->langopts.our_alphabet = OFFSET_ARABIC; // don't say "Arabic" before each letter when spelling
+		// every number up to 99 is a word of its own in ps_list; "aw" (and) after hundreds and thousands
+		tr->langopts.numbers = NUM_HUNDRED_AND | NUM_AND_HUNDRED | NUM_THOUSAND_AND;
+		break;
 	case L('p', 't'): // Portuguese
 	{
 		static const short stress_lengths_pt[8] = { 170, 115,  210, 240,  0, 0,  260, 280 };
@@ -1678,6 +1689,11 @@ Translator *SelectTranslator(const char *name)
 		SetLetterBitsRange(tr, LETTERGP_B, 0x4e, 0x4e); // chillu-virama (unofficial)
 	}
 		break;
+	case L('t', 'i'): // Tigrinya
+		tr->langopts.param[LOPT_UNPRONOUNCABLE] = 1; // disable check for unpronouncable words
+		tr->langopts.our_alphabet = OFFSET_ETHIOPIC; // don't say "Ethiopic" before each letter when spelling
+		tr->langopts.numbers = NUM_OMIT_1_HUNDRED; // 100 is "mI'ti", 1000 "hade shih"
+		break;
 	case L('t', 'r'): // Turkish
 	case L('a', 'z'): // Azerbaijan
 	{
@@ -1707,6 +1723,12 @@ Translator *SelectTranslator(const char *name)
 		tr->langopts.stress_flags = S_NO_AUTO_2; // no automatic secondary stress
 		tr->langopts.numbers = NUM_SINGLE_STRESS | NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_OMIT_1_HUNDRED | NUM_OMIT_1_THOUSAND | NUM_DFRACTION_4; // 10 000 as well as 10.000
 	}
+		break;
+	case L('u', 'g'): // Uyghur
+		tr->langopts.param[LOPT_UNPRONOUNCABLE] = 1; // disable check for unpronouncable words
+		tr->langopts.our_alphabet = OFFSET_ARABIC; // don't say "Arabic" before each letter when spelling
+		// 1.5 is "bir pUtUn ondin besh": the tenths, hundredths ... before the decimal fraction (as lang=kk)
+		tr->langopts.numbers = NUM_DEFAULT | NUM_DFRACTION_6;
 		break;
 	case L('u', 'k'): // Ukrainian
 	{
