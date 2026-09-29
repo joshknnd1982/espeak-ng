@@ -532,7 +532,7 @@ Translator *SelectTranslator(const char *name)
 		tr->langopts.param[LOPT_PREFIXES] = 1;
 		SetLetterVowel(tr, 'y'); // add 'y' to vowels
 
-		tr->langopts.numbers = NUM_SWAP_TENS | NUM_HUNDRED_AND | NUM_SINGLE_AND | NUM_ROMAN | NUM_1900;
+		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_SWAP_TENS | NUM_HUNDRED_AND | NUM_SINGLE_AND | NUM_ROMAN | NUM_1900;
 		tr->langopts.accents = 1;
 	}
 		break;
@@ -704,7 +704,7 @@ Translator *SelectTranslator(const char *name)
 		tr->langopts.stress_rule = STRESSPOSN_1L;
 		tr->langopts.param[LOPT_PREFIXES] = 1;
 		SetLetterVowel(tr, 'y');
-		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_SWAP_TENS | NUM_HUNDRED_AND | NUM_OMIT_1_HUNDRED | NUM_ORDINAL_DOT | NUM_1900 | NUM_ROMAN | NUM_ROMAN_CAPITALS | NUM_ROMAN_ORDINAL;
+		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_SWAP_TENS | NUM_HUNDRED_AND | NUM_OMIT_1_HUNDRED | NUM_ORDINAL_DOT | NUM_1900 | NUM_ROMAN | NUM_ROMAN_CAPITALS | NUM_ROMAN_ORDINAL;
 	}
 		break;
 	case L('d', 'e'):
@@ -931,7 +931,7 @@ Translator *SelectTranslator(const char *name)
 		//tr->langopts.stress_rule = STRESSPOSN_1L;
 		//tr->langopts.param[LOPT_PREFIXES] = 1;
 		//SetLetterVowel(tr, 'y');
-		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_SWAP_TENS | NUM_HUNDRED_AND | NUM_OMIT_1_HUNDRED | NUM_ORDINAL_DOT | NUM_1900 | NUM_ROMAN | NUM_ROMAN_CAPITALS | NUM_ROMAN_ORDINAL;
+		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_SWAP_TENS | NUM_HUNDRED_AND | NUM_OMIT_1_HUNDRED | NUM_ORDINAL_DOT | NUM_1900 | NUM_ROMAN | NUM_ROMAN_CAPITALS | NUM_ROMAN_ORDINAL;
 	}
 		break;
 	case L('f', 'r'): // french
@@ -1153,7 +1153,7 @@ Translator *SelectTranslator(const char *name)
 		SetLetterBits(tr, 3, "jvr"); // Letter group H
 		tr->letter_groups[1] = is_lettergroup_B;
 		SetLetterVowel(tr, 'y');
-		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_SINGLE_AND | NUM_HUNDRED_AND | NUM_AND_UNITS | NUM_1900;
+		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_ALLOW_SPACE | NUM_SINGLE_AND | NUM_HUNDRED_AND | NUM_AND_UNITS | NUM_1900;
 		tr->langopts.numbers2 = NUM2_THOUSANDPLEX_VAR_THOUSANDS;
 	}
 		break;
@@ -1297,6 +1297,15 @@ Translator *SelectTranslator(const char *name)
 		tr->langopts.param[LOPT_DIERESES] = 1;
 		tr->langopts.numbers = NUM_ROMAN;
 		tr->langopts.max_roman = 5000;
+	}
+		break;
+	case L('l', 'b'): // Luxembourgish
+	{
+		tr->langopts.param[LOPT_UNPRONOUNCABLE] = 1; // as the default case: don't check for unpronouncable words (d'Schoul)
+		// units before tens (eenanzwanzeg), 3,14 and 10 000 or 10.000
+		tr->langopts.numbers = NUM_DECIMAL_COMMA | NUM_SWAP_TENS | NUM_ALLOW_SPACE;
+		// feminine "zwou" before Milliounen and Milliarden, not before dausend
+		tr->langopts.numbers2 = NUM2_THOUSANDPLEX_VAR_ALL & ~NUM2_THOUSANDPLEX_VAR_THOUSANDS;
 	}
 		break;
 	case L3('l', 'f', 'n'): // Lingua Franca Nova: the voice file adds NUM_THOUS_SPACE and NUM_DECIMAL_COMMA
