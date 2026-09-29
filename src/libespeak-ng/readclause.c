@@ -72,6 +72,7 @@ static bool audio_text = false; // set during <audio> ... </audio>
 static bool clear_skipping_text = false; // next clause should clear the skipping_text flag
 int count_characters = 0;
 static int sayas_mode;
+static int sayas_embedded = -1; // the number of an embedded command whose letter is still to come
 static int sayas_start;
 
 #define N_SSML_STACK  20
@@ -661,8 +662,22 @@ int ReadClause(Translator *tr, char *buf, short *charix, int *charix_top, int n_
 			return terminator;
 		}
 
+		if (sayas_embedded >= 0) {
+			// the number and letter of an embedded command: a say-as (\001 18Y ... \001 Y)
+			// is kept, as an SSML <say-as> is, so that punctuation does not end the clause
+			if (iswdigit(c1))
+				sayas_embedded = sayas_embedded * 10 + (c1 - '0');
+			else {
+				if (c1 == 'Y')
+					sayas_mode = sayas_embedded;
+				sayas_embedded = -1;
+			}
+		}
+
 		if (c1 == CTRL_EMBEDDED) {
  			// an embedded command. If it's a voice change, end the clause
+			if (iswdigit(c2) || (c2 == 'Y'))
+				sayas_embedded = 0;
 			if (c2 == 'V') {
 				buf[ix++] = 0; // end the clause at this point
 				while (!Eof() && !iswspace(c1 = GetC()) && (ix < (n_buf-1)))
@@ -1026,6 +1041,7 @@ void InitText2(void)
 	clear_skipping_text = false;
 	count_characters = -1;
 	sayas_mode = 0;
+	sayas_embedded = -1;
 
 	xmlbase = NULL;
 }
