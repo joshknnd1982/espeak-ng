@@ -66,16 +66,16 @@
 _و	'vAv
 ه	'he:
 ی	'je:
-َ	'a:
-ُ	'o:
-ِ	'e:
+َ	f'athe:
+ُ	z'amme:
+ِ	k'asRe:
 ْ	'sAken
-ٰ	'alef'maq1suRe:
+ٰ	'alefe||xandZaR'i
 ٓ	kolAhe_'A::
 ّ	taSdid
-ً	'an
-ٌ	'on
-ٍ	'en
+ً	t'anvine||n'asb
+ٌ	t'anvine||R'af?
+ٍ	t'anvine||dZ'aR
 ئ	'je,hamze:
 ؤ	'vAv,hamze:
 ۀ	'he,hamze:
@@ -100,7 +100,7 @@ _و	'vAv
 ٪	'darsad
 ٔ	hamzeje_bAlA   //this character "ٔ" is defrent of "ء" and "ۀ" for example "دانشنامهٔ "
 ×	'zaRbdaR
-‍	'taq1simbaR
+‍	n'im||ettes'Al
 
 //Farsi Numbers used in Standard Persian keybord layout
 ۰	'sefRe_fARsi
@@ -129,6 +129,27 @@ _و	'vAv
 ۂ	'he,hamze:_oRdu
 ۓ	'je,hamze:_oRdu
 
+
+// Letter names that were missing (added for reading character by character)
+_cap    boz'oRg                                // capital: bozorg
+ك       k'Afe||aRab'i                          // U+0643 kaf-e arabi
+ى       'alefe||maq1s'uRe:                     // U+0649 alef-e maqsure
+ٱ       h'amzeje||v'asl                        // U+0671 hamze-ye vasl
+ٕ       h'amzeje||pAj'in                       // U+0655 hamze-ye payin
+ە       'he:                                   // U+06D5 ae: read as he
+ﻻ       l'Am||'alef                            // U+FEFB lam alef
+ﻼ       l'Am||'alef                            // U+FEFC lam alef
+ﻵ       l'Am||'A                               // U+FEF5 lam a (alef madde)
+ﻶ       l'Am||'A                               // U+FEF6 lam a (alef madde)
+ﻷ       l'Am||'alef||h'amze:                   // U+FEF7 lam alef hamze
+ﻸ       l'Am||'alef||h'amze:                   // U+FEF8 lam alef hamze
+ﻹ       l'Am||'alef||h'amzeje||z'iR            // U+FEF9 lam alef hamze-ye zir
+ﻺ       l'Am||'alef||h'amzeje||z'iR            // U+FEFA lam alef hamze-ye zir
+ﷲ       all'Ah                                 // U+FDF2 allah
+ﷺ       s,allall'Aho||?al'ejhe||va||s'allam    // U+FDFA sallallaho alayhe va sallam
+﷽       besmell'AheR||Rahm'AneR||Rah'im        // U+FDFD besmellahe rahmane rahim
+// vav alone (as a character is read when moving by character) is the letter; in a sentence it is "va"
+و       'vAv                                   $atend  // the letter, when it stands alone
 
 // Alphabet for Farsi is written by English characters (Pinglish)
 // Sometimes, Farsi speakers write Farsi words using English characters, particularly in Chat and SMS (texte messages).), called Pinglish
@@ -197,14 +218,14 @@ _2C	devist
 _3C	sisad
 _5C	pAnsad
 
-_0M1	hezARo
+_0M1	hezAR
 _0M1x	hezAR
-_0M2	miljuno
+_0M2	miljun
 _0M2x	miljun
-_0M3	miljARdo
+_0M3	miljARd
 _0M3x	miljARd
 _0and	o
-_dpt	noq1te:
+_dpt	mom'ajjez
 _roman	eRomi_
 
 _#st	om
@@ -231,6 +252,71 @@ U+20	fAsele_
 <	alAmate'kutSektaR
 =	mosAvi
 >	bozoRgtaR
+
+// names of punctuation marks (said only when a mark is named: spelling, reading with punctuation)
+_,      v'iRgul                                // virgul
+_;      noq1te'viRgul                          // noqte-virgul
+_?      alAmate'soAl                           // alamat-e so'al
+_'      Ap'AstRof                              // apostrof
+_"      gij'ume:                               // giyume
+_“      gij'umeje||tS'ap                       // giyume-ye chap
+_”      gij'umeje||R'Ast                       // giyume-ye rast
+_„      gij'umeje||pAj'in                      // giyume-ye payin
+_‘      Ap'AstRofe||tS'ap                      // apostrof-e chap
+_’      Ap'AstRofe||R'Ast                      // apostrof-e rast
+_-      x'atte||t'iRe:                         // khatt-e tire
+_–      x'atte||f'Aseleje||kut'Ah              // khatt-e fasele-ye kutah
+_—      x'atte||f'Aseleje||bol'and             // khatt-e fasele-ye boland
+__      z'iRxat                                // zirkhatt
+_|      x'atte||amud'i                         // khatt-e amudi
+_^      kol'Ahak                               // kolahak
+_`      aks'Ane||geR'Av                        // aksan-e gerav
+_…      s'e:||n'oq1te:                         // se noqte
+_·      n'oq1teje||mijAn'i                     // noqte-ye miyani
+_•      gol'ule:                               // golule (bullet)
+_¡      alAmate||ta?adZdZ'obe||vAR'une:        // alamat-e ta'ajjob-e varune
+_¿      alAmate||so?'Ale||vAR'une:             // alamat-e so'al-e varune
+_‰      daR||hez'AR                            // dar hezar
+_≠      nAmosAv'i                              // namosavi
+_≤      kutS'ektaR||jA||mos'Avi                // kuchektar ya mosavi
+_≥      boz'oRgtaR||jA||mos'Avi                // bozorgtar ya mosavi
+_∞      binah'Ajat                             // binahayat
+_©      h'aq1q1e||n'aSR                        // haqq-e nashr (as fa_emoji reads it in text)
+_®      n'eSAne||tedZAR'ije||s'abt||Sod'e:     // neshan-e tejari-ye sabt shode
+_™      nam'Ade||bAzaRgAn'i                    // namad-e bazargani
+_€      j'oRo                                  // yoro
+_←      p'ejkAn||R'u||be||tS'ap                // peykan ru be chap
+_→      p'ejkAn||R'u||be||R'Ast                // peykan ru be rast
+_↑      p'ejkAn||R'u||be||bAl'A                // peykan ru be bala
+_↓      p'ejkAn||R'u||be||pAj'in               // peykan ru be payin
+_؋      afq1An'i                               // afghani sign
+_٭      set'ARe:                               // Arabic five pointed star: setare
+_۔      n'oq1te:                               // Urdu full stop: noqte
+_‚      Ap'AstRofe||pAj'in                     // apostrof-e payin
+_†      n'eSAne||tSalip'A                      // neshan-e chalipa (dagger)
+_‡      n'eSAne||tSalip'Aje||dogAn'e:          // neshan-e chalipa-ye dogane (double dagger)
+_−      alAmate||menh'A                        // alamat-e menha (minus sign, as fa_emoji reads it in text)
+_؉      daR||hez'AR                            // Arabic-Indic per mille: dar hezar
+_؊      daR||d'ah||hez'AR                      // Arabic-Indic per ten thousand: dar dah hezar
+_﴾      paRAntezbAz                            // ornate left parenthesis: as (
+_﴿      paRAntezbaste:                         // ornate right parenthesis: as )
+_£      p'ond                                  // pond
+_¥      j'en                                   // yen
+_¢      s'ent                                  // sent
+_§      b'axS                                  // bakhsh
+_°      daR'adZe:                              // daraje
+_¶      n'eSAne||pARAgR'Af                     // neshan-e paragraf
+// symbols said in ordinary text too (before, they were said in English)
++       be||alAv'e:                            $max3   // be alave
+#       Som'ARe:                               $max3   // shomare
+@       'at                                    $max3   // at
+&       'and                                   $max3   // and
+\       b,ak'eslaS                             $max3   // bak-eslash
+/       'eslaS                                 $max3   // eslash
+~       tild'A                                 $max3   // tilda
+½       n'im                                   $max3   // nim
+¼       j'ek||tSAhAR'om                        $max3   // yek chaharom
+¾       s'e||tSAhAR'om                         $max3   // se chaharom (was not said before; a number now, like the other two)
 
 //characters and numbers and words with English alphabet is translated by English phonemes
 		//th	_^_en

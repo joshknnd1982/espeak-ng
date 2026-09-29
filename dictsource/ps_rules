@@ -20,6 +20,19 @@
 ٧	7
 ٨	8
 ٩	9
+۰	0
+۱	1
+۲	2
+۳	3
+۴	4
+۵	5
+۶	6
+۷	7
+۸	8
+۹	9
+٫	.
+٬	,
+٪	%
 ي	ی
 آ	ا
 
@@ -1512,3 +1525,6 @@ L02) ږ (_	g      // Word-final ږ in Eastern dialect
 _) ږ	Z.      // Standard pronunciation 
 
  
+
+// minus sign before a number
+    __) - (_D      manf'i

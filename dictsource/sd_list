@@ -68,7 +68,114 @@
 ّ	t,aSd'i:d
 ً	d'o:zab'ar
 ٗ	Ubto:pe:S
+// letter names that were missing (added for reading character by character)
+آ       al'if||m'ad                            // U+0622 alif mad
+ی       'uRdu:||j'e:                           // U+06CC Urdu ye (in text it is replaced by U+064A)
+ے       'uRdu:||v'ad.i:||j'e:                  // U+06D2 Urdu badi ye
+ٹ       'uRdu:||t.'e:                          // U+0679 Urdu te
+ڈ       'uRdu:||d.'a:l                         // U+0688 Urdu dal
+ڑ       'uRdu:||r.'e:                          // U+0691 Urdu re
+ں       'uRdu:||n'u:n||Q'unna                  // U+06BA Urdu nun ghunna
+ك       k'a:f                                  // U+0643 kaf (Arabic form)
+ة       t'e:                                   // U+0629 te (ta marbuta)
+ى       j'e:                                   // U+0649 ye
+أ       al'if||h'amzah                         // U+0623 alif hamza
+إ       al'if||h'amzah                         // U+0625 alif hamza (below)
+ٌ       b'a||p'e:S                             // U+064C ba pesh (two pesh)
+ٍ       b'a||z'e:R                             // U+064D ba zer (two zer)
+ْ       J'azam                                 // U+0652 jazam
+ٓ       m'ad                                   // U+0653 mad
+ٔ       h'amzah                                // U+0654 hamza above
+ٕ       h'amzah                                // U+0655 hamza below
+ٖ       k#'ar.o:||z'e:R                        // U+0656 kharo zer
+ـ       kaS'i:do:                              // U+0640 kashido
 
+
+
+// names of punctuation marks (said only when a mark is named: spelling, reading with punctuation)
+_.      m'ado:                                 // mado
+_۔      m'ado:                                 // mado
+_,      k'a:ma:                                // kama
+_،      k'a:ma:                                // kama
+_;      s'e:mi:||ko:l'a:n                      // semi kolan
+_؛      s'e:mi:||ko:l'a:n                      // semi kolan
+_:      ko:l'a:n                               // kolan
+_!      aJ'ab||Ji:||nIS'a:ni:                  // ajab ji nishani
+_?      sav'a:l||Ji:||nIS'a:ni:                // saval ji nishani
+_؟      sav'a:l||Ji:||nIS'a:ni:                // saval ji nishani
+_'      apa:st.R'a:fi:                         // apastrafi
+_"      hav'a:le:||Ji:||nIS'a:ni:              // havale ji nishani
+_“      hav'a:le:||Ji:||nIS'a:ni:              // havale ji nishani
+_”      hav'a:le:||Ji:||nIS'a:ni:              // havale ji nishani
+_‘      k#'a:bi:||apa:st.R'a:fi:               // khabi apastrafi
+_’      s'a:Ji:||apa:st.R'a:fi:                // saji apastrafi
+_«      k#'a:bo:||gIjo:lm'Ent.                 // khabo giyolment
+_»      s'a:Jo:||gIjo:lm'Ent.                  // sajo giyolment
+_(      k#Ulj'al||n'and.#i:||d.'Ingi:          // khulyal nandhi dingi
+_)      b'and||n'and.#i:||d.'Ingi:             // band nandhi dingi
+_[      k#Ulj'al||v'ad.i:||d.'Ingi:            // khulyal vadi dingi
+_]      b'and||v'ad.i:||d.'Ingi:               // band vadi dingi
+_{      k#Ulj'al||vIc'i:n||d.'Ingi:            // khulyal vichin dingi
+_}      b'and||vIc'i:n||d.'Ingi:               // band vichin dingi
+_<      k#'a~:||n'and.#o:                      // khan nandho (less than)
+_>      k#'a~:||v'ad.o:                        // khan vado (greater than)
+_-      H'aIfan                                // haifan
+__      l'o:||l'aIn                            // lo lain (low line)
+_|      amu:d'i:||lak'i:R                      // amudi lakir
+_…      'e:lIpsIs                              // elipsis
+_–      'e:||'e:n||d.'e:S                      // e en desh
+_—      'e:||'e:m||d.'e:S                      // e em desh
+_·      v'ac||v'a:Ro:||t.ab'ako:               // vach varo tabako
+_•      bUl'e:t.                               // bulet
+_¡      'abti:||aJ'ab||Ji:||nIS'a:ni:          // abti ajab ji nishani
+_¿      'abti:||sav'a:l||Ji:||nIS'a:ni:        // abti saval ji nishani
+_$      d.'a:laR                               // dalar
+_§      s'e:kSan                               // sekshan
+_°      d.'IgRi:                               // digri
+_€      j'u:Ro:                                // yuro
+_£      p'a:Und.                               // paund
+_¥      j'e:n                                  // yen
+_¢      s'ent.                                 // sent
+_©      k'a:pi:||R'aIt.                        // kapi rait
+_®      R'aJIst.aR||t#'Ial                     // rajistar thial
+_™      t.R'e:d.||m'a:Rk                       // tred mark
+_×      z'aRb||Ji:||nIS'a:ni:                  // zarb ji nishani
+_÷      v'and.#||Ji:||nIS'a:ni:                // vandh ji nishani
+_¶      pe:Ra:gR'a:f||Ji:||nIS'a:ni:           // paragraf ji nishani
+_†      d.'e:gaR||Ji:||nIS'a:ni:               // degar ji nishani
+_‰      f'i:||Haz'a:R                          // fi hazar
+_−      k'a:t.o:                               // kato (minus)
+_≠      'an.||bar'a:baR                        // an barabar
+_≤      k#'a~:||n'and.#o:||j'a:||bar'a:baR     // khan nandho ya barabar
+_≥      k#'a~:||v'ad.o:||j'a:||bar'a:baR       // khan vado ya barabar
+_∞      Inf'Inat.i:                            // infiniti
+_₨      R'upjo:                                // rupyo
+_₹      R'upjo:                                // rupyo
+_﷼      Rij'a:l                                // riyal
+_٪      f'i:s@d                                // fisad (as the rules read %)
+_٫      d.aH'a:i:                              // dahai (decimal separator)
+_٭      t'a:Ro:                                // taro (star)
+_„      hav'a:le:||Ji:||nIS'a:ni:              // havale ji nishani
+_‚      apa:st.R'a:fi:                         // apastrafi
+_↑      m'at.#e:||t'i:R                        // mathe tir (up arrow)
+_↓      H'e:t.#||t'i:R                         // heth tir (down arrow)
+_؋      afQa:n'i:                              // afghani
+_﴾      k#Ulj'al||n'and.#i:||d.'Ingi:          // ornate parenthesis: as (
+_﴿      b'and||n'and.#i:||d.'Ingi:             // ornate parenthesis: as )
+// symbols said in ordinary text too (before, they were said in English)
+#       H'e:S                                  $max3   // hesh
+@       'e:t.                                  $max3   // et
+&       'e:nd.                                 $max3   // end (and)
+/       sl'e:S                                 $max3   // slesh
+\       b'e:k||sl'e:S                          $max3   // bek slesh
+~       t.'Ild.i:                              $max3   // tildi
+*       t'a:Ro:                                $max3   // taro (star)
+=       bar'a:baR                              $max3   // barabar
++       v'a:d#o:                               $max3   // vadho (plus)
+±       v'a:d#o:||k'a:t.o:                     $max3   // vadho kato
+½       'ad#                                   $max3   // adh
+¼       co:t#'a:i:                             $max3   // chauthai
+¾       t.'e:||co:t#'a:i:                      $max3   // te chauthai
 
 // The numbers
 _0	bUr.i:

@@ -32,10 +32,10 @@ phonemetable ps
 ښ	S.i:n
 ص	swa:d
 ض	zwa:d
-ط	toe:
-ظ	zoe:
-ع	ain
-غ	Qain
+ط	tw'e:
+ظ	zw'e:
+ع	'ajn
+غ	Q'ajn
 ف	fe:
 ق	qa:f
 ک	ka:f
@@ -45,19 +45,40 @@ phonemetable ps
 ن	nu:n
 ڼ	n.u:n
 _و	wa:w
-ه	he:
+ه	Qw'@nd.a||h'e:
 ں	nu:n||Qun:@
 ﮨ	tSo:ti:||he:
 ھ	do||tSaSmi:||he:
 ء	hamz@
-ی	je:
-ې	je:||dra:z@
-ۍ	je:||l@ra:
+ی	na:rin'a||j'e:
+ې	'uZ.da||j'e:
+ۍ	S.@dzin'a||j'e:
 ئ	hamz@je:
 ۀ	he:||hamz@
 ؤ	wa:w||hamz@
 ﺅ	wa:w||hamz@
 ة	ta:||marbut@
+// letter names that were missing (added for reading character by character)
+آ       al'if||m'ad@                           // U+0622 alif mada
+ي       ts@rg'anda||j'e:                       // U+064A tsarganda ye (in text it is replaced by U+06CC)
+ى       na:rin'a||j'e:                         // U+0649 written for narina ye
+ے       j'e:                                   // U+06D2 ye
+گ       g'a:f                                  // U+06AF gaf (Persian form of U+06AB)
+ك       k'a:f                                  // U+0643 kaf (Arabic form)
+ہ       tSo:t'i:||h'e:                         // U+06C1 choti he
+أ       al'if||h'amz@                          // U+0623 alif hamza
+إ       al'if||h'amz@||z'e:r                   // U+0625 alif hamza zer
+ﻻ       l'a:m||al'if                           // U+FEFB lam alif
+ﻼ       l'a:m||al'if                           // U+FEFC lam alif
+ٌ       tanv'i:n||p'e:S                        // U+064C tanwin pesh
+ٍ       tanv'i:n||z'e:r                        // U+064D tanwin zer
+ٔ       h'amz@                                 // U+0654 hamza above
+ٕ       h'amz@||z'e:r                          // U+0655 hamza below
+ٙ       zwa:r@k'aj                             // U+0659 zwarakay
+// dal and vav alone are words (da, u) in a sentence: the letter names when spelling, and when
+// the character stands alone
+_د      d'a:l
+و       w'a:w                                  $atend  // the letter, when it stands alone
 
 // character names
 َ	zabar
@@ -74,6 +95,79 @@ _:	ra:bt@
 _،	d.rand.@j
 _۔	t.@kaj
 _؟	puSt@naj
+// names of punctuation marks (said only when a mark is named: spelling, reading with punctuation)
+_.      t.@k'aj                                // takay (as the list names U+06D4)
+_,      d.rand.@j                              // as the list names the Arabic comma
+_;      waqf@                                  // as the list names the Arabic semicolon
+_?      puSt@naj                               // as the list names the Arabic question mark
+_!      nida:j'@                               // nidaya
+_"      n'@ql||n@S.'@                          // naql nakha (quotation mark)
+_«      n'@ql||n@S.'@                          // naql nakha
+_»      n'@ql||n@S.'@                          // naql nakha
+_“      n'@ql||n@S.'@                          // naql nakha
+_”      n'@ql||n@S.'@                          // naql nakha
+_‘      n'@ql||n@S.'@                          // naql nakha
+_’      n'@ql||n@S.'@                          // naql nakha
+_„      n'@ql||n@S.'@                          // naql nakha
+_‚      n'@ql||n@S.'@                          // naql nakha
+_(      q'aws||xla:s                           // qaws khlas (open bracket)
+_)      q'aws||b'and                           // qaws band (closed bracket)
+_[      mur'abba||q'aws||xla:s                 // murabba qaws khlas
+_]      mur'abba||q'aws||b'and                 // murabba qaws band
+_{      k'uZ.||q'aws||xla:s                    // kuzh qaws khlas
+_}      k'uZ.||q'aws||b'and                    // kuzh qaws band
+_-      h'a:jfan                               // hayfan (hyphen)
+__      t.'i:t.@||k'@rS.@                      // tita karkha (low line)
+_|      amu:d'i||l'ik@                         // amudi lika (vertical line)
+_…      dr'e:||t.@k'i                          // dre taki (three dots)
+_§      b'arx@                                 // barkha (section)
+_°      dar'aj@                                // daraja
+_£      p'a:wn.d.                              // pawnd
+_¥      j'en                                   // yen
+_¢      s'ent                                  // sent
+_€      j'u:ro:                                // yuro
+_©      d@||tS'a:p||h'aq                       // da chap haq (copyright)
+_×      z'arb                                  // zarb
+_÷      w'e:S                                  // wesh
+_±      dZ'am?||manf'i                         // jama manfi
+_≠      musa:w'i||n'@                          // musawi na
+_≤      l'@Z.||ja:||musa:w'i                   // lazh ya musawi
+_≥      l'oj||ja:||musa:w'i                    // loy ya musawi
+_∞      la:mahd'u:d                            // lamahdud
+_−      manf'i                                 // manfi (minus sign)
+_﷼      rij'a:l                                // riyal
+_₨      ru:p'@j                                // rupay
+_₹      ru:p'@j                                // rupay
+_٪      sal'an@                                // salana (Arabic percent sign)
+_٫      aSa:r'ij@                              // asharia (Arabic decimal separator)
+_٭      st'oraj                                // storay (Arabic five pointed star)
+_$      d.'a:l@r                               // dalar
+_<      l'@Z.||ts@x'@                          // lazh tsakha (less than)
+_>      l'oj||ts@x'@                           // loy tsakha (greater than)
+_–      l'and.@||k'@rS.@                       // landa karkha (short line)
+_—      'uZ.d@||k'@rS.@                        // uzhda karkha (long line)
+_†      d@||xand'Zar||n@S.'@                   // da khanjar nakha (dagger)
+_™      tidZa:rat'i||n@S.'a:n                  // tijarati nakhan (trade mark)
+_←      k'in.||Q@S'aj                          // kin ghashay (left arrow)
+_→      S.'aj||Q@S'aj                          // khay ghashay (right arrow)
+_↑      p'orta||Q@S'aj                         // porta ghashay (up arrow)
+_↓      S.'@kta||Q@S'aj                        // khkata ghashay (down arrow)
+_﴾      q'aws||xla:s                           // ornate parenthesis: as (
+_﴿      q'aws||b'and                           // ornate parenthesis: as )
+_ـ      kaSi:d'@                               // kashida (tatweel)
+_+      dZ'am?                                 // jama (plus)
+_½      n'im                                   // nim (half)
+// symbols said in ordinary text too (before, they were said in English)
+#       Sme:r'@                                $max3   // shmera (number)
+@       'at                                    $max3   // at
+&       'aw                                    $max3   // aw (and)
+/       sl'aS                                  $max3   // slash
+\       b'ak||sl'aS                            $max3   // bak slash
+~       t.'ild.                                $max3   // tild
+*       st'oraj                                $max3   // storay (star)
+%       sal'an@                                $max3   // salana (percent)
+=       musa:w'i                               $max3   // musawi
+؋       afQa:n'@j                              $max3   // afghanay (Afghani sign; read through Arabic as "fathatan" before)
 
 
 // The numbers
@@ -81,9 +175,9 @@ _0	s'@f@r
 _1	j'aw
 _2	dw@
 _3	dre:
-_4	c'@lor
+_4	ts'@lor
 _5	p'@ndz@
-_6	Sp'aQ
+_6	Sp'aZ.
 _7	'o:w@
 _8	'at@
 _9	n'ah
@@ -91,30 +185,105 @@ _10	l'as
 _11	jw'o:las
 _12	dw'o:las
 _13	di'arlas
-_14	c'awarlas
+_14	tsw'a:rlas
 _15	p'@ndz@las
-_16	Sp'aQlas
+_16	Sp'a:r.as
 _17	o:w'@las
 _18	at'@las
 _19	n'o:las
 _20	S'@l
 _21	j'aw||wiSt
 _22	dw'a||wiSt
-_23	dr'e:||wiSt
-_24	c'@lor||wiSt
+_23	d@rw'iSt
+_24	ts@le:rw'iSt
 _25	p'@ndz@||wiSt
-_26	Sp'aQ||wiSt
+_26	Sp'aZ.||wiSt
 _27	'o:w@||wiSt
 _28	'at@||wiSt
-_29	n'ah||wiSt
+_29	n'@||wiSt
 _30	d'e:rS
 _31	j'aw||de:rS
-_40	c'@l||we:St
+_40	ts@lw'e:S.t
 _50	p'@ndz'os
 _60	Sp'e:t@
 _70	aw'ja:
 _80	at'ja:
 _90	n'awi
+// the numbers 32 to 99 (units before tens), hundreds, thousands, the decimal point
+_32     dw'a||de:rS
+_33     dr'e:||de:rS
+_34     ts'@lor||de:rS
+_35     p'@ndz@||de:rS
+_36     Sp'aZ.||de:rS
+_37     'o:w@||de:rS
+_38     'at@||de:rS
+_39     n'@||de:rS
+_41     j'aw||ts@lwe:S.t
+_42     dw'a||ts@lwe:S.t
+_43     dr'e:||ts@lwe:S.t
+_44     ts'@lor||ts@lwe:S.t
+_45     p'@ndz@||ts@lwe:S.t
+_46     Sp'aZ.||ts@lwe:S.t
+_47     'o:w@||ts@lwe:S.t
+_48     'at@||ts@lwe:S.t
+_49     n'@||ts@lwe:S.t
+_51     j'aw||p@ndz'os
+_52     dw'a||p@ndz'os
+_53     dr'e:||p@ndz'os
+_54     ts'@lor||p@ndz'os
+_55     p'@ndz@||p@ndz'os
+_56     Sp'aZ.||p@ndz'os
+_57     'o:w@||p@ndz'os
+_58     'at@||p@ndz'os
+_59     n'@||p@ndz'os
+_61     j'aw||Spe:t@
+_62     dw'a||Spe:t@
+_63     dr'e:||Spe:t@
+_64     ts'@lor||Spe:t@
+_65     p'@ndz@||Spe:t@
+_66     Sp'aZ.||Spe:t@
+_67     'o:w@||Spe:t@
+_68     'at@||Spe:t@
+_69     n'@||Spe:t@
+_71     j'aw||awj'a:
+_72     dw'a||awj'a:
+_73     dr'e:||awj'a:
+_74     ts'@lor||awj'a:
+_75     p'@ndz@||awj'a:
+_76     Sp'aZ.||awj'a:
+_77     'o:w@||awj'a:
+_78     'at@||awj'a:
+_79     n'@||awj'a:
+_81     j'aw||atj'a:
+_82     dw'a||atj'a:
+_83     dr'e:||atj'a:
+_84     ts'@lor||atj'a:
+_85     p'@ndz@||atj'a:
+_86     Sp'aZ.||atj'a:
+_87     'o:w@||atj'a:
+_88     'at@||atj'a:
+_89     n'@||atj'a:
+_91     j'aw||n'awi
+_92     dw'a||n'awi
+_93     dr'e:||n'awi
+_94     ts'@lor||n'awi
+_95     p'@ndz@||n'awi
+_96     Sp'aZ.||n'awi
+_97     'o:w@||n'awi
+_98     'at@||n'awi
+_99     n'@||n'awi
+_0C     s'aw@                                  // hundreds: dwa sawa
+_1C     j'aw||s'@l                             // 101 to 199: yaw sal aw ...
+_1C0    s'@l                                   // 100: sal
+_0M1    z'@r@                                  // thousands: dwa zara
+_1M1    j'aw||z'@r                             // 1001 to 1999: yaw zar aw ...
+_1M1x   z'@r                                   // 1000: zar
+_0M2    milj'o:n@                              // millions: dwa milyona
+_1M2    j'aw||milj'o:n                         // 1 000 000: yaw milyon
+_0M3    milj'a:rd@                             // milliards: dwa milyarda
+_1M3    j'aw||milj'a:rd                        // 1 000 000 000: yaw milyard
+_0and   aw                                     // and
+_dpt    aSa:r'ij@                              // decimal point: asharia
 _100	s'@l
 _1000	z'@r
 _10000	l'as||z'@r@
@@ -122190,3 +122359,6 @@ _10st	l'as@m
 کاپیوره	ka:pi'wara
 ګاټوونی	ga:t.auna'i:
 ګېنډی	ge:nd.a'i:
+
+// dal alone at the end of a clause (as a character is read when moving by character) is the letter
+د       d'a:l                                  $atend  // the letter, when it stands alone

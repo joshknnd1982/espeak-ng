@@ -68,6 +68,20 @@ _و	va:O
 ؎	naz.m||nISa:n
 ؃	s.afHa
 ﷽	bIsmIl:a:HIR:aHma:nIR:aHi:m
+// letter names that were missing (added for reading character by character)
+آ       alIf||m'ada                            // U+0622 alif madda
+ه       He:                                    // U+0647 he (the Arabic form of U+06C1)
+ي       c#o:t.i:||je:                          // U+064A as U+06CC (in text it is replaced by it)
+ى       c#o:t.i:||je:                          // U+0649 as U+06CC
+ك       ka:f                                   // U+0643 kaf (Arabic form)
+ة       go:l||te:                              // U+0629 as U+06C3
+أ       alIf||Hamza||u:paR                     // U+0623 alif, hamza above
+إ       alIf||Hamza||ni:ce:                    // U+0625 alif, hamza below
+ٍ       do||ze:R                               // U+064D do zer
+ٕ       Hamza||ni:ce:                          // U+0655 hamza below
+ـ       kaS'i:da                               // U+0640 kashida
+ﻻ       la:m||alIf                             // U+FEFB lam alif
+ﻼ       la:m||alIf                             // U+FEFC lam alif
 
 // character names
 َ	z@b@R
@@ -84,6 +98,82 @@ _:	Ra:bta
 _،	sakta
 _۔	xatma
 _؟	sava:li:;a:
+// names of punctuation marks (said only when a mark is named: spelling, reading with punctuation)
+_.      n'Uqta                                 // nuqta (dot)
+_?      sava:li:;a:||nISa:n                    // savaliya nishan (as the rules name the Arabic question mark)
+_'      ap'o:st.@Ro:fi                         // apostrofi
+_"      va:v'E:n                               // vavain (quotation marks)
+_“      va:v'E:n                               // vavain
+_”      va:v'E:n                               // vavain
+_‘      b'a:ja~:||ap'o:st.@Ro:fi               // bayan apostrofi
+_’      d'a:ja~:||ap'o:st.@Ro:fi               // dayan apostrofi
+_«      b'a:e~:||g@lIm'e:t.                    // bain gilimet
+_»      d'a:e~:||g@lIm'e:t.                    // dain gilimet
+_(      k#'Ula:||q'aUs                         // khula qaus
+_)      b'and||q'aUs                           // band qaus
+_[      k#'Uli:||m'aRba||bR'e:kIt.             // khuli murabba braket
+_]      b'and||m'aRba||bR'e:kIt.               // band murabba braket
+_{      k#'Uli:||xam'i:da||bR'e:kIt.           // khuli khamida braket
+_}      b'and||xam'i:da||bR'e:kIt.             // band khamida braket
+_<      se:||k'am                              // se kam
+_>      se:||b'ar.a:                           // se bara
+_-      H'aIf@n                                // hayfan
+__      z'e:Ri~:||l'aIn                        // zerin lain
+_|      amu:d'i:||l'aIn                        // amudi lain
+_¡      'Ult.i:||al'a:mat||Iste:J'a:b          // ulti alamat-e istejab
+_¿      'Ult.a:||sava:l'i:ja||nIS'a:n          // ulta savaliya nishan
+_–      'e:n||d.'e:S                           // en desh
+_—      'e:m||d.'e:S                           // em desh
+_…      t'i:n||n'Uqte:                         // tin nuqte
+_·      v'asti:||n'Uqta                        // vasti nuqta
+_•      b'UlIt.                                // bulit
+_§      s'e:kSan                               // sekshan
+_°      d.'IgRi:                               // digri
+_£      p'a:Und.                               // paund
+_¥      j'en                                   // yen
+_¢      s'ent.                                 // sent
+_©      k'a:pi:||R'aIt.                        // kapi rait
+_®      RIJIst.'aRd.                           // rajistard
+_™      tIJ'a:Rati:||nIS'a:n                   // tijarati nishan
+_×      al'a:mat||z'aRb                        // alamat-e zarb
+_÷      al'a:mat||taqs'i:m                     // alamat-e taqsim
+_¶      pe:Ra:gR'a:f||ka:||nIS'a:n             // paragraf ka nishan
+_†      d.'e:gaR||ka:||nIS'a:n                 // degar ka nishan
+_‰      f'i:||Haz'a:R                          // fi hazar
+_−      m'anfi:                                // manfi
+_≠      Q'E:R||musa:v'i:                       // ghair musavi
+_≤      se:||k'am||ja:||musa:v'i:              // se kam ya musavi
+_≥      se:||b'ar.a:||ja:||musa:v'i:           // se bara ya musavi
+_∞      l'a:||mUtan'a:Hi:                      // la mutanahi
+_←      b'a:e~:||t'aRaf||t'i:R                 // bain taraf tir (left arrow)
+_→      d'a:e~:||t'aRaf||t'i:R                 // dain taraf tir
+_↑      'u:paR||k'i:||t'aRaf||t'i:R            // upar ki taraf tir
+_↓      n'i:ce:||k'i:||t'aRaf||t'i:R           // niche ki taraf tir
+_₹      b#'a:Rati:||R'u:pIja                   // bharati rupiya
+_₨      R'u:pIja                               // rupiya
+_﷼      Rij'a:l                                // riyal
+_€      j'u:Ro:                                // yuro
+_٫      ISa:R'ija                              // isharia (Arabic decimal separator)
+_٭      sIt'a:Ra                               // sitara (Arabic five pointed star)
+_„      va:v'E:n                               // vavain
+_‚      ap'o:st.@Ro:fi                         // apostrofi
+_؋      afQa:n'i:                              // afghani
+_﴾      k#'Ula:||q'aUs                         // ornate parenthesis: as (
+_﴿      b'and||q'aUs                           // ornate parenthesis: as )
+// symbols said in ordinary text too (before, they were said in English)
+#       H'e:S                                  $max3   // hesh
+@       'e:t.                                  $max3   // et
+&       'OR                                    $max3   // aur (and)
+/       sl'e:S                                 $max3   // slesh
+\       b'e:k||sl'e:S                          $max3   // bek slesh
+~       t.'Ild.a:                              $max3   // tilda
+*       sIt'a:Ra                               $max3   // sitara
+=       musa:v'i:                              $max3   // musavi
++       J'ama                                  $max3   // jama (plus)
+±       J'ama||m'anfi:                         $max3   // jama manfi
+½       'a:d#a:                                $max3   // adha
+¼       caUt#'a:i:                             $max3   // chauthai
+¾       t'i:n||caUt#'a:i:                      $max3   // tin chauthai
 
 
 // The numbers
@@ -95,7 +185,7 @@ _4	c'a:R
 _5	p'a:Nc
 _6	c#'eh
 _7	s'a:t
-_8	'a:t#
+_8	'a:t.#
 _9	n'aU
 _10	d'as
 _11	gj'a:RaH
@@ -105,7 +195,7 @@ _14	c'aUdaH
 _15	p'andRaH
 _16	s'o:laH
 _17	s'atRaH
-_18	at#'a:RaH
+_18	at.#'a:RaH
 _19	'Unni:s
 _20	b'i:s
 _21	Ikk'i:s
@@ -115,7 +205,7 @@ _24	caUb'i:s
 _25	pacc'i:s
 _26	c#abb'i:s
 _27	sat:a:'i:s
-_28	,at#:a:j'i:s
+_28	,at.#:a:j'i:s
 _29	Unt'i:s
 _30	t'i:s
 _31	ikVt'i:s
@@ -145,17 +235,17 @@ _54	c'aUvan
 _55	p'acpan
 _56	c#'appan
 _57	sat:'a:van
-_58	at#'a:van
-_59	Uns'at#
-_60	s'a:t#
-_61	'Iksat#
-_62	b'a:sat#
-_63	t'IRsat#
-_64	c'aUsat#
-_65	p'aINsat#
-_66	c#Ij'a:sat#
-_67	s'aRsat#
-_68	'aRsat#
+_58	at.#'a:van
+_59	Uns'at.#
+_60	s'a:t.#
+_61	'Iksat.#
+_62	b'a:sat.#
+_63	t'IRsat.#
+_64	c'aUsat.#
+_65	p'aINsat.#
+_66	c#Ij'a:sat.#
+_67	s'aRsat.#
+_68	'aRsat.#
 _69	UnH,at:'aR
 _70	sat:'aR
 _71	IkHat:'aR
@@ -165,7 +255,7 @@ _74	caUHat:'aR
 _75	pac#at:'aR
 _76	c#IHat:'aR
 _77	sat#at:'aR
-_78	at#Hat:'aR
+_78	at.#Hat:'aR
 _79	Unna:s'i:
 _80	ass'i:
 _81	Ika:s'i:
@@ -175,7 +265,7 @@ _84	caURa:s'i:
 _85	paca:s'i:
 _86	c#Ija:s'i:
 _87	sat:a:s'i:
-_88	at#a:s'i:
+_88	at.#a:s'i:
 _89	nava:s'i:
 _90	navv'e:
 _91	Ikj'a:nve:
@@ -185,7 +275,7 @@ _94	caUR'a:nve:
 _95	pac'a:nve:
 _96	c#Ij'a:nve:
 _97	sat:'a:nve:
-_98	at#:'a:nve:
+_98	at.#:'a:nve:
 _99	nInj'a:nve:
 
 _0C	s'aU
@@ -484,6 +574,7 @@ _dpt	_ISaRI'Ia_
 محفوظ	m,e:Hf'u:z.
 مقدس	m,Uqad'as
 و	o:
+و       va:O                                   $atend  // the letter, when it stands alone (moving by character)
 انحراف	,InHIR'a:f
 مبینہ	m,Ubai:;'an,a
 متبادل	m,Utab'a:dIl
