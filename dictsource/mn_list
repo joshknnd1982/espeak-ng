@@ -52,14 +52,23 @@ _7X     dalan
 _8X     najan
 _9X     jeren
 _0C     zU:n
-_2C     xOjOr'zU:
-_3C     gUrvan'zU:
-_4C     d8rven'zU:
-_5C     tavan'zU:
-_6C     zUrga:n'zU:
-_7C     dOlO:n'zU:
-_8C     naIman'zU:
-_9C     jesen'zU:
+// hundreds: зуу when nothing follows, зуун when tens or units follow (хоёр зуун нэг)
+_2C0    xOjOr'zU:
+_2C     xOjOr'zU:n
+_3C0    gUrvan'zU:
+_3C     gUrvan'zU:n
+_4C0    d8rven'zU:
+_4C     d8rven'zU:n
+_5C0    tavan'zU:
+_5C     tavan'zU:n
+_6C0    zUrga:n'zU:
+_6C     zUrga:n'zU:n
+_7C0    dOlO:n'zU:
+_7C     dOlO:n'zU:n
+_8C0    naIman'zU:
+_8C     naIman'zU:n
+_9C0    jesen'zU:
+_9C     jesen'zU:n
 _1MA1   mjaNga
 _0MA1   mjaNga
 _0M1    mjaNga
@@ -73,6 +82,37 @@ _1MA4   ix'naja:d
 _0MA4   ix'naja:d
 _0M4    ix'naja:d
 
+// before мянга, сая and тэрбум a number takes its attributive form:
+// гурван мянга, арван мянга, таван сая
+_3a     g'Urva#N                // гурван
+_4a     d'8rv8#N                // дөрвөн
+_5a     t'ava#N                 // таван
+_6a     z'Urga:N                // зургаан
+_7a     d'OlO:N                 // долоон
+_8a     n'aIma#N                // найман
+_9a     j'es8#N                 // есөн
+_10a    'arva#N                 // арван
+// a round number standing alone (not followed by a word) takes its
+// standalone form: хорь, гуч ... зуу (20 жил is still хорин жил)
+_20n    x'Or                    // хорь
+_30n    g'UtS                   // гуч
+_40n    d'8tS                   // дөч
+_50n    t'av                    // тавь
+_60n    dZ'ar                   // жар
+_70n    d'al                    // дал
+_80n    n'aja#                  // ная
+_90n    j'er                    // ер
+_100n   z'U:                    // зуу
+// exact hundreds of thousands: хоёр зуун мянга (not зуу)
+_200M1  xOjOr'zU:n||mjaNga
+_300M1  gUrvan'zU:n||mjaNga
+_400M1  d8rven'zU:n||mjaNga
+_500M1  tavan'zU:n||mjaNga
+_600M1  zUrga:n'zU:n||mjaNga
+_700M1  dOlO:n'zU:n||mjaNga
+_800M1  naIman'zU:n||mjaNga
+_900M1  jesen'zU:n||mjaNga
+
 _dpt    tseg
 
 
@@ -85,7 +125,7 @@ _`      aksent
 _'      apostrOf
 \       UrU:g'zUra:s
 _>      ix'temdeg
-_       dU:gU:r'defis
+__      dU:gU:r'defis           // доогуур дефис (the underscore)
 $       dOllar
 _:      davxar'tseg
 ^       OrOI'temdeg
@@ -105,6 +145,43 @@ _?      asU:lti:n'temdeg
 _!      aNxa:rU:lax'temdeg
 *       Od              $max3
 _,      taslal
+
+// more marks and symbols (named only when they are read out or spelled)
+_(      n'e:x||x'a:lt           // нээх хаалт
+_)      x'a:x||x'a:lt           // хаах хаалт
+_[      n'e:x||d'8rv8#ldZi#N||x'a:lt    // нээх дөрвөлжин хаалт
+_]      x'a:x||d'8rv8#ldZi#N||x'a:lt    // хаах дөрвөлжин хаалт
+_{      z'y:N||g'OjO#||x'a:lt   // зүүн гоё хаалт
+_}      b'arU:N||g'OjO#||x'a:lt // баруун гоё хаалт
+_-      z'Ura:s                 // зураас
+_‐      z'Ura:s
+_–      d'UndU:r||z'Ura:s       // дундуур зураас
+_—      d'UndU:r||z'Ura:s
+_…      g'Urva#N||ts'eg         // гурван цэг
+_«      x'aSi#lt                // хашилт
+_»      x'aSi#lt
+_„      x'aSi#lt
+_“      x'aSi#lt
+_”      x'aSi#lt
+_‘      x'aSi#lt
+_’      apOstr'Of
+_‚      x'aSi#lt
+_°      x'em                    // хэм
+_§      z'UIl                   // зүйл
+_©      z'Oxi#O#gtSi:N||'erx    // зохиогчийн эрх
+_®      b'yrtge#lteI            // бүртгэлтэй
+_™      x'Uda#lda:ni#||t'emde#g // худалдааны тэмдэг
+_±      n'eme#x||x'asa#x        // нэмэх хасах
+_×      'yrdZy:le#x             // үржүүлэх
+_÷      x'Uva:x                 // хуваах
+_€      j'evrO#                 // евро
+_£      f'Unt                   // фунт
+_¥      'ije#N                  // иен
+_¢      ts'ent                  // цент
+_₮      t'8gr8g                 // төгрөг
+_№      d'Uga:r                 // дугаар
+_+      n'eme#x                 // нэмэх
+_₽      r'ubl                   // рубль
 
 
 // ============================================================
@@ -515,7 +592,7 @@ _ё      jO
 _ж      dZe
 _з      ze
 _и      i:
-_й      xagas'i:
+_й      x'agas||'i:             // хагас и
 _к      ka
 _л      el
 _м      em
@@ -533,13 +610,20 @@ _х      xe
 _ц      tse
 _ч      tSe
 _ш      Sa
-_щ      Sa
-_ъ      xatU:'temdeg
-_ы      i
-_ь      z8:l8N'temdeg
+_щ      StSa                    // ща
+_ъ      x'atU:gi:N||t'emdeg     // хатуугийн тэмдэг
+_ы      'er||'ygi:N||'i:        // эр үгийн ы
+_ь      z'8:lni:||t'emdeg       // зөөлний тэмдэг
 _э      e:
 _ю      jU:
 _я      ja:
+
+
+// A capital letter
+_cap    t,Om||                  // том
+
+// The stress mark which is written over a vowel
+U+301   '8rg8lti:N||t'emdeg     // өргөлтийн тэмдэг
 
 
 // ============================================================

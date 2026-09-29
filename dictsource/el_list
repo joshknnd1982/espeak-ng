@@ -42,6 +42,15 @@ _6C	eksak'os;a_
 _7C	eptak'os;a_
 _8C	oktak'os;a_
 _9C	en^ak'os;a_
+// before χιλιάδες the hundreds are feminine: διακόσιες χιλιάδες
+_2Cf	D;ak'os;es_
+_3Cf	triak'os;es_
+_4Cf	tetrak'os;es_
+_5Cf	pendak'os;es_
+_6Cf	eksak'os;es_
+_7Cf	eptak'os;es_
+_8Cf	oktak'os;es_
+_9Cf	en^ak'os;es_
 _0M1	Cil^'aDes
 _1M1	C'il^a        // no '1' before thousand
 _1M2	'ena|ekatom'irio
@@ -106,6 +115,61 @@ _,	k'oma
 _«	arister'a||isaQojik'a
 _»	Deksi'a||isaQojik'a
 
+
+// more marks and symbols, with the names of NVDA's Greek translation: ; is the
+// Greek question mark (ερωτηματικό), and ? the English one. Those with _ are
+// named only when they are read out (--punct) or spelled; those without _ are
+// also said in a text, as they were before (in English).
+_;	,erot,imatik'o	// ερωτηματικό
+_;	,erot,imatik'o	// U+037E
+_?	,aNglik'o||,erot,imatik'o	// αγγλικό ερωτηματικό
+_:	'ano||k'ato||tel'i;a	// άνω κάτω τελεία
+_·	'ano||tel'i;a	// U+00B7 άνω τελεία
+_·	'ano||tel'i;a	// U+0387
+_'	ap'ostrof,os	// απόστροφος
+_"	,isaQ,ojik'a	// εισαγωγικά
+_„	,isaQ,ojik'a
+_“	'aniQm,a||,aNglik'on||,isaQ,ojik'on	// άνοιγμα αγγλικών εισαγωγικών
+_”	kl'isim,o||,aNglik'on||,isaQ,ojik'on	// κλείσιμο αγγλικών εισαγωγικών
+_‘	,arister'i||ap'ostrof,os	// αριστερή απόστροφος
+_’	D,eksi;'a||ap'ostrof,os	// δεξιά απόστροφος
+_‚	ap'ostrof,os
+_(	'aniQm,a||par'enTes,is	// άνοιγμα παρένθεσης
+_)	kl'isim,o||par'enTes,is	// κλείσιμο παρένθεσης
+_[	'aniQm,a||aNg'ilis	// άνοιγμα αγκύλης
+_]	kl'isim,o||aNg'ilis	// κλείσιμο αγκύλης
+_{	'aniQm,a||aNg'istru	// άνοιγμα αγκίστρου
+_}	kl'isim,o||aNg'istru	// κλείσιμο αγκίστρου
+_<	mikr'oter,o	// μικρότερο
+_>	m,eQal'iter,o	// μεγαλύτερο
+_‐	p'avla	// παύλα
+_–	sten'i||p'avla	// στενή παύλα
+_—	f,arDi;'a||p'avla	// φαρδιά παύλα
+__	k'ato||p'avla	// κάτω παύλα
+_|	b'ara	// μπάρα
+_^	D'inam,i	// δύναμη
+_`	var'i;a	// βαρεία
+_…	tr'is||tel'i;es	// τρεις τελείες
+_•	kuc'iDa	// κουκίδα
+_°	vaTm'i	// βαθμοί
+_§	par'aQraf,os	// παράγραφος
+_©	pn,evmatic'i||,iDi;,oktis'i;a	// πνευματική ιδιοκτησία
+_®	k,atax,orim'eno	// καταχωρημένο
+_™	s'ima||k,atateT'en	// σήμα κατατεθέν
+_×	ep'i	// επί
+_÷	Di;'a	// διά
+_€	evr'o	// ευρώ
+_$	Dol'ari;,o	// δολάριο
+_£	l'ira	// λίρα
+_¥	j'en	// γιεν
+_¢	s'eds	// σεντς
+/	k'aTet,os	// κάθετος
+\	an'apoD,i||k'aTet,os	// ανάποδη κάθετος
+&	k'e	// και
+~	p,erispom'eni	// περισπωμένη
+#	D'i;es,i	// δίεση
+@	pap'aci	// παπάκι
+±	s'in||pl'in	// συν πλην
 
 // articles
 ο	o $u   // definate article
@@ -273,7 +337,7 @@ _ο	'omikron
 π       pi
 ρ       Ro
 σ       s'iQma
-ς       s'iQma
+ς       telik'o||s'iQma	// τελικό σίγμα
 τ       taf
 υ       'ipsilon
 φ       fi
@@ -457,6 +521,60 @@ U+37a	ipojeQram'eni   // iota subscript
 U+1fbf	psil'i
 U+1fc0	perispom'eni
 U+1fc1	Di;alitik'a||perispom'eni
+
+// the accents and breathings, as combining characters, and standing alone
+// (these with _ : they are named only when a word is spelled)
+U+301	t'onos	// τόνος
+U+300	var'ia	// βαρεία
+U+308	Di;alitik'a	// διαλυτικά
+U+344	Di;alitik'a||t'onos
+U+313	psil'i	// ψιλή
+U+314	Das'ia	// δασεία
+U+343	koron'iDa	// κορωνίδα
+U+304	makr'on	// μακρόν
+U+306	vraC'i	// βραχύ
+_΄	t'onos	// U+384 τόνος
+_΅	Di;alitik'a||t'onos	// U+385 διαλυτικά τόνος
+_᾽	koron'iDa	// U+1fbd
+_ι	prozjeQram'eni	// U+1fbe προσγεγραμμένη
+_῍	psil'i||var'ia	// U+1fcd
+_῎	psil'i||oks'ia	// U+1fce
+_῏	psil'i||perispom'eni	// U+1fcf
+_῝	Das'ia||var'ia	// U+1fdd
+_῞	Das'ia||oks'ia	// U+1fde
+_῟	Das'ia||perispom'eni	// U+1fdf
+_῭	Di;alitik'a||var'ia	// U+1fed
+_΅	Di;alitik'a||oks'ia	// U+1fee
+_`	var'ia	// U+1fef
+_´	oks'ia	// U+1ffd
+_῾	Das'ia	// U+1ffe
+
+// letters which are met as numerals, and other forms of letters
+ϝ	D'iQama	// δίγαμμα
+ϛ	st'iQma	// στίγμα
+ϙ	k'opa	// κόππα
+ϟ	k'opa
+ϡ	samp'i	// σαμπί
+ϐ	v'ita
+ϑ	T'ita
+ϕ	f'i
+ϖ	p'i
+ϰ	k'apa
+ϱ	R'o
+ϲ	s'iQma
+ϵ	'epsilon
+
+// the names of the accents, for an accented letter of another language
+_acu	oks'ia	// οξεία
+_grv	var'ia	// βαρεία
+_cir	perispom'eni	// περισπωμένη
+_tld	perispom'eni
+_dia	Di;alitik'a	// διαλυτικά
+_mcn	makr'on	// μακρόν
+_brv	vraC'i	// βραχύ
+
+// a capital letter
+_cap	kefal,eo||	// κεφαλαίο
 
 
 // Jer

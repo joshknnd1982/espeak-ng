@@ -1,3 +1,47 @@
+// Letter names
+// A vowel is named by its own sound, a consonant as it is named at school
+// (бе, ве, ге ... ка, эль, эм ...). The names of the vowels are given with _
+// so that they are used only in spelling.
+_а	'A
+б	b'e	// бе
+в	v'e	// ве
+г	g'e	// ге
+д	d'e	// де
+_е	j'e
+_ё	j'o
+ж	Z'e	// же
+з	z'e	// зе
+_и	'I
+й	q@sq'A||'I	// кыска и
+к	k'A	// ка
+л	'el	// эль
+м	'em	// эм
+н	'en	// эн
+_о	'o
+п	p'e	// пе
+р	'eR	// эр
+с	'es	// эс
+т	t'e	// те
+_у	'U
+ф	'ef	// эф
+х	x'A	// ха
+ц	ts'e	// це
+ч	tS'e	// че
+ш	S'A	// ша
+щ	S;'A	// ща
+ъ	qAtt'@||belg'I	// катты белги
+_ы	'@
+ь	j@ms'Aq||belg'I	// йымсак белги
+_э	'e
+_ю	j'u
+_я	j'A
+
+// A capital letter
+_cap	u#jk,en||	// уьйкен
+
+// The alphabet is not named before a letter: Cyrillic is the language's own script
+_cyr	_|
+
 // Numbers
 _0 n'ol?
 _1 b'IR
@@ -22,6 +66,13 @@ _0C j'uz
 _0M1 m'@N
 _0M2 mILl'Ion
 _0M3 mILl'IARd
+
+// the decimal comma: no Nogai word for it was found, so only a pause is
+// made between the whole number and the digits after the comma
+_dpt _:
+
+// the percent sign, said as the Russian word Nogai speakers use
+%	pRots'ent	// процент
 
 // Stress
 ама	$1

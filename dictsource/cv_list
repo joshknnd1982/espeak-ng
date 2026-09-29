@@ -1,6 +1,109 @@
 // This file is UTF8 encoded
 // Pronunciation exceptions for Chuvash
 
+// Letter names
+// A vowel is named by its own sound, a consonant with ӑ after it (бӑ, вӑ, гӑ ...).
+// The names of the vowels are given with _ so that they are used only in
+// spelling: а, е, и, э are also words.
+_а	'a
+_ӑ	'@
+б	b'@	// бӑ
+в	v'@	// вӑ
+г	g'@	// гӑ
+д	d'@	// дӑ
+_е	j'E
+_ё	j'O
+_ӗ	'8
+ж	Z'@	// жӑ
+з	z'@	// зӑ
+_и	'I
+й	j'@	// йӑ
+к	k'@	// кӑ
+л	l'@	// лӑ
+м	m'@	// мӑ
+н	n'@	// нӑ
+_о	'O
+п	p'@	// пӑ
+р	R'@	// рӑ
+с	s'@	// сӑ
+ҫ	C'@	// ҫӑ
+т	t'@	// тӑ
+_у	'U
+_ӳ	'Y
+ф	f'@	// фӑ
+х	x'@	// хӑ
+ц	ts'@	// цӑ
+ч	tS'@	// чӑ
+ш	S'@	// шӑ
+щ	C:'@	// щӑ
+ъ	x'Vt@l@x||pall'I	// хытӑлӑх палли
+_ы	'V
+ь	CEmC'El8x||pall'I	// ҫемҫелӗх палли
+_э	'E
+_ю	j'U
+_я	j'a
+
+// A capital letter
+_cap	p,Vs@k||	// пысӑк
+
+// The names of the accents, for an accented letter of another language,
+// and the stress mark which is written over a vowel
+_acu	ak'Ut	// акут
+_grv	gR'avIs	// гравис
+_cir	tsIRkUmfl'Eks	// циркумфлекс
+_dia	Uml'aUt	// умлаут
+_tld	t'Ilda	// тильда
+U+301	p'us@m||pall'I	// пусӑм палли
+
+// ӑ ӗ ҫ ӳ are often typed as the Latin letters which look like them
+ă	'@
+ĕ	'8
+ç	C'@
+ÿ	'Y
+
+// Punctuation marks and symbols, with the names the Chuvash Wikipedia gives
+// them (Чарӑну палли, Пунктуаци паллисем). Those with _ are named only when
+// they are read out (--punct) or spelled; those without _ are also said in a
+// text, as they were before (in English).
+_.	p'@ntS@	// пӑнчӑ
+_,	xy*'Ell8||p'@ntS@	// хӳреллӗ пӑнчӑ
+_;	p@ntS@p'a||xy*'Ell8||p'@ntS@	// пӑнчӑпа хӳреллӗ пӑнчӑ
+_:	'ik8||p'@ntS@	// икӗ пӑнчӑ
+_!	k@Sk@*'U||pall'I	// кӑшкӑру палли
+_?	Vjt'U||pall'I	// ыйту палли
+_¡	kut@nl'a||k@Sk@*'U||pall'I	// кутӑнла кӑшкӑру палли
+_¿	kut@nl'a||Vjt'U||pall'I	// кутӑнла ыйту палли
+_…	v'iC8||p'@ntS@	// виҫӗ пӑнчӑ
+_'	apOstR'Of	// апостроф
+_’	apOstR'Of
+_"	tS8RnESk'E	// чӗрнешке
+_«	tS8RnESk'E
+_»	tS8RnESk'E
+_„	tS8RnESk'E
+_“	tS8RnESk'E
+_”	tS8RnESk'E
+_‘	tS8RnESk'E
+_‚	tS8RnESk'E
+_(	x@l@pk'a	// хӑлӑпка
+_)	x@l@pk'a
+_[	x@l@pk'a
+_]	x@l@pk'a
+_{	x@l@pk'a
+_}	x@l@pk'a
+_-	dEf'Is	// дефис
+_‐	dEf'Is
+_–	ti*'E	// тире
+_—	ti*'E
+_°	gR'adUs	// градус
+_€	j'EvRo	// евро
+_₽	t'Enk8	// тенкӗ
+$	d'OllaR	// доллар
+/	tS'al@S||j'8R	// чалӑш йӗр
+*	C'@lt@RtS@k	// ҫӑлтӑрчӑк
++	plj'Us	// плюс
+%	pRots'Ent	// процент
+~	t'Ilda	// тильда
+
 // Numbers
 // The phonemes are those which cv_rules gives for the words in the comments,
 // but with Chuvash stress: on the last syllable with a full vowel (not ӑ, ӗ),

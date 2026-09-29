@@ -31,42 +31,83 @@
 //      them from being considered as a multi-character phoneme mnemonic
 
 // Letters 
-_а a
-_б be
-_в ve
-_г ge
-_д de
-_е e
-_ё jo
-_ж dZe
-_з ze
-_и i
-_й ij
-_к ka
-_л el
-_м em
-_н en
-_ң IN
-_о o
-_ө O
-_п pe
-_р er
-_с es
-_т te
-_у u
-_ү y
-_ф ef
-_х Xa
-_ц tse
-_ч tSe
-_ш Sa
-_щ StSa
+// The names with _ are used when a word is spelled. The names without _ are
+// also used for a consonant or a sign which stands alone in a text.
+_а 'a
+_б b'e
+_в v'e
+_г g'e
+_д d'e
+_е 'e
+_ё j'o
+_ж dZ'e
+_з z'e
+_и 'i
+_й 'ij
+_к k'a
+_л 'el
+_м 'em
+_н 'en
+_ң 'IN
+_о 'o
+_ө 'O
+_п p'e
+_р 'er
+_с 'es
+_т t'e
+_у 'u
+_ү 'y
+_ф 'ef
+_х X'a
+_ц ts'e
+_ч tS'e
+_ш S'a
+_щ StS'a
 _ъ adZIrat'u:||belgis'i
-_ы I
+_ы 'I
 _ь itSkert'y:||belgis'i
-_э e
-_ю ju
-_я ja
+_э 'e
+_ю j'u
+_я j'a
+
+б b'e	// бэ
+в v'e	// вэ
+г g'e	// гэ
+д d'e	// дэ
+ж dZ'e	// жэ
+з z'e	// зэ
+й 'ij	// ий
+к k'a	// ка
+л 'el	// эл
+м 'em	// эм
+н 'en	// эн
+ң 'IN	// ың
+п p'e	// пэ
+р 'er	// эр
+с 'es	// эс
+т t'e	// тэ
+ф 'ef	// эф
+х X'a	// ха
+ц ts'e	// цэ
+ч tS'e	// чэ
+ш S'a	// ша
+щ StS'a	// ща
+ъ adZIrat'u:||belgis'i	// ажыратуу белгиси
+ь itSkert'y:||belgis'i	// ичкертүү белгиси
+
+// A capital letter
+_cap tS,oN||	// чоң
+
+// The stress mark which is written over a vowel
+U+301 bas'Im||belgis'i	// басым белгиси
+
+// other characters which are met in place of ң and ө
+ӊ 'IN
+ѳ 'O
+ɵ 'O
+
+// The alphabet is not named before a letter: Cyrillic is the language's own script
+_cyr _|
 
 // Numbers
 _0	n'oL
@@ -108,47 +149,81 @@ _8C segizdZ'yz
 _9C toGuzdZ'yz
 _0M1	m'iN
 _0M2	mili'on
-_dpt	_:jan'a_:
+_0M3	mili'ard	// миллиард
+// a decimal fraction as it is read at school: 1,3 is бир бүтүн ондон үч
+_dpt	_byt'yn	// бүтүн
+_0Z1	ond'on	// ондон
+_0Z2	dZyzd'On	// жүздөн
+_0Z3	miNd'en	// миңден
+_0Z4	'on||miNd'en	// он миңден
+_0Z5	dZ'yz||miNd'en	// жүз миңден
 
 // symbols
 @ majmyltS'a
 # tortS'o        $max3
 $ d'oLar
 % pratsent  $max3  //shorter e
-^ kr'ySka
+^ qapq'aq	// капкак
 & ampers'and
 * dZILdIztS'a   $max3
 + qoS'u:        $max3
 = barab'ar      $max3
 / bOrtS'Ok     $max3
-\ tetir'i||sl'eS      $max3
+\ t,esker'i||sl'eS      $max3	// тескери слэш
 _- sIzIqtS'a
-_ astInq'I||kenemt'e    $max3
-~ tild'e
+__ ,ILdIjq'I||sIz'Iq	// ылдыйкы сызык
+~ t'ilda	// тильда
 № nom'er
-! il'ep||belg'i
-? sur'o:||belg'i
-( qaS'a:a||tS'u:
+! il'ep||belgis'i	// илеп белгиси
+_? sur'o:||belgis'i	// суроо белгиси
+_( qaS'a:||atS'u:	// кашаа ачуу
 ) qaS'a:||dZab'u:
 | t'ik||sl'eS
 { atSu:tS'u||figuraL'Iq||qaS'a:
 } dZabu:tS'u||figuraL'Iq||qaS'a:
 [ atSu:tS'u||kvadratt'Iq||qaS'a:
 ] dZabu:tS'u||kvadratt'Iq||qaS'a:
-> azd'Iq||belgis'i
-< kOpt'yk||belgis'i
+> tS'oN||belg'i	// чоң белги
+< k,itSin'e||belg'i	// кичине белги
 _. tSek'it
 , yt'yr 
 ` atSu:tS'u||apostr'of
 " tIrmaqtS'a
 ' dZabu:tS'u||apostr'of
-; tSek'it||yt'yr
+; ,ytyrl'y:||tSek'it	// үтүрлүү чекит
 : q'oS||tSek'it
 × kObOjty:
 // ÷
 // - дефис
-《 atSu:tSu||franzuz||tIrmaqtSaLarI
- 》dZabu:tSu||franzuz||tIrmaqtSaLarI
+_« atS'Iq||tIrmaqtS'a	// ачык тырмакча
+_» dZab'Iq||tIrmaqtS'a	// жабык тырмакча
+
+// more marks and symbols, with the names of NVDA's Kyrgyz translation
+// (those with _ are named only when they are read out or spelled)
+_„ tIrmaqtS'a
+_“ s'oL||tIrmaqtS'a	// сол тырмакча
+_” 'oN||tIrmaqtS'a	// оң тырмакча
+_‘ s'oL||dZaLG'Iz||tIrmaqtS'a	// сол жалгыз тырмакча
+_’ 'oN||dZaLG'Iz||tIrmaqtS'a	// оң жалгыз тырмакча
+_‚ tIrmaqtS'a
+_‐ s,IzIqtS'a	// сызыкча
+_– s,IzIqtS'a
+_— sIz'Iq	// сызык
+_… k'Op||tSek'it	// көп чекит
+_• belg'i||tS,ekit'i	// белги чекити
+_° gr'adus	// градус
+_§ bOl'yk	// бөлүк
+_÷ bOl'y:	// бөлүү
+_© a,vtord'uq||uq'uq	// автордук укук
+_® qattaLG'an	// катталган
+_™ so:d'a||marqas'I	// соода маркасы
+_£ f'unt	// фунт
+_¥ ij'en	// иен
+_¢ ts'ent	// цент
+_€ j'evro	// евро
+_₽ r'ubl	// рубль
+± qoS'u:||dZ'e||al'u:	// кошуу же алуу
+⃀ s'om	// U+20C0 сом
 
 // Abbreviations
 
